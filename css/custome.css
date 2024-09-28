@@ -773,3 +773,13 @@
         width: 100%;
     }
 }
+
+#mobile-menu {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #mobile-menu {
+        display: flex;
+    }
+}   
