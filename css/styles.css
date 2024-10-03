@@ -115,7 +115,7 @@ html {
 
 #sec-0 header:last-of-type {
   background-color: var(--bgaccent);
-  position: relative;
+  /* position: relative; */
 }
 
 #sec-0 header:last-of-type .container {
@@ -235,7 +235,7 @@ html {
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 3rem 0px;
+  /* padding: 3rem 0px; */
 }
 
 #sec-0 article h1 {
@@ -937,7 +937,7 @@ html {
   }
 
   #sec-0 article {
-    padding: 5rem 0px;
+    /* padding: 5rem 0px; */
   }
 
   #sec-0 article h1 {
@@ -1226,5 +1226,7 @@ html {
   }
 
 }
+
+
 
 /* END OF SHEET */
