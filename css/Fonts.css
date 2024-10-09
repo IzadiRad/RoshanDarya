@@ -1,0 +1,58 @@
+:root {
+
+    --font-poppins: 'Poppins', sans-serif;
+    --font-noto-sans: 'Noto Sans', sans-serif;
+    --font-vazirmatn: 'Vazirmatn', sans-serif;
+}
+
+/* فونت برای عناوین اصلی */
+h1,
+h2,
+h3,
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* فونت برای بدنه متن */
+body,
+p,
+.content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* فونت برای تأکید */
+.emphasis,
+.quote {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+/* فونت برای منو و دکمه‌ها */
+nav,
+.btn,
+.menu-item {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+
+/* پایان فونت اینگلیسی */
+
+
+
+/* فونت برای زبان فارسی */
+body[lang="fa"] {
+    font-family: 'Vazir', sans-serif;
+}
+
+/* فونت برای زبان چینی */
+body[lang="zh"] {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* فونت برای زبان ترکی */
+body[lang="tr"] {
+    font-family: 'Roboto', sans-serif;
+}

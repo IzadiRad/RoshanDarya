@@ -1,0 +1,64 @@
+:root {
+    /* رنگ‌های اصلی */
+    --primary-navy-blue: #003f5c;
+    --primary-light-blue: #0077b6;
+    --primary-turquoise: #00b4d8;
+    --primary-light-gray: #f1f1f1;
+    --primary-orange-gold: #f8961e;
+
+    /* رنگ‌های ثانویه */
+    --secondary-grayish-blue: #6c757d;
+    --secondary-coral-orange: #f3722c;
+    --secondary-sky-blue: #48cae4;
+    --secondary-midnight-blue: #023e8a;
+    --secondary-soft-green: #90e0ef;
+}
+
+/* مثال‌هایی از استفاده از رنگ‌ها */
+body {
+    background-color: var(--primary-light-gray);
+    color: var(--primary-navy-blue);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-navy-blue);
+}
+
+button {
+    background-color: var(--primary-orange-gold);
+    color: white;
+    border: 2px solid var(--secondary-coral-orange);
+}
+
+button:hover {
+    background-color: var(--secondary-coral-orange);
+    color: white;
+}
+
+a {
+    color: var(--primary-light-blue);
+}
+
+a:hover {
+    color: var(--secondary-midnight-blue);
+}
+
+header {
+    background-color: var(--primary-turquoise);
+    box-shadow: 0 4px 8px var(--secondary-grayish-blue);
+}
+
+footer {
+    background-color: var(--primary-navy-blue);
+    color: var(--primary-light-gray);
+}
+
+.border {
+    border-color: var(--secondary-grayish-blue);
+}
+
+.shadow {
+    box-shadow: 0 4px 6px var(--secondary-grayish-blue);
+}

@@ -1,24 +1,67 @@
 :root {
-    --txtaccent: #fff;
-    --txtaccent1: #9d9d9f;
-    --textaccent2: #73757e;
-    --textaccent3: #484848;
-    --txtaccent4: #000;
-    --txtaccent5: #e5e5e5;
-    --haccent: #424899;
-    --haccent_withOpacity: rgba(38, 66, 223, 0.425);
-    --haccent2: #333333;
-    --bgaccent: #1a1c27;
-    --bgaccent_withOpacity: rgba(26, 28, 39, 0.96);
-    --firstColor: #333333;
-    --secoundColor: #333333;
+    /* رنگ‌های اصلی */
+    --primary-navy-blue: #003f5c;
+    --primary-light-blue: #0077b6;
+    --primary-turquoise: #00b4d8;
+    --primary-light-gray: #f1f1f1;
+    --primary-orange-gold: #f8961e;
 
-    /*custome*/
-    --fColor: #00629b;
-    --sColor: #333333;
-    --tColor: #ffffff;
+    /* رنگ‌های ثانویه */
+    --secondary-grayish-blue: #6c757d;
+    --secondary-coral-orange: #f3722c;
+    --secondary-sky-blue: #48cae4;
+    --secondary-midnight-blue: #023e8a;
+    --secondary-soft-green: #90e0ef;
 }
 
+/* مثال‌هایی از استفاده از رنگ‌ها */
+body {
+    background-color: var(--primary-light-gray);
+    color: var(--primary-navy-blue);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-navy-blue);
+}
+
+button {
+    background-color: var(--primary-orange-gold);
+    color: white;
+    border: 2px solid var(--secondary-coral-orange);
+}
+
+button:hover {
+    background-color: var(--secondary-coral-orange);
+    color: white;
+}
+
+a {
+    color: var(--primary-light-blue);
+}
+
+a:hover {
+    color: var(--secondary-midnight-blue);
+}
+
+header {
+    background-color: var(--primary-turquoise);
+    box-shadow: 0 4px 8px var(--secondary-grayish-blue);
+}
+
+footer {
+    background-color: var(--primary-navy-blue);
+    color: var(--primary-light-gray);
+}
+
+.border {
+    border-color: var(--secondary-grayish-blue);
+}
+
+.shadow {
+    box-shadow: 0 4px 6px var(--secondary-grayish-blue);
+}
 
 /*customize */
 .logo-desktop {
@@ -108,28 +151,12 @@
         box-shadow: 0 12px 6px -6px #00629b;
     }
 
-    #sec-2 article {
-        position: relative;
-    }
 
-    .custome-item-figure {
-        flex-direction: row;
-        text-align: center;
-        max-width: 63%;
-        position: inherit;
-        top: -75px;
-    }
-
-    #sec-2 article .cont {
-        min-height: 76vh;
-    }
 
 
 }
 
-.custome-item-figure div:first-child {
-    box-shadow: 0 0 10px 7px #00629b;
-}
+
 
 #section-About-Pic {
     width: 50%;

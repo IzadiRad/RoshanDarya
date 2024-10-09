@@ -1,26 +1,90 @@
 /* استایل منو */
+:root {
+    --txtaccent: #fff;
+    --txtaccent-dark: #000;
+    --primary-color: #00457c;
+    /* رنگ اصلی آبی */
+    --secondary-color: #00aaff;
+    /* رنگ دوم آبی روشن */
+    --highlight-color: #f5a623;
+    /* رنگ هایلایت برای تضاد */
+    --border-color: #e5e5e5;
+    /* رنگ حاشیه */
+
+    /* Font Variables */
+    --font-poppins: 'Poppins', sans-serif;
+    --font-noto-sans: 'Noto Sans', sans-serif;
+
+    --fon header {
+        background-color: var(--primary-color);
+        padding: 10px 0;
+    }
+}
+
+.nav-link {
+    color: var(--txtaccent);
+    font-family: var(--font-poppins);
+    /* استفاده از فونت Poppins */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--highlight-color);
+}
+
+/* Hero Section */
+#hero-section {
+    position: relative;
+}
+
+#hero-section video {
+    object-fit: cover;
+}
+
+#hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 69, 124, 0.4);
+    /* لایه‌ای روی ویدیو برای تیرگی */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #mobile-menu {
+        display: flex;
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    #mobile-menu {
+        display: none;
+    }
+
+    #mobile-menu.show {
+        display: flex;
+    }
+}
+
 #mobile-menu {
     display: none;
-    /* به طور پیش‌فرض مخفی */
+    flex-direction: column;
+    background-color: var(--primary-color);
     position: fixed;
-    /* استفاده از fixed برای ماندن در یک مکان */
     top: 0;
     right: 0;
-    /* باز شدن از سمت راست */
     width: 200px;
-    /* عرض مناسب */
     height: 100%;
-    /* به‌طور کامل صفحه را بپوشاند */
-    background-color: rgba(255, 255, 255, 0.95);
-    /* پس‌زمینه با کمی شفافیت */
-    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
-    /* سایه زیبا */
-    z-index: 9999;
-    opacity: 0;
-    /* برای استفاده از افکت محو */
-    transform: translateX(100%);
-    /* شروع انیمیشن از سمت راست */
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
 }
 
 /* تنظیمات برای نمایش منو */
@@ -140,7 +204,7 @@
 
 @media (min-width: 768px) {
     #logo-butt {
-        background-color: transparent;  
+        background-color: transparent;
         /* یا از هر رنگ دلخواهی استفاده کنید */
     }
 }
