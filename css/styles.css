@@ -149,7 +149,7 @@ footer {
 }
 
 #sec-0 header:last-of-type {
-  background-color: var(--bgaccent);
+  /* background-color: var(--bgaccent); */
   /* position: relative; */
 }
 

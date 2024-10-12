@@ -46,31 +46,69 @@ overlay.addEventListener('click', () => {
     overlay.style.display = 'none'; // پنهان کردن overlay
 });
 
-// گرفتن عنصر هدر
-const header = document.querySelector('header');
-const butt = document.getElementById('logo-butt');
-// تابعی برای اضافه یا حذف کردن کلاس به هنگام اسکرول
-function checkWindowSize() {
-    if (window.innerWidth < 1000) {
-        butt.classList.add("bg-white");
-    }
-}
+document.addEventListener('DOMContentLoaded', function () {
+    // گرفتن عناصر مورد نیاز
+    const header = document.querySelector('header');
+    const butt = document.getElementById('logo-butt');
+    const mymenu = document.querySelector('.mymenu');
 
-// بررسی اندازه در بارگذاری صفحه
-checkWindowSize();
-window.onscroll = function () {
-    if (window.scrollY > 100) {  // عدد 100 قابل تنظیم است
-        header.classList.add('fixed-header');
-        if (window.innerWidth >= 768) {
-            butt.classList.add("bg-white");
-        }
-    } else {
-        header.classList.remove('fixed-header');
-        if (window.innerWidth >= 768) {
-            butt.classList.remove("bg-white");
+    // تابعی برای اضافه یا حذف کردن کلاس به هنگام اسکرول
+    function checkWindowSize() {
+        if (window.innerWidth >= 1000) {
+            butt.classList.remove("bg-white"); // در اندازه بزرگ، رنگ حذف شود
         }
     }
-};
+
+    // بررسی اندازه در بارگذاری صفحه
+    checkWindowSize();
+
+    window.onscroll = function () {
+        if (window.scrollY > 100) {  // عدد 100 قابل تنظیم است
+            header.classList.add('fixed-header');
+            if (window.innerWidth >= 768) {
+                butt.classList.add("bg-white"); // فقط در اندازه بزرگ
+                mymenu.classList.add("bg-white"); // فقط در اندازه بزرگ
+            }
+        } else {
+            header.classList.remove('fixed-header');
+            if (window.innerWidth >= 768) {
+                butt.classList.remove("bg-white");
+                mymenu.classList.remove("bg-white");
+            }
+        }
+    };
+});
 
 // // افزودن event listener برای تغییر اندازه صفحه
 // window.addEventListener('resize', checkWindowSize);
+
+
+//section 4
+document.querySelectorAll('.cursor-pointer').forEach((service) => {
+    service.addEventListener('click', function () {
+        const serviceId = this.id;
+        let serviceDetails = '';
+
+        if (serviceId === 'service1') {
+            serviceDetails = `
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">Service 1 Details</h3>
+          <p class="text-gray-600">Detailed information about Service 1.</p>
+          <img src="https://via.placeholder.com/300" alt="Service 1" class="mt-4 rounded-lg">
+        `;
+        } else if (serviceId === 'service2') {
+            serviceDetails = `
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">Service 2 Details</h3>
+          <p class="text-gray-600">Detailed information about Service 2.</p>
+          <img src="https://via.placeholder.com/300" alt="Service 2" class="mt-4 rounded-lg">
+        `;
+        } else if (serviceId === 'service3') {
+            serviceDetails = `
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">Service 3 Details</h3>
+          <p class="text-gray-600">Detailed information about Service 3.</p>
+          <img src="https://via.placeholder.com/300" alt="Service 3" class="mt-4 rounded-lg">
+        `;
+        }
+
+        document.getElementById('service-details-content').innerHTML = serviceDetails;
+    });
+});

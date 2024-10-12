@@ -29,6 +29,11 @@
     transition: color 0.3s;
 }
 
+.bg-white {
+    background-color: white;
+}
+
+
 .nav-link:hover {
     color: var(--highlight-color);
 }
@@ -202,9 +207,18 @@
 
 }
 
-@media (min-width: 768px) {
+#logo-butt,
+header {}
+
+/* @media (min-width: 768px) {
     #logo-butt {
-        background-color: transparent;
+        /* background-color: transparent; */
+/* یا از هر رنگ دلخواهی استفاده کنید */
+
+
+@media (max-width: 766px) {
+    #logo-butt {
+        background-color: #fff;
         /* یا از هر رنگ دلخواهی استفاده کنید */
     }
 }
