@@ -1,0 +1,76 @@
+.gallery-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.grid-item {
+    min-width: 200px; /* اندازه هر تصویر */
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px; /* طراحی گوشه‌ها */
+}
+
+.left {
+    transform: translateY(20px); /* حرکت پایین */
+    transition: transform 0.5s; /* انیمیشن حرکت */
+}
+
+.right {
+    transform: translateY(-20px); /* حرکت بالا */
+    transition: transform 0.5s; /* انیمیشن حرکت */
+}
+
+/* برای ردیف دوم */
+.grid-item.left:nth-child(n+6) {
+    transform: translateY(-20px); /* حرکت بالا برای ردیف دوم */
+}
+
+.grid-item.right:nth-child(n+6) {
+    transform: translateY(20px); /* حرکت پایین برای ردیف دوم */
+}
+.gallery-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.grid-item {
+    min-width: 200px; /* اندازه هر تصویر */
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px; /* طراحی گوشه‌ها */
+}
+
+.left {
+    transform: translateY(20px); /* حرکت پایین */
+    transition: transform 0.5s; /* انیمیشن حرکت */
+}
+
+.right {
+    transform: translateY(-20px); /* حرکت بالا */
+    transition: transform 0.5s; /* انیمیشن حرکت */
+}
+
+/* برای ردیف دوم */
+.grid-item.left:nth-child(n+6) {
+    transform: translateY(-20px); /* حرکت بالا برای ردیف دوم */
+}
+
+.grid-item.right:nth-child(n+6) {
+    transform: translateY(20px); /* حرکت پایین برای ردیف دوم */
+}

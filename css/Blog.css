@@ -1,0 +1,26 @@
+.container-fluid {
+    background-color: #f8f9fa;
+    /* رنگ پس‌زمینه برای بخش وبلاگ */
+}
+
+.blog-item {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* سایه برای بلاگ‌ها */
+    transition: transform 0.3s;
+    /* افکت انتقال */
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    /* حرکت بلاگ به بالا هنگام hover */
+}
+
+.section-title h5 {
+    color: #007bff;
+    /* رنگ عنوان بخش */
+}
+
+.section-title h1 {
+    color: #333;
+    /* رنگ متن اصلی */
+}

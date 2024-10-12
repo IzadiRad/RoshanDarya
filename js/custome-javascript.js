@@ -83,32 +83,72 @@ document.addEventListener('DOMContentLoaded', function () {
 // window.addEventListener('resize', checkWindowSize);
 
 
-//section 4
-document.querySelectorAll('.cursor-pointer').forEach((service) => {
-    service.addEventListener('click', function () {
-        const serviceId = this.id;
-        let serviceDetails = '';
+//section 
+const detailsContent = {
+    service1: `
+      <h3 class="text-3xl font-bold mb-4">Service 1 Details</h3>
+      <video controls class="w-full mb-4">
+        <source src="service1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="text-gray-700">Detailed explanation about Service 1 goes here. This can include images, videos, or more detailed descriptions.</p>
+    `,
+    service2: `
+      <h3 class="text-3xl font-bold mb-4">Service 2 Details</h3>
+      <img src="service2-details.jpg" alt="Service 2 Details" class="w-full mb-4">
+      <p class="text-gray-700">Detailed explanation about Service 2 goes here. This can include images, videos, or more detailed descriptions.</p>
+    `,
+    service3: `
+      <h3 class="text-3xl font-bold mb-4">Service 3 Details</h3>
+      <video controls class="w-full mb-4">
+        <source src="service3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="text-gray-700">Detailed explanation about Service 3 goes here. This can include images, videos, or more detailed descriptions.</p>
+    `
+};
 
-        if (serviceId === 'service1') {
-            serviceDetails = `
-          <h3 class="text-2xl font-bold text-blue-700 mb-4">Service 1 Details</h3>
-          <p class="text-gray-600">Detailed information about Service 1.</p>
-          <img src="https://via.placeholder.com/300" alt="Service 1" class="mt-4 rounded-lg">
-        `;
-        } else if (serviceId === 'service2') {
-            serviceDetails = `
-          <h3 class="text-2xl font-bold text-blue-700 mb-4">Service 2 Details</h3>
-          <p class="text-gray-600">Detailed information about Service 2.</p>
-          <img src="https://via.placeholder.com/300" alt="Service 2" class="mt-4 rounded-lg">
-        `;
-        } else if (serviceId === 'service3') {
-            serviceDetails = `
-          <h3 class="text-2xl font-bold text-blue-700 mb-4">Service 3 Details</h3>
-          <p class="text-gray-600">Detailed information about Service 3.</p>
-          <img src="https://via.placeholder.com/300" alt="Service 3" class="mt-4 rounded-lg">
-        `;
-        }
+function showDetails(service) {
+    document.getElementById('details-content').innerHTML = detailsContent[service];
+    document.getElementById('details-panel').classList.remove('hidden');
+}
 
-        document.getElementById('service-details-content').innerHTML = serviceDetails;
+function hideDetails() {
+    document.getElementById('details-panel').classList.add('hidden');
+}
+
+
+
+//gallery
+
+window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const gridContainer = document.querySelector('.grid-container');
+
+    // تنظیم حرکت گالری با توجه به مقدار اسکرول
+    const offset = scrollTop * 0.5; // تنظیم سرعت حرکت
+    gridContainer.style.transform = `translateX(-${offset}px)`;
+
+    // اضافه کردن انیمیشن به تصاویر بر اساس اسکرول
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach((item, index) => {
+        const direction = (index < 5) ? 20 : -20; // تعیین جهت حرکت برای دو ردیف
+        item.style.transform = `translateY(${direction * Math.sin(scrollTop * 0.01 + index)}px)`; // انیمیشن بر اساس اسکرول
     });
 });
+window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const gridContainer = document.querySelector('.grid-container');
+
+    // تنظیم حرکت گالری با توجه به مقدار اسکرول
+    const offset = scrollTop * 0.5; // تنظیم سرعت حرکت
+    gridContainer.style.transform = `translateX(-${offset}px)`;
+
+    // اضافه کردن انیمیشن به تصاویر بر اساس اسکرول
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach((item, index) => {
+        const direction = (index < 5) ? 20 : -20; // تعیین جهت حرکت برای دو ردیف
+        item.style.transform = `translateY(${direction * Math.sin(scrollTop * 0.01 + index)}px)`; // انیمیشن بر اساس اسکرول
+    });
+});
+
