@@ -1,50 +1,39 @@
-const blogs = [
-    {
-        title: "How to build a website",
-        description: "Short description about the first blog. You can write more details about the topic here.",
-        imgSrc: "https://via.placeholder.com/350",
-        date: "01 Jan, 2022",
-        author: "John Doe",
-    },
-    {
-        title: "10 Tips for SEO Improvement",
-        description: "Short description about the second blog. You can write more details about the topic here.",
-        imgSrc: "https://via.placeholder.com/350",
-        date: "01 Jan, 2022",
-        author: "John Doe",
-    },
-    // Add more blog objects here...
-];
 
-let currentBlogIndex = 0;
+// اضافه کردن قابلیت کشیدن به سمت راست و چپ
+const blogScroll = document.getElementById('blogScroll');
 
-function loadMoreBlogs() {
-    const blogContainer = document.querySelector('.row.g-4');
-    const maxBlogsToLoad = 3; // Number of blogs to load each time
-    const nextBlogs = blogs.slice(currentBlogIndex, currentBlogIndex + maxBlogsToLoad);
+let isDown = false;
+let startX;
+let scrollLeft;
 
-    nextBlogs.forEach(blog => {
-        const blogItem = document.createElement('div');
-        blogItem.classList.add('col-lg-4');
-        blogItem.innerHTML = `
-            <div class="blog-item bg-light rounded overflow-hidden">
-                <div class="blog-img position-relative overflow-hidden">
-                    <a href="blog-details.html">
-                        <img class="img-fluid" src="${blog.imgSrc}" alt="${blog.title}" style="max-width: 100%; height: auto;">
-                    </a>
-                </div>
-                <div class="p-4">
-                    <h4 class="mb-3 text-primary">${blog.title}</h4>
-                    <p>${blog.description}</p>
-                    <p><small>${blog.author} | ${blog.date}</small></p>
-                    <a class="text-uppercase text-primary" href="blog-details.html">Read More <i class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-        `;
-        blogContainer.appendChild(blogItem);
-    });
+blogScroll.addEventListener('mousedown', (e) => {
+    isDown = true;
+    blogScroll.classList.add('active');
+    startX = e.pageX - blogScroll.offsetLeft;
+    scrollLeft = blogScroll.scrollLeft;
+});
 
-    currentBlogIndex += maxBlogsToLoad;
-}
+blogScroll.addEventListener('mouseleave', () => {
+    isDown = false;
+    blogScroll.classList.remove('active');
+});
 
-// Hide load more button if there are no more blogs to load
+blogScroll.addEventListener('mouseup', () => {
+    isDown = false;
+    blogScroll.classList.remove('active');
+});
+
+blogScroll.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - blogScroll.offsetLeft;
+    const walk = (x - startX) * 2; // مقدار حرکت ماوس
+    blogScroll.scrollLeft = scrollLeft - walk;
+});
+
+// جلوگیری از باز شدن لینک در حین کشیدن
+blogScroll.addEventListener('click', (e) => {
+    if (isDown) {
+        e.preventDefault();
+    }
+});
