@@ -152,3 +152,19 @@ window.addEventListener('scroll', function () {
     });
 });
 
+
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modal-img");
+const galleryItems = document.querySelectorAll(".gallery-item img");
+const closeModal = document.getElementById("close-modal");
+
+galleryItems.forEach(item => {
+    item.addEventListener("click", function () {
+        modalImg.src = this.src;
+        modal.classList.remove("hidden");
+    });
+});
+
+closeModal.addEventListener("click", function () {
+    modal.classList.add("hidden");
+});

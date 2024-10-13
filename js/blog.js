@@ -45,5 +45,6 @@ function loadMoreBlogs() {
     });
 
     currentBlogIndex += maxBlogsToLoad;
+}
 
 // Hide load more button if there are no more blogs to load

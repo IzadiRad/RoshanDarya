@@ -1,0 +1,59 @@
+<section id="sec-0">
+    <header class=" top-0 bg-white z-50 shadow-lg">
+        <div class="hide" id="searchBar">
+            <input type="search" name="searchBox" id="searchBox"
+                placeholder="Type your search here.. Press [Esc] to exit">
+        </div>
+        <div class="flex justify-center items-center space-x-8 mx-auto relative mymenu">
+            <!-- دکمه منوی همبرگری -->
+            <button id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0">
+                <i class="fa fa-bars text-2xl"></i>
+            </button>
+            <div id="mobile-menu" class="hidden">
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+                <a href="#"><i class="fas fa-cog"></i> Services</a>
+                <a href="#"><i class="fas fa-file-alt"></i> Request a Quote</a>
+                <button id="close-menu" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <a href="#"><i class="fas fa-star"></i> EQC</a>
+                <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+            </div>
+
+
+            <!-- منوی سمت چپ لوگو -->
+            <nav id="menu" class="hidden md:flex space-x-4">
+                <a href="#" class="nav-link custome-size-menu custome-menu-item">Home</a>
+                <a href="#" class="nav-link custome-size-menu custome-menu-item">Services</a>
+                <a href="#" class="nav-link custome-size-menu custome-menu-item">Request a Quote</a>
+                <a href="#" class="nav-link custome-size-menu custome-menu-item">EQC</a>
+            </nav>
+
+            <!-- لوگو وسط منو -->
+            <div class="relative flex justify-center items-center mt-4 mb-4 mx-5">
+                <div id="logo-butt"
+                    class="absolute w-44 h-28 rounded-full  shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 ">
+                </div>
+                <img src="./Images/Icon/roshan-new-en.png" alt="roshandarya"
+                    class="relative w-32 h-auto z-10 top-6">
+            </div>
+
+            <!-- منو سمت راست لوگو -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="#" class="nav-link custome-size-menu custome-menu-item">About Us</a>
+                <a href="#" class="nav-link custome-size-menu custome-menu-item">Contact Us</a>
+                <a href="index.html" class="nav-link custome-size-menu custome-menu-item">
+                    <img src="./Images/iran-flag-icon.svg" alt="Iran Flag" id="iran-flag" class="w-6 h-6">
+                </a>
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            </nav>
+        </div>
+    </header>
+    <div id="overlay" class="overlay"></div>
+    <article id="custome-main-show">
+        <video autoplay muted loop id="myVideo">
+            <source src="./Images/Hero1.mp4" type="video/mp4">
+        </video>
+    </article>
+</section>
