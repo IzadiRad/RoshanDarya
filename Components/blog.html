@@ -1,130 +1,89 @@
-<link href="css/Blog.css" rel="stylesheet" type="text/css">
-<section id="sec-99">
-    <div class="container-fluid px-lg-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container px-lg-0 py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Latest Blogs</h5>
-                <h1 class="mb-0">Read Our Latest Blog Articles</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/custome.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/Header.css" rel="stylesheet" type="text/css">
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/Services-Section2.css" rel="stylesheet" type="text/css">
+    <link href="css/Color.css" rel="stylesheet" type="text/css">
+    <link href="css/Fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/Gallery.css" rel="stylesheet" type="text/css">
+    <link href="css/Blog.css" rel="stylesheet" type="text/css">
+
+    <!-- english Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Lora:wght@400;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <link href="path/to/vazir-font.css" rel="stylesheet"> -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>roshandarya</title>
+
+
+</head>
+
+<body>
+
+    <section id="blog-home" class="bg-light-gray">
+        <div class="container mx-auto px-4 py-5">
+            <div class="text-center mb-5">
+                <img src="https://via.placeholder.com/1200x400" alt="Blog Banner" class="w-full rounded-lg mb-4">
+                <h1 class="mb-0">Welcome to Our Blog</h1>
+                <p class="text-secondary">Your go-to source for the latest updates and insights.</p>
+                <a href="all-blogs.html" class="bg-primary text-white px-4 py-2 rounded-lg">View All Blogs</a>
             </div>
-            <div class="row g-4">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- Blog Item 1 -->
-                <div class="col-lg-4">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <a href="blog-details.html">
-                                <img class="img-fluid" src="https://via.placeholder.com/350" alt="Blog Image 1"
-                                    style="max-width: 100%; height: auto;">
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">How to build a website</h4>
-                            <p>Short description about the first blog. You can write more details about the
-                                topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md p-5">
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://via.placeholder.com/400"
+                        alt="Blog Image 1">
+                    <h2 class="text-primary font-bold text-xl mb-2">How to Build a Website</h2>
+                    <p class="text-gray-600">Short description about the first blog. You can write more details about
+                        the
+                        topic here.</p>
+                    <a href="blog-details.html" class="text-primary underline mt-2 block">Read More</a>
                 </div>
+
                 <!-- Blog Item 2 -->
-                <div class="col-lg-4">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <a href="blog-details.html">
-                                <img class="img-fluid" src="https://via.placeholder.com/350" alt="Blog Image 2"
-                                    style="max-width: 100%; height: auto;">
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
-                            <p>Short description about the second blog. You can write more details about the
-                                topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md p-5">
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://via.placeholder.com/400"
+                        alt="Blog Image 2">
+                    <h2 class="text-primary font-bold text-xl mb-2">10 Tips for SEO Improvement</h2>
+                    <p class="text-gray-600">Short description about the second blog. You can write more details about
+                        the
+                        topic here.</p>
+                    <a href="blog-details.html" class="text-primary underline mt-2 block">Read More</a>
                 </div>
+
                 <!-- Blog Item 3 -->
-                <div class="col-lg-4">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <a href="blog-details.html">
-                                <img class="img-fluid" src="https://via.placeholder.com/350" alt="Blog Image 3"
-                                    style="max-width: 100%; height: auto;">
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">UX Design Guide</h4>
-                            <p>Short description about the third blog. You can write more details about the
-                                topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md p-5">
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://via.placeholder.com/400"
+                        alt="Blog Image 3">
+                    <h2 class="text-primary font-bold text-xl mb-2">UX Design Guide</h2>
+                    <p class="text-gray-600">Short description about the third blog. You can write more details about
+                        the
+                        topic here.</p>
+                    <a href="blog-details.html" class="text-primary underline mt-2 block">Read More</a>
                 </div>
-                <!-- Blog Item 4 -->
-                <div class="col-lg-4">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <a href="blog-details.html">
-                                <img class="img-fluid" src="https://via.placeholder.com/350" alt="Blog Image 4"
-                                    style="max-width: 100%; height: auto;">
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Graphic Design Tips</h4>
-                            <p>Short description about the fourth blog. You can write more details about the
-                                topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item 5 -->
-                <div class="col-lg-4">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <a href="blog-details.html">
-                                <img class="img-fluid" src="https://via.placeholder.com/350" alt="Blog Image 5"
-                                    style="max-width: 100%; height: auto;">
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Digital Marketing Techniques</h4>
-                            <p>Short description about the fifth blog. You can write more details about the
-                                topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item 6 -->
-                <div class="col-lg-4">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <a href="blog-details.html">
-                                <img class="img-fluid" src="https://via.placeholder.com/350" alt="Blog Image 6"
-                                    style="max-width: 100%; height: auto;">
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Successful Project Management</h4>
-                            <p>Short description about the sixth blog. You can write more details about the
-                                topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <button class="btn btn-primary" id="loadMore">Load More</button>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+</body>
+
+</html>
