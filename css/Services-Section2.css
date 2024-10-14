@@ -7,3 +7,15 @@
         display: block;
     }
 }
+
+.secCard>div {
+    flex-direction: row;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.secCard {
+    justify-content: space-evenly;
+    align-content: center;
+}

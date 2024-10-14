@@ -200,6 +200,8 @@ footer {
 #sec-0 header nav a:hover {
   /* background-color: var(--haccent_withOpacity); */
   color: var(--txtaccent);
+  color: var(--primary-light-blue);
+  font-size: large;
 }
 
 #sec-0 header nav i {
