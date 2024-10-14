@@ -66,3 +66,11 @@
     gap: 50px;
     /* فاصله بین بخش‌ها */
 }
+
+.secCard>.text-center>.item-icon>svg {
+    fill: var(--primary-navy-blue);
+}
+
+.secCard:hover>.text-center>.item-icon>svg {
+    fill: var(--primary-light-gray);
+}

@@ -12,8 +12,12 @@
     flex-direction: row;
     display: flex;
     gap: 15px;
+
     justify-content: space-around;
+    align-items: center;
+
 }
+
 
 .secCard {
     justify-content: space-evenly;
