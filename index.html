@@ -558,39 +558,42 @@
                     </p>
                     <p class="text-secondary-grayish-blue mb-6" style="font-family: var(--font-noto-sans);">
                         Web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
-                        ipsum'
-                        will uncover many web sites still in their infancy.
+                        ipsum' will uncover many web sites still in their infancy.
                     </p>
                     <a href="#learn-more"
                         class="inline-block mt-4 px-6 py-3 bg-primary-turquoise text-white font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300">Learn
                         More</a>
                 </div>
 
-                <!-- Right Section (Images and Video) -->
+                <!-- Right Section (Video and Images) -->
                 <div class="grid grid-cols-1 gap-6">
                     <!-- Video -->
                     <div class="relative">
-                        <img class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80"
-                            src="https://via.placeholder.com/600x400" alt="Video thumbnail">
-                        <div class="absolute inset-0 flex justify-center items-center">
+                        <!-- ویدیو جایگزین تصویر -->
+                        <video class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80" autoplay muted loop>
+                            <source src="./Images/Video/66.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- <div class="absolute inset-0 flex justify-center items-center">
                             <a href="#"
                                 class="absolute inset-0 flex items-center justify-center text-primary-light-gray hover:text-primary-light-blue">
-                                <i class="fas fa-play-circle text-6xl"></i>
+                                <i class="fas fa-play-circle text-6xl">aaaa</i>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
 
                     <!-- Two Small Images -->
                     <div class="grid grid-cols-2 gap-4">
-                        <img class="rounded-lg shadow-lg w-full h-48 lg:h-52 object-cover"
-                            src="https://via.placeholder.com/300x200" alt="Image 1">
-                        <img class="rounded-lg shadow-lg w-full h-48 lg:h-52 object-cover"
-                            src="https://via.placeholder.com/300x200" alt="Image 2">
+                        <img class="rounded-lg shadow-lg w-full object-cover" src="./Images/Image/38.jpg" alt="Image 1">
+                        <img class="rounded-lg shadow-lg w-full object-cover" src="./Images/Image/204.jpg"
+                            alt="Image 2">
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+
 
     <br />
     <br />
@@ -600,40 +603,56 @@
         <!-- Sidebar - کشویی سمت چپ -->
         <div class="w-full md:w-1/4 bg-gray-200 p-4 flex flex-col h-full">
             <ul class="flex-grow space-y-4 h-full">
-                <li class="service-tab cursor-pointer h-full" data-content="service1">
-                    <div class="flex justify-between items-center bg-blue-500 text-white py-3 px-4 h-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                        </svg>
-                        <span class="ml-4">Service 1</span>
+                <!-- Service 1 -->
+                <li class="service-tab cursor-pointer h-full group" data-content="service1">
+                    <div
+                        class="flex items-center justify-center bg-blue-500 text-white py-3 px-4 h-full group-hover:bg-white transition-colors duration-300">
+                        <div class="flex items-center ">
+                            <img src="Images/svg/ship-svgrepo-com.svg" alt=""
+                                class="h-16 fill-current text-white group-hover:text-blue-500 transition-colors duration-300">
+                            <span
+                                class="ml-4 text-white group-hover:text-blue-500 transition-colors duration-300">NVOCC</span>
+                        </div>
                     </div>
                 </li>
-                <li class="service-tab cursor-pointer h-full" data-content="service2">
-                    <div class="flex justify-between items-center bg-blue-500 text-white py-3 px-4 h-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                        </svg>
-                        <span class="ml-4">Service 2</span>
+
+                <!-- Service 2 -->
+                <li class="service-tab cursor-pointer h-full group" data-content="service2">
+                    <div
+                        class="flex items-center justify-center bg-blue-500 text-white py-3 px-4 h-full group-hover:bg-white transition-colors duration-300">
+                        <div class="flex items-center">
+                            <img src="Images/svg/truck-svgrepo-com.svg" alt=""
+                                class="h-16 fill-current text-white group-hover:text-blue-500 transition-colors duration-300">
+                            <span
+                                class="ml-4 text-white group-hover:text-blue-500 transition-colors duration-300">TRANSIT</span>
+                        </div>
                     </div>
                 </li>
-                <li class="service-tab cursor-pointer h-full" data-content="service3">
-                    <div class="flex justify-between items-center bg-blue-500 text-white py-3 px-4 h-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                        </svg>
-                        <span class="ml-4">Service 3</span>
+
+                <!-- Service 3 -->
+                <li class="service-tab cursor-pointer h-full group" data-content="service3">
+                    <div
+                        class="flex items-center justify-center bg-blue-500 text-white py-3 px-4 h-full group-hover:bg-white transition-colors duration-300">
+                        <div class="flex items-center">
+                            <img src="Images/svg/justice-bureau-svgrepo-com.svg" alt=""
+                                class="h-16 fill-current text-white group-hover:text-blue-500 transition-colors duration-300">
+                            <span
+                                class="ml-4 text-white group-hover:text-blue-500 transition-colors duration-300">AGENCY
+                                APPLICATION</span>
+                        </div>
                     </div>
                 </li>
-                <li class="service-tab cursor-pointer h-full" data-content="service4">
-                    <div class="flex justify-between items-center bg-blue-500 text-white py-3 px-4 h-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                        </svg>
-                        <span class="ml-4">Service 4</span>
+
+                <!-- Service 4 -->
+                <li class="service-tab cursor-pointer h-full group" data-content="service4">
+                    <div
+                        class="flex items-center justify-center bg-blue-500 text-white py-3 px-4 h-full group-hover:bg-white transition-colors duration-300">
+                        <div class="flex items-center">
+                            <img src="Images/svg/airplane-svgrepo-com.svg" alt=""
+                                class="h-16 fill-current text-white group-hover:text-blue-500 transition-colors duration-300">
+                            <span class="ml-4 text-white group-hover:text-blue-500 transition-colors duration-300">AIR
+                                FREIGHT</span>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -642,17 +661,39 @@
         <!-- Content - محتوای سمت راست -->
         <div class="w-full md:w-3/4 bg-white p-6 h-full">
             <!-- محتوای پیش‌فرض -->
-            <div id="default-content" class="service-content">
-                <h2 class="text-2xl font-bold mb-4">Welcome to Our Services</h2>
+            <div id="default-content" class="service-content flex flex-col gap-5">
+                <div class="relative">
+                    <!-- ویدیو جایگزین تصویر -->
+                    <video class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80" autoplay muted loop>
+                        <source src="./Images/Video/190.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <div class="absolute inset-0 flex justify-center items-center">
+                        <a href="#"
+                            class="absolute inset-0 flex items-center justify-center text-primary-light-gray hover:text-primary-light-blue">
+                            <i class="fas fa-play-circle text-6xl">aaaa</i>
+                        </a>
+                    </div> -->
+                </div>
+                <h2 class="text-2xl font-bold mb-4 items-center text-center">Welcome to Our Services</h2>
                 <p>This is the default content that is shown before any service is selected.</p>
-                <img src="https://via.placeholder.com/400x300" alt="Default Content" class="w-full">
             </div>
 
             <!-- Service 1 content -->
             <div id="service1" class="service-content hidden">
+<div class="relative overflow-hidden rounded-lg shadow-lg w-full">
+    <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
+        <video class="w-full h-full object-cover lg:h-64 xl:h-56" autoplay muted loop>
+            <source src="./Images/Video/121.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+
                 <h2 class="text-2xl font-bold mb-4">Service 1</h2>
                 <p>This is the content for Service 1.</p>
-                <img src="https://via.placeholder.com/400x300" alt="Service 1" class="w-full">
+
             </div>
 
             <!-- Service 2 content -->
