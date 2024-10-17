@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeMenuBtn = document.getElementById('close-menu');
     const overlay = document.getElementById('overlay');
     const mobileMenu = document.getElementById('mobile-menu');
+    const servicesDropdown = document.getElementById('services-dropdown');
+    const eqcDropdown = document.getElementById('eqc-dropdown');
+
 
     if (menuToggle && closeMenuBtn && overlay && mobileMenu) {
         menuToggle.addEventListener('click', function () {
@@ -36,11 +39,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (window.innerWidth >= 768) {
                     butt.classList.add("bg-white");
                     mymenu.classList.add("bg-white");
+                    eqcDropdown.classList.add("eqc-dropdownScroll");
+                    servicesDropdown.classList.add("services-dropdownScroll");
                 }
             } else {
                 header.classList.remove('fixed-header');
                 butt.classList.remove("bg-white");
                 mymenu.classList.remove("bg-white");
+                eqcDropdown.classList.remove("eqc-dropdownScroll");
+                servicesDropdown.classList.remove("services-dropdownScroll");
             }
         };
     }
@@ -83,5 +90,51 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-});
 
+
+    document.getElementById('services-link').addEventListener('click', function (e) {
+        e.preventDefault(); // جلوگیری از پیش‌فرض لینک
+        var submenu = document.getElementById('services-submenu');
+        submenu.classList.toggle('show'); // نمایش یا مخفی کردن زیرمنو
+    });
+    // برای منوی EQC
+    document.getElementById('eqc-link').addEventListener('click', function (e) {
+        e.preventDefault(); // جلوگیری از پیش‌فرض لینک
+        console.log('EQC link clicked'); // برای تست اینکه کلیک شده
+        var eqcSubmenu = document.getElementById('eqc-submenu');
+        eqcSubmenu.classList.toggle('hidden');
+        eqcSubmenu.classList.toggle('show');
+    });
+
+
+    const menu = document.getElementById('menu');
+    // نمایش و پنهان‌کردن زیرمنوها در حالت دسکتاپ
+    const servicesLink = document.getElementById('desktop-services');
+    const eqcLink = document.getElementById('desktop-eqc');
+
+    servicesLink.addEventListener('mouseenter', function () {
+        servicesDropdown.classList.remove('hidden');
+    });
+
+    servicesLink.addEventListener('mouseleave', function () {
+        servicesDropdown.classList.add('hidden');
+    });
+
+    eqcLink.addEventListener('mouseenter', function () {
+        eqcDropdown.classList.remove('hidden');
+    });
+
+    eqcLink.addEventListener('mouseleave', function () {
+        eqcDropdown.classList.add('hidden');
+    });
+
+    servicesLink.addEventListener('click', function (e) {
+        e.stopPropagation(); // جلوگیری از بسته شدن منو در هنگام کلیک داخل منو
+        toggleDropdown(servicesDropdown);
+    });
+    eqcLink.addEventListener('click', function (e) {
+        e.stopPropagation();
+        toggleDropdown(eqcDropdown);
+    });
+    
+});

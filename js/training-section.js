@@ -35,3 +35,5 @@ trainingScroll.addEventListener('click', (e) => {
         e.preventDefault();
     }
 });
+
+
