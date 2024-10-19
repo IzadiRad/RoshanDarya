@@ -136,5 +136,48 @@ document.addEventListener('DOMContentLoaded', function () {
         e.stopPropagation();
         toggleDropdown(eqcDropdown);
     });
-    
+
+
+    //     document.querySelectorAll('.fuck').forEach(item => {
+    //         item.addEventListener('mouseenter', function () {
+    //             const substack = this.querySelector('.substack');
+    //             if (substack.style.display === 'block') {
+    //                 substack.style.display = 'none';
+    //             } else {
+    //                 substack.style.display = 'block';
+    //             }
+    //         });
+    //     });
+
+    // });
+    // برای Services
+    servicesLink.addEventListener('mouseenter', function () {
+        servicesDropdown.style.display = 'block';
+    });
+
+    servicesDropdown.addEventListener('mouseleave', function () {
+        servicesDropdown.style.display = 'none';
+    });
+
+    servicesLink.addEventListener('mouseleave', function () {
+        if (!servicesDropdown.matches(':hover')) {
+            servicesDropdown.style.display = 'none';
+        }
+    });
+
+    // برای EQC
+    eqcLink.addEventListener('mouseenter', function () {
+        eqcDropdown.style.display = 'block';
+    });
+
+    eqcDropdown.addEventListener('mouseleave', function () {
+        eqcDropdown.style.display = 'none';
+    });
+
+    eqcLink.addEventListener('mouseleave', function () {
+        if (!eqcDropdown.matches(':hover')) {
+            eqcDropdown.style.display = 'none';
+        }
+    });
+
 });

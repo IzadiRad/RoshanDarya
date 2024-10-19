@@ -26,12 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
     closeMenu.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
     });
-
-    // برای منوی Services
 });
 
 document.getElementById('services-link').addEventListener('click', function (e) {
-    e.preventDefault(); // جلوگیری از پیش‌فرض لینک
+    e.preventDefault(); 
     var servicesSubmenu = document.getElementById('services-submenu');
     servicesSubmenu.classList.toggle('hidden');
     servicesSubmenu.classList.toggle('show');
@@ -45,6 +43,3 @@ document.getElementById('eqc-link').addEventListener('click', function (e) {
     eqcSubmenu.classList.toggle('hidden');
     eqcSubmenu.classList.toggle('show');
 });
-
-
-

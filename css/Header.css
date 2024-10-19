@@ -280,7 +280,6 @@ header {}
 
 
 
-
 #menu {
     background-color: transparent;
     /* پس‌زمینه‌ی شفاف */
@@ -302,25 +301,42 @@ header {}
 }
 
 #desktop-services:hover+#services-dropdown,
-#desktop-eqc:hover+#eqc-dropdown {
+#desktop-eqc:hover+#eqc-dropdown,
+#services-dropdown:hover,
+#eqc-dropdown:hover {
     display: block;
 }
 
-#eqc-dropdown,
-#services-dropdown {
-    background-color: rgba(255, 255, 255, 0.452);
-    
-}
 
 #eqc-dropdown,
-#services-dropdown > a {
+#services-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80%;
+    /* اینجا فاصله زیرمنو از لینک اصلی */
+    background-color: rgba(255, 255, 255, 0.452);
+    z-index: 999;
+
+}
+
+
+#eqc-dropdown>a,
+#services-dropdown>a {
     text-shadow: #fff 2px;
+}
+
+#eqc-dropdown>a:hover,
+#services-dropdown>a:hover {
+    text-shadow: #c2bbbb 2px;
+    background-color: var(--secondary-soft-green);
+    border-radius: 10%;
+    width: 80%;
+
 }
 
 .eqc-dropdownScroll,
 .services-dropdownScroll {
     background-color: #fffffa !important;
     border-radius: 10%;
-
-
 }

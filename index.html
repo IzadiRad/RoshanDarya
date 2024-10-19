@@ -49,7 +49,7 @@
                 <!-- دکمه منوی همبرگری -->
                 <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0">
                     <i class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 30"
                             class="hamburger-svg">
                             <rect width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
                             <rect y="13" width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
@@ -57,6 +57,8 @@
                         </svg>
                     </i>
                 </div>
+
+
                 <div id="mobile-menu" class="hidden">
                     <a href="#"><i class="fas fa-home"></i> Home</a>
                     <hr />
@@ -69,6 +71,7 @@
                         <a href="#"><i class="fas fa-home"></i> Maritime Transport</a>
                         <a href="#"><i class="fas fa-home"></i> Services Maps</a>
                     </div>
+
                     <hr />
                     <a href="#"><i class="fas fa-file-alt"></i> Request a Quote</a>
                     <div id="close-menu" class="close-btn">
@@ -105,24 +108,17 @@
                             Services
                             <span class="submenu-icon">&#9662;</span>
                         </a>
-                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48">
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Ocean Transport</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Maritime Transport</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Services Maps</a>
-                        </div>
+                    </div>
+                    <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Ocean Transport</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Maritime
+                            Transport</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Services Maps</a>
                     </div>
 
+
                     <a href="#" class="nav-link custome-size-menu custome-menu-item">Request a Quote</a>
-                    <div class="relative">
-                        <a href="#" id="desktop-eqc" class="nav-link custome-size-menu custome-menu-item">
-                            EQC
-                            <span class="submenu-icon">&#9662;</span>
-                        </a>
-                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0">
-                            <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Incoterms</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cargo</a>
-                        </div>
-                    </div>
+
                 </nav>
 
                 <!-- لوگو وسط منو -->
@@ -136,6 +132,17 @@
 
                 <!-- منو سمت راست لوگو -->
                 <nav class="hidden md:flex space-x-4">
+
+                    <div class="relative z-10">
+                        <a href="#" id="desktop-eqc" class="nav-link custome-size-menu custome-menu-item z-100">
+                            EQC
+                            <span class="submenu-icon">&#9662;</span>
+                        </a>
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
+                            <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Incoterms</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cargo</a>
+                        </div>
+                    </div>
                     <a href="#" class="nav-link custome-size-menu custome-menu-item">About Us</a>
                     <a href="#" class="nav-link custome-size-menu custome-menu-item">Contact Us</a>
                     <a href="index.html" class="nav-link custome-size-menu custome-menu-item">
@@ -921,11 +928,11 @@
                         class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item2">
-                    <img src="https://via.placeholder.com/400x300" alt="Image 2"
+                    <img src="https://via.placeholder.com/300x300" alt="Image 2"
                         class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item3">
-                    <img src="https://via.placeholder.com/400x100" alt="Image 3"
+                    <img src="https://via.placeholder.com/100x300" alt="Image 3"
                         class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item4">
@@ -937,7 +944,7 @@
                         class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item6">
-                    <img src="https://via.placeholder.com/200x100" alt="Image 6"
+                    <img src="https://via.placeholder.com/100x200" alt="Image 6"
                         class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
             </div>
@@ -945,7 +952,7 @@
             <br />
             <section class="gallery4 cid-upCxZ2xO3D" id="gallery-12-upCxZ2xO3D">
                 <div class="container-fluid gallery-wrapper">
-                    <div class="grid-container">
+                    <div class="grid-container horizontal-scroll">
                         <div class="grid-item left">
                             <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
                         </div>
@@ -978,9 +985,8 @@
                         </div>
                     </div>
                 </div>
-
-
             </section>
+
         </section>
     </div>
 

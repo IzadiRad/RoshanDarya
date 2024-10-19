@@ -197,12 +197,12 @@ footer {
   border-bottom: solid 1px var(--txtaccent1);
 }
 
-#sec-0 header nav a:hover {
-  /* background-color: var(--haccent_withOpacity); */
+/* #sec-0 header nav a:hover {
+  background-color: var(--haccent_withOpacity);
   color: var(--txtaccent);
   color: var(--primary-light-blue);
   font-size: large;
-}
+} */
 
 #sec-0 header nav i {
   display: flex;
