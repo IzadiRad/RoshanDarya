@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="css/custome.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/Header.css" rel="stylesheet" type="text/css">
@@ -167,8 +168,8 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
                 <!-- Item 1 -->
-                <div
-                    class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group flex flex-col items-center secCard">
+                <div class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group flex flex-col items-center secCard"
+                    data-aos="fade-right">
                     <div class="text-center">
                         <div class="item-icon mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +261,7 @@
                     </div>
                 </div>
                 <!-- Item 2-->
-                <div
+                <div data-aos="fade-right"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group secCard">
                     <div class="text-center">
                         <div class="item-icon">
@@ -373,7 +374,7 @@
                     </div>
                 </div>
                 <!-- Item 3 -->
-                <div
+                <div data-aos="fade-left"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group secCard">
                     <div class="text-center">
                         <div class="item-icon">
@@ -512,7 +513,7 @@
                     </div>
                 </div>
                 <!-- Item 4 -->
-                <div
+                <div data-aos="fade-left"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group secCard">
                     <div class="text-center">
                         <div class="item-icon">
@@ -599,7 +600,8 @@
 
 
 
-    <section class="bg-white py-16 AboutUs-Section" id="sec-3">
+    <section class="bg-white py-16 AboutUs-Section" id="sec-3" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Left Section (Text) -->
@@ -631,10 +633,11 @@
                     <!-- Video -->
                     <div class="relative">
                         <!-- ویدیو جایگزین تصویر -->
-                        <video class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80" autoplay muted loop>
+                        <video class="rounded-lg shadow-lg object-contain w-full h-72 lg:h-80" autoplay muted loop>
                             <source src="./Images/Video/66.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+
                         <!-- <div class="absolute inset-0 flex justify-center items-center">
                             <a href="#"
                                 class="absolute inset-0 flex items-center justify-center text-primary-light-gray hover:text-primary-light-blue">
@@ -645,9 +648,10 @@
 
                     <!-- Two Small Images -->
                     <div class="grid grid-cols-2 gap-4">
-                        <img class="rounded-lg shadow-lg w-full object-cover" src="./Images/Image/38.jpg" alt="Image 1">
+                        <img class="rounded-lg shadow-lg w-full object-cover" src="./Images/Image/38.jpg" alt="Image 1"
+                            data-aos="zoom-out">
                         <img class="rounded-lg shadow-lg w-full object-cover" src="./Images/Image/204.jpg"
-                            alt="Image 2">
+                            data-aos="zoom-out" alt="Image 2">
                     </div>
 
                 </div>
@@ -660,7 +664,9 @@
     <br />
     <br />
 
-    <section class="flex flex-col md:flex-row container mx-auto max-w-screen-lg mt-10 p-4 service-section min-h-screen">
+    <section class="flex flex-col md:flex-row container mx-auto max-w-screen-lg mt-10 p-4 service-section min-h-screen"
+        data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        </div>
         <!-- Sidebar - کشویی سمت چپ -->
         <div class="w-full md:w-1/4 bg-gray-200 p-4 flex flex-col h-full">
             <ul class="flex-grow space-y-4 h-full">
@@ -724,7 +730,6 @@
             <!-- محتوای پیش‌فرض -->
             <div id="default-content" class="service-content flex flex-col gap-5">
                 <div class="relative">
-                    <!-- ویدیو جایگزین تصویر -->
                     <video class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80" autoplay muted loop>
                         <source src="./Images/Video/190.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -744,7 +749,7 @@
             <div id="service1" class="service-content hidden">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <video class="w-full h-full object-cover lg:h-64 xl:h-56" autoplay muted loop>
+                        <video class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80" autoplay muted loop>
                             <source src="./Images/Video/121.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -761,7 +766,7 @@
             <div id="service2" class="service-content hidden">
                 <h2 class="text-2xl font-bold mb-4">Service 2</h2>
                 <div class="video-container h-full">
-                    <video controls class="w-full h-full object-cover">
+                    <video class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80">
                         <source src="video-sample.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -784,10 +789,6 @@
         </div>
     </section>
 
-
-
-    <br />
-    <br />
     <br />
     <section id="counter-section" class="py-10 bg-primary-light-gray">
         <div class="container mx-auto px-4 text-center">
@@ -846,73 +847,40 @@
     </section>
 
 
-    <br />
-    <br />
-    <br />
-
     <div id="section04" class="gallery-Section">
 
         <section id="src-04" class="gallery">
 
             <section class="gallery4 cid-upCxZ2xO3D left" id="gallery-12-upCxZ2xO3D">
                 <div class="container-fluid gallery-wrapper">
-                    <div class="grid-container">
+                    <div class="grid-container  horizontal-scroll cursor-grab">
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/1.jpg" alt="image1"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
-                        </div>
-                        <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/2.jpg" alt="image2"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/3.jpg" alt="image3"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/4.jpg" alt="image4"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/5.jpg" alt="image5"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/6.jpg" alt="image6"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
-                        </div>
-                        <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
-                        </div>
-                        <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
-                        </div>
-                        <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
-                        </div>
-                        <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/7.jpg" alt="image7"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
 
                     </div>
@@ -924,64 +892,75 @@
 
             <div class="grid-container0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 p-4">
                 <div class="grid-item0 item1">
-                    <img src="https://via.placeholder.com/400x400" alt="Image 1"
-                        class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
+                    <img src="./Images/Image/gallery/MainPage/2-1.jpg" alt="Image 1"
+                        class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item2">
-                    <img src="https://via.placeholder.com/300x300" alt="Image 2"
-                        class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
+                    <img src="./Images/Image/gallery/MainPage/2-2.jpg" alt="Image 2"
+                        class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item3">
-                    <img src="https://via.placeholder.com/100x300" alt="Image 3"
-                        class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
+                    <img src="./Images/Image/gallery/MainPage/2-3.jpg" alt="Image 3"
+                        class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item4">
-                    <img src="https://via.placeholder.com/400x200" alt="Image 4"
-                        class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
+                    <img src="./Images/Image/gallery/MainPage/3-1.jpg" alt="Image 4"
+                        class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item5">
-                    <img src="https://via.placeholder.com/200x200" alt="Image 5"
-                        class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
+                    <img src="./Images/Image/gallery/MainPage/3-2.jpg" alt="Image 5"
+                        class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item6">
-                    <img src="https://via.placeholder.com/100x200" alt="Image 6"
-                        class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
+                    <img src="./Images/Image/gallery/MainPage/3-3.jpg" alt="Image 6"
+                        class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
             </div>
+
             <br />
             <br />
             <section class="gallery4 cid-upCxZ2xO3D" id="gallery-12-upCxZ2xO3D">
                 <div class="container-fluid gallery-wrapper">
                     <div class="grid-container horizontal-scroll">
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/e1.jpg" alt="image1"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/e2.jpg" alt="image2"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image3" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/e3.jpg" alt="image3"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image4" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/e4.jpg" alt="image4"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image5" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/e5.jpg" alt="image5"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image6" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/e6.jpg" alt="image6"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image1" class="animate__animated">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image2" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/e7.jpg" alt="image7"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                         <div class="grid-item left">
-                            <img src="https://via.placeholder.com/200" alt="image3" class="animate__animated">
+                            <img src="./Images/Image/gallery/MainPage/e8.jpg" alt="image8"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
-                        <div class="grid-item right">
-                            <img src="https://via.placeholder.com/200" alt="image4" class="animate__animated">
+                        <div class="grid-item left">
+                            <img src="./Images/Image/gallery/MainPage/e9.jpg" alt="image9"
+                                class="animate__animated w-full h-auto object-cover">
+                        </div>
+                        <div class="grid-item left">
+                            <img src="./Images/Image/gallery/MainPage/e10.jpg" alt="image10"
+                                class="animate__animated w-full h-auto object-cover">
                         </div>
                     </div>
                 </div>
@@ -1444,6 +1423,10 @@
     <script src="js/counters.js"></script>
     <script src="js/toggleFAQ.js"></script>
     <script src="js/training-section.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

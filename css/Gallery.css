@@ -470,3 +470,13 @@ img {
 .unique-grid-item img:hover {
     transform: scale(1.1);
 }
+
+.grid-container {
+    cursor: grab;
+    /* حالت موس در حالت عادی */
+}
+
+.grid-container:active {
+    cursor: grabbing;
+    /* حالت موس هنگام کلیک و درگ */
+}

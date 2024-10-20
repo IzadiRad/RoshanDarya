@@ -217,9 +217,6 @@
 
 }
 
-#logo-butt,
-header {}
-
 /* @media (min-width: 768px) {
     #logo-butt {
         /* background-color: transparent; */
@@ -340,3 +337,14 @@ header {}
     background-color: #fffffa !important;
     border-radius: 10%;
 }
+
+/* hero Section */
+/* #myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+} */

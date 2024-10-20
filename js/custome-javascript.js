@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.onscroll = function () {
             if (window.scrollY > 100) {
                 header.classList.add('fixed-header');
-                if (window.innerWidth >= 768) {
+                if (window.innerWidth >= 600) {
                     butt.classList.add("bg-white");
                     mymenu.classList.add("bg-white");
                     eqcDropdown.classList.add("eqc-dropdownScroll");
@@ -180,4 +180,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    //hero-Section
+    //     const video1 = document.getElementById('myVideo1');
+    //     const video2 = document.getElementById('myVideo2');
+
+    //     video1.addEventListener('ended', function () {
+    //         video2.style.display = 'block';
+    //         video1.style.display = 'none';
+    //         video2.play();
+    //     });
+
+    //     video2.addEventListener('ended', function () {
+    //         video1.style.display = 'block';
+    //         video2.style.display = 'none';
+    //         video1.play();
+    //     });
 });
+
+

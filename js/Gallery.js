@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     // درخواست انیمیشن
     requestAnimationFrame(() => {
         // حرکت گالری
-        document.querySelector('.grid-container').style.transform = `translateX(-${scrollPos}px)`;
+        document.querySelector('.grid-container').style.transform = `translateX(-${scrollPos - 2500}px)`;
 
         // انیمیشن عناصر گالری
         const gridItems = document.querySelectorAll('.grid-item');
@@ -55,4 +55,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     animateGallery();
 });
-
