@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Check if the elements exist before using them
 
-    // Menu toggle and close functionality
     const menuToggle = document.getElementById('menu-toggle');
     const closeMenuBtn = document.getElementById('close-menu');
     const overlay = document.getElementById('overlay');
@@ -27,12 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Menu elements not found.');
     }
 
+    // header.classList.add('CHCHeader')
     // Fixed header on scroll
     const header = document.querySelector('header');
     const butt = document.getElementById('logo-butt');
     const mymenu = document.querySelector('.mymenu');
+    const links = document.querySelectorAll('.mymenu a'); // انتخاب تمامی لینک‌ها داخل هدر
 
-    if (header && butt && mymenu) {
+    if (header && butt && mymenu && links.length > 0) {
         window.onscroll = function () {
             if (window.scrollY > 100) {
                 header.classList.add('fixed-header');
@@ -41,6 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     mymenu.classList.add("bg-white");
                     eqcDropdown.classList.add("eqc-dropdownScroll");
                     servicesDropdown.classList.add("services-dropdownScroll");
+
+                    // تغییر رنگ لینک‌ها
+                    links.forEach(link => {
+                        link.style.color = '#003f5c'; // آبی تیره یا هر رنگ دیگر
+                    });
                 }
             } else {
                 header.classList.remove('fixed-header');
@@ -48,6 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 mymenu.classList.remove("bg-white");
                 eqcDropdown.classList.remove("eqc-dropdownScroll");
                 servicesDropdown.classList.remove("services-dropdownScroll");
+
+                // بازگرداندن رنگ لینک‌ها به سفید
+                links.forEach(link => {
+                    link.style.color = 'white'; // رنگ اولیه لینک‌ها
+                });
             }
         };
     }
@@ -70,26 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     </video>
                     <p class="text-gray-700">Detailed explanation about Service 3.</p>`
     };
-
-    function showDetails(service) {
-        const detailsPanel = document.getElementById('details-panel');
-        const detailsContentDiv = document.getElementById('details-content');
-
-        if (detailsPanel && detailsContentDiv) {
-            detailsContentDiv.innerHTML = detailsContent[service];
-            detailsPanel.classList.remove('hidden');
-        } else {
-            console.error('Details panel or content not found.');
-        }
-    }
-
-    function hideDetails() {
-        const detailsPanel = document.getElementById('details-panel');
-        if (detailsPanel) {
-            detailsPanel.classList.add('hidden');
-        }
-    }
-
 
 
     document.getElementById('services-link').addEventListener('click', function (e) {
@@ -136,21 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
         e.stopPropagation();
         toggleDropdown(eqcDropdown);
     });
-
-
-    //     document.querySelectorAll('.fuck').forEach(item => {
-    //         item.addEventListener('mouseenter', function () {
-    //             const substack = this.querySelector('.substack');
-    //             if (substack.style.display === 'block') {
-    //                 substack.style.display = 'none';
-    //             } else {
-    //                 substack.style.display = 'block';
-    //             }
-    //         });
-    //     });
-
-    // });
-    // برای Services
     servicesLink.addEventListener('mouseenter', function () {
         servicesDropdown.style.display = 'block';
     });
@@ -179,22 +154,6 @@ document.addEventListener('DOMContentLoaded', function () {
             eqcDropdown.style.display = 'none';
         }
     });
-
-    //hero-Section
-    //     const video1 = document.getElementById('myVideo1');
-    //     const video2 = document.getElementById('myVideo2');
-
-    //     video1.addEventListener('ended', function () {
-    //         video2.style.display = 'block';
-    //         video1.style.display = 'none';
-    //         video2.play();
-    //     });
-
-    //     video2.addEventListener('ended', function () {
-    //         video1.style.display = 'block';
-    //         video2.style.display = 'none';
-    //         video1.play();
-    //     });
 });
 
 
