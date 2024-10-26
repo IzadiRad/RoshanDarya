@@ -504,3 +504,9 @@ header li {
     object-fit: cover;
     z-index: -1;
 } */
+
+@media (max-width: 768px) {
+    .mobwhite {
+        background-color: #fff;
+    }
+}
