@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.querySelectorAll('.gallery-scroll').forEach((scrollContainer) => {
     let isDown = false;
     let startX, scrollLeft;
-
     scrollContainer.addEventListener('mousedown', (e) => {
         isDown = true;
         scrollContainer.classList.add('active');
@@ -83,6 +82,24 @@ document.querySelectorAll('.gallery-scroll').forEach((scrollContainer) => {
         e.preventDefault();
         const x = e.pageX - scrollContainer.offsetLeft;
         const walk = (x - startX) * 2; // میزان حرکت
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+
+    scrollContainer.addEventListener('touchstart', (e) => {
+        isDown = true;
+        startX = e.touches[0].pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener('touchend', () => {
+        isDown = false;
+    });
+
+    scrollContainer.addEventListener('touchmove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.touches[0].pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 2;
         scrollContainer.scrollLeft = scrollLeft - walk;
     });
 
