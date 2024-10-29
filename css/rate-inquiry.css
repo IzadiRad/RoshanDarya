@@ -39,7 +39,15 @@
 .rate-button {
     margin-top: 20px;
 }
+
 .rate-button:hover {
     background-color: var(--primary-light-blue);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ریسپانسیو کردن برای عرض کمتر از 500 پیکسل */
+@media (max-width: 500px) {
+    #rate-inquiry .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

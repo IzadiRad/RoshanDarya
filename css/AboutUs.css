@@ -1,0 +1,10 @@
+.lastAbout {
+    z-index: 20;
+}
+
+@media (max-width: 767px) {
+    .lastAbout {
+        justify-content: center;
+        padding: 20px 40px 20px 40px;
+    }
+}
