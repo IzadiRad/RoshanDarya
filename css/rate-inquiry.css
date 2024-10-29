@@ -1,0 +1,45 @@
+#rate-inquiry {
+    background-color: #003f5cc2;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%; */
+}
+
+.input-field {
+    background-color: white;
+    color: var(--primary-navy-blue);
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--secondary-grayish-blue);
+    font-size: 1rem;
+    width: calc(33.33% - 1rem);
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--primary-light-blue);
+    box-shadow: 0 0 5px var(--primary-light-blue);
+}
+
+.rate-button {
+    background-color: var(--primary-turquoise);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rate-button {
+    margin-top: 20px;
+}
+.rate-button:hover {
+    background-color: var(--primary-light-blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
