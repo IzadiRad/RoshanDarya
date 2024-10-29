@@ -45,6 +45,10 @@
     align-items: center;
     justify-content: center;
     /* محدود کردن به یک خط */
+<<<<<<< HEAD
+=======
+    text-overflow: ellipsis;
+>>>>>>> bcf2d0e81e219f7dae27c0f56b44c659b81d0f17
     /* سه‌نقطه‌ای در انتهای تیترهای طولانی */
     /* جلوگیری از رفتن به خط بعدی */
     margin-bottom: 35px;
@@ -64,4 +68,12 @@
     flex-wrap: wrap;
     gap: 50px;
     /* فاصله بین بخش‌ها */
+}
+
+.secCard>.text-center>.item-icon>svg {
+    fill: var(--primary-navy-blue);
+}
+
+.secCard:hover>.text-center>.item-icon>svg {
+    fill: var(--primary-light-gray);
 }

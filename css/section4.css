@@ -1,0 +1,19 @@
+.services-section {
+    padding: 2rem 0;
+}
+
+.service-cards .card:hover {
+    background-color: #f3f4f6;
+}
+
+.service-details {
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}

@@ -1,0 +1,504 @@
+.gallery-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.grid-item {
+    min-width: 200px;
+    /* اندازه هر تصویر */
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    /* طراحی گوشه‌ها */
+}
+
+.left {
+    transform: translateY(20px);
+    /* حرکت پایین */
+    transition: transform 0.5s;
+    /* انیمیشن حرکت */
+}
+
+.right {
+    transform: translateY(-20px);
+    /* حرکت بالا */
+    transition: transform 0.5s;
+    /* انیمیشن حرکت */
+}
+
+/* برای ردیف دوم */
+.grid-item.left:nth-child(n+6) {
+    transform: translateY(-20px);
+    /* حرکت بالا برای ردیف دوم */
+}
+
+.grid-item.right:nth-child(n+6) {
+    transform: translateY(20px);
+    /* حرکت پایین برای ردیف دوم */
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.grid-item {
+    min-width: 200px;
+    /* اندازه هر تصویر */
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    /* طراحی گوشه‌ها */
+}
+
+.left {
+    transform: translateY(20px);
+    /* حرکت پایین */
+    transition: transform 0.5s;
+    /* انیمیشن حرکت */
+}
+
+.right {
+    transform: translateY(-20px);
+    /* حرکت بالا */
+    transition: transform 0.5s;
+    /* انیمیشن حرکت */
+}
+
+/* برای ردیف دوم */
+.grid-item.left:nth-child(n+6) {
+    transform: translateY(-20px);
+    /* حرکت بالا برای ردیف دوم */
+}
+
+.grid-item.right:nth-child(n+6) {
+    transform: translateY(20px);
+    /* حرکت پایین برای ردیف دوم */
+}
+
+.left-reverse {
+    transform: translateY(-20px);
+    /* حرکت بالا به‌جای پایین */
+    transition: transform 0.5s;
+}
+
+.right-reverse {
+    transform: translateY(20px);
+    /* حرکت پایین به‌جای بالا */
+    transition: transform 0.5s;
+}
+
+/* برای ردیف دوم */
+.grid-item.left-reverse:nth-child(n+6) {
+    transform: translateY(20px);
+    /* حرکت پایین برای ردیف دوم */
+}
+
+.grid-item.right-reverse:nth-child(n+6) {
+    transform: translateY(-20px);
+    /* حرکت بالا برای ردیف دوم */
+}
+
+
+
+
+.grid-container0 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* حالت موبایل با صفحه نمایش کوچک‌تر از 768px */
+@media (max-width: 768px) {
+    .grid-container0 {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        /* تنظیم ستون‌ها به شکلی که بر اساس فضای موجود ستون‌های جدید ساخته شود */
+        grid-auto-rows: minmax(150px, auto);
+        /* تنظیم اندازه‌ی ردیف‌ها برای حفظ تناسب تصاویر */
+        gap: 5px;
+    }
+}
+
+/* حالت موبایل بسیار کوچک (عرض کمتر از 480px) */
+@media (max-width: 480px) {
+    .grid-container0 {
+        grid-template-columns: repeat(auto-fill, minmax(93px, 1fr));
+        grid-auto-rows: minmax(150px, auto);
+        gap: 5px;
+    }
+}
+
+.grid-item0 {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item0 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item0 img:hover {
+    transform: scale(1.1);
+    /* افکت زوم در هاور */
+}
+
+/* تنظیمات برای چیدمان در دسکتاپ */
+@media (min-width: 655px) and (max-width: 768px) {
+
+    .item1 {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+
+    .item2 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .item3 {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .item4 {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+    .item5 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .item6 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+
+
+}
+
+.item1 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.item2 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.item3 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.item4 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.item5 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item6 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* تنظیمات CSS برای گالری منحصر به فرد */
+.unique-gallery-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.unique-gallery-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.unique-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.unique-grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.unique-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.unique-grid-item img:hover {
+    transform: scale(1.1);
+}
+
+
+.gallery-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.grid-item {
+    min-width: 200px;
+    /* اندازه هر تصویر */
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    /* طراحی گوشه‌ها */
+}
+
+.left {
+    transform: translateY(20px);
+    /* حرکت پایین */
+    transition: transform 0.5s;
+    /* انیمیشن حرکت */
+}
+
+.right {
+    transform: translateY(-20px);
+    /* حرکت بالا */
+    transition: transform 0.5s;
+    /* انیمیشن حرکت */
+}
+
+/* برای ردیف دوم */
+.grid-item.left:nth-child(n+6) {
+    transform: translateY(-20px);
+    /* حرکت بالا برای ردیف دوم */
+}
+
+.grid-item.right:nth-child(n+6) {
+    transform: translateY(20px);
+    /* حرکت پایین برای ردیف دوم */
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.grid-item {
+    min-width: 200px;
+    /* اندازه هر تصویر */
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    /* طراحی گوشه‌ها */
+}
+
+.left {
+    transform: translateY(20px);
+    /* حرکت پایین */
+    transition: transform 0.5s;
+    /* انیمیشن حرکت */
+}
+
+.right {
+    transform: translateY(-20px);
+    /* حرکت بالا */
+    transition: transform 0.5s;
+    /* انیمیشن حرکت */
+}
+
+/* برای ردیف دوم */
+.grid-item.left:nth-child(n+6) {
+    transform: translateY(-20px);
+    /* حرکت بالا برای ردیف دوم */
+}
+
+.grid-item.right:nth-child(n+6) {
+    transform: translateY(20px);
+    /* حرکت پایین برای ردیف دوم */
+}
+
+.left-reverse {
+    transform: translateY(-20px);
+    /* حرکت بالا به‌جای پایین */
+    transition: transform 0.5s;
+}
+
+.right-reverse {
+    transform: translateY(20px);
+    /* حرکت پایین به‌جای بالا */
+    transition: transform 0.5s;
+}
+
+/* برای ردیف دوم */
+.grid-item.left-reverse:nth-child(n+6) {
+    transform: translateY(20px);
+    /* حرکت پایین برای ردیف دوم */
+}
+
+.grid-item.right-reverse:nth-child(n+6) {
+    transform: translateY(-20px);
+    /* حرکت بالا برای ردیف دوم */
+}
+
+
+.grid-container0 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* حالت موبایل با صفحه نمایش کوچک‌تر از 768px */
+@media (max-width: 768px) {
+    .grid-container0 {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        /* تنظیم ستون‌ها به شکلی که بر اساس فضای موجود ستون‌های جدید ساخته شود */
+        grid-auto-rows: minmax(90, auto);
+        /* تنظیم اندازه‌ی ردیف‌ها برای حفظ تناسب تصاویر */
+        gap: 5px;
+    }
+}
+
+.grid-item0 {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item0 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item0 img:hover {
+    transform: scale(1.1);
+    /* افکت زوم در هاور */
+}
+
+/* تنظیمات برای چیدمان در دسکتاپ */
+.item1 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.item2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item3 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.item4 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.item5 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item6 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+
+
+/* تنظیمات CSS برای گالری منحصر به فرد */
+.unique-gallery-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.unique-gallery-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.unique-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.unique-grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.unique-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.unique-grid-item img:hover {
+    transform: scale(1.1);
+}
+
+.grid-container {
+    cursor: grab;
+    /* حالت موس در حالت عادی */
+}
+
+.grid-container:active {
+    cursor: grabbing;
+    /* حالت موس هنگام کلیک و درگ */
+}
