@@ -17,3 +17,12 @@
 .block {
     display: block;
 }
+
+.active-tab {
+    background-color: white !important;
+}
+
+.active-text {
+    color: #1d4ed8 !important;
+    /* رنگ آبی پررنگ */
+}

@@ -12,3 +12,14 @@ serviceTabs.forEach(tab => {
         document.getElementById(target).classList.remove('hidden');
     });
 });
+
+// افزودن listener کلیک به هر دکمه
+serviceTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // حذف کلاس active از تمامی دکمه‌ها
+        serviceTabs.forEach(t => t.classList.remove('active'));
+
+        // افزودن کلاس active به دکمه کلیک‌شده
+        tab.classList.add('active');
+    });
+});
