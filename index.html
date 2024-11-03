@@ -11,7 +11,6 @@
     <link href="css/custome.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/Header.css" rel="stylesheet" type="text/css">
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
     <link href="css/Services-Section2.css" rel="stylesheet" type="text/css">
     <link href="css/Color.css" rel="stylesheet" type="text/css">
     <link href="css/Fonts.css" rel="stylesheet" type="text/css">
@@ -50,7 +49,7 @@
             <input type="search" name="searchBox" id="searchBox"
                 placeholder="Type your search here.. Press [Esc] to exit">
         </div>
-        <div class="flex justify-center items-center space-x-8 mx-auto relative ">
+        <nav class="flex justify-center items-center space-x-8 mx-auto relative ">
             <!-- دکمه منوی همبرگری -->
             <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0">
                 <i class="">
@@ -65,21 +64,21 @@
 
 
             <div id="mobile-menu" class="hidden">
-                <a href="#"><i class="fas fa-home"></i> Home</a>
+                <a href="#" id="home-link-mob"><i class="fas fa-home"></i> Home</a>
                 <hr />
-                <a href="#" id="services-link" class="menu-item">
-                    <i class="fas fa-cog"></i> Services
+                <a href="#" id="services-linkss" class="menu-item">
+                    <i class="fas fa-cog" id="services-link-mob"></i> Services
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="services-submenu" class="submenu hidden">
-                    <a href="#"><i class="fas fa-home"></i> Ocean Transport</a>
-                    <a href="#"><i class="fas fa-home"></i> Maritime Transport</a>
-                    <a href="#"><i class="fas fa-home"></i> Ground Transport</a>
-                    <a href="#"><i class="fas fa-home"></i> Services Maps</a>
+                    <a href="#" id="maritime-link-mob"><i class="fas fa-home"></i> Maritime Transport</a>
+                    <a href="#" id="air-freight-link-mob"><i class="fas fa-home"></i> air freight</a>
+                    <a href="#" id="ground-transport-link-mob"><i class="fas fa-home"></i> Ground Transport</a>
+                    <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> Services Maps</a>
                 </div>
 
                 <hr />
-                <a href="#"><i class="fas fa-file-alt"></i> Request a Quote</a>
+                <a href="#" id="request-quote-link-mob"><i class="fas fa-file-alt"></i> Request a Quote</a>
                 <div id="close-menu" class="close-btn">
                     <i class="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
@@ -91,24 +90,27 @@
                     </i>
                 </div>
                 <hr />
-                <a href="#" id="eqc-link" class="menu-item">
+                <a href="#" id="eqc-linkss" class="menu-item">
                     <i class="fas fa-cog"></i> EQC
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="eqc-submenu" class="submenu hidden">
-                    <a href="#"><i class="fas fa-home"></i> Incoterms</a>
-                    <a href="#"><i class="fas fa-box"></i> Cargo</a>
+                    <a href="#" id="incoterms-link-mob"><i class="fas fa-home"></i> Incoterms</a>
+                    <a href="#" id="cargo-link-mob"><i class="fas fa-box"></i> Cargo</a>
                 </div>
                 <hr />
-                <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="#" id="about-us-link-mob"><i class="fas fa-info-circle"></i> About Us</a>
                 <hr />
-                <a href="#contact-section"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="#contact-section" id="contact-us-link-mob"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="#" class="nav-link-mob custome-size-menu custome-menu-item language-toggle">
+                    <img src="./Images/iran-flag-icon.svg" alt="Iran Flag" id="iran-flag" class="w-6 h-6">
+                </a>
             </div>
 
 
             <!-- منوی سمت چپ لوگو -->
             <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white">Home</a>
+                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="home-link">Home</a>
                 <div class="relative">
                     <a href="#" id="desktop-services" class="nav-link custome-size-menu custome-menu-item text-white">
                         Services
@@ -116,18 +118,22 @@
                     </a>
 
                     <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white">Ocean
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                            id="maritime-link">Maritime
                             Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white">Maritime
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                            id="ground-transport-link">Ground
                             Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white">Ground
-                            Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white">Services
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
+                            id="air-freight-link">air freight</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                            id="services-maps-link">Services
                             Maps</a>
                     </div>
                 </div>
 
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white">Request a Quote</a>
+                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white"
+                    id="request-quote-link">Request a Quote</a>
 
             </nav>
 
@@ -148,19 +154,22 @@
                         <span class="submenu-icon">&#9662;</span>
                     </a>
                     <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                        <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Incoterms</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cargo</a>
+                        <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                            id="incoterms-link">Incoterms</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link">Cargo</a>
                     </div>
                 </div>
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white">About Us</a>
-                <a href="#sss" class="nav-link custome-size-menu custome-menu-item text-white">Contact
+                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="about-us-link">About
                     Us</a>
-                <a href="index.html" class="nav-link custome-size-menu custome-menu-item">
+                <a href="#sss" class="nav-link custome-size-menu custome-menu-item text-white"
+                    id="contact-us-link">Contact
+                    Us</a>
+                <a href="#" class="nav-link custome-size-menu custome-menu-item language-toggle">
                     <img src="./Images/iran-flag-icon.svg" alt="Iran Flag" id="iran-flag" class="w-6 h-6">
                 </a>
                 <i class="fa-solid fa-magnifying-glass" id="search"></i>
             </nav>
-        </div>
+        </nav>
     </header>
     <section id="sec-0" class="hero-section relative">
         <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>
@@ -589,16 +598,14 @@
                                     Your browser does not support the video tag.
                                 </video>
 
-
-
                             </div>
 
                             <!-- Two Small Images -->
                             <div class="grid grid-cols-2 gap-4">
-                                <img class="rounded-lg shadow-lg w-full object-cover" src="./Images/Image/38.jpg"
-                                    alt="Image 1" data-aos="zoom-out">
-                                <img class="rounded-lg shadow-lg w-full object-cover" src="./Images/Image/204.jpg"
-                                    data-aos="zoom-out" alt="Image 2">
+                                <img class="rounded-lg shadow-lg w-full object-cover"
+                                    src="./Images/Image/AboutUs/Main/3.jpg" alt="Image 1" data-aos="zoom-out">
+                                <img class="rounded-lg shadow-lg w-full object-cover"
+                                    src="./Images/Image/AboutUs/Main/98.jpg" data-aos="zoom-out" alt="Image 2">
                             </div>
 
                         </div>
@@ -795,7 +802,7 @@
                 <h2 class="text-2xl font-bold mb-4">Service 2</h2>
                 <div class="video-container h-full">
                     <video class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80">
-                        <source src="video-sample.mp4" type="video/mp4">
+                        <source src="#" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -1253,8 +1260,8 @@
     <script src="js/toggleFAQ.js"></script>
     <script src="js/counters.js"></script>
     <script src="js/toggleFAQ.js"></script>
-    <script src="js/training-section.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="Fa/js/convertIntoPersian.js"></script>
     <script>
         AOS.init();
     </script>

@@ -25,20 +25,6 @@ const modalImg = document.getElementById("modal-img");
 const galleryItems = document.querySelectorAll(".gallery-item img");
 const closeModal = document.getElementById("close-modal");
 
-if (modal && modalImg && galleryItems.length > 0 && closeModal) {
-    galleryItems.forEach(item => {
-        item.addEventListener("click", function () {
-            modalImg.src = this.src;
-            modal.classList.remove("hidden");
-        });
-    });
-
-    closeModal.addEventListener("click", function () {
-        modal.classList.add("hidden");
-    });
-} else {
-    console.error('Modal elements for gallery not found.');
-}
 
 document.addEventListener("DOMContentLoaded", function () {
     const gridItems = document.querySelectorAll('.grid-item');

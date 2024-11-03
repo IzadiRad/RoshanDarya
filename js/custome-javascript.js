@@ -82,13 +82,13 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
 
-    document.getElementById('services-link').addEventListener('click', function (e) {
+    document.getElementById('services-linkss').addEventListener('click', function (e) {
         e.preventDefault(); // جلوگیری از پیش‌فرض لینک
         var submenu = document.getElementById('services-submenu');
         submenu.classList.toggle('show'); // نمایش یا مخفی کردن زیرمنو
     });
     // برای منوی EQC
-    document.getElementById('eqc-link').addEventListener('click', function (e) {
+    document.getElementById('eqc-linkss').addEventListener('click', function (e) {
         e.preventDefault(); // جلوگیری از پیش‌فرض لینک
         console.log('EQC link clicked'); // برای تست اینکه کلیک شده
         var eqcSubmenu = document.getElementById('eqc-submenu');

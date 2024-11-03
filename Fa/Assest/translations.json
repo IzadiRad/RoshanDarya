@@ -1,0 +1,16 @@
+{
+    "header": {
+        "home": "خانه",
+        "services": "خدمات",
+        "maritime_transport": "حمل و نقل دریایی",
+        "air_freight": "حمل و نقل هوایی",
+        "ground_transport": "حمل و نقل زمینی",
+        "services_maps": "نقشه‌های خدمات",
+        "request_quote": "درخواست قیمت",
+        "eqc": "شرایط حمل و نقل",
+        "incoterms": "شرایط اینکوترمز",
+        "cargo": "کالا",
+        "about_us": "درباره ما",
+        "contact_us": "تماس با ما"
+    }
+}
