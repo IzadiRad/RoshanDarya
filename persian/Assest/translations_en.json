@@ -1,0 +1,90 @@
+{
+    "language": "en",
+    "header": {
+        "home": "Home",
+        "services": "Services",
+        "maritime_transport": "Maritime Transport",
+        "air_freight": "Air Freight",
+        "ground_transport": "Ground Transport",
+        "services_maps": "Services Maps",
+        "request_quote": "Request a Quote",
+        "eqc": "EQC",
+        "incoterms": "Incoterms",
+        "cargo": "Cargo",
+        "about_us": "About Us",
+        "contact_us": "Contact Us",
+        "iran_flag": "<img src=\"./Images/iran-flag-icon.svg\" alt=\"Iran Flag\" class=\"w-6 h-6\">"
+    },
+    "Short-Service": {
+        "sustainable": "Sustainable",
+        "sustainable_logistics_solutions": "Logistics Solutions",
+        "reliable": "Reliable",
+        "air_freight_service": "Air Freight Service",
+        "innovative": "Innovative",
+        "nvocc": "NVOCC",
+        "flexible": "Flexible",
+        "transit": "Transit"
+    },
+    "AboutUs": {
+        "about_us": "About Us",
+        "welcome": "Welcome to Roshan Darya Pars",
+        "company_description": "At Roshan Darya Pars, we are a leading provider of logistics and transportation services, dedicated to ensuring that your cargo is handled with care and efficiency.",
+        "specialization": "Specializing in ocean, land, and air transportation, we offer tailored solutions to meet your unique needs, backed by a strong network and advanced technology.",
+        "mission": "Our mission: 'Your cargo is safe in our hands.' We aim to exceed your expectations with reliable logistics services.",
+        "more": "More"
+    },
+    "LargeSection": {
+        "main_services_title": "Our Main Services",
+        "service_1": "Logistics Consulting",
+        "service_2": "Transportation Management",
+        "service_3": "Warehousing Solutions",
+        "service_4": "Supply Chain Optimization"
+    },
+    "Counter": {
+        "projects_completed": "Projects Completed",
+        "satisfied_clients": "Satisfied Clients",
+        "global_partners": "Global Partners",
+        "years_experience": "Years of Experience"
+    },
+    "Gallery": {
+        "gallery_title": "Our Gallery",
+        "gallery_description": "Explore our recent projects and operations across the globe."
+    },
+    "Blog": {
+        "blog_section_title": "From Our Blog",
+        "latest_articles": "Latest Articles",
+        "read_more": "Read More"
+    },
+    "Quote": {
+        "get_a_quote": "Get a Quote",
+        "quote_description": "Contact us for a custom quote tailored to your logistics needs."
+    },
+    "FAQ": {
+        "faq_title": "Frequently Asked Questions",
+        "question_1": "What services do you offer?",
+        "answer_1": "We offer a range of logistics services including transportation, warehousing, and supply chain management.",
+        "question_2": "How can I track my shipment?",
+        "answer_2": "You can track your shipment through our online tracking system or by contacting customer service.",
+        "question_3": "What are your business hours?",
+        "answer_3": "Our business hours are Monday to Friday, 9:00 AM to 6:00 PM.",
+        "question_4": "How do I request a quote?",
+        "answer_4": "You can request a quote by filling out the form on our 'Get a Quote' page.",
+        "question_5": "Do you handle international shipments?",
+        "answer_5": "Yes, we handle both domestic and international shipments."
+    },
+    "ContactUs": {
+        "contact_us_title": "Contact Us",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address",
+        "contact_form": "Contact Form",
+        "send_message": "Send Message"
+    },
+    "Footer": {
+        "company_info": "Company Info",
+        "quick_links": "Quick Links",
+        "recent_posts": "Recent Posts",
+        "subscribe": "Subscribe to Our Newsletter",
+        "follow_us": "Follow Us"
+    }
+}
