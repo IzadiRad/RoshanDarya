@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 setText('cargo-link-mob', data.header.cargo);
                 setText('about-us-link-mob', data.header.about_us);
                 setText('contact-us-link-mob', data.header.contact_us);
-
                 setText('desktop-services', data.header.services);
                 setText('desktop-eqc', data.header.eqc);
 

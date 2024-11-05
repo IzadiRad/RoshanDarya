@@ -138,16 +138,26 @@
 }
 
 #sec-6 .contact p:first-of-type::before {
+    font-family: "Font Awesome 5 Free";
     content: "\f3c5";
+    font-weight: 900;
+    margin-right: 8px;
 }
 
 #sec-6 .contact p:nth-of-type(2)::before {
+    font-family: "Font Awesome 5 Free";
     content: "\f0e0";
+    font-weight: 900;
+    margin-right: 8px;
 }
 
 #sec-6 .contact p:last-of-type::before {
+    font-family: "Font Awesome 5 Free";
     content: "\f3cd";
+    font-weight: 900;
+    margin-right: 8px;
 }
+
 
 
 #sec-6 {

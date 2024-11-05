@@ -1,6 +1,7 @@
 const clientsCount = document.getElementById('clientsCount');
 const projectsCount = document.getElementById('projectsCount');
 const companiesCount = document.getElementById('companiesCount');
+const experienceCount = document.getElementById('experienceCount');
 
 function animateCounter(element, target, duration) {
     let count = 0;
@@ -20,4 +21,5 @@ function animateCounter(element, target, duration) {
 // Call the animateCounter function with desired values
 animateCounter(clientsCount, 1500, 2000); // Example: 1500 happy clients
 animateCounter(projectsCount, 350, 2000); // Example: 350 completed projects
-animateCounter(companiesCount, 50, 2000); // Example: 50 partner companies
+animateCounter(companiesCount, 45, 2000); // Example: 45 partner companies
+animateCounter(experienceCount, 12, 2000); // Example: 12 partner companies
