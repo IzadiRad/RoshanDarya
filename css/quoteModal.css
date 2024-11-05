@@ -1,0 +1,39 @@
+#quoteModal {
+    display: none;
+    /* مخفی کردن مودال در ابتدا */
+}
+
+#quoteModal.show {
+    display: flex;
+    /* نمایش مودال با استفاده از کلاس 'show' */
+}
+
+/* تنظیمات موبایل */
+@media (max-width: 768px) {
+    #quoteModal .container {
+        width: 90%;
+    }
+
+    #quoteModal input,
+    #quoteModal select,
+    #quoteModal button {
+        width: 100%;
+        /* اندازه کامل برای موبایل */
+    }
+}
+
+#quoteModal .container {
+    max-width: 90vw;
+    /* عرض مودال را تنظیم کنید */
+    max-height: 90vh;
+    /* ارتفاع مودال را تنظیم کنید */
+    overflow-y: auto;
+    /* اضافه کردن اسکرول در صورت لزوم */
+    padding: 1.5rem;
+}
+
+#quoteModal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

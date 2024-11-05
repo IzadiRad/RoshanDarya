@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+
+    <!-- لینک به فایل‌های CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/custome.css" type="text/css">
+    <link rel="stylesheet" href="../css/Header.css" type="text/css">
+    <link rel="stylesheet" href="../css/Footer.css" type="text/css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class=" top-0 bg-white z-50 shadow-lg">
+        <div class="hide" id="searchBar">
+            <input type="search" name="searchBox" id="searchBox"
+                placeholder="Type your search here.. Press [Esc] to exit">
+        </div>
+        <nav class="flex justify-center items-center space-x-8 mx-auto relative ">
+            <!-- دکمه منوی همبرگری -->
+            <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0">
+                <i class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 30"
+                        class="hamburger-svg">
+                        <rect width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
+                        <rect y="13" width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
+                        <rect y="26" width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
+                    </svg>
+                </i>
+            </div>
+
+
+            <div id="mobile-menu" class="hidden">
+                <a href="#" id="home-link-mob"><i class="fas fa-home"></i> Home</a>
+                <hr />
+                <a href="#" id="services-linkss" class="menu-item">
+                    <i class="fas fa-cog" id="services-link-mob"></i> Services
+                    <span class="submenu-icon">&#9662;</span>
+                </a>
+                <div id="services-submenu" class="submenu hidden">
+                    <a href="#" id="maritime-link-mob"><i class="fas fa-home"></i> Maritime Transport</a>
+                    <a href="#" id="air-freight-link-mob"><i class="fas fa-home"></i> air freight</a>
+                    <a href="#" id="ground-transport-link-mob"><i class="fas fa-home"></i> Ground Transport</a>
+                    <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> Services Maps</a>
+                </div>
+
+                <hr />
+                <a href="#" id="request-quote-link-mob"><i class="fas fa-file-alt"></i> Request a Quote</a>
+                <div id="close-menu" class="close-btn">
+                    <i class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                            class="x-icon text-blue-900 ">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </i>
+                </div>
+                <hr />
+                <a href="#" id="eqc-linkss" class="menu-item">
+                    <i class="fas fa-cog"></i> EQC
+                    <span class="submenu-icon">&#9662;</span>
+                </a>
+                <div id="eqc-submenu" class="submenu hidden">
+                    <a href="#" id="incoterms-link-mob"><i class="fas fa-home"></i> Incoterms</a>
+                    <a href="#" id="cargo-link-mob"><i class="fas fa-box"></i> Cargo</a>
+                </div>
+                <hr />
+                <a href="#" id="about-us-link-mob"><i class="fas fa-info-circle"></i> About Us</a>
+                <hr />
+                <a href="#contact-section" id="contact-us-link-mob"><i class="fas fa-envelope"></i> Contact Us</a>
+
+            </div>
+
+
+            <!-- منوی سمت چپ لوگو -->
+            <nav id="menu" class="hidden md:flex space-x-4 mymenu">
+                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="home-link">Home</a>
+                <div class="relative">
+                    <a href="#" id="desktop-services" class="nav-link custome-size-menu custome-menu-item text-white">
+                        Services
+                        <span class="submenu-icon">&#9662;</span>
+                    </a>
+
+                    <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                            id="maritime-link">Maritime
+                            Transport</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                            id="ground-transport-link">Ground
+                            Transport</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
+                            id="air-freight-link">air freight</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                            id="services-maps-link">Services
+                            Maps</a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white"
+                    id="request-quote-link">Request a Quote</a>
+
+            </nav>
+
+            <!-- لوگو وسط منو -->
+            <div class="relative flex justify-center items-center mt-4 mb-4 mx-5 ">
+                <div id="logo-butt"
+                    class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
+                </div>
+                <img src="../Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
+            </div>
+
+            <!-- منو سمت راست لوگو -->
+            <nav class="hidden md:flex space-x-4 mymenu">
+
+                <div class="relative z-10">
+                    <a href="#" id="desktop-eqc" class="nav-link custome-size-menu custome-menu-item z-100 text-white">
+                        EQC
+                        <span class="submenu-icon">&#9662;</span>
+                    </a>
+                    <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
+                        <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                            id="incoterms-link">Incoterms</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link">Cargo</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="about-us-link">About
+                    Us</a>
+                <a href="#sss" class="nav-link custome-size-menu custome-menu-item text-white"
+                    id="contact-us-link">Contact
+                    Us</a>
+                <a href="#fa" class="nav-link custome-size-menu custome-menu-item language-toggle">
+                    <img src="../Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                </a>
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            </nav>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <!--  <main class="container mx-auto my-10 px-4">
+        <section class="text-center py-6">
+            <h1 class="text-4xl font-bold mb-4">Page Title</h1>
+            <p class="text-lg text-secondary-grayish-blue">Brief description or subtitle for this page.</p>
+        </section>
+
+        <section class="content-section my-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+             
+                <div class="text-lg text-gray-800">
+                    <h2 class="text-2xl font-semibold mb-4">Section Title</h2>
+                    <p>Place content here. This section can contain information, images, or any other relevant data.</p>
+                    لینک به صفحات دیگر 
+                    <a href="#" class="text-primary-turquoise hover:text-primary-blue">Learn More</a>
+                </div>
+
+                بخش سمت راست محتوای اصلی 
+                <div class="relative">
+                    <img src="path/to/image.jpg" alt="Image description" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+   <button onclick="toggleDropdown()" class="bg-primary-navy-blue text-white font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
+        Services
+    </button>
+-->
+    <!-- Dropdown Menu -->
+    <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
+        <!-- Maritime Transport -->
+        <a href="/services/maritime-transport"
+            class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
+            <h3 class="text-lg font-semibold">Maritime Transport</h3>
+            <p class="text-sm text-gray-600">Reliable ocean freight services for global shipping needs.</p>
+        </a>
+
+        <!-- Ground Transport -->
+        <a href="/services/ground-transport"
+            class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
+            <h3 class="text-lg font-semibold">Ground Transport</h3>
+            <p class="text-sm text-gray-600">Comprehensive trucking solutions for domestic and international delivery.
+            </p>
+        </a>
+
+        <!-- Air Freight -->
+        <a href="/services/air-freight" class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
+            <h3 class="text-lg font-semibold">Air Freight</h3>
+            <p class="text-sm text-gray-600">Fast and secure air cargo transport for time-sensitive shipments.</p>
+        </a>
+
+        <!-- Services Maps -->
+        <a href="/services/maps" class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
+            <h3 class="text-lg font-semibold">Services Maps</h3>
+            <p class="text-sm text-gray-600">Explore our global routes and coverage.</p>
+        </a>
+    </div>
+    </div>
+
+    <!-- جاوا اسکریپت ساده برای باز و بسته کردن منو -->
+    <script>
+        function toggleDropdown() {
+            const dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("hidden");
+        }
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function (e) {
+            const button = document.querySelector("button");
+            const dropdownMenu = document.getElementById("dropdownMenu");
+            if (!button.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.add("hidden");
+            }
+        });
+    </script>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-primary-navy-blue text-white py-10">
+        <section id="sec-6" class="bg-primary-navy-blue text-white py-10">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+
+                <!-- About Company Section -->
+                <div class="about">
+                    <h1>About Company</h1>
+                    <h2>
+                        Roshandarya
+                        <p>Global Shipping & Transport Solutions</p>
+                    </h2>
+                    <p>We specialize in providing comprehensive transportation and logistics solutions worldwide,
+                        committed
+                        to excellence and customer satisfaction.</p>
+                    <!-- Map Integration -->
+                    <h2>Our Location</h2>
+                    <iframe loading="lazy"
+                        src="https://maps.google.com/maps?q=tehran%2C%20motahary%20st%2C%20%20roshan%20darya%20pars&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
+                        title="tehran, motahary st,  roshan darya pars"
+                        aria-label="tehran, motahary st,  roshan darya pars" data-origwidth="" data-origheight=""
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+
+                <!-- Explor Links Section -->
+                <div class="links">
+                    <h1 class="text-xl font-bold mb-4">Explore Links</h1>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Our Services</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Meet Our Team</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Forum</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Help Center</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Contact Us</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Privacy Policy</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Our Terms</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Site Map</a>
+                </div>
+
+                <!-- Latest Posts Section -->
+                <div class="posts">
+                    <h1 class="text-xl font-bold mb-4">Latest Posts</h1>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">20<br>AUG</span> Important Tips for Efficient Shipping
+                    </a>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">15<br>AUG</span> How We Ensure Fast Deliveries
+                    </a>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">10<br>AUG</span> The Future of Marine Transport
+                    </a>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">05<br>AUG</span> Customer Success Stories
+                    </a>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">01<br>AUG</span> Navigating New Trade Routes
+                    </a>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="contact" style="display: flex; gap: 10px;flex-direction: column;">
+                    <h1>Contact Us</h1>
+                    <p>Unit 2 & 4, No.235 , After Sarafraz cross road St , Motahari Ave , Tehran , IRAN</p>
+                    <p>Email: info@roshandarya.com</p>
+                    <p>Phone:<br /> (+98) 21 860 47 322 <br />(+98) 21 860 47 425 <br />(+98) 21 861 22 178 </p>
+                    <br />
+                    <!-- Social Media Links with Specific Colors -->
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+                    <div class="social-icons text-center">
+                        <div class="social-icons space-x-4">
+                            <a href="https://facebook.com" target="_blank" style="color: #4267B2;">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" style="color: #1DA1F2;">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" style="color: #C13584;">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" style="color: #0A66C2;">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+                            <a href="https://t.me/roshandarya" target="_blank" style="color: #0088cc;">
+                                <i class="fab fa-telegram-plane fa-2x"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- اسکریپت‌ها -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/custome-javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+
+
+</body>
+
+</html>
