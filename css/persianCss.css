@@ -1,0 +1,30 @@
+#mobile-menu {
+    direction: rtl;
+    text-align: right;
+    padding: 10px;
+}
+
+.nav-link {
+    color: #fcfcfc;
+    /* رنگ مشکی برای متن‌ها */
+    transition: color 0.3s ease;
+    font-size: larger;
+}
+
+.nav-link i {
+    margin-left: 8px;
+    /* آیکون سمت چپ متن */
+    margin-right: 0;
+}
+
+.nav-link:hover {
+    color: #ff6600;
+    /* رنگ نارنجی برای هاور */
+}
+
+.submenu {
+    text-align: right;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 0.875rem;
+}

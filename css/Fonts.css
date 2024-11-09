@@ -1,58 +1,72 @@
-:root {
-
-    --font-poppins: 'Poppins', sans-serif;
-    --font-noto-sans: 'Noto Sans', sans-serif;
-    --font-vazirmatn: 'Vazirmatn', sans-serif;
+/* BYekan */
+@font-face {
+    font-family: 'BYekan';
+    src: url('../webfonts/BYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* فونت برای عناوین اصلی */
+@font-face {
+    font-family: 'BYekan';
+    src: url('../webfonts/BYekanBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Shabnam */
+@font-face {
+    font-family: 'Shabnam';
+    src: url('../webfonts/Shabnam.woff2') format('woff2'),
+        url('../webfonts/Shabnam.woff') format('woff'),
+        url('../webfonts/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shabnam';
+    src: url('../webfonts/Shabnam-Bold.woff2') format('woff2'),
+        url('../webfonts/Shabnam-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Vazir */
+@font-face {
+    font-family: 'Vazir';
+    src: url('../webfonts/Vazir.woff2') format('woff2'),
+        url('../webfonts/Vazir.woff') format('woff'),
+        url('../webfonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1,
 h2,
 h3,
-.title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+.nav-link {
+    font-family: 'BYekan', sans-serif;
+    font-weight: bold;
 }
 
-/* فونت برای بدنه متن */
-body,
-p,
-.content {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+p {
+    font-family: 'Shabnam', sans-serif;
+    font-weight: normal;
 }
 
-/* فونت برای تأکید */
-.emphasis,
-.quote {
-    font-family: 'Lora', serif;
-    font-weight: 700;
-}
-
-/* فونت برای منو و دکمه‌ها */
-nav,
-.btn,
-.menu-item {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-}
-
-
-/* پایان فونت اینگلیسی */
-
-
-
-/* فونت برای زبان فارسی */
-body[lang="fa"] {
+a {
     font-family: 'Vazir', sans-serif;
+    font-weight: medium;
+    text-decoration: none;
+    color: #0056b3;
 }
 
-/* فونت برای زبان چینی */
-body[lang="zh"] {
-    font-family: 'Noto Sans SC', sans-serif;
-}
-
-/* فونت برای زبان ترکی */
-body[lang="tr"] {
-    font-family: 'Roboto', sans-serif;
+button {
+    font-family: 'BYekan', sans-serif;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
