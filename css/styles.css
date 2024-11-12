@@ -619,26 +619,6 @@ footer {
     text-align: left;
   }
 
-  #sec-6 .container {
-    justify-content: space-between;
-    row-gap: 25px;
-  }
-
-  #sec-6 .about {
-    width: 30%;
-  }
-
-  #sec-6 .links {
-    width: 15%;
-  }
-
-  #sec-6 .posts {
-    width: 20%;
-  }
-
-  #sec-6 .contact {
-    width: 18%;
-  }
 }
 
 
