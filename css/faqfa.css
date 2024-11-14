@@ -1,0 +1,76 @@
+#contact-section {
+    direction: rtl;
+    /* راست‌چین کردن کل بخش */
+    text-align: right;
+    font-family: 'Shabnam', sans-serif;
+    /* فونت فارسی */
+    padding: 2rem 0;
+    background-color: #ffffff;
+    /* پس‌زمینه سفید */
+}
+
+#contact-section h2 {
+    font-family: 'BYekan', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    /* آبی تیره */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contact-section p {
+    font-family: 'Vazir', sans-serif;
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-family: 'Shabnam', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: var(--primary-light-gray);
+    font-family: 'Vazir', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-weight: bolder;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    /* آبی برای حالت فوکوس */
+    outline: none;
+}
+
+button {
+    font-family: 'BYekan', sans-serif;
+    font-size: 1rem;
+    background-color: #2563eb;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    /* رنگ آبی تیره‌تر در هاور */
+}

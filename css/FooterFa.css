@@ -1,0 +1,107 @@
+#sec-6 {
+    direction: rtl;
+    /* راست‌چین کردن کل بخش */
+    text-align: right;
+    font-family: 'Shabnam', sans-serif;
+    /* فونت فارسی */
+    padding: 2rem 0;
+    background-color: #003366;
+    /* پس‌زمینه آبی تیره */
+    color: #ffffff;
+    /* متن سفید */
+}
+
+#sec-6 h1 {
+    font-family: 'BYekan', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#sec-6 h2 {
+    font-family: 'BYekan', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    /* زرد برای تأکید */
+    margin-bottom: 0.5rem;
+}
+
+#sec-6 p {
+    font-family: 'Vazir', sans-serif;
+    font-size: 1rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+#sec-6 a {
+    font-family: 'Shabnam', sans-serif;
+    font-size: 1rem;
+    color: #cccccc;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+#sec-6 a:hover {
+    color: #ffcc00;
+    /* زرد در حالت هاور */
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+
+    #sec-6 .container {
+        justify-content: space-between;
+        row-gap: 25px;
+    }
+
+    #sec-6 .about {
+        width: 65%;
+    }
+
+    #sec-6 .links {
+        width: 20%;
+    }
+
+    #sec-6 .posts {
+        width: 65%;
+    }
+
+    #sec-6 .contact {
+        width: 20%;
+    }
+}
+
+
+#sec-6 h1,
+#sec-6 h2,
+#sec-6 p,
+#sec-6 a {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: var(--primary-light-gray);
+    /* استفاده از رنگ سفید برای متن */
+
+    /* سایه برای متن‌ها */
+}
+
+#sec-6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        /* تیرگی بیشتر */
+        url(../Images/Image/footer.jpg) no-repeat center center/cover;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: 0.8rem;
+}

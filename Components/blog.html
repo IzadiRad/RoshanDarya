@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
@@ -12,548 +13,577 @@
     <link href="../css/ّFooter.css" rel="stylesheet" type="text/css">
     <link href="../css/Blog.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="../css/quoteModal.css" rel="stylesheet" type="text/css">
+    <link href="../css/rate-inquiry.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
 <body style="height: 200vh; display: flex;flex-direction: column;justify-content: space-between;">
-    <header class=" top-0 bg-white z-50 shadow-lg">
-        <div class="hide" id="searchBar">
-            <input type="search" name="searchBox" id="searchBox"
-                placeholder="Type your search here.. Press [Esc] to exit">
-        </div>
-        <nav class="flex justify-center items-center space-x-8 mx-auto relative ">
-            <!-- دکمه منوی همبرگری -->
-            <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0">
-                <i class="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 30"
-                        class="hamburger-svg">
-                        <rect width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
-                        <rect y="13" width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
-                        <rect y="26" width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
-                    </svg>
-                </i>
+
+    <body>
+        <!-- Header -->
+        <header class=" top-0 bg-white z-50 shadow-lg">
+            <div class="hide" id="searchBar">
+                <input type="search" name="searchBox" id="searchBox"
+                    placeholder="Type your search here.. Press [Esc] to exit">
             </div>
-
-
-            <div id="mobile-menu" class="hidden">
-                <a href="#" id="home-link-mob"><i class="fas fa-home"></i> Home</a>
-                <hr />
-                <a href="#" id="services-linkss" class="menu-item">
-                    <i class="fas fa-cog" id="services-link-mob"></i> Services
-                    <span class="submenu-icon">&#9662;</span>
-                </a>
-                <div id="services-submenu" class="submenu hidden">
-                    <a href="#" id="maritime-link-mob"><i class="fas fa-home"></i> Maritime Transport</a>
-                    <a href="#" id="air-freight-link-mob"><i class="fas fa-home"></i> air freight</a>
-                    <a href="#" id="ground-transport-link-mob"><i class="fas fa-home"></i> Ground Transport</a>
-                    <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> Services Maps</a>
-                </div>
-
-                <hr />
-                <a href="#" id="request-quote-link-mob"><i class="fas fa-file-alt"></i> Request a Quote</a>
-                <div id="close-menu" class="close-btn">
+            <nav class="flex justify-center items-center space-x-8 mx-auto relative ">
+                <!-- دکمه منوی همبرگری -->
+                <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0">
                     <i class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                            class="x-icon text-blue-900 ">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 30"
+                            class="hamburger-svg">
+                            <rect width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
+                            <rect y="13" width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
+                            <rect y="26" width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
                         </svg>
                     </i>
                 </div>
-                <hr />
-                <a href="#" id="eqc-linkss" class="menu-item">
-                    <i class="fas fa-cog"></i> EQC
-                    <span class="submenu-icon">&#9662;</span>
-                </a>
-                <div id="eqc-submenu" class="submenu hidden">
-                    <a href="#" id="incoterms-link-mob"><i class="fas fa-home"></i> Incoterms</a>
-                    <a href="#" id="cargo-link-mob"><i class="fas fa-box"></i> Cargo</a>
-                </div>
-                <hr />
-                <a href="#" id="about-us-link-mob"><i class="fas fa-info-circle"></i> About Us</a>
-                <hr />
-                <a href="#contact-section" id="contact-us-link-mob"><i class="fas fa-envelope"></i> Contact Us</a>
-
-            </div>
 
 
-            <!-- منوی سمت چپ لوگو -->
-            <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="home-link">Home</a>
-                <div class="relative">
-                    <a href="#" id="desktop-services" class="nav-link custome-size-menu custome-menu-item text-white">
-                        Services
+                <div id="mobile-menu" class="hidden">
+                    <a href="#" id="home-link-mob"><i class="fas fa-home"></i> Home</a>
+                    <hr />
+                    <a id="services-linkss" class="menu-item">
+                        <i class="fas fa-cog" id="services-link-mob"></i> Services
                         <span class="submenu-icon">&#9662;</span>
                     </a>
-
-                    <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                            id="maritime-link">Maritime
-                            Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                            id="ground-transport-link">Ground
-                            Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
-                            id="air-freight-link">air freight</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                            id="services-maps-link">Services
-                            Maps</a>
+                    <div id="services-submenu" class="submenu hidden">
+                        <a href="#" id="maritime-link-mob"><i class="fas fa-home"></i> Maritime Transport</a>
+                        <a href="#" id="air-freight-link-mob"><i class="fas fa-home"></i> air freight</a>
+                        <a href="#" id="ground-transport-link-mob"><i class="fas fa-home"></i> Ground Transport</a>
+                        <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> Services Maps</a>
                     </div>
-                </div>
 
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white"
-                    id="request-quote-link">Request a Quote</a>
-
-            </nav>
-
-            <!-- لوگو وسط منو -->
-            <div class="relative flex justify-center items-center mt-4 mb-4 mx-5 ">
-                <div id="logo-butt"
-                    class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
-                </div>
-                <img src="../Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
-            </div>
-
-            <!-- منو سمت راست لوگو -->
-            <nav class="hidden md:flex space-x-4 mymenu">
-
-                <div class="relative z-10">
-                    <a href="#" id="desktop-eqc" class="nav-link custome-size-menu custome-menu-item z-100 text-white">
-                        EQC
+                    <hr />
+                    <a href="#" id="request-quote-link-mob"><i class="fas fa-file-alt"></i> Request a Quote</a>
+                    <div id="close-menu" class="close-btn">
+                        <i class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="x-icon text-blue-900 ">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </i>
+                    </div>
+                    <hr />
+                    <a href="#" id="eqc-linkss" class="menu-item">
+                        <i class="fas fa-cog"></i> EQC
                         <span class="submenu-icon">&#9662;</span>
                     </a>
-                    <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                        <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                            id="incoterms-link">Incoterms</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link">Cargo</a>
+                    <div id="eqc-submenu" class="submenu hidden">
+                        <a href="#" id="incoterms-link-mob"><i class="fas fa-home"></i> Incoterms</a>
+                        <a href="#" id="cargo-link-mob"><i class="fas fa-box"></i> Cargo</a>
                     </div>
+                    <hr />
+                    <a href="#" id="about-us-link-mob"><i class="fas fa-info-circle"></i> About Us</a>
+                    <hr />
+                    <a href="#contact-section" id="contact-us-link-mob"><i class="fas fa-envelope"></i> Contact Us</a>
+
                 </div>
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="about-us-link">About
-                    Us</a>
-                <a href="#sss" class="nav-link custome-size-menu custome-menu-item text-white"
-                    id="contact-us-link">Contact
-                    Us</a>
-                <a href="#fa" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                    <img src="../Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
-                </a>
-                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+
+
+                <!-- منوی سمت چپ لوگو -->
+                <nav id="menu" class="hidden md:flex space-x-4 mymenu">
+                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-black" id="home-link">Home</a>
+                    <div class="relative">
+                        <a href="#" id="desktop-services"
+                            class="nav-link custome-size-menu custome-menu-item text-black">
+                            Services
+                            <span class="submenu-icon">&#9662;</span>
+                        </a>
+
+                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
+                                id="maritime-link">Maritime
+                                Transport</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
+                                id="ground-transport-link">Ground
+                                Transport</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-black"
+                                id="air-freight-link">air freight</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
+                                id="services-maps-link">Services
+                                Maps</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-black"
+                        id="request-quote-link">Request a Quote</a>
+
+                </nav>
+
+                <!-- لوگو وسط منو -->
+                <div class="relative flex justify-center items-center mt-4 mb-4 mx-5 ">
+                    <div id="logo-butt"
+                        class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
+                    </div>
+                    <img src="../Images/Icon/roshan-new-en.png" alt="roshandarya"
+                        class="relative w-36 h-auto z-10 top-6">
+                </div>
+
+                <!-- منو سمت راست لوگو -->
+                <nav class="hidden md:flex space-x-4 mymenu">
+
+                    <div class="relative z-10">
+                        <a href="#" id="desktop-eqc"
+                            class="nav-link custome-size-menu custome-menu-item z-100 text-black">
+                            EQC
+                            <span class="submenu-icon">&#9662;</span>
+                        </a>
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
+                            <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="incoterms-link">Incoterms</a>
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="cargo-link">Cargo</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-black" id="about-us-link">About
+                        Us</a>
+                    <a href="#sss" class="nav-link custome-size-menu custome-menu-item text-black"
+                        id="contact-us-link">Contact
+                        Us</a>
+                    <a href="../persian/components/blog.html"
+                        class="nav-link custome-size-menu custome-menu-item language-toggle">
+                        <img src="../Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                    </a>
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </nav>
             </nav>
-        </nav>
-    </header>
-    <br />
-    <section id="bsec-01" class="bg-light-gray blog-section">
-        <div class="container mx-auto px-4 py-5">
-            <div class="text-center mb-5">
-                <h5 class="text-primary font-bold uppercase">Latest Blogs</h5>
-                <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
-            </div>
+        </header>
+        <br />
+        <section id="bsec-01" class="bg-light-gray blog-section">
+            <div class="container mx-auto px-4 py-5">
+                <div class="text-center mb-5">
+                    <h5 class="text-primary font-bold uppercase">Latest Blogs</h5>
+                    <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
+                </div>
 
-            <div class="overflow-x-hidden">
-                <div id="blogScroll1" class="blogScroll flex space-x-4 cursor-grab overflow-x-auto"
-                    style="user-select: none; scrollbar-width: none;">
-                    <!-- Blog Item 1 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                <div class="overflow-x-hidden">
+                    <div id="blogScroll1" class="blogScroll flex space-x-4 cursor-grab overflow-x-auto"
+                        style="user-select: none; scrollbar-width: none;">
+                        <!-- Blog Item 1 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                                <p>Short description about the first blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                            <p>Short description about the first blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 2 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 2"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
+                                <p>Short description about the second blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Blog Item 2 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 2"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                        <!-- Blog Item 3 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 3"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">UX Design Guide</h4>
+                                <p>Short description about the third blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
-                            <p>Short description about the second blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 4 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Blog Item 3 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 3"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                        <!-- Blog Item 5 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">UX Design Guide</h4>
-                            <p>Short description about the third blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 4 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 5 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 6 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 6 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <section id="bsec-02" class="bg-light-gray blog-section">
-        <div class="container mx-auto px-4 py-5">
-            <div class="text-center mb-5">
-                <h5 class="text-primary font-bold uppercase">Latest Blogs</h5>
-                <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
-            </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <section id="bsec-02" class="bg-light-gray blog-section">
+            <div class="container mx-auto px-4 py-5">
+                <div class="text-center mb-5">
+                    <h5 class="text-primary font-bold uppercase">Latest Blogs</h5>
+                    <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
+                </div>
 
-            <div class="overflow-x-hidden">
-                <div id="blogScroll2" class="blogScroll flex space-x-4 cursor-grab overflow-x-auto"
-                    style="user-select: none; scrollbar-width: none;">
-                    <!-- Blog Item 1 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                <div class="overflow-x-hidden">
+                    <div id="blogScroll2" class="blogScroll flex space-x-4 cursor-grab overflow-x-auto"
+                        style="user-select: none; scrollbar-width: none;">
+                        <!-- Blog Item 1 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                                <p>Short description about the first blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                            <p>Short description about the first blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 2 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 2"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
+                                <p>Short description about the second blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Blog Item 2 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 2"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                        <!-- Blog Item 3 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 3"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">UX Design Guide</h4>
+                                <p>Short description about the third blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
-                            <p>Short description about the second blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 4 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Blog Item 3 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 3"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                        <!-- Blog Item 5 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">UX Design Guide</h4>
-                            <p>Short description about the third blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 4 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 5 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 6 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 6 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <section id="bsec-03" class="bg-light-gray blog-section">
-        <div class="container mx-auto px-4 py-5">
-            <div class="text-center mb-5">
-                <h5 class="text-primary font-bold uppercase">Latest Blogs</h5>
-                <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
-            </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <section id="bsec-03" class="bg-light-gray blog-section">
+            <div class="container mx-auto px-4 py-5">
+                <div class="text-center mb-5">
+                    <h5 class="text-primary font-bold uppercase">Latest Blogs</h5>
+                    <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
+                </div>
 
-            <div class="overflow-x-hidden">
-                <div id="blogScroll3" class="blogScroll flex space-x-4 cursor-grab overflow-x-auto"
-                    style="user-select: none; scrollbar-width: none;">
+                <div class="overflow-x-hidden">
+                    <div id="blogScroll3" class="blogScroll flex space-x-4 cursor-grab overflow-x-auto"
+                        style="user-select: none; scrollbar-width: none;">
 
-                    <!-- Blog Item 1 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                        <!-- Blog Item 1 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                                <p>Short description about the first blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                            <p>Short description about the first blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 2 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 2"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
+                                <p>Short description about the second blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Blog Item 2 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 2"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                        <!-- Blog Item 3 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 3"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">UX Design Guide</h4>
+                                <p>Short description about the third blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
-                            <p>Short description about the second blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 4 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Blog Item 3 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 3"> <!-- غیرفعال کردن کلیک -->
-                            </a>
+                        <!-- Blog Item 5 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">UX Design Guide</h4>
-                            <p>Short description about the third blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 4 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 5 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- Blog Item 6 -->
-                    <div
-                        class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                        <div class="blog-img">
-                            <a class="blog-link">
-                                <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                    alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
-                            </a>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                            <p>Short description about the fourth blog. You can write more details about the topic here.
-                            </p>
-                            <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                    class="bi bi-arrow-right"></i></a>
+                        <!-- Blog Item 6 -->
+                        <div
+                            class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                            <div class="blog-img">
+                                <a class="blog-link">
+                                    <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
+                                        alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
+                                <p>Short description about the fourth blog. You can write more details about the topic
+                                    here.
+                                </p>
+                                <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <footer id="bsec-6">
-        <div class="container">
-            <div class="about">
-                <h1>About Company</h1>
-                <h2>
-                    roshandarya
-                    <p>Lorem ipsum dolor sit amit.</p>
-                </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eius nisi repudiandae ipsam
-                    pariatur, quos perspiciatis eaque officia rerum odio modi sed fugiat mollitia? Rerum, architecto
-                    obcaecati!</p>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
-            </div>
-            <div class="links">
-                <h1>Explor links</h1>
-                <a href="#">Our services</a>
-                <a href="#">Meet our team</a>
-                <a href="#">Forum</a>
-                <a href="#">Help center</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Our terms</a>
-                <a href="#">Site map</a>
-            </div>
-            <div class="posts">
-                <h1>Latest posts</h1>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-                <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
-            </div>
-            <div class="contact">
-                <h1>Contact us</h1>
-                <p>123 New Line, London UK</p>
-                <p>Hello@contact-us.com</p>
-                <p>+44 00 00 1234<br>+44 00 00 1234</p>
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <footer id="bsec-6">
+            <div class="container">
+                <div class="about">
+                    <h1>About Company</h1>
+                    <h2>
+                        roshandarya
+                        <p>Lorem ipsum dolor sit amit.</p>
+                    </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eius nisi repudiandae ipsam
+                        pariatur, quos perspiciatis eaque officia rerum odio modi sed fugiat mollitia? Rerum, architecto
+                        obcaecati!</p>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                </div>
+                <div class="links">
+                    <h1>Explor links</h1>
+                    <a href="#">Our services</a>
+                    <a href="#">Meet our team</a>
+                    <a href="#">Forum</a>
+                    <a href="#">Help center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Our terms</a>
+                    <a href="#">Site map</a>
+                </div>
+                <div class="posts">
+                    <h1>Latest posts</h1>
+                    <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
+                    <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
+                    <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
+                    <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
+                    <a href="#"><span>20<br>AUG</span>Lorem ipsum dolor sit stiae tempora</a>
+                </div>
+                <div class="contact">
+                    <h1>Contact us</h1>
+                    <p>123 New Line, London UK</p>
+                    <p>Hello@contact-us.com</p>
+                    <p>+44 00 00 1234<br>+44 00 00 1234</p>
 
+                </div>
             </div>
-        </div>
-    </footer>
-    <script src="../js/custome-javascript.js"></script>
-    <script src="../js/blog.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-</body>
+        </footer>
+        <script src="../js/custome-javascript.js"></script>
+        <script src="../js/blog.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </body>
 
 </html>
