@@ -28,11 +28,8 @@
 
 
     <!-- english Fonts-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Lora:wght@400;700&family=Inter:wght@400;500&display=swap"
-        rel="stylesheet">
-
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Lora:wght@400;700&family=Inter:wght@400;500&display=swap">
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -108,68 +105,82 @@
 
             </div>
 
+            <menu class="flex items-center flex-row w-full justify-center">
+                <!-- منوی سمت چپ لوگو -->
+                <nav id="menu" class="hidden md:flex space-x-4 mymenu">
+                    <a href="/index.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                        id="home-link">Home</a>
+                    <div class="relative">
+                        <a href="/Components/Services.html" id="desktop-services"
+                            class="nav-link custome-size-menu custome-menu-item text-white">
+                            Services
+                            <span class="submenu-icon">&#9662;</span>
+                        </a>
 
-            <!-- منوی سمت چپ لوگو -->
-            <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="home-link">Home</a>
-                <div class="relative">
-                    <a href="#" id="desktop-services" class="nav-link custome-size-menu custome-menu-item text-white">
-                        Services
-                        <span class="submenu-icon">&#9662;</span>
-                    </a>
-
-                    <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                            id="maritime-link">Maritime
-                            Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                            id="ground-transport-link">Ground
-                            Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
-                            id="air-freight-link">air freight</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                            id="services-maps-link">Services
-                            Maps</a>
+                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
+                            <a href="/Components/services/maritime-transport.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                                id="maritime-link">Maritime
+                                Transport</a>
+                            <a href="/Components/services/ground-transport.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                                id="ground-transport-link">Ground
+                                Transport</a>
+                            <a href="/Components/services/air-freight.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
+                                id="air-freight-link">air freight</a>
+                            <a href="/Components/services/services-maps.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                                id="services-maps-link">Services
+                                Maps</a>
+                        </div>
                     </div>
-                </div>
 
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white"
-                    id="request-quote-link">Request a Quote</a>
+                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-white"
+                        id="request-quote-link">Request a Quote</a>
 
-            </nav>
+                </nav>
 
-            <!-- لوگو وسط منو -->
-            <div class="relative flex justify-center items-center mt-4 mb-4 mx-5 ">
-                <div id="logo-butt"
-                    class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
-                </div>
-                <img src="./Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
-            </div>
-
-            <!-- منو سمت راست لوگو -->
-            <nav class="hidden md:flex space-x-4 mymenu">
-
-                <div class="relative z-10">
-                    <a href="#" id="desktop-eqc" class="nav-link custome-size-menu custome-menu-item z-100 text-white">
-                        EQC
-                        <span class="submenu-icon">&#9662;</span>
-                    </a>
-                    <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                        <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                            id="incoterms-link">Incoterms</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link">Cargo</a>
+                <!-- لوگو وسط منو -->
+                <a class="relative flex justify-center items-center ml-6" href="/index.html">
+                    <div id="logo-butt"
+                        class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
                     </div>
-                </div>
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="about-us-link">About
-                    Us</a>
-                <a href="#sss" class="nav-link custome-size-menu custome-menu-item text-white"
-                    id="contact-us-link">Contact
-                    Us</a>
-                <a href="./persian/index.html" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                    <img src="./Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+
+                    <img src="/Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
                 </a>
-                <i class="fa-solid fa-magnifying-glass" id="search"></i>
-            </nav>
+
+
+
+                <!-- منو سمت راست لوگو -->
+                <nav class="hidden md:flex space-x-4 mymenu ml-3">
+
+                    <div class="relative z-10">
+                        <a href="/Components/EQC.html" id="desktop-eqc"
+                            class="nav-link custome-size-menu custome-menu-item z-100 text-white">
+                            EQC
+                            <span class="submenu-icon">&#9662;</span>
+                        </a>
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
+                            <a href="/Components/eqc/incoterms.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="incoterms-link">Incoterms</a>
+                            <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="cargo-link">Cargo</a>
+                        </div>
+                    </div>
+                    <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                        id="about-us-link">About
+                        Us</a>
+                    <a href="/Components/ContactUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                        id="contact-us-link">Contact
+                        Us</a>
+                    <a href="/persian/index.html" class="nav-link custome-size-menu custome-menu-item language-toggle">
+                        <img src="/Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                    </a>
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </nav>
+            </menu>
         </nav>
     </header>
 
@@ -178,7 +189,7 @@
         <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>
         <article id="custome-main-show" class="relative">
             <video autoplay muted loop id="myVideo" class="w-full h-[calc(100vh-70px)] object-cover">
-                <source src="./Images/Video/Hero.MP4" type="video/mp4">
+                <source src="/Images/Video/Hero.MP4" type="video/mp4">
             </video>
         </article>
     </section>
@@ -189,8 +200,8 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
                 <!-- Item 1 -->
-                <div class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group flex flex-col items-center secCard"
-                    data-aos="fade-right overflow-x-hidden">
+                <a class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group flex flex-col items-center secCard"
+                    data-aos="fade-right overflow-x-hidden" href="/Components/services/logistics-solution.html">
                     <div class="text-center">
                         <div class="item-icon mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -217,9 +228,9 @@
                         </div>
 
                     </div>
-                </div>
+                </a>
                 <!-- Item 2-->
-                <div data-aos="fade-right"
+                <a data-aos="fade-right" href="/Components/services/air-freight.html"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group secCard overflow-x-hidden">
                     <div class="text-center">
                         <div class="item-icon">
@@ -330,9 +341,9 @@
                         </div>
 
                     </div>
-                </div>
+                </a>
                 <!-- Item 3 -->
-                <div data-aos="fade-left"
+                <a data-aos="fade-left" href="/Components/services/maritime-transport.html"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group overflow-x-hidden secCard ">
                     <div class="text-center">
                         <div class="item-icon">
@@ -469,9 +480,9 @@
                                 NVOCC</h3>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!-- Item 4 -->
-                <div data-aos="fade-left"
+                <a data-aos="fade-left" href="/Components/services/ground-transport.html"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group overflow-x-hidden secCard">
                     <div class="text-center">
                         <div class="item-icon">
@@ -551,7 +562,7 @@
                                 TRANSIT</h3>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -587,7 +598,7 @@
                                 reliable logistics services.
                             </p>
                             <div class="rounded-lg m-2 p-1 flex flex-row justify-between relative lastAbout">
-                                <a href="./Components/blog.html"
+                                <a href="./Components/AboutUs.html"
                                     class="button explore inline-block mt-4 px-6 py-3 bg-primary-turquoise text-white font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300">More</a>
                             </div>
                         </div>
@@ -599,7 +610,7 @@
                                 <!-- <video class="rounded-lg shadow-lg object-contain w-full h-72 lg:h-80" autoplay muted loop> -->
                                 <video class="rounded-lg shadow-lg w-full object-cover" style="aspect-ratio: 16 / 9;"
                                     autoplay muted loop>
-                                    <source src="./Images/Video/AboutUs/Main/intro.mp4" type="video/mp4">
+                                    <source src="/Images/Video/AboutUs/Main/intro.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
 
@@ -608,9 +619,9 @@
                             <!-- Two Small Images -->
                             <div class="grid grid-cols-2 gap-4">
                                 <img class="rounded-lg shadow-lg w-full object-cover"
-                                    src="./Images/Image/AboutUs/Main/3.jpg" alt="Image 1" data-aos="zoom-out">
+                                    src="/Images/Image/AboutUs/Main/3.jpg" alt="Image 1" data-aos="zoom-out">
                                 <img class="rounded-lg shadow-lg w-full object-cover"
-                                    src="./Images/Image/AboutUs/Main/98.jpg" data-aos="zoom-out" alt="Image 2">
+                                    src="/Images/Image/AboutUs/Main/98.jpg" data-aos="zoom-out" alt="Image 2">
                             </div>
 
                         </div>
@@ -765,7 +776,7 @@
 
                     <video class="rounded-lg shadow-lg w-full object-cover" style="aspect-ratio: 16 / 9;" autoplay muted
                         loop>
-                        <source src="./Images/Video/190.mp4" type="video/mp4">
+                        <source src="/Images/Video/190.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <!-- <div class="absolute inset-0 flex justify-center items-center">
@@ -783,7 +794,7 @@
             <div id="service1" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="./Images/Image/services/MainPage/1.png" alt="">
+                        <img src="/Images/Image/services/MainPage/1.png" alt="">
                     </div>
                 </div>
                 <br />
@@ -799,7 +810,7 @@
             <div id="service2" class="service-content hidden">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="./Images/Image/services/MainPage/2.jpg" alt="">
+                        <img src="/Images/Image/services/MainPage/2.jpg" alt="">
                     </div>
                 </div>
                 <br />
@@ -814,7 +825,7 @@
             <div id="service3" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="./Images/Image/services/MainPage/3.jpg" alt="">
+                        <img src="/Images/Image/services/MainPage/3.jpg" alt="">
                     </div>
                 </div>
                 <br />
@@ -831,7 +842,7 @@
             <div id="service4" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="./Images/Image/services/MainPage/4.jpg" alt="">
+                        <img src="/Images/Image/services/MainPage/4.jpg" alt="">
                     </div>
                 </div>
                 <br />
@@ -1137,7 +1148,7 @@
             </div>
         </div>
         <div class=" rounded-lg m-2 p-1 flex flex-row justify-between relative top-14 lastblog">
-            <a href=" ./Components/blog.html" class="button explore">More</a>
+            <a href=" /Components/blog.html" class="button explore">More</a>
         </div>
     </section>
     <br />
@@ -1246,6 +1257,8 @@
 
 
     <br id="sss" />
+    <br />
+    <br />
     <br />
     <br />
     <section id="contact-section" class="py-10 bg-white text-primary-navy-blue " name="#ContactUs">
@@ -1390,7 +1403,7 @@
 
 
     <!-- quoteModal-->
-    <div id="quoteModal" class=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden ">
+    <div id="quoteModal" class=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10 ">
         <div class="bg-white  rounded-lg w-11/12 md:w-1/2 lg:w-1/3 w-autotailwind " style="width: auto;">
             <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
             <!-- محتوای فرم درخواست نرخ -->

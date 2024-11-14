@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Roshandarya</title>
 
     <!-- لینک به فایل‌های CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="../css/quoteModal.css" rel="stylesheet" type="text/css">
-    <link href="../css/rate-inquiry.css" rel="stylesheet" type="text/css">
-
+    <link href="/css/quoteModal.css" rel="stylesheet" type="text/css">
+    <link href="/css/rate-inquiry.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../css/custome.css" type="text/css">
-    <link rel="stylesheet" href="../css/Header.css" type="text/css">
-    <link rel="stylesheet" href="../css/Footer.css" type="text/css">
-    <link href="../css/Color.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/custome.css" type="text/css">
+    <link rel="stylesheet" href="/css/Header.css" type="text/css">
+    <link rel="stylesheet" href="/css/Footer.css" type="text/css">
+    <link rel="stylesheet" href="/css/Color.css" type="text/css">
 
 </head>
 
@@ -44,7 +45,7 @@
             <div id="mobile-menu" class="hidden">
                 <a href="#" id="home-link-mob"><i class="fas fa-home"></i> Home</a>
                 <hr />
-                <a href="#" id="services-linkss" class="menu-item">
+                <a id="services-linkss" class="menu-item">
                     <i class="fas fa-cog" id="services-link-mob"></i> Services
                     <span class="submenu-icon">&#9662;</span>
                 </a>
@@ -83,101 +84,82 @@
 
             </div>
 
+            <menu class="flex items-center flex-row w-full justify-center">
+                <!-- منوی سمت چپ لوگو -->
+                <nav id="menu" class="hidden md:flex space-x-4 mymenu">
+                    <a href="/index.html" class="nav-link custome-size-menu custome-menu-item text-black"
+                        id="home-link">Home</a>
+                    <div class="relative">
+                        <a href="/Components/Services.html" id="desktop-services"
+                            class="nav-link custome-size-menu custome-menu-item text-black">
+                            Services
+                            <span class="submenu-icon">&#9662;</span>
+                        </a>
 
-            <!-- منوی سمت چپ لوگو -->
-            <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                <a href="#" class="nav-link custome-size-menu custome-menu-item text-blue-900">Home</a>
-                <div class="relative">
-                    <a href="#" id="desktop-services" class="nav-link custome-size-menu custome-menu-item ">
-                        Services
-                        <span class="submenu-icon">&#9662;</span>
-                    </a>
-
-                    <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack"
-                        style="background-color: rgb(255, 255, 255);">
-                        <a href="#" class="block px-4 py-2 text-black hover:bg-gray-200 " id="maritime-link"
-                            style="color: black;">Maritime
-                            Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 " style="color: black;"
-                            id="ground-transport-link">Ground
-                            Transport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200  " id="air-freight-link"
-                            style="color: black;">air
-                            freight</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 " style="color: black;"
-                            id="services-maps-link">Services
-                            Maps</a>
+                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
+                            <a href="/Components/services/maritime-transport.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
+                                id="maritime-link">Maritime
+                                Transport</a>
+                            <a href="/Components/services/ground-transport.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
+                                id="ground-transport-link">Ground
+                                Transport</a>
+                            <a href="/Components/services/air-freight.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-black"
+                                id="air-freight-link">air freight</a>
+                            <a href="/Components/services/services-maps.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
+                                id="services-maps-link">Services
+                                Maps</a>
+                        </div>
                     </div>
-                </div>
 
-                <a href="#" class="nav-link custome-size-menu custome-menu-item " id="request-quote-link">Request a
-                    Quote</a>
+                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-black"
+                        id="request-quote-link">Request a Quote</a>
 
-            </nav>
+                </nav>
 
-            <!-- لوگو وسط منو -->
-            <div class="relative flex justify-center items-center mt-4 mb-4 mx-5 ">
-                <div id="logo-butt"
-                    class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite bg-white">
-                </div>
-                <img src="../Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
-            </div>
-
-            <!-- منو سمت راست لوگو -->
-            <nav class="hidden md:flex space-x-4 mymenu">
-
-                <div class="relative z-10">
-                    <a href="#" id="desktop-eqc" class="nav-link custome-size-menu custome-menu-item z-100 ">
-                        EQC
-                        <span class="submenu-icon">&#9662;</span>
-                    </a>
-                    <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack"
-                        style="background-color: rgb(255, 255, 255);">
-                        <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" style="color: black;"
-                            id="incoterms-link">Incoterms</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link"
-                            style="color: black;">Cargo</a>
+                <!-- لوگو وسط منو -->
+                <a class="relative flex justify-center items-center ml-6 mr-6 " href="/index.html" style="padding:0 ;">
+                    <div id="logo-butt"
+                        class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite bg-white">
                     </div>
-                </div>
-                <a href="#" class="nav-link custome-size-menu custome-menu-item " id="about-us-link">About
-                    Us</a>
-                <a href="#sss" class="nav-link custome-size-menu custome-menu-item " id="contact-us-link">Contact
-                    Us</a>
-                <a href="#fa" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 55.2 38.4" style="enable-background:new 0 0 55.2 38.4" xml:space="preserve">
-                        <style type="text/css">
-                            .st0 {
-                                fill: #B22234;
-                            }
 
-                            .st1 {
-                                fill: #FFFFFF;
-                            }
-
-                            .st2 {
-                                fill: #3C3B6E;
-                            }
-                        </style>
-                        <g>
-                            <path class="st0"
-                                d="M3.03,0h49.13c1.67,0,3.03,1.36,3.03,3.03v32.33c0,1.67-1.36,3.03-3.03,3.03H3.03C1.36,38.4,0,37.04,0,35.37 V3.03C0,1.36,1.36,0,3.03,0L3.03,0z" />
-                            <path class="st1"
-                                d="M0.02,2.73h55.17c0.01,0.1,0.02,0.2,0.02,0.31v2.94H0V3.03C0,2.93,0.01,2.83,0.02,2.73L0.02,2.73z M55.2,8.67 v3.24H0V8.67H55.2L55.2,8.67z M55.2,14.61v3.24H0v-3.24H55.2L55.2,14.61z M55.2,20.55v3.24H0v-3.24H55.2L55.2,20.55z M55.2,26.49 v3.24H0v-3.24H55.2L55.2,26.49z M55.2,32.43v2.93c0,0.1-0.01,0.21-0.02,0.31H0.02C0.01,35.58,0,35.47,0,35.37v-2.93H55.2 L55.2,32.43z" />
-                            <path class="st2" d="M20.8,0v20.68H0V3.03C0,1.36,1.36,0,3.03,0H20.8L20.8,0L20.8,0z" />
-                            <polygon class="st1" points="1.23,2.86 1.92,5.01 0.1,3.68 2.36,3.68 0.53,5.01 1.23,2.86" />
-                            <polygon class="st1" points="1.23,7.02 1.92,9.17 0.1,7.84 2.36,7.84 0.53,9.17 1.23,7.02" />
-                            <polygon class="st1" points="1.23,11.18 1.92,13.33 0.1,12 2.36,12 0.53,13.33 1.23,11.18" />
-                            <polygon class="st1"
-                                points="1.23,15.34 1.92,17.49 0.1,16.16 2.36,16.16 0.53,17.49 1.23,15.34" />
-                            <polygon class="st1" points="3.67,0.78 4.37,2.93 2.54,1.6 4.81,1.6 2.97,2.93 3.67,0.78" />
-                            <polygon class="st1" points="3.67,4.94 4.37,7.09 2.54,5.76 4.81,5.76 2.97,7.09 3.67,4.94" />
-                        </g>
-                    </svg>
+                    <img src="/Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
                 </a>
-                <i class="fa-solid fa-magnifying-glass" id="search"></i>
-            </nav>
+
+
+
+                <!-- منو سمت راست لوگو -->
+                <nav class="hidden md:flex space-x-4 mymenu ml-3">
+
+                    <div class="relative z-10">
+                        <a href="/Components/EQC.html" id="desktop-eqc"
+                            class="nav-link custome-size-menu custome-menu-item z-100 text-black">
+                            EQC
+                            <span class="submenu-icon">&#9662;</span>
+                        </a>
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
+                            <a href="/Components/eqc/incoterms.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="incoterms-link">Incoterms</a>
+                            <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="cargo-link">Cargo</a>
+                        </div>
+                    </div>
+                    <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-black"
+                        id="about-us-link">About
+                        Us</a>
+                    <a href="/Components/ContactUs.html" class="nav-link custome-size-menu custome-menu-item text-black"
+                        id="contact-us-link">Contact
+                        Us</a>
+                    <a href="/persian/index.html" class="nav-link custome-size-menu custome-menu-item language-toggle">
+                        <img src="/Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                    </a>
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </nav>
+            </menu>
         </nav>
     </header>
 
@@ -187,36 +169,11 @@
     </main>
     <!-- Main Content -->
     <main class="container mx-auto my-10 px-4 " style="height: 100vh">
-        <section class="text-center py-6">
-            <h1 class="text-4xl font-bold mb-4">Page Title</h1>
-            <p class="text-lg text-secondary-grayish-blue">Brief description or subtitle for this page.</p>
-        </section>
 
-        <section class="content-section my-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                <div class="text-lg text-gray-800">
-                    <h2 class="text-2xl font-semibold mb-4">Section Title</h2>
-                    <p>Place content here. This section can contain information, images, or any other relevant data.</p>
-                    لینک به صفحات دیگر
-                    <a href="#" class="text-primary-turquoise hover:text-primary-blue">Learn More</a>
-                </div>
-
-                بخش سمت راست محتوای اصلی
-                <div class="relative">
-                    <img src="path/to/image.jpg" alt="Image description" class="rounded-lg shadow-lg w-full">
-                </div>
-            </div>
-        </section>
     </main>
 
 
 
-
-    <button onclick="toggleDropdown()"
-        class="bg-primary-navy-blue  font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
-        Services
-    </button>
 
     <!-- Dropdown Menu -->
     <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
@@ -249,30 +206,11 @@
             <p class="text-sm text-gray-600">Explore our global routes and coverage.</p>
         </a>
     </div>
-    </div>
-
-    <!-- جاوا اسکریپت ساده برای باز و بسته کردن منو -->
-    <!-- <script>
-        function toggleDropdown() {
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            dropdownMenu.classList.toggle("hidden");
-        }
-
-        // Close dropdown when clicking outside
-        window.addEventListener('click', function (e) {
-            const button = document.querySelector("button");
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            if (!button.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.add("hidden");
-            }
-        });
-    </script> -->
-
 
     <!-- Footer -->
     <footer class="bg-primary-navy-blue text-white py-10">
         <section id="sec-6" class="bg-primary-navy-blue text-white py-10">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pr-6 pl-6">
 
                 <!-- About Company Section -->
                 <div class="about">
@@ -400,36 +338,9 @@ float items
     <!-- float items End-->
 
     <!-- اسکریپت‌ها -->
-    <script src="../js/quoteModel.js"></script>
+    <script src="/js/quoteModel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script> 
-    const header = document.querySelector('header');
-        const butt = document.getElementById('logo-butt');
-        const mymenu = document.querySelector('.mymenu');
-        const links = document.querySelectorAll('.mymenu a'); // انتخاب تمامی لینک‌ها داخل هدر
-        if (header && butt && mymenu && links.length > 0) {
-            window.onscroll = function () {
-                if (window.scrollY > 100) {
-                    header.classList.add('fixed-header');
-                    butt.classList.add("bg-white");
-                    mymenu.classList.add("bg-white");
-                    eqcDropdown.classList.add("eqc-dropdownScroll");
-                    servicesDropdown.classList.add("services-dropdownScroll");
-
-                    // تغییر رنگ لینک‌ها
-                    links.forEach(link => {
-                        link.style.color = '#003f5c'; // آبی تیره یا هر رنگ دیگر
-                    });
-
-                } else {
-                    console.log("this will be fix")
-                }
-            };
-        }
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-
     <script>
         const header = document.querySelector('header');
         const butt = document.getElementById('logo-butt');
@@ -461,7 +372,6 @@ float items
             };
         }
     </script>
-
 </body>
 
 </html>
