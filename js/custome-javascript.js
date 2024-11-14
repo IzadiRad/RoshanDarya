@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('services-linkss').addEventListener('click', function (e) {
         e.preventDefault(); // جلوگیری از پیش‌فرض لینک
         var submenu = document.getElementById('services-submenu');
-        submenu.classList.toggle('show'); // نمایش یا مخفی کردن زیرمنو
+        submenu.classList.toggle('show'); // نمایش یا مخفی کردن زیرمنو.0
     });
     // برای منوی EQC
     document.getElementById('eqc-linkss').addEventListener('click', function (e) {
