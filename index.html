@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
     <link rel="stylesheet" href="/css/AboutUs.css" type="text/css">
     <link rel="stylesheet" href="/css/quoteModal.css" type="text/css">
+    <link rel="stylesheet" href="/Components/country.css" type="text/css">
 
 
     <!-- english Fonts-->
@@ -156,7 +157,7 @@
                 <nav class="hidden md:flex space-x-4 mymenu ml-3">
 
                     <div class="relative z-10">
-                        <a href="/Components/EQC.html" id="desktop-eqc"
+                        <a href="/Components/eqc.html" id="desktop-eqc"
                             class="nav-link custome-size-menu custome-menu-item z-100 text-white">
                             EQC
                             <span class="submenu-icon">&#9662;</span>
@@ -1398,29 +1399,51 @@
 
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" aria-label="Chat with us on WhatsApp"
+    <a href="https://wa.me/+989965595135" target="_blank" aria-label="Chat with us on WhatsApp"
         class="fixed bottom-5 right-5 bg-green-500 text-white text-3xl w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform duration-300">
         <i class="fab fa-whatsapp"></i>
     </a>
 
 
     <!-- quoteModal-->
-    <div id="quoteModal" class=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50 ">
+    <div id="quoteModal" class=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10 ">
         <div class="bg-white  rounded-lg w-11/12 md:w-1/2 lg:w-1/3 w-autotailwind " style="width: auto;">
             <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
             <!-- محتوای فرم درخواست نرخ -->
             <section id="rate-inquiry" class="py-6">
                 <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
-                    <input type="text" placeholder="Ready Date" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="Departure Airport" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="Destination Airport" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="Phone Number" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5">
                     <select class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <option value="" disabled selected>Select</option>
                         <option>Air Transport</option>
                         <option>Ground Transport</option>
                         <option>Sea Transport</option>
                     </select>
+                    <select id="containerType" class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <option value="" disabled selected>Select Container Type</option>
+                        <option value="20">20 ft - Standard Container</option>
+                        <option value="40">40 ft - Standard Container</option>
+                        <option value="OP">OP - Open-Top Container</option>
+                        <option value="FR">FR - Flat Rack Container</option>
+                        <option value="RF">RF - Refrigerated Container</option>
+                        <option value="ISO">ISO Tank - Liquid Transport</option>
+                    </select>
+                    <select id="isoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
+                        <option value="" disabled selected>Select ISO Tank Type</option>
+                        <option value="T7">T7</option>
+                        <option value="T1">T1</option>
+                        <option value="T50">T50</option>
+                    </select>
+                    <input type="number" id="containerCount" placeholder="Enter Quantity" min="1"
+                        class="input-field w-full" required>
+                    <select id="countrySelect" class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <option value="" disabled selected>Select Departure Country</option>
+                    </select>
+                    <select id="portsSelect" class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <option value="" disabled selected>Select Departure Port</option>
+                    </select>
+                    <input type="text" placeholder="Phone Number" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                    <input type="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5">
+
                     <button class="rate-button w-full md:w-1/3 lg:w-1/5">Get Rate Quote</button>
                 </div>
             </section>
