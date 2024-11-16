@@ -164,41 +164,110 @@
     </header>
 
 
-    <main style="height: 100vh;">
-
-    </main>
-    <!-- Main Content -->
-    <main class="container mx-auto my-10 px-4 " style="height: 100vh">
-        <section class="text-center py-6">
-            <h1 class="text-4xl font-bold mb-4">Page Title</h1>
-            <p class="text-lg text-secondary-grayish-blue">Brief description or subtitle for this page.</p>
+    <main class="py-10 bg-gray-50 mt-5">
+        <!-- Hero Section -->
+        <section class="bg-cover bg-center relative h-72"
+            style="background-image: url('/Images/Image/cargo/hero.jpg');">
+            <div class="relative h-full bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold text-white mb-2">Cargo Services</h1>
+                    <p class="text-lg text-gray-300">
+                        Comprehensive solutions for safe and efficient cargo handling worldwide.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section class="content-section my-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Introduction Section -->
+        <section class="container mx-auto px-6 py-12 text-center">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-4">What is Cargo Handling?</h2>
+            <p class="text-secondary-grayish-blue text-lg">
+                Cargo handling encompasses the processes of loading, unloading, and managing goods to ensure safe and
+                timely transportation. It plays a crucial role in logistics, ensuring that shipments of all sizes are
+                managed with precision and care.
+            </p>
+        </section>
 
-                <div class="text-lg text-gray-800">
-                    <h2 class="text-2xl font-semibold mb-4">Section Title</h2>
-                    <p>Place content here. This section can contain information, images, or any other relevant data.</p>
-                    لینک به صفحات دیگر
-                    <a href="#" class="text-primary-turquoise hover:text-primary-blue">Learn More</a>
+        <!-- Types of Cargo Section -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center">Types of Cargo We Handle</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">General Cargo</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        Standard goods shipped in boxes, pallets, or containers, including retail and consumer products.
+                    </p>
                 </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">Bulk Cargo</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        Large quantities of unpackaged goods such as grains, coal, or minerals.
+                    </p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">Refrigerated Cargo</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        Temperature-sensitive items like fresh produce, meat, and pharmaceuticals.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                بخش سمت راست محتوای اصلی
-                <div class="relative">
-                    <img src="path/to/image.jpg" alt="Image description" class="rounded-lg shadow-lg w-full">
+        <!-- Services Section -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center">Our Cargo Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">Cargo Consolidation</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        Combining smaller shipments into larger loads for cost efficiency.
+                    </p>
                 </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">Secure Storage</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        State-of-the-art facilities to store cargo safely during transit.
+                    </p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">Customs Clearance</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        Streamlined customs procedures for smooth cargo movement across borders.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="bg-primary-light-blue text-white py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Why Choose Our Cargo Services?</h2>
+                <ul class="list-disc list-inside text-lg mx-auto max-w-3xl text-left">
+                    <li>Advanced handling techniques for all cargo types.</li>
+                    <li>Global network of warehouses and logistics partners.</li>
+                    <li>24/7 support for real-time cargo tracking.</li>
+                    <li>Compliance with international shipping standards.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4 text-primary-navy-blue">Secure Your Cargo with Us</h2>
+                <p class="text-secondary-grayish-blue text-lg mb-6">
+                    Let us handle your cargo with care and precision. Get in touch with our experts for tailored
+                    solutions.
+                </p>
+                <a href="#contact-us"
+                    class="bg-primary-light-blue text-white px-8 py-4 rounded-md shadow-md hover:bg-secondary-sky-blue">
+                    Contact Us
+                </a>
             </div>
         </section>
     </main>
 
 
-
-
-    <button onclick="toggleDropdown()"
-        class="bg-primary-navy-blue  font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
-        Services
-    </button>
 
     <!-- Dropdown Menu -->
     <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
@@ -233,22 +302,6 @@
     </div>
     </div>
 
-    <!-- جاوا اسکریپت ساده برای باز و بسته کردن منو -->
-    <!-- <script>
-        function toggleDropdown() {
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            dropdownMenu.classList.toggle("hidden");
-        }
-
-        // Close dropdown when clicking outside
-        window.addEventListener('click', function (e) {
-            const button = document.querySelector("button");
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            if (!button.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.add("hidden");
-            }
-        });
-    </script> -->
 
 
     <!-- Footer -->

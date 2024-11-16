@@ -164,41 +164,115 @@
     </header>
 
 
-    <main style="height: 100vh;">
-
-    </main>
-    <!-- Main Content -->
-    <main class="container mx-auto my-10 px-4 " style="height: 100vh">
-        <section class="text-center py-6">
-            <h1 class="text-4xl font-bold mb-4">Page Title</h1>
-            <p class="text-lg text-secondary-grayish-blue">Brief description or subtitle for this page.</p>
+    <main class="py-10 bg-gray-50 mt-5">
+        <!-- Hero Section -->
+        <section class="bg-cover bg-center relative h-72"
+            style="background-image: url('/Images/Image/incoterms/hero.jpg');">
+            <div class="relative h-full bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold text-white mb-2">Incoterms</h1>
+                    <p class="text-lg text-gray-300">
+                        Navigating international trade with clarity and confidence.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section class="content-section my-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Introduction Section -->
+        <section class="container mx-auto px-6 py-12 text-center">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-4">What Are Incoterms?</h2>
+            <p class="text-secondary-grayish-blue text-lg">
+                Incoterms, or International Commercial Terms, are globally recognized rules that define the
+                responsibilities of buyers and sellers in the shipment and delivery of goods. Established by the
+                International Chamber of Commerce (ICC), they ensure seamless international trade by clarifying risks,
+                costs, and tasks.
+            </p>
+        </section>
 
-                <div class="text-lg text-gray-800">
-                    <h2 class="text-2xl font-semibold mb-4">Section Title</h2>
-                    <p>Place content here. This section can contain information, images, or any other relevant data.</p>
-                    لینک به صفحات دیگر
-                    <a href="#" class="text-primary-turquoise hover:text-primary-blue">Learn More</a>
+        <!-- Key Categories Section -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center">Key Incoterms Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">EXW (Ex Works)</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        Buyer assumes all transportation costs and risks from the seller's premises onward.
+                    </p>
                 </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">FOB (Free On Board)</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        Seller handles delivery to the ship; buyer takes over from the port of shipment.
+                    </p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-primary-navy-blue">CIF (Cost, Insurance, and Freight)</h3>
+                    <p class="text-secondary-grayish-blue mt-2">
+                        Seller covers shipping and insurance up to the destination port.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                بخش سمت راست محتوای اصلی
-                <div class="relative">
-                    <img src="path/to/image.jpg" alt="Image description" class="rounded-lg shadow-lg w-full">
+        <!-- Why Use Incoterms Section -->
+        <section class="bg-primary-light-blue text-white py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Why Are Incoterms Important?</h2>
+                <ul class="list-disc list-inside text-lg mx-auto max-w-3xl text-left">
+                    <li>Standardized rules recognized globally.</li>
+                    <li>Clear allocation of risks and responsibilities.</li>
+                    <li>Prevents disputes in international transactions.</li>
+                    <li>Simplifies negotiations and trade agreements.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center">Learn More About Incoterms</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="/Images/Image/incoterms/exw.jpg" alt="Ex Works" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary-navy-blue">Ex Works Explained</h3>
+                        <a href="#" class="text-secondary-grayish-blue hover:underline mt-2 inline-block">Read More</a>
+                    </div>
                 </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="/Images/Image/incoterms/fob.jpg" alt="Free On Board" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary-navy-blue">FOB Insights</h3>
+                        <a href="#" class="text-secondary-grayish-blue hover:underline mt-2 inline-block">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="/Images/Image/incoterms/cif.jpg" alt="Cost, Insurance, and Freight"
+                        class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary-navy-blue">CIF Details</h3>
+                        <a href="#" class="text-secondary-grayish-blue hover:underline mt-2 inline-block">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4 text-primary-navy-blue">Master Incoterms with Us</h2>
+                <p class="text-secondary-grayish-blue text-lg mb-6">
+                    Need help understanding Incoterms for your business? Our team is here to guide you through the
+                    complexities of global trade.
+                </p>
+                <a href="#contact-us"
+                    class="bg-primary-light-blue text-white px-8 py-4 rounded-md shadow-md hover:bg-secondary-sky-blue">
+                    Contact Us
+                </a>
             </div>
         </section>
     </main>
 
 
-
-
-    <button onclick="toggleDropdown()"
-        class="bg-primary-navy-blue  font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
-        Services
-    </button>
 
     <!-- Dropdown Menu -->
     <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
