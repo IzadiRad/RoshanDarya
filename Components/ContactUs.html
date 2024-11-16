@@ -9,15 +9,18 @@
 
     <!-- لینک به فایل‌های CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="/css/quoteModal.css" rel="stylesheet" type="text/css">
-    <link href="/css/rate-inquiry.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="/css/custome.css" type="text/css">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/Fonts.css" type="text/css">
     <link rel="stylesheet" href="/css/Header.css" type="text/css">
     <link rel="stylesheet" href="/css/Footer.css" type="text/css">
-    <link href="/css/Color.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/Color.css" type="text/css">
+    <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
+    <link rel="stylesheet" href="/css/ContactUs.css" type="text/css">
+    <link rel="stylesheet" href="/css/quoteModal.css" type="text/css">
 
 </head>
 
@@ -108,7 +111,7 @@
                             <a href="/Components/services/air-freight.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-black"
                                 id="air-freight-link">air freight</a>
-                            <a href="/Components/services/services-maps.html"
+                            <a href="/Components/services/maps.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="services-maps-link">Services
                                 Maps</a>
@@ -162,43 +165,160 @@
             </menu>
         </nav>
     </header>
+    <!--
+                   <i class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>
+                  <i class="fas fa-envelope text-primary-turquoise text-xl mr-4"></i>
+                  <i class="fas fa-map-marker-alt text-primary-turquoise text-xl mr-4"></i>
+   
+ -->
 
+    <main class="bg-gray-50 py-10 mt-10 mb-10">
+        <div class="container mx-auto px-4">
+            <!-- Page Title -->
+            <h1 class="text-4xl font-bold text-primary-navy-blue text-center mb-8">Contact Us</h1>
 
-    <main style="height: 100vh;">
-
-    </main>
-    <!-- Main Content -->
-    <main class="container mx-auto my-10 px-4 " style="height: 100vh">
-        <section class="text-center py-6">
-            <h1 class="text-4xl font-bold mb-4">Page Title</h1>
-            <p class="text-lg text-secondary-grayish-blue">Brief description or subtitle for this page.</p>
-        </section>
-
-        <section class="content-section my-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                <div class="text-lg text-gray-800">
-                    <h2 class="text-2xl font-semibold mb-4">Section Title</h2>
-                    <p>Place content here. This section can contain information, images, or any other relevant data.</p>
-                    لینک به صفحات دیگر
-                    <a href="#" class="text-primary-turquoise hover:text-primary-blue">Learn More</a>
+            <!-- Contact Information Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Main Office Information -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-2xl font-bold text-primary-navy-blue mb-4">
+                        <i class="fas fa-map-marker-alt text-primary-turquoise text-xl mr-4"></i>
+                        Head Office
+                    </h2>
+                    <p class="text-secondary-grayish-blue ">
+                        Unit 2 & 4, No.235, After Sarafraz Cross Road St, Motahari Ave, Tehran, IRAN
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-secondary-grayish-blue mb-2"><strong><i
+                                    class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>Phone:</strong></p>
+                        <ul class="list-disc list-inside text-secondary-grayish-blue">
+                            <li>(+98) 21 860 47 322</li>
+                            <li>(+98) 21 860 47 425</li>
+                            <li>(+98) 21 861 22 178</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-secondary-grayish-blue list-disc list-inside "><strong><i
+                                    class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>Fax:</strong>
+                            (+98) 21
+                            86120639
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-secondary-grayish-blue"><strong><i
+                                    class="fas fa-envelope text-primary-turquoise text-xl mr-4"></i>Email:</strong>
+                            info@roshandarya.com</p>
+                    </div>
                 </div>
 
-                بخش سمت راست محتوای اصلی
-                <div class="relative">
-                    <img src="path/to/image.jpg" alt="Image description" class="rounded-lg shadow-lg w-full">
+                <!-- Contact Form -->
+                <div class="bg-primary-light-blue rounded-lg shadow-lg p-6">
+                    <h2 class="text-2xl font-bold  mb-4">Send Us a Message</h2>
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 gap-4">
+                            <input type="text" name="name" placeholder="Your Name"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-turquoise"
+                                required>
+                            <input type="email" name="email" placeholder="Your Email"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-turquoise"
+                                required>
+                            <textarea name="message" rows="5" placeholder="Your Message"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-turquoise"
+                                required></textarea>
+                            <button type="submit"
+                                class="w-full bg-primary-turquoise text-primary-navy-blue font-bold py-2 px-4 rounded-lg hover:bg-primary-light-blue hover:text-white transition duration-300">
+                                Send Message
+                            </button>
+
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
+
+            <!-- Branch Offices Section -->
+            <div class="mt-10">
+                <h2 class="text-2xl font-bold text-primary-navy-blue text-center mb-8">Our Branch Offices</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Bandar Abbas Office -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-primary-light-blue mb-2">
+                            <i class="fas fa-map-marker-alt text-primary-turquoise text-xl mr-4"></i>
+                            Bandar Abbas Office
+                        </h3>
+                        <p class="text-secondary-grayish-blue mb-8">Unit 604, Floor 6, Integrated Malake Asemanha,
+                            Square
+                            Yadbood, Bandar Abbas – Iran</p>
+                        <p class="mt-2 text-secondary-grayish-blue"><strong>
+                                <i class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>Phone:</strong> (+98)
+                            763 2250666-70</p>
+                        <p class="mt-2 text-secondary-grayish-blue"><strong><i
+                                    class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>Fax:</strong> (+98) 763
+                            2250665</p>
+                    </div>
+                    <!-- Bushehr Office -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-primary-light-blue mb-2">
+                            <i class="fas fa-map-marker-alt text-primary-turquoise text-xl mr-4"></i>
+                            Bushehr Office
+                        </h3>
+                        <p class="text-secondary-grayish-blue mb-8">Unit 401, 4th Floor, Hooman Bldg, Opposite of Attar
+                            Mosque, Dehghan St</p>
+                        <p class="mt-2 text-secondary-grayish-blue"><strong><i
+                                    class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>Phone:</strong> (+98)
+                            773 3337849</p>
+                        <p class="mt-2 text-secondary-grayish-blue"><strong><i
+                                    class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>Fax:</strong> (+98) 773
+                            3337849</p>
+                    </div>
+                    <!-- Khorramshahr Office -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-primary-light-blue mb-2">
+                            <i class="fas fa-map-marker-alt text-primary-turquoise text-xl mr-4"></i>
+                            Khorramshahr Office
+                        </h3>
+                        <p class="text-secondary-grayish-blue">Unit 15, 3rd Floor, Next to Prior Municipality, Maleknia
+                            Building, Saheli Boulevard, Khorramshahr, Iran</p>
+                        <p class="mt-2 text-secondary-grayish-blue"><strong><i
+                                    class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>Phone:</strong> (+98)
+                            615 3511665</p>
+                        <p class="mt-2 text-secondary-grayish-blue"><strong><i
+                                    class="fas fa-phone text-primary-turquoise text-xl mr-4"></i>Fax:</strong> (+98) 615
+                            3511665</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Contact Details -->
+            <div class="mt-10">
+                <h2 class="text-2xl font-bold text-primary-navy-blue text-center mb-8">Additional Contacts</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Sales Manager -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-primary-light-blue mb-2">Sales Manager</h3>
+                        <p class="text-secondary-grayish-blue"><strong>Name:</strong> Sina Agha Rafiee</p>
+                        <p class="text-secondary-grayish-blue"><strong>Email:</strong> rafiee@roshandarya.com</p>
+                        <p class="text-secondary-grayish-blue"><strong>Extension:</strong> 400</p>
+                    </div>
+                    <!-- Finance -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-primary-light-blue mb-2">Finance</h3>
+                        <p class="text-secondary-grayish-blue"><strong>Name:</strong> Narges Noori</p>
+                        <p class="text-secondary-grayish-blue"><strong>Email:</strong> acc@roshandarya.com</p>
+                        <p class="text-secondary-grayish-blue"><strong>Extension:</strong> 230</p>
+                    </div>
+                    <!-- Operation Manager -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-primary-light-blue mb-2">Operation Manager</h3>
+                        <p class="text-secondary-grayish-blue"><strong>Name:</strong> Hanieh Ghasemi</p>
+                        <p class="text-secondary-grayish-blue"><strong>Email:</strong> operation@roshandarya.com</p>
+                        <p class="text-secondary-grayish-blue"><strong>Extension:</strong> 201</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
-
-
-    <button onclick="toggleDropdown()"
-        class="bg-primary-navy-blue  font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
-        Services
-    </button>
 
     <!-- Dropdown Menu -->
     <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
@@ -232,23 +352,6 @@
         </a>
     </div>
     </div>
-
-    <!-- جاوا اسکریپت ساده برای باز و بسته کردن منو -->
-    <!-- <script>
-        function toggleDropdown() {
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            dropdownMenu.classList.toggle("hidden");
-        }
-
-        // Close dropdown when clicking outside
-        window.addEventListener('click', function (e) {
-            const button = document.querySelector("button");
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            if (!button.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.add("hidden");
-            }
-        });
-    </script> -->
 
 
     <!-- Footer -->

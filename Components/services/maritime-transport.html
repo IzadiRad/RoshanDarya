@@ -15,9 +15,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/css/custome.css" type="text/css">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/Fonts.css" type="text/css">
     <link rel="stylesheet" href="/css/Header.css" type="text/css">
     <link rel="stylesheet" href="/css/Footer.css" type="text/css">
-    <link href="/css/Color.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/Color.css" type="text/css">
+    <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
+    <link rel="stylesheet" href="/css/quoteModal.css" type="text/css">
+
+
+
+
+
+
+
+
 
 </head>
 
@@ -108,7 +120,7 @@
                             <a href="/Components/services/air-freight.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-black"
                                 id="air-freight-link">air freight</a>
-                            <a href="/Components/services/services-maps.html"
+                            <a href="/Components/services/maps.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="services-maps-link">Services
                                 Maps</a>
@@ -164,41 +176,136 @@
     </header>
 
 
-    <main style="height: 100vh;">
-
-    </main>
-    <!-- Main Content -->
-    <main class="container mx-auto my-10 px-4 " style="height: 100vh">
-        <section class="text-center py-6">
-            <h1 class="text-4xl font-bold mb-4">Page Title</h1>
-            <p class="text-lg text-secondary-grayish-blue">Brief description or subtitle for this page.</p>
+    <main id="maritime-transport" class="bg-white text-gray-800">
+        <!-- Hero Section -->
+        <section class="bg-cover bg-center relative h-96"
+            style="background-image: url('/Images/Image/services/maritime-transport/Hero-section.jpg');">
+            <div class="relative bg-black bg-opacity-50 flex items-center justify-center h-full">
+                <div class="text-center w-full">
+                    <h1 class="text-4xl font-bold text-white mb-4">Maritime Transport Services</h1>
+                    <p class="text-lg text-gray-300">
+                        Efficient, reliable, and global solutions for all your sea freight needs.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section class="content-section my-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Introduction Section -->
+        <br />
 
-                <div class="text-lg text-gray-800">
-                    <h2 class="text-2xl font-semibold mb-4">Section Title</h2>
-                    <p>Place content here. This section can contain information, images, or any other relevant data.</p>
-                    لینک به صفحات دیگر
-                    <a href="#" class="text-primary-turquoise hover:text-primary-blue">Learn More</a>
-                </div>
+        <section
+            class="relative container mx-auto px-6 py-12 text-white bg-indigo-500 shadow-lg shadow-indigo-500/50 rounded drop-shadow-md"
+            style="background-image: url('/Images/Image/services/maritime-transport/intro-bg.jpg'); background-size: cover; background-position: center;">
+            <div class="bg-black bg-opacity-50 p-6 rounded">
+                <h2 class="text-3xl font-bold text-white mb-6 text-center pt-5 text-xl pb-5">Introduction</h2>
+                <p class="text-center pb-10 m-5 text-lg drop-shadow-md">
+                    Maritime transport is the backbone of international trade and commerce, connecting countries through
+                    sea routes and delivering large quantities of goods cost-effectively. Our services ensure timely
+                    delivery, efficient cargo handling, and seamless integration with global supply chains.
+                </p>
+            </div>
+        </section>
 
-                بخش سمت راست محتوای اصلی
-                <div class="relative">
-                    <img src="path/to/image.jpg" alt="Image description" class="rounded-lg shadow-lg w-full">
+
+        <!-- Key Features Section -->
+        <section class="bg-gray-50 py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-primary-navy-blue mb-6">Our Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 bg-white shadow-lg rounded-lg">
+                        <img src="path/to/feature1.jpg" alt="Feature 1"
+                            class="w-full h-40 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Global Reach</h3>
+                        <p>
+                            Access extensive sea routes that connect major ports across continents, ensuring smooth
+                            international trade.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white shadow-lg rounded-lg">
+                        <img src="path/to/feature2.jpg" alt="Feature 2"
+                            class="w-full h-40 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Cost Efficiency</h3>
+                        <p>
+                            Competitive pricing for bulk shipments, making sea freight the preferred choice for
+                            businesses.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white shadow-lg rounded-lg">
+                        <img src="path/to/feature3.jpg" alt="Feature 3"
+                            class="w-full h-40 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Eco-Friendly</h3>
+                        <p>
+                            Sustainable shipping solutions that minimize environmental impact compared to other modes of
+                            transport.
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="container mx-auto px-6 py-12" style="margin-bottom: 5rem;">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center pt-5">Services We Provide</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Full Container Load (FCL)</h3>
+                    <p>Exclusive container services for your shipments, ensuring privacy and security.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Less than Container Load (LCL)</h3>
+                    <p>Cost-effective solutions for smaller shipments that don’t require full container space.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Break Bulk</h3>
+                    <p>Specialized services for oversized and irregularly shaped cargo that doesn’t fit in standard
+                        containers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="bg-gray-50 py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-primary-navy-blue mb-6">Why Choose Us?</h2>
+                <ul class="list-disc list-inside text-lg">
+                    <li>Access to a wide network of global ports.</li>
+                    <li>End-to-end cargo management and tracking.</li>
+                    <li>Customized solutions for all shipping needs.</li>
+                    <li>Experienced team of maritime experts.</li>
+                    <li>Commitment to timely and secure deliveries.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-primary-navy-blue mb-6">Our Fleet & Facilities</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <img src="path/to/image1.jpg" alt="Fleet Image 1" class="rounded-md shadow-lg">
+                    <img src="path/to/image2.jpg" alt="Fleet Image 2" class="rounded-md shadow-lg">
+                    <img src="path/to/image3.jpg" alt="Fleet Image 3" class="rounded-md shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-primary-light-blue text-white py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Get Started with Maritime Transport Today</h2>
+                <p class="mb-6">
+                    Reach out to our team for customized solutions tailored to your business needs.
+                </p>
+                <a href="#contact-us"
+                    class="bg-white text-primary-light-blue px-8 py-4 rounded-md shadow-md hover:bg-gray-200">
+                    Contact Us
+                </a>
             </div>
         </section>
     </main>
 
 
 
-
-    <button onclick="toggleDropdown()"
-        class="bg-primary-navy-blue  font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
-        Services
-    </button>
 
     <!-- Dropdown Menu -->
     <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
@@ -233,22 +340,6 @@
     </div>
     </div>
 
-    <!-- جاوا اسکریپت ساده برای باز و بسته کردن منو -->
-    <!-- <script>
-        function toggleDropdown() {
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            dropdownMenu.classList.toggle("hidden");
-        }
-
-        // Close dropdown when clicking outside
-        window.addEventListener('click', function (e) {
-            const button = document.querySelector("button");
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            if (!button.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.add("hidden");
-            }
-        });
-    </script> -->
 
 
     <!-- Footer -->
@@ -358,9 +449,9 @@ float items
     </a>
 
     <!-- quoteModal-->
-    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10">
-        <div class="bg-white p-6 rounded-lg w-11/12 md:w-1/2 lg:w-1/3 " style="width: auto;">
-            <span id="closeModal" class="text-right text-2xl cursor-pointer">&times;</span>
+    <div id="quoteModal" class=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-100 ">
+        <div class="bg-white  rounded-lg w-11/12 md:w-1/2 lg:w-1/3 w-autotailwind " style="width: auto;">
+            <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
             <!-- محتوای فرم درخواست نرخ -->
             <section id="rate-inquiry" class="py-6">
                 <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">

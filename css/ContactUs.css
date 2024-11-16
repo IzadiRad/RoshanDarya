@@ -1,0 +1,14 @@
+button[type="submit"] {
+    background-color: var(--secondary-sky-blue);
+    color: var(--primary-navy-blue); /* Changed to make it visible */
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-dark-blue);
+    color: white; /* Optionally invert colors on hover */
+}
