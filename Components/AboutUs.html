@@ -87,7 +87,7 @@
             <menu class="flex items-center flex-row w-full justify-center">
                 <!-- منوی سمت چپ لوگو -->
                 <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                    <a href="/index.html" class="nav-link custome-size-menu custome-menu-item text-black"
+                    <a href="/index.html" class="nav-link custome-size-menu custome-menu-item text-black bg-white"
                         id="home-link">Home</a>
                     <div class="relative">
                         <a href="/Components/Services.html" id="desktop-services"
@@ -96,19 +96,22 @@
                             <span class="submenu-icon">&#9662;</span>
                         </a>
 
-                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
+                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack"
+                            style="background-color:rgba(255, 255, 255, 0.805);">
                             <a href="/Components/services/maritime-transport.html"
-                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
-                                id="maritime-link">Maritime
+                                class="block px-4 py-2 hover:bg-gray-200"
+                                style="color: var(--primary-navy-blue) !important;" id="maritime-link">Maritime
                                 Transport</a>
                             <a href="/Components/services/ground-transport.html"
+                                style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="ground-transport-link">Ground
                                 Transport</a>
                             <a href="/Components/services/air-freight.html"
+                                style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-black"
                                 id="air-freight-link">air freight</a>
-                            <a href="/Components/services/maps.html"
+                            <a href="/Components/services/maps.html" style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="services-maps-link">Services
                                 Maps</a>
@@ -140,12 +143,13 @@
                             EQC
                             <span class="submenu-icon">&#9662;</span>
                         </a>
-                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                            <a href="/Components/eqc/incoterms.html"
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack"
+                            style="background-color:rgba(255, 255, 255, 0.805);">
+                            <a href="/Components/eqc/incoterms.html" style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                                 id="incoterms-link">Incoterms</a>
                             <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                id="cargo-link">Cargo</a>
+                                style="color: var(--primary-navy-blue) !important;" id="cargo-link">Cargo</a>
                         </div>
                     </div>
                     <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-black"
@@ -164,71 +168,108 @@
     </header>
 
 
-    <main style="height: 100vh;">
-
-    </main>
-    <!-- Main Content -->
-    <section class="bg-white py-16" id="sec-3">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Left Section (Text) -->
-                <div>
-                    <div class="mb-4 border-l-4 pl-4" style="border-color: #2563EB;">
-                        <h3 class="text-2xl font-semibold uppercase mb-4 tracking-widest"
-                            style="font-family: var(--font-poppins);color: #2563EB;">About Us</h3>
-                    </div>
-                    <h2 class="text-primary-orange-gold text-3xl lg:text-4xl font-bold mb-6"
-                        style="font-family: var(--font-poppins);">
-                        How to Logistic <span style="color: #2563EB;">Activities</span> Solution of Business in
-                        the world
-                    </h2>
-                    <p class="text-secondary-grayish-blue mb-4" style="font-family: var(--font-noto-sans);">
-                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything
-                        embarrassing hidden in the middle of text.
-                    </p>
-                    <p class="text-secondary-grayish-blue mb-6" style="font-family: var(--font-noto-sans);">
-                        Web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
-                        ipsum'
-                        will uncover many web sites still in their infancy.
-                    </p>
-                    <a href="#learn-more"
-                        class="inline-block mt-4 px-6 py-3 bg-primary-turquoise text-white font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300">Learn
-                        More</a>
+    <main id="about-us" class="bg-white text-gray-800">
+        <!-- Hero Section -->
+        <section class="bg-cover bg-center relative h-96" style="background-image: url('path/to/hero-image.jpg');">
+            <div class="bg-black bg-opacity-50 absolute inset-0 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h1 class="text-4xl font-bold mb-4">About Us</h1>
+                    <p class="text-lg">Learn more about who we are, our mission, and how we serve our clients.</p>
                 </div>
+            </div>
+        </section>
 
-                <!-- Right Section (Images and Video) -->
-                <div class="grid grid-cols-1 gap-6">
-                    <!-- Video -->
-                    <div class="relative">
-                        <img class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80"
-                            src="https://via.placeholder.com/600x400" alt="Video thumbnail">
-                        <div class="absolute inset-0 flex justify-center items-center">
-                            <a href="#"
-                                class="absolute inset-0 flex items-center justify-center text-primary-light-gray hover:text-primary-light-blue">
-                                <i class="fas fa-play-circle text-6xl"></i>
-                            </a>
-                        </div>
+        <!-- Introduction Section -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center">Who We Are</h2>
+            <p class="text-lg text-center">
+                Roshandarya is a leading provider of global logistics and transport solutions. With decades of
+                expertise, we specialize in delivering reliable, efficient, and innovative services to our customers
+                worldwide. Our commitment to excellence drives everything we do.
+            </p>
+        </section>
+
+        <!-- Mission, Vision, and Values -->
+        <section class="bg-gray-50 py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary-navy-blue mb-4">Our Mission</h3>
+                        <p>To provide seamless, sustainable, and innovative logistics solutions that empower global
+                            trade.</p>
                     </div>
-
-                    <!-- Two Small Images -->
-                    <div class="grid grid-cols-2 gap-4">
-                        <img class="rounded-lg shadow-lg w-full h-48 lg:h-52 object-cover"
-                            src="https://via.placeholder.com/300x200" alt="Image 1">
-                        <img class="rounded-lg shadow-lg w-full h-48 lg:h-52 object-cover"
-                            src="https://via.placeholder.com/300x200" alt="Image 2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary-navy-blue mb-4">Our Vision</h3>
+                        <p>To be a trusted leader in maritime and logistics services, connecting businesses across the
+                            globe.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary-navy-blue mb-4">Our Values</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Customer Centricity</li>
+                            <li>Innovation</li>
+                            <li>Integrity</li>
+                            <li>Sustainability</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- History Section -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center">Our Story</h2>
+            <p class="text-lg text-center mb-6">
+                Founded in [year], Roshandarya began as a small logistics company focused on maritime transport. Over
+                the years, we have expanded our services to include air, ground, and integrated solutions, becoming a
+                trusted partner for businesses of all sizes.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <img src="path/to/history1.jpg" alt="Milestone 1" class="rounded-md shadow-lg">
+                <img src="path/to/history2.jpg" alt="Milestone 2" class="rounded-md shadow-lg">
+                <img src="path/to/history3.jpg" alt="Milestone 3" class="rounded-md shadow-lg">
+            </div>
+        </section>
 
+        <!-- Leadership Section -->
+        <section class="bg-gray-100 py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center">Meet Our Leadership</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="path/to/leader1.jpg" alt="Leader 1" class="rounded-full w-32 h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold">John Doe</h3>
+                        <p class="text-gray-600">CEO</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="path/to/leader2.jpg" alt="Leader 2" class="rounded-full w-32 h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold">Jane Smith</h3>
+                        <p class="text-gray-600">COO</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="path/to/leader3.jpg" alt="Leader 3" class="rounded-full w-32 h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold">Mike Brown</h3>
+                        <p class="text-gray-600">CFO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Call to Action -->
+        <section class="bg-primary-light-blue text-white py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Join Our Journey</h2>
+                <p class="mb-6">
+                    Partner with us and experience the difference in reliable, efficient logistics solutions.
+                </p>
+                <a href="#contact-us"
+                    class="bg-white text-primary-light-blue px-8 py-4 rounded-md shadow-md hover:bg-gray-200">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
 
-    <button onclick="toggleDropdown()"
-        class="bg-primary-navy-blue  font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
-        Services
-    </button>
 
     <!-- Dropdown Menu -->
     <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
