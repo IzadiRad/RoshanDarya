@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/custome.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="css/Header.css" type="text/css">
-    <link rel="stylesheet" href="css/Services-Section2.css" type="text/css">
-    <link rel="stylesheet" href="css/Color.css" type="text/css">
-    <link rel="stylesheet" href="css/Fonts.css" type="text/css">
-    <link rel="stylesheet" href="css/Gallery.css" type="text/css">
-    <link rel="stylesheet" href="css/Blog.css" type="text/css">
-    <link rel="stylesheet" href="css/section2.css" type="text/css">
-    <link rel="stylesheet" href="css/service-section.css" type="text/css">
-    <link rel="stylesheet" href="css/Footer.css" type="text/css">
-    <link rel="stylesheet" href="css/faq.css" type="text/css">
-    <link rel="stylesheet" href="css/rate-inquiry.css" type="text/css">
-    <link rel="stylesheet" href="css/AboutUs.css" type="text/css">
-    <link rel="stylesheet" href="css/quoteModal.css" type="text/css">
-    <link rel="stylesheet" href="Components/country.css" type="text/css">
+    <link rel="stylesheet" href="/css/custome.css" type="text/css">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/Header.css" type="text/css">
+    <link rel="stylesheet" href="/css/Services-Section2.css" type="text/css">
+    <link rel="stylesheet" href="/css/Color.css" type="text/css">
+    <link rel="stylesheet" href="/css/Fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/Gallery.css" type="text/css">
+    <link rel="stylesheet" href="/css/Blog.css" type="text/css">
+    <link rel="stylesheet" href="/css/section2.css" type="text/css">
+    <link rel="stylesheet" href="/css/service-section.css" type="text/css">
+    <link rel="stylesheet" href="/css/Footer.css" type="text/css">
+    <link rel="stylesheet" href="/css/faq.css" type="text/css">
+    <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
+    <link rel="stylesheet" href="/css/AboutUs.css" type="text/css">
+    <link rel="stylesheet" href="/css/quoteModal.css" type="text/css">
+    <link rel="stylesheet" href="/Components/country.css" type="text/css">
 
 
     <!-- english Fonts-->
@@ -483,7 +483,7 @@
                     </div>
                 </a>
                 <!-- Item 4 -->
-                <a data-aos="fade-left" href="/Components/services/ground-transport.html"
+                <a data-aos="fade-left" href="./Components/services/ground-transport.html"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group overflow-x-hidden secCard">
                     <div class="text-center">
                         <div class="item-icon">
@@ -1405,7 +1405,7 @@
 
 
     <!-- quoteModal-->
-    <form action="processRateRequest.php" method="POST" id="rate-inquiry-form">
+    <form action="./processRateRequest.php" method="POST" id="rate-inquiry-form">
         <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
             <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                 <option value="" disabled selected>Select</option>

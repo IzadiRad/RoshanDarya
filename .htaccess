@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /RoshanDarya/
+
+# ریدایرکت همه درخواست‌ها به مسیر صحیح در لوکال
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /RoshanDarya/$1 [L]
