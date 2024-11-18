@@ -2,7 +2,11 @@
     "name": "kavenegar/php",
     "type": "library",
     "description": "A PHP wrapper for Kavenegar's API",
-    "keywords": ["kavenegar", "sms", "api"],
+    "keywords": [
+        "kavenegar",
+        "sms",
+        "api"
+    ],
     "homepage": "http://github.com/Kavenegar/kavenegar-php",
     "license": "MIT",
     "authors": [
@@ -19,5 +23,6 @@
             "Kavenegar\\": "src/"
         }
     },
-    "minimum-stability" : "stable"
+    "minimum-stability": "stable",
+    "kavenegar/php": "*"
 }

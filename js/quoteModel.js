@@ -98,3 +98,32 @@ containerTypeDropdown.addEventListener("change", () => {
         isoTankDropdown.classList.add("hidden");
     }
 });
+
+
+const destinationCountrySelect = document.getElementById("destinationCountry");
+const destinationPortsSelect = document.getElementById("destinationPortsSelect");
+
+// Populate Destination Country Dropdown
+Object.keys(portsData).forEach((country) => {
+    const option = document.createElement("option");
+    option.value = country;
+    option.textContent = country;
+    destinationCountrySelect.appendChild(option);
+});
+
+// Update Destination Ports Dropdown
+destinationCountrySelect.addEventListener("change", () => {
+    const selectedCountry = destinationCountrySelect.value;
+    const ports = portsData[selectedCountry] || [];
+
+    // Clear previous ports
+    destinationPortsSelect.innerHTML = `<option value="" disabled selected>Select Destination Port</option>`;
+
+    // Populate with new ports
+    ports.forEach((port) => {
+        const option = document.createElement("option");
+        option.value = port.abbr;
+        option.textContent = `${port.name} (${port.abbr})`;
+        destinationPortsSelect.appendChild(option);
+    });
+});
