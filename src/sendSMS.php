@@ -1,16 +1,15 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
-
+require '/vendor/autoload.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // اطلاعات دریافت‌شده از فرم
     $phoneNumber = $_POST['phoneNumber'];
     $message = $_POST['message'];
 
     try {
-        $apiKey = "YOUR_API_KEY_HERE"; // کلید API را جایگزین کنید
-        $api = new \Kavenegar\KavenegarApi($apiKey);
+        $apiKey = "636B51624643442F69657A7A6971654D6B6C5972676F564234654C594459746F657548784A6D46563737773D"; // کلید API را جایگزین کنید
+        $api = new .\KavenegarApi($apiKey);
 
-        $sender = "10004346"; // شماره ارسال‌کننده
+        $sender = "2000500666"; // شماره ارسال‌کننده
         $receptor = [$phoneNumber]; // شماره گیرنده
 
         $result = $api->Send($sender, $receptor, $message);

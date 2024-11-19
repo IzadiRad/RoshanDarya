@@ -3,7 +3,7 @@ require './vendor/autoload.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $transportType = $_POST['transportType'];
     $containerType = $_POST['containerType'];
-    $isoTankType = $_POST['isoTankType'] || null;
+    $isoTankType = $_POST['isoTankType'] ?? null;
     $quantity = $_POST['quantity'];
     $departureCountry = $_POST['departureCountry'];
     $departurePort = $_POST['departurePort'];
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($transportType) || empty($containerType) || empty($quantity) || empty($departureCountry) || empty($departurePort) || empty($destinationCountry) || empty($destinationPort) || empty($phoneNumber) || empty($email)) {
         die('All fields are required!');
     }
-    $verificationCode = rand(100000, 999999);
+    $verificationCode = rand(10000, 99999);
     try {
         require 'vendor/autoload.php';
         $api = new \Kavenegar\KavenegarApi("636B51624643442F69657A7A6971654D6B6C5972676F564234654C594459746F657548784A6D46563737773D");
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = $api->Send("2000660110", [$phoneNumber], $message);
 
         // ذخیره یا ارسال ایمیل (اختیاری)
-        mail($email, "Rate Quote Request", "Your verification code: $verificationCode");
+        // mail($email, "Rate Quote Request", "Your verification code: $verificationCode");
 
         echo "Verification code sent to $phoneNumber!";
     } catch (\Kavenegar\Exceptions\ApiException $e) {
