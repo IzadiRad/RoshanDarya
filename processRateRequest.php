@@ -47,18 +47,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // تنظیمات SMTP
         $mail->isSMTP();
-        $mail->Host = 'codiman.ir'; // آدرس سرور SMTP
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'test1@codiman.ir'; // ایمیل شما
-        $mail->Password = '123459876a0A&&'; // رمز عبور
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port = 465;
+        $mail->Username = 'mrprogramer1378@gmail.com'; // آدرس Gmailایمیل شما
+        $mail->Password = 'caqogznykpnmtsqo';  // رمز عبور
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // یا ENCRYPTION_STARTTLS برای پورت 587
+        $mail->Port = 465; // یا 587 برای STARTTLS
 
         // اطلاعات فرستنده
-        $mail->setFrom('test1@codiman.ir', 'Customer Inquiry Form');
+        $mail->setFrom('mrprogramer1378@gmail.com', 'Customer Inquiry Form');
 
         // اطلاعات گیرنده
-        $mail->addAddress('test1@codiman.ir', 'CodiMan');
+        $mail->addAddress('izadirad1999@outlook.com', 'CodiMan');
 
         // محتوای ایمیل
         $mail->isHTML(true);
