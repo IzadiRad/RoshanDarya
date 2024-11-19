@@ -1406,8 +1406,7 @@
 
     <!-- quoteModal-->
     <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10">
-        <form action="processRateRequest.php" method="POST" id="rate-inquiry-form"
-            class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
+        <form id="rate-inquiry-form" class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
             <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">×</span>
             <section id="rate-inquiry" class="py-6">
                 <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
@@ -1462,11 +1461,11 @@
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
                     <input type="email" placeholder="Email" name="email" class="input-field w-full md:w-1/3 lg:w-1/5"
                         required>
-
-                    <button class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get Rate Quote</button>
+                    <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get
+                        Rate Quote</button>
                 </div>
             </section>
-        </form>
+    </div>
     </div>
 
 

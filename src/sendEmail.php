@@ -1,11 +1,10 @@
 <?php
-include "./Toolkit/personalDebug.php";
 require './vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // دریافت اطلاعات فرم
+    // دریافت اطلاعات از فرم
     $transportType = $_POST['transportType'];
     $containerType = $_POST['containerType'];
     $isoTankType = $_POST['isoTankType'] ?? 'N/A';
@@ -17,52 +16,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phoneNumber = $_POST['phoneNumber'];
     $email = $_POST['email'];
 
-    // اعتبارسنجی اطلاعات
+    // اعتبارسنجی ورودی‌ها
     if (empty($transportType) || empty($containerType) || empty($quantity) || empty($departureCountry) || empty($departurePort) || empty($destinationCountry) || empty($destinationPort) || empty($phoneNumber) || empty($email)) {
         die('تمامی فیلدها باید پر شوند.');
     }
 
-    // تولید کد تأیید
-    $verificationCode = rand(100000, 999999);
+    $mail = new PHPMailer(true);
 
-    // ارسال کد تأیید با Kavenegar
     try {
-        $api = new \Kavenegar\KavenegarApi("636B51624643442F69657A7A6971654D6B6C5972676F564234654C594459746F657548784A6D46563737773D");
-        $type = "sms"; // نوع پیام
-        $receptor = $phoneNumber;
-
-        // تعیین قالب بر اساس شماره
-        $template = preg_match('/^(09|\+98)/', $receptor) ? "RoshanDarya" : "RoshanDarya-en";
-
-        // ارسال پیامک
-        $result = $api->VerifyLookup($receptor, $verificationCode, "", "", $template, $type);
-        debug_to_console("کد تأیید به شماره به  این شماره ارسال شد.");
-    } catch (\Kavenegar\Exceptions\ApiException $e) {
-        debug_to_console("خطا در ارسال پیامک: " . $e->errorMessage());
-        exit;
-    } catch (\Kavenegar\Exceptions\HttpException $e) {
-        debug_to_console("خطای HTTP: " . $e->errorMessage());
-        exit;
-    }
-
-    // ارسال اطلاعات مشتری به ایمیل
-    try {
-        $mail = new PHPMailer(true);
-
         // تنظیمات SMTP
         $mail->isSMTP();
         $mail->Host = 'codiman.ir'; // آدرس سرور SMTP
         $mail->SMTPAuth = true;
         $mail->Username = 'test1@codiman.ir'; // ایمیل شما
-        $mail->Password = '123459876a0A&&'; // رمز عبور
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port = 465;
+        $mail->Password = 'اینجا_پسورد_ایمیل_را_قرار_دهید'; // رمز عبور
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // نوع رمزنگاری
+        $mail->Port = 465; // پورت SMTP
 
         // اطلاعات فرستنده
-        $mail->setFrom('test1@codiman.ir', 'Customer Inquiry Form');
+        $mail->setFrom('test1@codiman.ir', 'Customer Inquiry Form'); // ایمیل فرستنده
 
-        // اطلاعات گیرنده
-        $mail->addAddress('test1@codiman.ir', 'CodiMan');
+        // اطلاعات گیرنده (ایمیل مجموعه)
+        $mail->addAddress('test1@codiman.ir', 'CodiMan'); // ایمیل مجموعه
 
         // محتوای ایمیل
         $mail->isHTML(true);
@@ -79,16 +54,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p><strong>Destination Port:</strong> $destinationPort</p>
             <p><strong>Phone Number:</strong> $phoneNumber</p>
             <p><strong>Customer Email:</strong> $email</p>
-            <p><strong>Verification Code Sent:</strong> $verificationCode</p>
         ";
 
         // ارسال ایمیل
         $mail->send();
-        debug_to_console("اطلاعات مشتری به ایمیل ارسال شد!");
+        echo "اطلاعات مشتری با موفقیت ارسال شد!";
     } catch (Exception $e) {
-        debug_to_console("خطا در ارسال ایمیل: {$mail->ErrorInfo}");
+        echo "خطا در ارسال ایمیل: {$mail->ErrorInfo}";
     }
 } else {
-    debug_to_console("درخواست نامعتبر است.");
+    echo "درخواست نامعتبر است.";
 }
-?>
