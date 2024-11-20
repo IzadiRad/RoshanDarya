@@ -53,7 +53,7 @@
                     <a href="#" id="maritime-link-mob"><i class="fas fa-home"></i> Maritime Transport</a>
                     <a href="#" id="air-freight-link-mob"><i class="fas fa-home"></i> air freight</a>
                     <a href="#" id="ground-transport-link-mob"><i class="fas fa-home"></i> Ground Transport</a>
-                    <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> Services Maps</a>
+                    <!-- <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> Services Maps</a> -->
                 </div>
 
                 <hr />
@@ -87,7 +87,7 @@
             <menu class="flex items-center flex-row w-full justify-center">
                 <!-- منوی سمت چپ لوگو -->
                 <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-black"
+                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-black bg-white"
                         id="home-link">Home</a>
                     <div class="relative">
                         <a href="/Components/Services.html" id="desktop-services"
@@ -96,22 +96,25 @@
                             <span class="submenu-icon">&#9662;</span>
                         </a>
 
-                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
+                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack"
+                            style="background-color:rgba(255, 255, 255, 0.805);">
                             <a href="/Components/services/maritime-transport.html"
-                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
-                                id="maritime-link">Maritime
+                                class="block px-4 py-2 hover:bg-gray-200"
+                                style="color: var(--primary-navy-blue) !important;" id="maritime-link">Maritime
                                 Transport</a>
                             <a href="/Components/services/ground-transport.html"
+                                style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="ground-transport-link">Ground
                                 Transport</a>
                             <a href="/Components/services/air-freight.html"
+                                style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-black"
                                 id="air-freight-link">air freight</a>
-                            <a href="/Components/services/maps.html"
+                            <!-- <a href="/Components/services/maps.html" style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="services-maps-link">Services
-                                Maps</a>
+                                Maps</a> -->
                         </div>
                     </div>
 
@@ -126,7 +129,7 @@
                         class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite bg-white">
                     </div>
 
-                    <img src="Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
+                    <img src="/Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
                 </a>
 
 
@@ -140,12 +143,13 @@
                             EQC
                             <span class="submenu-icon">&#9662;</span>
                         </a>
-                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                            <a href="/Components/eqc/incoterms.html"
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack"
+                            style="background-color:rgba(255, 255, 255, 0.805);">
+                            <a href="/Components/eqc/incoterms.html" style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                                 id="incoterms-link">Incoterms</a>
                             <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                id="cargo-link">Cargo</a>
+                                style="color: var(--primary-navy-blue) !important;" id="cargo-link">Cargo</a>
                         </div>
                     </div>
                     <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-black"
@@ -155,7 +159,7 @@
                         id="contact-us-link">Contact
                         Us</a>
                     <a href="/persian/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                        <img src="Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                        <img src="/Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
                     </a>
                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
                 </nav>
