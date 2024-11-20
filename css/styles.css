@@ -634,5 +634,12 @@ footer {
 }
 
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
 
 /* END OF SHEET */

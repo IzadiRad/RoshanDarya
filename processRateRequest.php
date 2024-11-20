@@ -77,7 +77,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p><strong>Customer Email:</strong> $email</p>
             <p><strong>Verification Code Sent:</strong> $verificationCode</p>
         ";
-
         // ارسال ایمیل
         $mail->send();
         debug_to_console("اطلاعات مشتری به ایمیل ارسال شد!");

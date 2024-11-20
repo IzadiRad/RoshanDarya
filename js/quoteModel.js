@@ -327,7 +327,7 @@ document.getElementById('rate-inquiry-form').onsubmit = function (e) {
 
     const formData = new FormData(this);
 
-    fetch('/processRateRequest.php', {
+    fetch('../processRateRequest.php', {
         method: 'POST',
         body: formData,
     })

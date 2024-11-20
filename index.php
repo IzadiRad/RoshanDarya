@@ -10,22 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/custome.css" type="text/css">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
-    <link rel="stylesheet" href="./css/Header.css" type="text/css">
-    <link rel="stylesheet" href="./css/Services-Section2.css" type="text/css">
-    <link rel="stylesheet" href="./css/Color.css" type="text/css">
-    <link rel="stylesheet" href="./css/Fonts.css" type="text/css">
-    <link rel="stylesheet" href="./css/Gallery.css" type="text/css">
-    <link rel="stylesheet" href="./css/Blog.css" type="text/css">
-    <link rel="stylesheet" href="./css/section2.css" type="text/css">
-    <link rel="stylesheet" href="./css/service-section.css" type="text/css">
-    <link rel="stylesheet" href="./css/Footer.css" type="text/css">
-    <link rel="stylesheet" href="./css/faq.css" type="text/css">
-    <link rel="stylesheet" href="./css/rate-inquiry.css" type="text/css">
-    <link rel="stylesheet" href="./css/AboutUs.css" type="text/css">
-    <link rel="stylesheet" href="./css/quoteModal.css" type="text/css">
-    <link rel="stylesheet" href="./Components/country.css" type="text/css">
+    <link rel="stylesheet" href="css/custome.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/Header.css" type="text/css">
+    <link rel="stylesheet" href="css/Srvices-Section2.css" type="text/css">
+    <link rel="stylesheet" href="css/Color.css" type="text/css">
+    <link rel="stylesheet" href="css/Fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/Gallery.css" type="text/css">
+    <link rel="stylesheet" href="css/Blog.css" type="text/css">
+    <link rel="stylesheet" href="css/section2.css" type="text/css">
+    <link rel="stylesheet" href="css/service-section.css" type="text/css">
+    <link rel="stylesheet" href="css/Footer.css" type="text/css">
+    <link rel="stylesheet" href="css/faq.css" type="text/css">
+    <link rel="stylesheet" href="css/rate-inquiry.css" type="text/css">
+    <link rel="stylesheet" href="css/AboutUs.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/quoteModal.css" type="text/css"> -->
 
 
     <!-- english Fonts-->
@@ -1156,61 +1155,59 @@
     <br />
     <br />
     <section id="rate-inquiry" class="py-6">
-                <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
-                    <!-- Existing Fields -->
-                    <select class="input-field w-full md:w-1/3 lg:w-1/5" name="transportType" required>
-                        <option value="" disabled selected>Select Transport Type</option>
-                        <option>Air Transport</option>
-                        <option>Ground Transport</option>
-                        <option>Sea Transport</option>
-                    </select>
-                    <select id="mainContainerType" class="input-field w-full md:w-1/3 lg:w-1/5" name="containerType"
-                        required>
-                        <option value="" disabled selected>Select Container Type</option>
-                        <option value="20">20 ft - Standard Container</option>
-                        <option value="40">40 ft - Standard Container</option>
-                        <option value="OP">OP - Open-Top Container</option>
-                        <option value="FR">FR - Flat Rack Container</option>
-                        <option value="RF">RF - Refrigerated Container</option>
-                        <option value="ISO">ISO Tank - Liquid Transport</option>
-                    </select>
-                    <select name="isoTankType" id="mainIsoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
-                        <option value="" disabled="" selected="">Select ISO Tank Type</option>
-                        <option value="T7">T7</option>
-                        <option value="T1">T1</option>
-                        <option value="T50">T50</option>
-                    </select>
+        <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
+            <!-- Existing Fields -->
+            <select class="input-field w-full md:w-1/3 lg:w-1/5" name="transportType" required>
+                <option value="" disabled selected>Select Transport Type</option>
+                <option>Air Transport</option>
+                <option>Ground Transport</option>
+                <option>Sea Transport</option>
+            </select>
+            <select id="mainContainerType" class="input-field w-full md:w-1/3 lg:w-1/5" name="containerType" required>
+                <option value="" disabled selected>Select Container Type</option>
+                <option value="20">20 ft - Standard Container</option>
+                <option value="40">40 ft - Standard Container</option>
+                <option value="OP">OP - Open-Top Container</option>
+                <option value="FR">FR - Flat Rack Container</option>
+                <option value="RF">RF - Refrigerated Container</option>
+                <option value="ISO">ISO Tank - Liquid Transport</option>
+            </select>
+            <select name="isoTankType" id="mainIsoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
+                <option value="" disabled="" selected="">Select ISO Tank Type</option>
+                <option value="T7">T7</option>
+                <option value="T1">T1</option>
+                <option value="T50">T50</option>
+            </select>
 
-                    <input type="number" id="containerCount" placeholder="Enter Quantity" min="1"
-                        class="input-field w-full" required name="quantity">
+            <input type="number" id="containerCount" placeholder="Enter Quantity" min="1" class="input-field w-full"
+                required name="quantity">
 
-                    <!-- Departure Fields -->
-                    <select id="mainCountrySelect" class="input-field w-full md:w-1/3 lg:w-1/5" required
-                        name="departureCountry">
-                        <option value="" disabled selected>Select Departure Country</option>
-                    </select>
-                    <select name="departurePort" id="mainPortsSelect" class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>Select Departure Port</option>
-                    </select>
+            <!-- Departure Fields -->
+            <select id="mainCountrySelect" class="input-field w-full md:w-1/3 lg:w-1/5" required
+                name="departureCountry">
+                <option value="" disabled selected>Select Departure Country</option>
+            </select>
+            <select name="departurePort" id="mainPortsSelect" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                <option value="" disabled selected>Select Departure Port</option>
+            </select>
 
-                    <!-- Destination Fields -->
-                    <select id="mainDestinationCountry" name="destinationCountry"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>Select Destination Country</option>
-                    </select>
-                    <select name="destinationPort" id="mainDestinationPortsSelect"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>Select Destination Port</option>
-                    </select>
+            <!-- Destination Fields -->
+            <select id="mainDestinationCountry" name="destinationCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
+                required>
+                <option value="" disabled selected>Select Destination Country</option>
+            </select>
+            <select name="destinationPort" id="mainDestinationPortsSelect" class="input-field w-full md:w-1/3 lg:w-1/5"
+                required>
+                <option value="" disabled selected>Select Destination Port</option>
+            </select>
 
-                    <!-- Contact Fields -->
-                    <input type="email" placeholder="Email" name="email" class="input-field w-full md:w-1/3 lg:w-1/5"
-                    required>
-                    <input type="text" placeholder="Phone Number" name="phoneNumber"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                    <button class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get Rate Quote</button>
-                </div>
-            </section>
+            <!-- Contact Fields -->
+            <input type="email" placeholder="Email" name="email" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+            <input type="text" placeholder="Phone Number" name="phoneNumber"
+                class="input-field w-full md:w-1/3 lg:w-1/5" required>
+            <button class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get Rate Quote</button>
+        </div>
+    </section>
 
 
     <br />
@@ -1522,7 +1519,7 @@
     <script src="js/counters.js"></script>
     <script src="js/toggleFAQ.js"></script>
     <script src="js/quoteModel.js"></script>
-    <script src="js/rate-inquiry.js"></script>
+    <!-- <script src="js/rate-inquiry.js"></script> -->
     <!-- <script src="persian/js/convertLangulage.js"></script> -->
     <script>
         AOS.init();
