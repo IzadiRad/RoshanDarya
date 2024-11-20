@@ -10,21 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/custome.css" type="text/css">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
-    <link rel="stylesheet" href="./css/Header.css" type="text/css">
-    <link rel="stylesheet" href="./css/Services-Section2.css" type="text/css">
-    <link rel="stylesheet" href="./css/Color.css" type="text/css">
-    <link rel="stylesheet" href="./css/Fonts.css" type="text/css">
-    <link rel="stylesheet" href="./css/Gallery.css" type="text/css">
-    <link rel="stylesheet" href="./css/Blog.css" type="text/css">
-    <link rel="stylesheet" href="./css/section2.css" type="text/css">
-    <link rel="stylesheet" href="./css/service-section.css" type="text/css">
-    <link rel="stylesheet" href="./css/Footer.css" type="text/css">
-    <link rel="stylesheet" href="./css/faq.css" type="text/css">
-    <link rel="stylesheet" href="./css/rate-inquiry.css" type="text/css">
-    <link rel="stylesheet" href="./css/AboutUs.css" type="text/css">
-    <link rel="stylesheet" href="./css/quoteModal.css" type="text/css">
+    <link rel="stylesheet" href="css/custome.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/Header.css" type="text/css">
+    <link rel="stylesheet" href="css/Srvices-Section2.css" type="text/css">
+    <link rel="stylesheet" href="css/Color.css" type="text/css">
+    <link rel="stylesheet" href="css/Fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/Gallery.css" type="text/css">
+    <link rel="stylesheet" href="css/Blog.css" type="text/css">
+    <link rel="stylesheet" href="css/section2.css" type="text/css">
+    <link rel="stylesheet" href="css/service-section.css" type="text/css">
+    <link rel="stylesheet" href="css/Footer.css" type="text/css">
+    <link rel="stylesheet" href="css/faq.css" type="text/css">
+    <link rel="stylesheet" href="css/rate-inquiry.css" type="text/css">
+    <link rel="stylesheet" href="css/AboutUs.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/quoteModal.css" type="text/css"> -->
 
 
     <!-- english Fonts-->
@@ -1519,7 +1519,7 @@
     <script src="js/counters.js"></script>
     <script src="js/toggleFAQ.js"></script>
     <script src="js/quoteModel.js"></script>
-    <script src="js/rate-inquiry.js"></script>
+    <!-- <script src="js/rate-inquiry.js"></script> -->
     <!-- <script src="persian/js/convertLangulage.js"></script> -->
     <script>
         AOS.init();
