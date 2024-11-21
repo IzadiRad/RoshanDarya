@@ -94,10 +94,10 @@
     background: #fff;
 }
 
-.explore,
-.explore:before,
-.close-btn,
-.close-btn:before {
+.blog-section .explore,
+.blog-section .explore:before,
+.blog-section .close-btn,
+.blog-section .close-btn:before {
     background: var(--primary-light-blue);
     background: linear-gradient(45deg,
             var(--primary-light-blue) 0%,
