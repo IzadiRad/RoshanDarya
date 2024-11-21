@@ -10,22 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/css/custome.css" type="text/css">
-    <link rel="stylesheet" href="/css/styles.css" type="text/css">
-    <link rel="stylesheet" href="/css/Header.css" type="text/css">
-    <link rel="stylesheet" href="/css/Services-Section2.css" type="text/css">
-    <link rel="stylesheet" href="/css/Color.css" type="text/css">
-    <link rel="stylesheet" href="/css/Fonts.css" type="text/css">
-    <link rel="stylesheet" href="/css/Gallery.css" type="text/css">
-    <link rel="stylesheet" href="/css/Blog.css" type="text/css">
-    <link rel="stylesheet" href="/css/section2.css" type="text/css">
-    <link rel="stylesheet" href="/css/service-section.css" type="text/css">
-    <link rel="stylesheet" href="/css/Footer.css" type="text/css">
-    <link rel="stylesheet" href="/css/faq.css" type="text/css">
-    <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
-    <link rel="stylesheet" href="/css/AboutUs.css" type="text/css">
-    <link rel="stylesheet" href="/css/quoteModal.css" type="text/css">
-    <link rel="stylesheet" href="/Components/country.css" type="text/css">
+    <link rel="stylesheet" href="css/custome.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/Header.css" type="text/css">
+    <link rel="stylesheet" href="css/Srvices-Section2.css" type="text/css">
+    <link rel="stylesheet" href="css/Color.css" type="text/css">
+    <link rel="stylesheet" href="css/Fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/Gallery.css" type="text/css">
+    <link rel="stylesheet" href="css/Blog.css" type="text/css">
+    <link rel="stylesheet" href="css/section2.css" type="text/css">
+    <link rel="stylesheet" href="css/service-section.css" type="text/css">
+    <link rel="stylesheet" href="css/Footer.css" type="text/css">
+    <link rel="stylesheet" href="css/faq.css" type="text/css">
+    <link rel="stylesheet" href="css/rate-inquiry.css" type="text/css">
+    <link rel="stylesheet" href="css/AboutUs.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/quoteModal.css" type="text/css"> -->
 
 
     <!-- english Fonts-->
@@ -132,10 +131,10 @@
                             <a href="/Components/services/air-freight.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
                                 id="air-freight-link">air freight</a>
-                            <a href="/Components/services/maps.html"
+                            <!-- <a href="/Components/services/maps.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
                                 id="services-maps-link">Services
-                                Maps</a>
+                                Maps</a> -->
                         </div>
                     </div>
 
@@ -1157,19 +1156,58 @@
     <br />
     <br />
     <br />
-    <section id="rate-inquiry" class="bg-primary-light-gray py-6">
+    <section id="rate-inquiry" class="py-6">
         <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
-            <input type="text" placeholder="Ready Date" class="input-field w-full md:w-1/3 lg:w-1/5">
-            <input type="text" placeholder="Departure Airport" class="input-field w-full md:w-1/3 lg:w-1/5 ">
-            <input type="text" placeholder="Destination Airport" class="input-field w-full md:w-1/3 lg:w-1/5">
-            <input type="text" placeholder="Phone Number" class="input-field w-full md:w-1/3 lg:w-1/5">
-            <input type="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5">
-            <select class="input-field w-full md:w-1/3 lg:w-1/5">
+            <!-- Existing Fields -->
+            <select class="input-field w-full md:w-1/3 lg:w-1/5" name="transportType" required>
+                <option value="" disabled selected>Select Transport Type</option>
                 <option>Air Transport</option>
                 <option>Ground Transport</option>
                 <option>Sea Transport</option>
             </select>
-            <button class="rate-button w-full md:w-1/3 lg:w-1/5">Get Rate Quote</button>
+            <select id="mainContainerType" class="input-field w-full md:w-1/3 lg:w-1/5" name="containerType" required>
+                <option value="" disabled selected>Select Container Type</option>
+                <option value="20">20 ft - Standard Container</option>
+                <option value="40">40 ft - Standard Container</option>
+                <option value="OP">OP - Open-Top Container</option>
+                <option value="FR">FR - Flat Rack Container</option>
+                <option value="RF">RF - Refrigerated Container</option>
+                <option value="ISO">ISO Tank - Liquid Transport</option>
+            </select>
+            <select name="isoTankType" id="mainIsoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
+                <option value="" disabled="" selected="">Select ISO Tank Type</option>
+                <option value="T7">T7</option>
+                <option value="T1">T1</option>
+                <option value="T50">T50</option>
+            </select>
+
+            <input type="number" id="containerCount" placeholder="Enter Quantity" min="1" class="input-field w-full"
+                required name="quantity">
+
+            <!-- Departure Fields -->
+            <select id="mainCountrySelect" class="input-field w-full md:w-1/3 lg:w-1/5" required
+                name="departureCountry">
+                <option value="" disabled selected>Select Departure Country</option>
+            </select>
+            <select name="departurePort" id="mainPortsSelect" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                <option value="" disabled selected>Select Departure Port</option>
+            </select>
+
+            <!-- Destination Fields -->
+            <select id="mainDestinationCountry" name="destinationCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
+                required>
+                <option value="" disabled selected>Select Destination Country</option>
+            </select>
+            <select name="destinationPort" id="mainDestinationPortsSelect" class="input-field w-full md:w-1/3 lg:w-1/5"
+                required>
+                <option value="" disabled selected>Select Destination Port</option>
+            </select>
+
+            <!-- Contact Fields -->
+            <input type="email" placeholder="Email" name="email" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+            <input type="text" placeholder="Phone Number" name="phoneNumber"
+                class="input-field w-full md:w-1/3 lg:w-1/5" required>
+            <button class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get Rate Quote</button>
         </div>
     </section>
 
@@ -1394,7 +1432,7 @@
 
     <section id="sec-7" style="background-color: black; color: aliceblue; height: auto;">
         <div class="container">
-            <p>Copyright @2022 | <span>roshandarya</span></p>
+            <p>Copyright @2022 | <span><a href="https://codiman.ir">CodiMan</a></span></p>
         </div>
     </section>
 
@@ -1407,73 +1445,85 @@
 
 
     <!-- quoteModal-->
-    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10">
-        <form id="rate-inquiry-form" class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
-            <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">×</span>
-            <section id="rate-inquiry" class="py-6">
-                <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
-                    <!-- Existing Fields -->
-                    <select class="input-field w-full md:w-1/3 lg:w-1/5" name="transportType" required>
+    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10 ">
+        <div class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
+            <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
+
+            <!-- مرحله اول -->
+            <section id="step1" class="py-6">
+                <form id="rate-inquiry-form"
+                    class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
+                    <!-- انتخاب نوع حمل و نقل -->
+                    <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                         <option value="" disabled selected>Select Transport Type</option>
                         <option>Air Transport</option>
                         <option>Ground Transport</option>
                         <option>Sea Transport</option>
                     </select>
-                    <select id="containerType" class="input-field w-full md:w-1/3 lg:w-1/5" name="containerType"
+                    <!-- انتخاب نوع کانتینر -->
+                    <select id="containerType" name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5"
                         required>
                         <option value="" disabled selected>Select Container Type</option>
                         <option value="20">20 ft - Standard Container</option>
                         <option value="40">40 ft - Standard Container</option>
-                        <option value="OP">OP - Open-Top Container</option>
-                        <option value="FR">FR - Flat Rack Container</option>
-                        <option value="RF">RF - Refrigerated Container</option>
                         <option value="ISO">ISO Tank - Liquid Transport</option>
                     </select>
+                    <!-- نوع ISO Tank -->
                     <select name="isoTankType" id="isoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
-                        <option value="" disabled="" selected="">Select ISO Tank Type</option>
+                        <option value="" disabled selected>Select ISO Tank Type</option>
                         <option value="T7">T7</option>
                         <option value="T1">T1</option>
                         <option value="T50">T50</option>
                     </select>
-
-                    <input type="number" id="containerCount" placeholder="Enter Quantity" min="1"
-                        class="input-field w-full" required name="quantity">
-
-                    <!-- Departure Fields -->
-                    <select id="countrySelect" class="input-field w-full md:w-1/3 lg:w-1/5" required
-                        name="departureCountry">
+                    <!-- سایر فیلدها -->
+                    <input type="number" name="quantity" placeholder="Enter Quantity" min="1" class="input-field w-full"
+                        required>
+                    <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
+                        required>
                         <option value="" disabled selected>Select Departure Country</option>
                     </select>
-                    <select name="departurePort" id="portsSelect" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                    <select id="portsSelect" name="departurePort" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                         <option value="" disabled selected>Select Departure Port</option>
                     </select>
-
-                    <!-- Destination Fields -->
                     <select id="destinationCountry" name="destinationCountry"
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
                         <option value="" disabled selected>Select Destination Country</option>
                     </select>
-                    <select name="destinationPort" id="destinationPortsSelect"
+                    <select id="destinationPortsSelect" name="destinationPort"
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
                         <option value="" disabled selected>Select Destination Port</option>
                     </select>
-
-                    <!-- Contact Fields -->
-                    <input type="text" placeholder="Phone Number" name="phoneNumber"
+                    <input type="text" name="phoneNumber" placeholder="Phone Number"
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                    <input type="email" placeholder="Email" name="email" class="input-field w-full md:w-1/3 lg:w-1/5"
+                    <input type="email" name="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5"
                         required>
+
                     <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get
                         Rate Quote</button>
-                </div>
+                </form>
             </section>
+
+            <!-- مرحله دوم -->
+            <section id="step2" class="py-6 hidden">
+                <form id="otp-verification-form" class="container mx-auto px-4 flex flex-wrap gap-4 justify-center">
+                    <p id="phone-display" class="w-full text-center text-gray-700"></p>
+                    <input type="text" name="verificationCode" placeholder="Enter OTP"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                    <button type="submit" class="rate-button w-full md:w-1/3 lg:w-1/5">Verify OTP</button>
+                    <button type="button" id="back-to-step1"
+                        class="text-blue-500 underline w-full text-center mt-4">Back</button>
+                </form>
+
+            </section>
+        </div>
     </div>
-    </div>
+
 
 
 
 
     <!-- <script src="js/sectionLoader.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/custome-javascript.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/Gallery.js"></script>
@@ -1481,9 +1531,9 @@
     <script src="js/toggleFAQ.js"></script>
     <script src="js/counters.js"></script>
     <script src="js/toggleFAQ.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- <script src="persian/js/convertLangulage.js"></script> -->
     <script src="js/quoteModel.js"></script>
+    <!-- <script src="js/rate-inquiry.js"></script> -->
+    <!-- <script src="persian/js/convertLangulage.js"></script> -->
     <script>
         AOS.init();
     </script>

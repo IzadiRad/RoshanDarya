@@ -3,7 +3,7 @@
         'name' => 'kavenegar/php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'dd75f706aced9ec4fee21baa5a38ee951c5239d9',
+        'reference' => '6ab671383e61cd3c37e1445626f74a18855fdbaf',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'kavenegar/php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'dd75f706aced9ec4fee21baa5a38ee951c5239d9',
+            'reference' => '6ab671383e61cd3c37e1445626f74a18855fdbaf',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
