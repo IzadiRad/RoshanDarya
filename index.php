@@ -65,6 +65,7 @@
 
 
             <div id="mobile-menu" class="hidden">
+                <div id="overlay"> </div>
                 <a href="/index.php" id="home-link-mob"><i class=""></i> Home</a>
                 <hr />
                 <a id="services-linkss" class="menu-item">
@@ -187,7 +188,7 @@
             </menu>
         </nav>
     </header>
-
+    <div id="overlayy"></div>
 
     <section id="sec-0" class="hero-section relative">
         <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>

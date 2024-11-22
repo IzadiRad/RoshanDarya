@@ -189,3 +189,8 @@ document.getElementById("back-to-step1").addEventListener("click", function () {
     document.getElementById("step2").classList.add("hidden");
     document.getElementById("step1").classList.remove("hidden");
 });
+
+
+// document.getElementById('menu-toggle').addEventListener("click", function () {
+//     document.getElementById("mobile-menu").classList.toggle("show");
+// })
