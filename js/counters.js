@@ -22,4 +22,4 @@ function animateCounter(element, target, duration) {
 animateCounter(clientsCount, 1500, 2000); // Example: 1500 happy clients
 animateCounter(projectsCount, 350, 2000); // Example: 350 completed projects
 animateCounter(companiesCount, 45, 2000); // Example: 45 partner companies
-animateCounter(experienceCount, 12, 2000); // Example: 12 partner companies
+animateCounter(experienceCount, 6, 2000); // Example: 12 partner companies

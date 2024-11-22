@@ -643,7 +643,7 @@
                     <div
                         class="flex items-center justify-center bg-white text-black py-3 px-4 h-full group-hover:bg-white transition-colors duration-300">
                         <div class="flex items-center">
-                            <img src="Images/logo.png" alt="roshanDarya"
+                            <img src="\Images\Icon\logo.png" alt="roshanDarya"
                                 class="h-16 fill-current text-white group-hover:text-blue-500 transition-colors duration-300">
                         </div>
                     </div>
@@ -946,7 +946,7 @@
                             </g>
                         </svg>
                     </div>
-                    <h3 class="text-6xl font-bold text-primary-light-blue mb-2" id="experienceCount">12</h3>
+                    <h3 class="text-6xl font-bold text-primary-light-blue mb-2" id="experienceCount">6</h3>
                     <p class="text-xl text-secondary-grayish-blue">Years of Experience</p>
                 </div>
             </div>
@@ -1149,7 +1149,8 @@
             </div>
         </div>
         <div class=" rounded-lg m-2 p-1 flex flex-row justify-between relative top-14 lastblog">
-            <a href=" /Components/blog.html" class="button explore">More</a>
+            <a href=" /Components/blog.html" class="button explore text-white"
+                style="-webkit-text-fill-color: white;">More</a>
         </div>
     </section>
     <br />
