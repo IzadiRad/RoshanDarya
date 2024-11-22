@@ -1,13 +1,35 @@
 // نمایش و مخفی‌سازی مودال
 const quoteModal = document.getElementById("quoteModal");
-document.getElementById("request-quote-link").addEventListener("click", (event) => {
-    event.preventDefault();
-    quoteModal.classList.remove("hidden");
-});
+const step1 = document.getElementById("quoteModal").firstElementChild;
+let div = document.createElement("div");
+quoteModal.appendChild(div);
+div.style.position = "absolute";
+div.style.width = "100%";
+div.style.height = "100%";
+div.style.zIndex = "999";
+div.style.backgroundColor = "rgba(0,0,0,var(--tw-bg-opacity))";
+step1.style.zIndex = "9999";
+div.id = "darkside";
 
-document.getElementById("closeModal").addEventListener("click", () => {
-    quoteModal.classList.add("hidden");
-});
+if (quoteModal) {
+    const quoteLinks = document.querySelectorAll(".request-quote-link");
+    quoteLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            quoteModal.classList.remove("hidden");
+            document.getElementsByTagName("body")[0].style.overflow = "hidden"
+        });
+    });
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        document.getElementsByTagName("body")[0].style.overflow = ""
+        quoteModal.classList.add("hidden");
+    });
+    document.getElementById("darkside").addEventListener("click", () => {
+        document.getElementsByTagName("body")[0].style.overflow = ""
+        quoteModal.classList.add("hidden");
+    });
+}
 
 window.addEventListener("click", (event) => {
     if (event.target === quoteModal) {

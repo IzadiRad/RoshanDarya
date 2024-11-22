@@ -1,6 +1,5 @@
 #quoteModal {
-    display: none;
-    /* مخفی کردن مودال در ابتدا */
+    z-index: 9999;
 }
 
 #quoteModal.show {
@@ -36,4 +35,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#quoteModal .hidden {
+    display: none;
+
+}
+
+#rate-inquiry-form {
+    background-color: #003f5cc2;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%; */
+}
+
+@media (100px < width < 999px) {
+
+    #quoteModal {
+        padding-top: 175px;
+        padding-bottom: 175px;
+        overflow: scroll;
+    }
+
+
 }

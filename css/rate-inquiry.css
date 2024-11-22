@@ -5,6 +5,13 @@
     /* border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%; */
 }
+#rate-inquiry-form {
+    background-color: #003f5cc2;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%; */
+}
 
 .input-field {
     background-color: white;

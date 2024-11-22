@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <hr />
-                <a href="#" id="request-quote-link-mob"><i class="fas fa-file-alt"></i> درخواست قیمت</a>
+                <a href="#" class="request-quote-link"><i class="fas fa-file-alt"></i> درخواست قیمت</a>
                 <div id="close-menu" class="close-btn">
                     <i class="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"

@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 setText('air-freight-link-mob', data.header.air_freight);
                 setText('ground-transport-link-mob', data.header.ground_transport);
                 setText('services-maps-link-mob', data.header.services_maps);
-                setText('request-quote-link-mob', data.header.request_quote);
+                setText('request-quote-link', data.header.request_quote);
                 setText('incoterms-link-mob', data.header.incoterms);
                 setText('cargo-link-mob', data.header.cargo);
                 setText('about-us-link-mob', data.header.about_us);

@@ -19,13 +19,13 @@
     <link rel="stylesheet" href="/css/Gallery.css" type="text/css">
     <link rel="stylesheet" href="/css/Blog.css" type="text/css">
     <link rel="stylesheet" href="/css/section2.css" type="text/css">
-    <link rel="stylesheet" href="/css/service-section.css" type="text/css"> 
-    <link rel="stylesheet" href="/css/Services-Section2.css" type="text/css"> 
+    <link rel="stylesheet" href="/css/service-section.css" type="text/css">
+    <link rel="stylesheet" href="/css/Services-Section2.css" type="text/css">
     <link rel="stylesheet" href="/css/Footer.css" type="text/css">
     <link rel="stylesheet" href="/css/faq.css" type="text/css">
     <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
     <link rel="stylesheet" href="/css/AboutUs.css" type="text/css">
-    <!-- <link rel="stylesheet" href="css/quoteModal.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/quoteModal.css" type="text/css">
 
 
     <!-- english Fonts-->
@@ -83,7 +83,7 @@
                 </div>
 
                 <hr />
-                <a href="#" id="request-quote-link-mob"><i class=""></i> Request a Quote</a>
+                <a href="#" class="request-quote-link"><i class=""></i> Request a Quote</a>
                 <div id="close-menu" class="close-btn">
                     <i class="contents">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
@@ -139,8 +139,9 @@
                         </div>
                     </div>
 
-                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-white"
-                        id="request-quote-link">Request a Quote</a>
+                    <a href="#"
+                        class="nav-link custome-size-menu custome-menu-item text-white request-quote-link">Request a
+                        Quote</a>
 
                 </nav>
 
@@ -1448,11 +1449,12 @@
 
     <!-- quoteModal-->
     <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10 ">
+
         <div class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
             <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
 
             <!-- مرحله اول -->
-            <section id="step1" class="py-6">
+            <section id="step1">
                 <form id="rate-inquiry-form"
                     class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
                     <!-- انتخاب نوع حمل و نقل -->
@@ -1495,10 +1497,10 @@
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
                         <option value="" disabled selected>Select Destination Port</option>
                     </select>
-                    <input type="text" name="phoneNumber" placeholder="Phone Number"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
                     <input type="email" name="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5"
                         required>
+                    <input type="text" name="phoneNumber" placeholder="Phone Number"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
 
                     <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get
                         Rate Quote</button>
