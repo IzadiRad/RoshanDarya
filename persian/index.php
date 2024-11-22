@@ -9,23 +9,23 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="../css/custome.css" rel="stylesheet" type="text/css">
-    <link href="../css/styles.css" rel="stylesheet" type="text/css">
-    <link href="../css/Header.css" rel="stylesheet" type="text/css">
-    <link href="../css/Services-Section2.css" rel="stylesheet" type="text/css">
-    <link href="../css/Color.css" rel="stylesheet" type="text/css">
-    <link href="../css/Fonts.fr.css" rel="stylesheet" type="text/css">
-    <link href="../css/Gallery.css" rel="stylesheet" type="text/css">
-    <link href="../css/Blog.css" rel="stylesheet" type="text/css">
-    <link href="../css/section2.css" rel="stylesheet" type="text/css">
-    <link href="../css/service-section.css" rel="stylesheet" type="text/css">
-    <link href="../css/Footer.css" rel="stylesheet" type="text/css">
+    <link href="/css/custome.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/Header.css" rel="stylesheet" type="text/css">
+    <link href="/css/Services-Section2.css" rel="stylesheet" type="text/css">
+    <link href="/css/Color.css" rel="stylesheet" type="text/css">
+    <link href="/css/Fonts.fr.css" rel="stylesheet" type="text/css">
+    <link href="/css/Gallery.css" rel="stylesheet" type="text/css">
+    <link href="/css/Blog.css" rel="stylesheet" type="text/css">
+    <link href="/css/section2.css" rel="stylesheet" type="text/css">
+    <link href="/css/service-section.css" rel="stylesheet" type="text/css">
+    <link href="/css/Footer.css" rel="stylesheet" type="text/css">
     <!-- <link href="../css/faq.css" rel="stylesheet" type="text/css"> -->
-    <link href="../css/faqFa.css" rel="stylesheet" type="text/css">
-    <link href="../css/rate-inquiry.css" rel="stylesheet" type="text/css">
-    <link href="../css/AboutUs.css" rel="stylesheet" type="text/css">
-    <link href="../css/quoteModal.css" rel="stylesheet" type="text/css">
-    <link href="../css/persianCss.css" rel="stylesheet" type="text/css">
+    <link href="/css/faqFa.css" rel="stylesheet" type="text/css">
+    <link href="/css/rate-inquiry.css" rel="stylesheet" type="text/css">
+    <link href="/css/AboutUs.css" rel="stylesheet" type="text/css">
+    <link href="/css/quoteModal.css" rel="stylesheet" type="text/css">
+    <link href="/css/persianCss.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -183,7 +183,7 @@
         <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>
         <article id="custome-main-show" class="relative">
             <video autoplay muted loop id="myVideo" class="w-full h-[calc(100vh-70px)] object-cover">
-                <source src="/Images/Video/Hero.MP4" type="video/mp4">
+                <source src="/Images/Video/Hero.webm" type="video/mp4">
             </video>
         </article>
     </section>
@@ -588,7 +588,7 @@
                             </div>
                             <h2 class="text-primary-orange-gold text-3xl lg:text-4xl font-bold mb-6"
                                 style="font-family: var(--font-poppins);">
-                                خوش آمدید به <span style="color: #2563EB;">روشن دریا پارس</span>
+                                خوش آمدید به <span style="color: #2563EB;">روشن دریای پارس</span>
                             </h2>
                             <p class="text-secondary-grayish-blue mb-4" style="font-family: var(--font-noto-sans);">
                                 ما در روشن دریا پارس، ارائه‌دهنده پیشرو خدمات لجستیک و حمل‌ونقل هستیم و متعهدیم که بار
@@ -616,7 +616,7 @@
                                 <!-- <video class="rounded-lg shadow-lg object-contain w-full h-72 lg:h-80" autoplay muted loop> -->
                                 <video class="rounded-lg shadow-lg w-full object-cover" style="aspect-ratio: 16 / 9;"
                                     autoplay muted loop>
-                                    <source src="../Images/Video/AboutUs/Main/intro.mp4" type="video/mp4">
+                                    <source src="/Images/Video/AboutUs/Main/intro.webm" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
 
@@ -779,7 +779,7 @@
                 <div class="relative">
                     <video class="rounded-lg shadow-lg w-full object-cover" style="aspect-ratio: 16 / 9;" autoplay muted
                         loop>
-                        <source src="../Images/Video/190.mp4" type="video/mp4">
+                        <source src="/Images/Video/190.webm" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <!-- <div class="absolute inset-0 flex justify-center items-center">
@@ -1451,16 +1451,16 @@
 
 
     <!-- <script src="js/sectionLoader.js"></script> -->
-    <script src="../js/custome-javascript.js"></script>
-    <script src="../js/blog.js"></script>
-    <script src="../js/Gallery.js"></script>
-    <script src="../js/service-section.js"></script>
-    <script src="../js/toggleFAQ.js"></script>
-    <script src="../js/counters.js"></script>
-    <script src="../js/toggleFAQ.js"></script>
+    <script src="/js/custome-javascript.js"></script>
+    <script src="/js/blog.js"></script>
+    <script src="/js/Gallery.js"></script>
+    <script src="/js/service-section.js"></script>
+    <script src="/js/toggleFAQ.js"></script>
+    <script src="/js/counters.js"></script>
+    <script src="/js/toggleFAQ.js"></script>
+    <script src="/js/quoteModel.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- <script src="../persian/js/convertLangulage.js"></script> -->
-    <script src="../js/quoteModel.js"></script>
     <script>
         AOS.init();
     </script>
