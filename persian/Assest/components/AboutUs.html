@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roshandarya</title>
+    <title>Page Title</title>
 
     <!-- لینک به فایل‌های CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -15,13 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/css/custome.css" type="text/css">
-    <link rel="stylesheet" href="/css/styles.css" type="text/css">
-    <link rel="stylesheet" href="/css/Fonts.css" type="text/css">
     <link rel="stylesheet" href="/css/Header.css" type="text/css">
     <link rel="stylesheet" href="/css/Footer.css" type="text/css">
-    <link rel="stylesheet" href="/css/Color.css" type="text/css">
-    <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
-    <link rel="stylesheet" href="/css/quoteModal.css" type="text/css">
+    <link href="/css/Color.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -47,29 +43,25 @@
 
 
             <div id="mobile-menu" class="hidden">
-                <a href="/index.php" id="home-link-mob"><i class=""></i> Home</a>
+                <a href="#" id="home-link-mob"><i class="fas fa-home"></i> Home</a>
                 <hr />
                 <a id="services-linkss" class="menu-item">
-                    <i class="" id="services-link-mob"></i> Services
+                    <i class="fas fa-cog" id="services-link-mob"></i> Services
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="services-submenu" class="submenu hidden">
-                    <a href="/Components/services/maritime-transport.html" id="maritime-link-mob"><i class=""></i>
-                        Maritime Transport</a>
-                    <a href="/Components/services/ground-transport.html" id="air-freight-link-mob"><i class=""></i> air
-                        freight</a>
-                    <a href="/Components/services/air-freight.html" id="ground-transport-link-mob"><i class=""></i>
-                        Ground Transport</a>
-                    <a href="/Components/services/maps.html" id="services-maps-link-mob"><i class=""></i> Services
-                        Maps</a>
+                    <a href="#" id="maritime-link-mob"><i class="fas fa-home"></i> Maritime Transport</a>
+                    <a href="#" id="air-freight-link-mob"><i class="fas fa-home"></i> air freight</a>
+                    <a href="#" id="ground-transport-link-mob"><i class="fas fa-home"></i> Ground Transport</a>
+                    <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> Services Maps</a>
                 </div>
 
                 <hr />
-                <a href="#" class="request-quote-link"><i class=""></i> Request a Quote</a>
+                <a href="#" class="request-quote-link"><i class="fas fa-file-alt"></i> Request a Quote</a>
                 <div id="close-menu" class="close-btn">
-                    <i class="contents">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                    <i class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
                             class="x-icon text-blue-900 ">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -78,25 +70,24 @@
                 </div>
                 <hr />
                 <a href="#" id="eqc-linkss" class="menu-item">
-                    <i class=""></i> EQC
+                    <i class="fas fa-cog"></i> EQC
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="eqc-submenu" class="submenu hidden">
-                    <a href="/Components/eqc/incoterms.html" id="incoterms-link-mob"><i class=""></i> Incoterms</a>
-                    <a href="/Components/eqc/cargo.html" id="cargo-link-mob"><i class=""></i> Cargo</a>
+                    <a href="#" id="incoterms-link-mob"><i class="fas fa-home"></i> Incoterms</a>
+                    <a href="#" id="cargo-link-mob"><i class="fas fa-box"></i> Cargo</a>
                 </div>
                 <hr />
-                <a href="/Components/AboutUs.html" id="about-us-link-mob"><i class=""></i> About Us</a>
+                <a href="#" id="about-us-link-mob"><i class="fas fa-info-circle"></i> About Us</a>
                 <hr />
-                <a href="/Components/ContactUs.html" id="contact-us-link-mob"><i class=""></i> Contact Us</a>
+                <a href="#contact-section" id="contact-us-link-mob"><i class="fas fa-envelope"></i> Contact Us</a>
 
             </div>
-
 
             <menu class="flex items-center flex-row w-full justify-center">
                 <!-- منوی سمت چپ لوگو -->
                 <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-black bg-white"
+                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-black"
                         id="home-link">Home</a>
                     <div class="relative">
                         <a href="/Components/Services.html" id="desktop-services"
@@ -105,31 +96,26 @@
                             <span class="submenu-icon">&#9662;</span>
                         </a>
 
-                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack"
-                            style="background-color:rgba(255, 255, 255, 0.805);">
+                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
                             <a href="/Components/services/maritime-transport.html"
-                                class="block px-4 py-2 hover:bg-gray-200"
-                                style="color: var(--primary-navy-blue) !important;" id="maritime-link">Maritime
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
+                                id="maritime-link">Maritime
                                 Transport</a>
                             <a href="/Components/services/ground-transport.html"
-                                style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="ground-transport-link">Ground
                                 Transport</a>
                             <a href="/Components/services/air-freight.html"
-                                style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-black"
                                 id="air-freight-link">air freight</a>
-                            <!-- <a href="/Components/services/maps.html" style="color: var(--primary-navy-blue) !important;"
+                            <a href="/Components/services/maps.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="services-maps-link">Services
-                                Maps</a> -->
+                                Maps</a>
                         </div>
                     </div>
 
-                    <a href="#"
-                        class="nav-link custome-size-menu custome-menu-item text-black request-quote-link">Request a
-                        Quote</a>
+                   <a href="#" class="nav-link custome-size-menu custome-menu-item text-black request-quote-link">Request a Quote</a>
 
                 </nav>
 
@@ -139,7 +125,7 @@
                         class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite bg-white">
                     </div>
 
-                    <img src="/Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
+                    <img src="Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
                 </a>
 
 
@@ -153,13 +139,12 @@
                             EQC
                             <span class="submenu-icon">&#9662;</span>
                         </a>
-                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack"
-                            style="background-color:rgba(255, 255, 255, 0.805);">
-                            <a href="/Components/eqc/incoterms.html" style="color: var(--primary-navy-blue) !important;"
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
+                            <a href="/Components/eqc/incoterms.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                                 id="incoterms-link">Incoterms</a>
                             <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                style="color: var(--primary-navy-blue) !important;" id="cargo-link">Cargo</a>
+                                id="cargo-link">Cargo</a>
                         </div>
                     </div>
                     <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-black"
@@ -169,7 +154,7 @@
                         id="contact-us-link">Contact
                         Us</a>
                     <a href="/persian/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                        <img src="/Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                        <img src="Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
                     </a>
                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
                 </nav>
@@ -178,131 +163,83 @@
     </header>
 
 
-    <main class="py-10 bg-gray-50 mt-5">
-        <!-- Services Intro Section -->
-        <section class="container mx-auto px-4 text-center " style="margin-bottom: 3.5em;">
-            <h1 class="text-4xl font-bold text-primary-navy-blue mb-4">Our Comprehensive Services</h1>
-            <p class="text-secondary-grayish-blue text-lg">
-                We provide tailored solutions across air, ground, and sea freight, ensuring seamless integration and
-                global reach for your business needs. Explore our services to find the right fit for your cargo and
-                logistics requirements.
-            </p>
-        </section>
+    <main style="height: 100vh;">
 
-        <!-- Services Grid Section -->
-        <section class="container mx-auto px-4">
-            <div class="flex grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Maritime Transport -->
-                <div
-                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <a href="/Components/services/maritime-transport.html">
-                        <img src="/Images/Image/services/services/Maritime-Transport.jpg" alt="Maritime Transport"
-                            class="w-full h-40 object-cover">
-                    </a>
-                    <div class="p-4 flex flex-col">
-                        <h2 class="text-xl font-bold text-primary-navy-blue">Maritime Transport</h2>
-                        <p class="text-secondary-grayish-blue mt-2">
-                            Efficient sea freight solutions to connect global markets with reliability and
-                            cost-efficiency.
-                        </p>
-                        <a href="/Components/services/maritime-transport.html"
-                            class="inline-block mt-4 bg-primary-turquoise text-blue-400 bg-blue-100 font-semibold py-2 px-4 rounded-lg hover:bg-secondary-sky-blue transition duration-300 self-end hover:text-blue-800">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Ground Transport -->
-                <div
-                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <a href="/Components/services/ground-transport.html">
-                        <img src="/images/Image/services/services/Ground-Transport.jpg" alt="Ground Transport"
-                            class="w-full h-40 object-cover">
-                    </a>
-                    <div class="p-4 flex flex-col">
-                        <h2 class="text-xl font-bold text-primary-navy-blue">Ground Transport</h2>
-                        <p class="text-secondary-grayish-blue mt-2">
-                            Reliable overland transport with extensive coverage and secure handling.
-                        </p>
-                        <a href="/Components/services/ground-transport.html"
-                            class="inline-block mt-4 bg-primary-turquoise text-blue-400 bg-blue-100 font-semibold py-2 px-4 rounded-lg hover:bg-secondary-sky-blue transition duration-300 self-end hover:text-blue-800">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Air Freight -->
-                <div
-                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <a href="/Components/services/air-freight.html">
-                        <img src="/images/Image/services/services/Air-Freight.jpg" alt="Air Freight"
-                            class="w-full h-40 object-cover">
-                    </a>
-                    <div class="p-4 flex flex-col">
-                        <h2 class="text-xl font-bold text-primary-navy-blue">Air Freight</h2>
-                        <p class="text-secondary-grayish-blue mt-2">
-                            Fast and secure solutions for urgent shipments, ensuring global reach and speed.
-                        </p>
-                        <a href="/Components/services/air-freight.html"
-                            class="inline-block mt-4 bg-primary-turquoise text-blue-400 bg-blue-100 font-semibold py-2 px-4 rounded-lg hover:bg-secondary-sky-blue transition duration-300 self-end hover:text-blue-800">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Services Maps
-                <div
-                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <a href="/Components/services/maps.html">
-                        <img src="/images/Image/services/services/maps.jpg" alt="Services Maps"
-                            class="w-full h-40 object-cover">
-                    </a>
-                    <div class="p-4 flex flex-col">
-                        <h2 class="text-xl font-bold text-primary-navy-blue">Services Maps</h2>
-                        <p class="text-secondary-grayish-blue mt-2">
-                            Explore our detailed coverage of global shipping destinations and service points.
-                        </p>
-                        <a href="/Components/services/maps.html"
-                            class="inline-block mt-4 bg-primary-turquoise text-blue-400 bg-blue-100 font-semibold py-2 px-4 rounded-lg hover:bg-secondary-sky-blue transition duration-300 self-end hover:text-blue-800">
-                            Learn More
-                        </a>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="bg-primary-light-blue text-white py-16 mt-10">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4">Partner with Us for Seamless Logistics</h2>
-                <p class="mb-6">
-                    Discover customized solutions designed for your unique needs. Contact us today to start shipping
-                    smarter.
-                </p>
-                <a href="#contact-us" id="request-quote-link"
-                    class="bg-white text-primary-light-blue px-8 py-4 rounded-md shadow-md hover:bg-gray-200">
-                    Contact Us
-                </a>
-            </div>
-        </section>
     </main>
-
     <!-- Main Content -->
+    <section class="bg-white py-16" id="sec-3">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Left Section (Text) -->
+                <div>
+                    <div class="mb-4 border-l-4 pl-4" style="border-color: #2563EB;">
+                        <h3 class="text-2xl font-semibold uppercase mb-4 tracking-widest"
+                            style="font-family: var(--font-poppins);color: #2563EB;">About Us</h3>
+                    </div>
+                    <h2 class="text-primary-orange-gold text-3xl lg:text-4xl font-bold mb-6"
+                        style="font-family: var(--font-poppins);">
+                        How to Logistic <span style="color: #2563EB;">Activities</span> Solution of Business in
+                        the world
+                    </h2>
+                    <p class="text-secondary-grayish-blue mb-4" style="font-family: var(--font-noto-sans);">
+                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything
+                        embarrassing hidden in the middle of text.
+                    </p>
+                    <p class="text-secondary-grayish-blue mb-6" style="font-family: var(--font-noto-sans);">
+                        Web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+                        ipsum'
+                        will uncover many web sites still in their infancy.
+                    </p>
+                    <a href="#learn-more"
+                        class="inline-block mt-4 px-6 py-3 bg-primary-turquoise text-white font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300">Learn
+                        More</a>
+                </div>
+
+                <!-- Right Section (Images and Video) -->
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Video -->
+                    <div class="relative">
+                        <img class="rounded-lg shadow-lg object-cover w-full h-72 lg:h-80"
+                            src="https://via.placeholder.com/600x400" alt="Video thumbnail">
+                        <div class="absolute inset-0 flex justify-center items-center">
+                            <a href="#"
+                                class="absolute inset-0 flex items-center justify-center text-primary-light-gray hover:text-primary-light-blue">
+                                <i class="fas fa-play-circle text-6xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Two Small Images -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <img class="rounded-lg shadow-lg w-full h-48 lg:h-52 object-cover"
+                            src="https://via.placeholder.com/300x200" alt="Image 1">
+                        <img class="rounded-lg shadow-lg w-full h-48 lg:h-52 object-cover"
+                            src="https://via.placeholder.com/300x200" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
+
+    <button onclick="toggleDropdown()"
+        class="bg-primary-navy-blue  font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
+        Services
+    </button>
 
     <!-- Dropdown Menu -->
     <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
         <!-- Maritime Transport -->
-        <a href="/Components/services/maritime-transport.html"
+        <a href="/services/maritime-transport"
             class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
             <h3 class="text-lg font-semibold">Maritime Transport</h3>
             <p class="text-sm text-gray-600">Reliable ocean freight services for global shipping needs.</p>
         </a>
 
         <!-- Ground Transport -->
-        <a href="/Components/services/ground-transport.html"
+        <a href="/services/ground-transport"
             class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
             <h3 class="text-lg font-semibold">Ground Transport</h3>
             <p class="text-sm text-gray-600">Comprehensive trucking solutions for domestic and international
@@ -311,25 +248,27 @@
         </a>
 
         <!-- Air Freight -->
-        <a href="/Components/services/air-freight.html"
-            class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
+        <a href="/services/air-freight" class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
             <h3 class="text-lg font-semibold">Air Freight</h3>
             <p class="text-sm text-gray-600">Fast and secure air cargo transport for time-sensitive shipments.
             </p>
         </a>
 
         <!-- Services Maps -->
-        <a href="/Components/services/maps.html"
-            class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
+        <a href="/services/maps" class="block px-4 py-3 hover:bg-gray-100 transition duration-300 text-gray-700">
             <h3 class="text-lg font-semibold">Services Maps</h3>
             <p class="text-sm text-gray-600">Explore our global routes and coverage.</p>
         </a>
     </div>
+    </div>
+
+    <!-- جاوا اسکریپت ساده برای باز و بسته کردن منو -->
+
 
     <!-- Footer -->
     <footer class="bg-primary-navy-blue text-white py-10">
         <section id="sec-6" class="bg-primary-navy-blue text-white py-10">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pr-6 pl-6">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 
                 <!-- About Company Section -->
                 <div class="about">
@@ -433,86 +372,36 @@ float items
     </a>
 
     <!-- quoteModal-->
-    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10 ">
-
-        <div class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
-            <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
-
-            <!-- مرحله اول -->
-            <section id="step1">
-                <form id="rate-inquiry-form"
-                    class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
-                    <!-- انتخاب نوع حمل و نقل -->
-                    <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>Select Transport Type</option>
+    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10">
+        <div class="bg-white p-6 rounded-lg w-11/12 md:w-1/2 lg:w-1/3 " style="width: auto;">
+            <span id="closeModal" class="text-right text-2xl cursor-pointer">&times;</span>
+            <!-- محتوای فرم درخواست نرخ -->
+            <section id="rate-inquiry" class="py-6">
+                <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
+                    <input type="text" placeholder="Ready Date" class="input-field w-full md:w-1/3 lg:w-1/5">
+                    <input type="text" placeholder="Departure Airport" class="input-field w-full md:w-1/3 lg:w-1/5">
+                    <input type="text" placeholder="Destination Airport" class="input-field w-full md:w-1/3 lg:w-1/5">
+                    <input type="text" placeholder="Phone Number" class="input-field w-full md:w-1/3 lg:w-1/5">
+                    <input type="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5">
+                    <select class="input-field w-full md:w-1/3 lg:w-1/5">
                         <option>Air Transport</option>
                         <option>Ground Transport</option>
                         <option>Sea Transport</option>
                     </select>
-                    <!-- انتخاب نوع کانتینر -->
-                    <select id="containerType" name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5"
-                        required>
-                        <option value="" disabled selected>Select Container Type</option>
-                        <option value="20">20 ft - Standard Container</option>
-                        <option value="40">40 ft - Standard Container</option>
-                        <option value="ISO">ISO Tank - Liquid Transport</option>
-                    </select>
-                    <!-- نوع ISO Tank -->
-                    <select name="isoTankType" id="isoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
-                        <option value="" disabled selected>Select ISO Tank Type</option>
-                        <option value="T7">T7</option>
-                        <option value="T1">T1</option>
-                        <option value="T50">T50</option>
-                    </select>
-                    <!-- سایر فیلدها -->
-                    <input type="number" name="quantity" placeholder="Enter Quantity" min="1" class="input-field w-full"
-                        required>
-                    <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
-                        required>
-                        <option value="" disabled selected>Select Departure Country</option>
-                    </select>
-                    <select id="portsSelect" name="departurePort" class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>Select Departure Port</option>
-                    </select>
-                    <select id="destinationCountry" name="destinationCountry"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>Select Destination Country</option>
-                    </select>
-                    <select id="destinationPortsSelect" name="destinationPort"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>Select Destination Port</option>
-                    </select>
-                    <input type="email" name="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5"
-                        required>
-                    <input type="text" name="phoneNumber" placeholder="Phone Number"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-
-                    <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get
-                        Rate Quote</button>
-                </form>
-            </section>
-
-            <!-- مرحله دوم -->
-            <section id="step2" class="py-6 hidden">
-                <form id="otp-verification-form" class="container mx-auto px-4 flex flex-wrap gap-4 justify-center">
-                    <p id="phone-display" class="w-full text-center text-gray-700"></p>
-                    <input type="text" name="verificationCode" placeholder="Enter OTP"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                    <button type="submit" class="rate-button w-full md:w-1/3 lg:w-1/5">Verify OTP</button>
-                    <button type="button" id="back-to-step1"
-                        class="text-blue-500 underline w-full text-center mt-4">Back</button>
-                </form>
-
+                    <button class="rate-button w-full md:w-1/3 lg:w-1/5">Get Rate Quote</button>
+                </div>
             </section>
         </div>
     </div>
     <!-- float items End-->
 
     <!-- اسکریپت‌ها -->
-    <script src="/js/custome-javascript.js"></script>
-    <script src="/js/quoteModel.js"></script>
+    <script src="js/quoteModel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
     <script>
         const header = document.querySelector('header');
         const butt = document.getElementById('logo-butt');
@@ -544,6 +433,7 @@ float items
             };
         }
     </script>
+
 </body>
 
 </html>

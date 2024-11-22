@@ -1,27 +1,3 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $transportType = $_POST['transportType'];
-    $containerType = $_POST['containerType'];
-    $quantity = $_POST['quantity'];
-    $departureCountry = $_POST['departureCountry'];
-    $departurePort = $_POST['departurePort'];
-    $phoneNumber = $_POST['phoneNumber'];
-    $email = $_POST['email'];
-
-    // اعتبارسنجی اطلاعات
-    if (empty($transportType) || empty($containerType) || empty($quantity) || empty($departureCountry) || empty($departurePort) || empty($phoneNumber) || empty($email)) {
-        die('All fields are required!');
-    }
-
-    // ارسال ایمیل یا ذخیره در پایگاه‌داده
-    // مثلا:
-    mail($email, "Rate Quote Request", "Your request has been received.");
-
-    echo "Your request has been submitted successfully!";
-}
-?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -80,25 +56,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
             <div id="mobile-menu" class="hidden">
-                <a href="#" id="home-link-mob"><i class="fas fa-home"></i> خانه</a>
+                <div id="overlay"> </div>
+                <a href="./index.php" id="home-link-mob"><i class=""></i> خانه</a>
                 <hr />
                 <a id="services-linkss" class="menu-item">
-                    <i class="fas fa-cog" id="services-link-mob"></i> خدمات
+                    <i class="" id="services-link-mob"></i> خدمات
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="services-submenu" class="submenu hidden">
-                    <a href="#" id="maritime-link-mob"><i class="fas fa-home"></i> حمل و نقل دریایی</a>
-                    <a href="#" id="air-freight-link-mob"><i class="fas fa-home"></i> حمل و نقل هوایی</a>
-                    <a href="#" id="ground-transport-link-mob"><i class="fas fa-home"></i> حمل و نقل زمینی</a>
-                    <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> نقشه‌های خدمات</a>
+                    <a href="./Components/services/maritime-transport.html" id="maritime-link-mob"><i class=""></i>
+                        حمل و نقل دریایی </a>
+                    <a href="./Components/services/ground-transport.html" id="air-freight-link-mob"><i class=""></i> حمل
+                        و نقل زمینی</a>
+                    <a href="./Components/services/air-freight.html" id="ground-transport-link-mob"><i class=""></i>
+                        حمل و نقل هوایی</a>
                 </div>
 
                 <hr />
-                <a href="#" class="request-quote-link"><i class="fas fa-file-alt"></i> درخواست قیمت</a>
+                <a href="#" class="request-quote-link"><i class=""></i> درخواست قیمت</a>
                 <div id="close-menu" class="close-btn">
-                    <i class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                    <i class="contents">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
                             class="x-icon text-blue-900 ">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -107,82 +86,91 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <hr />
                 <a href="#" id="eqc-linkss" class="menu-item">
-                    <i class="fas fa-cog"></i> شرایط حمل و نقل +
+                    <i class=""></i> شرایط حمل و نقل
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="eqc-submenu" class="submenu hidden">
-                    <a href="#" id="incoterms-link-mob"><i class="fas fa-home"></i> شرایط اینکوترمز</a>
-                    <a href="#" id="cargo-link-mob"><i class="fas fa-box"></i> کالا</a>
+                    <a href="./Components/eqc/incoterms.html" id="incoterms-link-mob"><i class=""></i> شرایط
+                        اینکوترمز</a>
+                    <a href="./Components/eqc/cargo.html" id="cargo-link-mob"><i class=""></i> کالا</a>
                 </div>
                 <hr />
-                <a href="#" id="about-us-link-mob"><i class="fas fa-info-circle"></i> درباره ما</a>
+                <a href="./Components/AboutUs.html" id="about-us-link-mob"><i class=""></i> درباره ما</a>
                 <hr />
-                <a href="#contact-section" id="contact-us-link-mob"><i class="fas fa-envelope"></i> تماس با ما</a>
+                <a href="./Components/ContactUs.html" id="contact-us-link-mob"><i class=""></i> تماس با ما</a>
 
             </div>
 
-
-            <!-- منوی سمت چپ لوگو -->
-            <menu class="flex items-center flex-row w-full justify-center " style="margin: 0;">
-                <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-white" id="home-link">خانه</a>
+            <menu class="flex items-center flex-row w-full justify-center relative  mx-6 sm:left-1 md:left-1 lg:right-5"
+                style="margin-left:0; ">
+                <!-- منوی سمت چپ لوگو -->
+                <nav id="menu" class="hidden md:flex space-x-4 mymenu ">
+                    <a href="./index.php" class="nav-link custome-size-menu custome-menu-item text-white"
+                        id="home-link">خانه</a>
                     <div class="relative">
-                        <a href="#" id="desktop-services"
+                        <a href="./Components/Services.html" id="desktop-services"
                             class="nav-link custome-size-menu custome-menu-item text-white">
                             خدمات
                             <span class="submenu-icon">&#9662;</span>
                         </a>
 
                         <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                            <a href="./Components/services/maritime-transport.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
                                 id="maritime-link">حمل و نقل دریایی</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                                id="ground-transport-link">حمل و نقل هوایی</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
-                                id="air-freight-link">حمل و نقل زمینی</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                                id="services-maps-link">نقشه‌های خدمات</a>
+                            <a href="./Components/services/ground-transport.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                                id="ground-transport-link">حمل و نقل زمینی</a>
+                            <a href="./Components/services/air-freight.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
+                                id="air-freight-link">حمل و نقل هوایی</a>
+                            <!-- <a href="/Components/services/maps.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                                id="services-maps-link">Services
+                                Maps</a> -->
                         </div>
                     </div>
 
-                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-white"
-                        id="request-quote-link">درخواست قیمت</a>
+                    <a href="#"
+                        class="nav-link custome-size-menu custome-menu-item text-white request-quote-link">درخواست
+                        قیمت</a>
 
                 </nav>
 
                 <!-- لوگو وسط منو -->
-                <div class="relative flex justify-center items-center mt-4 mb-4 mx-5 ">
+                <a class="relative flex justify-center items-center " href="./index.php">
                     <div id="logo-butt"
                         class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
                     </div>
-                    <img src="../Images/Icon/roshan-new-en.png" alt="roshandarya"
-                        class="relative w-36 h-auto z-10 top-6">
-                </div>
+
+                    <img src="/Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
+                </a>
+
+
 
                 <!-- منو سمت راست لوگو -->
-                <nav class="hidden md:flex space-x-4 mymenu">
+                <nav class="hidden md:flex space-x-4 mymenu ml-3">
 
                     <div class="relative z-10">
-                        <a href="#" id="desktop-eqc"
+                        <a href="/Components/eqc.html" id="desktop-eqc"
                             class="nav-link custome-size-menu custome-menu-item z-100 text-white">
                             شرایط حمل و نقل
                             <span class="submenu-icon">&#9662;</span>
                         </a>
                         <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                            <a href=" #" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                id="incoterms-link">شرایط
+                            <a href="/Components/eqc/incoterms.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="incoterms-link"> شرایط
                                 اینکوترمز</a>
-                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link">کالا</a>
+                            <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="cargo-link">کالا</a>
                         </div>
                     </div>
-                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-white"
-                        id="about-us-link">درباره
-                        ما</a>
-                    <a href="#sss" class="nav-link custome-size-menu custome-menu-item text-white"
-                        id="contact-us-link">تماس
-                        با ما</a>
-                    <a href="../index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                        <img src="../Images/usa-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                    <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                        id="about-us-link">درباره ما</a>
+                    <a href="/Components/ContactUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                        id="contact-us-link"> تماس با ما</a>
+                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
+                        <img src="/Images/united-kingdom-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
                     </a>
                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
                 </nav>
@@ -195,7 +183,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>
         <article id="custome-main-show" class="relative">
             <video autoplay muted loop id="myVideo" class="w-full h-[calc(100vh-70px)] object-cover">
-                <source src="../Images/Video/Hero.MP4" type="video/mp4">
+                <source src="/Images/Video/Hero.MP4" type="video/mp4">
             </video>
         </article>
     </section>
@@ -227,9 +215,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </svg>
                         </div>
                         <div>
-                            <div class="item-description group-hover:text-white">بهینه‌سازی فرآیندهای حمل و نقل</div>
+                            <div class="item-description group-hover:text-white whitespace-nowrap">بهینه‌سازی فرآیندهای
+                                حمل و نقل</div>
                             <h3
-                                class="text-xl font-semibold mb-2 text-[var(--primary-navy-blue)]-800 group-hover:text-white">
+                                class="text-xl font-semibold mb-2 text-[var(--primary-navy-blue)]-800 group-hover:text-white whitespace-nowrap">
                                 راهکارهای لجستیکی</h3>
                         </div>
 
@@ -341,12 +330,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div>
                             <!-- توضیحات -->
                             <div
-                                class="item-description text-sm leading-6 text-gray-600 group-hover:text-white font-vazir">
+                                class="item-description text-sm leading-6 text-gray-600 group-hover:text-white font-vazir whitespace-nowrap">
                                 بهینه‌سازی فرآیندهای حمل و نقل
                             </div>
                             <!-- عنوان -->
                             <h3
-                                class="text-lg font-bold mb-2 text-[var(--primary-navy-blue)] group-hover:text-white leading-7 font-vazir">
+                                class="text-lg font-bold mb-2 text-[var(--primary-navy-blue)] group-hover:text-white leading-7 font-vazir whitespace-nowrap">
                                 راهکارهای لجستیکی
                             </h3>
                         </div>
@@ -486,10 +475,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </svg>
                         </div>
                         <div>
-                            <div class="item-description group-hover:text-white">راه‌حلی ساده برای تجارت بین‌المللی
+                            <div class="item-description group-hover:text-white whitespace-nowrap">راه‌حل ساده
+                                تجارت بین‌المللی
                             </div>
                             <h3
-                                class="text-xl font-semibold mb-2 text-[var(--primary-navy-blue)]-800 group-hover:text-white">
+                                class="text-xl font-semibold mb-2 text-[var(--primary-navy-blue)]-800 group-hover:text-white whitespace-nowrap">
                                 کارگزاری حمل‌ونقل</h3>
                         </div>
                     </div>
@@ -569,10 +559,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </svg>
                         </div>
                         <div>
-                            <div class="item-description group-hover:text-white">رویکردی کارآمد برای مسیرهای پیچیده
+                            <div class="item-description group-hover:text-white whitespace-nowrap">رویکردی کارآمد
+                                مسیرهای پیچیده
                             </div>
                             <h3
-                                class="text-xl font-semibold mb-2 text-[var(--primary-navy-blue)]-800 group-hover:text-white">
+                                class="text-xl font-semibold mb-2 text-[var(--primary-navy-blue)]-800 group-hover:text-white whitespace-nowrap">
                                 ترانزیت</h3>
                         </div>
                     </div>
@@ -1385,27 +1376,79 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     <!-- quoteModal-->
-    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-        <div class="bg-white p-6 rounded-lg w-11/12 md:w-1/2 lg:w-1/3 " style="width: auto;">
-            <span id="closeModal" class="text-right text-2xl cursor-pointer">&times;</span>
-            <!-- محتوای فرم درخواست نرخ -->
-            <section id="rate-inquiry" class="py-6">
-                <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
-                    <input type="text" placeholder="تاریخ آماده‌سازی" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="فرودگاه مبدأ" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="فرودگاه مقصد" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="شماره تلفن" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="email" placeholder="ایمیل" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <select class="input-field w-full md:w-1/3 lg:w-1/5">
-                        <option>حمل‌ونقل هوایی</option>
-                        <option>حمل‌ونقل زمینی</option>
-                        <option>حمل‌ونقل دریایی</option>
+    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10">
+
+        <div class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
+            <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
+
+            <!-- مرحله اول -->
+            <section id="step1">
+                <form id="rate-inquiry-form"
+                    class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
+                    <!-- انتخاب نوع حمل و نقل -->
+                    <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        <option value="" disabled selected>انتخاب نوع حمل و نقل</option>
+                        <option>حمل و نقل هوایی</option>
+                        <option>حمل و نقل زمینی</option>
+                        <option>حمل و نقل دریایی</option>
                     </select>
-                    <button class="rate-button w-full md:w-1/3 lg:w-1/5">دریافت نرخ</button>
-                </div>
+                    <!-- انتخاب نوع کانتینر -->
+                    <select id="containerType" name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5"
+                        required>
+                        <option value="" disabled selected>انتخاب نوع کانتینر</option>
+                        <option value="20">۲۰ فوت - کانتینر استاندارد</option>
+                        <option value="40">۴۰ فوت - کانتینر استاندارد</option>
+                        <option value="ISO">مخزن ISO - حمل مایعات</option>
+                    </select>
+                    <!-- نوع ISO Tank -->
+                    <select name="isoTankType" id="isoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
+                        <option value="" disabled selected>انتخاب نوع مخزن ISO</option>
+                        <option value="T7">T7</option>
+                        <option value="T1">T1</option>
+                        <option value="T50">T50</option>
+                    </select>
+                    <!-- سایر فیلدها -->
+                    <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
+                        class="input-field w-full" required>
+                    <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
+                        required>
+                        <option value="" disabled selected>انتخاب کشور مبدا</option>
+                    </select>
+                    <select id="portsSelect" name="departurePort" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        <option value="" disabled selected>انتخاب بندر مبدا</option>
+                    </select>
+                    <select id="destinationCountry" name="destinationCountry"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        <option value="" disabled selected>انتخاب کشور مقصد</option>
+                    </select>
+                    <select id="destinationPortsSelect" name="destinationPort"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        <option value="" disabled selected>انتخاب بندر مقصد</option>
+                    </select>
+                    <input type="email" name="email" placeholder="ایمیل خود را وارد کنید"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                    <input type="text" name="phoneNumber" placeholder="شماره تلفن خود را وارد کنید"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+
+                    <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">دریافت
+                        نرخ حمل</button>
+                </form>
+            </section>
+
+            <!-- مرحله دوم -->
+            <section id="step2" class="py-6 hidden">
+                <form id="otp-verification-form" class="container mx-auto px-4 flex flex-wrap gap-4 justify-center">
+                    <p id="phone-display" class="w-full text-center text-gray-700"></p>
+                    <input type="text" name="verificationCode" placeholder="کد تایید را وارد کنید"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                    <button type="submit" class="rate-button w-full md:w-1/3 lg:w-1/5">تایید کد</button>
+                    <button type="button" id="back-to-step1"
+                        class="text-blue-500 underline w-full text-center mt-4">بازگشت</button>
+                </form>
             </section>
         </div>
     </div>
+
 
     <!-- <script src="js/sectionLoader.js"></script> -->
     <script src="../js/custome-javascript.js"></script>

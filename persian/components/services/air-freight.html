@@ -15,12 +15,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/css/custome.css" type="text/css">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/Fonts.css" type="text/css">
     <link rel="stylesheet" href="/css/Header.css" type="text/css">
     <link rel="stylesheet" href="/css/Footer.css" type="text/css">
-    <link href="/css/Color.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/Color.css" type="text/css">
+    <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
+    <link rel="stylesheet" href="/css/quoteModal.css" type="text/css">
+
+
+
+
+
+
+
+
 
 </head>
-
 <body>
     <!-- Header -->
     <header class=" top-0 bg-white z-50 shadow-lg">
@@ -43,25 +54,29 @@
 
 
             <div id="mobile-menu" class="hidden">
-                <a href="#" id="home-link-mob"><i class="fas fa-home"></i> Home</a>
+                <a href="/index.php" id="home-link-mob"><i class=""></i> Home</a>
                 <hr />
                 <a id="services-linkss" class="menu-item">
-                    <i class="fas fa-cog" id="services-link-mob"></i> Services
+                    <i class="" id="services-link-mob"></i> Services
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="services-submenu" class="submenu hidden">
-                    <a href="#" id="maritime-link-mob"><i class="fas fa-home"></i> Maritime Transport</a>
-                    <a href="#" id="air-freight-link-mob"><i class="fas fa-home"></i> air freight</a>
-                    <a href="#" id="ground-transport-link-mob"><i class="fas fa-home"></i> Ground Transport</a>
-                    <a href="#" id="services-maps-link-mob"><i class="fas fa-home"></i> Services Maps</a>
+                    <a href="/Components/services/maritime-transport.html" id="maritime-link-mob"><i class=""></i>
+                        Maritime Transport</a>
+                    <a href="/Components/services/ground-transport.html" id="air-freight-link-mob"><i class=""></i> air
+                        freight</a>
+                    <a href="/Components/services/air-freight.html" id="ground-transport-link-mob"><i class=""></i>
+                        Ground Transport</a>
+                    <a href="/Components/services/maps.html" id="services-maps-link-mob"><i class=""></i> Services
+                        Maps</a>
                 </div>
 
                 <hr />
-                <a href="#" class="request-quote-link"><i class="fas fa-file-alt"></i> Request a Quote</a>
+                <a href="#" class="request-quote-link"><i class=""></i> Request a Quote</a>
                 <div id="close-menu" class="close-btn">
-                    <i class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                    <i class="contents">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
                             class="x-icon text-blue-900 ">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -70,24 +85,25 @@
                 </div>
                 <hr />
                 <a href="#" id="eqc-linkss" class="menu-item">
-                    <i class="fas fa-cog"></i> EQC
+                    <i class=""></i> EQC
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="eqc-submenu" class="submenu hidden">
-                    <a href="#" id="incoterms-link-mob"><i class="fas fa-home"></i> Incoterms</a>
-                    <a href="#" id="cargo-link-mob"><i class="fas fa-box"></i> Cargo</a>
+                    <a href="/Components/eqc/incoterms.html" id="incoterms-link-mob"><i class=""></i> Incoterms</a>
+                    <a href="/Components/eqc/cargo.html" id="cargo-link-mob"><i class=""></i> Cargo</a>
                 </div>
                 <hr />
-                <a href="#" id="about-us-link-mob"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="/Components/AboutUs.html" id="about-us-link-mob"><i class=""></i> About Us</a>
                 <hr />
-                <a href="#contact-section" id="contact-us-link-mob"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="/Components/ContactUs.html" id="contact-us-link-mob"><i class=""></i> Contact Us</a>
 
             </div>
+
 
             <menu class="flex items-center flex-row w-full justify-center">
                 <!-- منوی سمت چپ لوگو -->
                 <nav id="menu" class="hidden md:flex space-x-4 mymenu">
-                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-black"
+                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-black bg-white"
                         id="home-link">Home</a>
                     <div class="relative">
                         <a href="/Components/Services.html" id="desktop-services"
@@ -96,22 +112,25 @@
                             <span class="submenu-icon">&#9662;</span>
                         </a>
 
-                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
+                        <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack"
+                            style="background-color:rgba(255, 255, 255, 0.805);">
                             <a href="/Components/services/maritime-transport.html"
-                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
-                                id="maritime-link">Maritime
+                                class="block px-4 py-2 hover:bg-gray-200"
+                                style="color: var(--primary-navy-blue) !important;" id="maritime-link">Maritime
                                 Transport</a>
                             <a href="/Components/services/ground-transport.html"
+                                style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="ground-transport-link">Ground
                                 Transport</a>
                             <a href="/Components/services/air-freight.html"
+                                style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-black"
                                 id="air-freight-link">air freight</a>
-                            <a href="/Components/services/maps.html"
+                            <!-- <a href="/Components/services/maps.html" style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-black"
                                 id="services-maps-link">Services
-                                Maps</a>
+                                Maps</a> -->
                         </div>
                     </div>
 
@@ -125,7 +144,7 @@
                         class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite bg-white">
                     </div>
 
-                    <img src="Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
+                    <img src="/Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
                 </a>
 
 
@@ -139,12 +158,13 @@
                             EQC
                             <span class="submenu-icon">&#9662;</span>
                         </a>
-                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                            <a href="/Components/eqc/incoterms.html"
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack"
+                            style="background-color:rgba(255, 255, 255, 0.805);">
+                            <a href="/Components/eqc/incoterms.html" style="color: var(--primary-navy-blue) !important;"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                                 id="incoterms-link">Incoterms</a>
                             <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                id="cargo-link">Cargo</a>
+                                style="color: var(--primary-navy-blue) !important;" id="cargo-link">Cargo</a>
                         </div>
                     </div>
                     <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-black"
@@ -154,7 +174,7 @@
                         id="contact-us-link">Contact
                         Us</a>
                     <a href="/persian/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                        <img src="Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                        <img src="/Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
                     </a>
                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
                 </nav>
@@ -163,41 +183,116 @@
     </header>
 
 
-    <main style="height: 100vh;">
-
-    </main>
-    <!-- Main Content -->
-    <main class="container mx-auto my-10 px-4 " style="height: 100vh">
-        <section class="text-center py-6">
-            <h1 class="text-4xl font-bold mb-4">Page Title</h1>
-            <p class="text-lg text-secondary-grayish-blue">Brief description or subtitle for this page.</p>
+    <main id="air-freight" class="bg-white text-gray-800">
+        <!-- Hero Section -->
+        <section class="bg-cover bg-top relative h-96"
+            style="background-image: url('/Images/Image/services/air-freight/Hero-section.jpg');">
+            <div class="relative bg-black bg-opacity-50 flex items-center justify-center h-full">
+                <div class="text-center w-full">
+                    <h1 class="text-4xl font-bold text-white mb-4">Air Freight Services</h1>
+                    <p class="text-lg text-gray-300">
+                        Speed, precision, and reliability for your time-critical shipments.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section class="content-section my-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Introduction Section -->
+        <br />
+        <section class="relative container mx-auto px-6 py-12 text-white bg-indigo-500 shadow-lg rounded drop-shadow-md"
+            style="background-image: url('/Images/Image/services/air-freight/intro-bg.jpg'); background-size: cover; background-position: center;">
+            <div class="bg-black bg-opacity-50 p-6 rounded">
+                <h2 class="text-3xl font-bold text-white mb-6 text-center pt-5 text-xl pb-5">Introduction</h2>
+                <p class="text-center pb-10 m-5 text-lg drop-shadow-md">
+                    Air freight is the fastest and most reliable mode of transporting goods across the globe. With our
+                    cutting-edge logistics network and dedicated team, we ensure that your cargo reaches its destination
+                    on
+                    time and in perfect condition.
+                </p>
+            </div>
+        </section>
 
-                <div class="text-lg text-gray-800">
-                    <h2 class="text-2xl font-semibold mb-4">Section Title</h2>
-                    <p>Place content here. This section can contain information, images, or any other relevant data.</p>
-                    لینک به صفحات دیگر
-                    <a href="#" class="text-primary-turquoise hover:text-primary-blue">Learn More</a>
+        <!-- Key Features Section -->
+        <section class="bg-gray-50 py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-primary-navy-blue mb-6">Our Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 bg-white shadow-lg rounded-lg">
+                        <img src="/Images/Image/services/air-freight/1.webp" alt="Feature 1"
+                            class="w-full h-40 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Global Connectivity</h3>
+                        <p>
+                            Access to an extensive air freight network spanning all major cities and airports worldwide.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white shadow-lg rounded-lg">
+                        <img src="/Images/Image/services/air-freight/2.jpg" alt="Feature 2"
+                            class="w-full h-40 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Time-Critical Solutions</h3>
+                        <p>
+                            Speedy and efficient transport for urgent shipments, ensuring on-time delivery.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white shadow-lg rounded-lg">
+                        <img src="/Images/Image/services/air-freight/3.jpg" alt="Feature 3"
+                            class="w-full h-40 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Secure Handling</h3>
+                        <p>
+                            Advanced security protocols and careful handling for sensitive and high-value cargo.
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                بخش سمت راست محتوای اصلی
-                <div class="relative">
-                    <img src="path/to/image.jpg" alt="Image description" class="rounded-lg shadow-lg w-full">
+        <!-- Services Section -->
+        <section class="container mx-auto px-6 py-12" style="margin-bottom: 5rem;">
+            <h2 class="text-3xl font-bold text-primary-navy-blue mb-6 text-center pt-5">Services We Provide</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Express Cargo</h3>
+                    <p>Fast and reliable shipping for urgent and time-sensitive goods.</p>
                 </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Temperature-Controlled Cargo</h3>
+                    <p>Specialized solutions for perishable and temperature-sensitive items.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Oversized Freight</h3>
+                    <p>Handling and transport of large and bulky cargo with precision.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="bg-gray-50 py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-primary-navy-blue mb-6">Why Choose Us?</h2>
+                <ul class="list-disc list-inside text-lg">
+                    <li>Comprehensive air freight network for global reach.</li>
+                    <li>Real-time tracking and cargo updates.</li>
+                    <li>Dedicated support for customized solutions.</li>
+                    <li>Seamless integration with other modes of transport.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-primary-light-blue text-white py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Start Your Air Freight Journey Today</h2>
+                <p class="mb-6">Partner with us for safe, secure, and fast air freight solutions tailored to your
+                    business
+                    needs.</p>
+                <a href="#contact-us"
+                    class="bg-white text-primary-light-blue px-8 py-4 rounded-md shadow-md hover:bg-gray-200">
+                    Contact Us
+                </a>
             </div>
         </section>
     </main>
 
 
-
-
-    <button onclick="toggleDropdown()"
-        class="bg-primary-navy-blue  font-semibold px-6 py-3 rounded-lg hover:bg-primary-light-blue transition duration-300 focus:outline-none">
-        Services
-    </button>
 
     <!-- Dropdown Menu -->
     <div id="dropdownMenu" class="hidden absolute mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
@@ -231,24 +326,6 @@
         </a>
     </div>
     </div>
-
-    <!-- جاوا اسکریپت ساده برای باز و بسته کردن منو -->
-    <!-- <script>
-        function toggleDropdown() {
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            dropdownMenu.classList.toggle("hidden");
-        }
-
-        // Close dropdown when clicking outside
-        window.addEventListener('click', function (e) {
-            const button = document.querySelector("button");
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            if (!button.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                dropdownMenu.classList.add("hidden");
-            }
-        });
-    </script> -->
-
 
     <!-- Footer -->
     <footer class="bg-primary-navy-blue text-white py-10">
@@ -357,31 +434,83 @@ float items
     </a>
 
     <!-- quoteModal-->
-    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10">
-        <div class="bg-white p-6 rounded-lg w-11/12 md:w-1/2 lg:w-1/3 " style="width: auto;">
-            <span id="closeModal" class="text-right text-2xl cursor-pointer">&times;</span>
-            <!-- محتوای فرم درخواست نرخ -->
-            <section id="rate-inquiry" class="py-6">
-                <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
-                    <input type="text" placeholder="Ready Date" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="Departure Airport" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="Destination Airport" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="text" placeholder="Phone Number" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <input type="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5">
-                    <select class="input-field w-full md:w-1/3 lg:w-1/5">
+    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10 ">
+
+        <div class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
+            <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
+
+            <!-- مرحله اول -->
+            <section id="step1">
+                <form id="rate-inquiry-form"
+                    class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
+                    <!-- انتخاب نوع حمل و نقل -->
+                    <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        <option value="" disabled selected>Select Transport Type</option>
                         <option>Air Transport</option>
                         <option>Ground Transport</option>
                         <option>Sea Transport</option>
                     </select>
-                    <button class="rate-button w-full md:w-1/3 lg:w-1/5">Get Rate Quote</button>
-                </div>
+                    <!-- انتخاب نوع کانتینر -->
+                    <select id="containerType" name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5"
+                        required>
+                        <option value="" disabled selected>Select Container Type</option>
+                        <option value="20">20 ft - Standard Container</option>
+                        <option value="40">40 ft - Standard Container</option>
+                        <option value="ISO">ISO Tank - Liquid Transport</option>
+                    </select>
+                    <!-- نوع ISO Tank -->
+                    <select name="isoTankType" id="isoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
+                        <option value="" disabled selected>Select ISO Tank Type</option>
+                        <option value="T7">T7</option>
+                        <option value="T1">T1</option>
+                        <option value="T50">T50</option>
+                    </select>
+                    <!-- سایر فیلدها -->
+                    <input type="number" name="quantity" placeholder="Enter Quantity" min="1" class="input-field w-full"
+                        required>
+                    <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
+                        required>
+                        <option value="" disabled selected>Select Departure Country</option>
+                    </select>
+                    <select id="portsSelect" name="departurePort" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        <option value="" disabled selected>Select Departure Port</option>
+                    </select>
+                    <select id="destinationCountry" name="destinationCountry"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        <option value="" disabled selected>Select Destination Country</option>
+                    </select>
+                    <select id="destinationPortsSelect" name="destinationPort"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        <option value="" disabled selected>Select Destination Port</option>
+                    </select>
+                    <input type="email" name="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5"
+                        required>
+                    <input type="text" name="phoneNumber" placeholder="Phone Number"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+
+                    <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get
+                        Rate Quote</button>
+                </form>
+            </section>
+
+            <!-- مرحله دوم -->
+            <section id="step2" class="py-6 hidden">
+                <form id="otp-verification-form" class="container mx-auto px-4 flex flex-wrap gap-4 justify-center">
+                    <p id="phone-display" class="w-full text-center text-gray-700"></p>
+                    <input type="text" name="verificationCode" placeholder="Enter OTP"
+                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                    <button type="submit" class="rate-button w-full md:w-1/3 lg:w-1/5">Verify OTP</button>
+                    <button type="button" id="back-to-step1"
+                        class="text-blue-500 underline w-full text-center mt-4">Back</button>
+                </form>
+
             </section>
         </div>
     </div>
     <!-- float items End-->
 
     <!-- اسکریپت‌ها -->
-    <script src="js/quoteModel.js"></script>
+    <script src="/js/quoteModel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
@@ -418,7 +547,6 @@ float items
             };
         }
     </script>
-
 </body>
 
 </html>
