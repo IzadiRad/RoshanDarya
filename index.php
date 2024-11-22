@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="/css/Gallery.css" type="text/css">
     <link rel="stylesheet" href="/css/Blog.css" type="text/css">
     <link rel="stylesheet" href="/css/section2.css" type="text/css">
-    <link rel="stylesheet" href="/css/service-section.css" type="text/css">
+    <link rel="stylesheet" href="/css/service-section.css" type="text/css"> 
+    <link rel="stylesheet" href="/css/Services-Section2.css" type="text/css"> 
     <link rel="stylesheet" href="/css/Footer.css" type="text/css">
     <link rel="stylesheet" href="/css/faq.css" type="text/css">
     <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
