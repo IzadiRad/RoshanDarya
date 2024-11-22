@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/custome.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="css/Header.css" type="text/css">
-    <link rel="stylesheet" href="css/Srvices-Section2.css" type="text/css">
-    <link rel="stylesheet" href="css/Color.css" type="text/css">
-    <link rel="stylesheet" href="css/Fonts.css" type="text/css">
-    <link rel="stylesheet" href="css/Gallery.css" type="text/css">
-    <link rel="stylesheet" href="css/Blog.css" type="text/css">
-    <link rel="stylesheet" href="css/section2.css" type="text/css">
-    <link rel="stylesheet" href="css/service-section.css" type="text/css">
-    <link rel="stylesheet" href="css/Footer.css" type="text/css">
-    <link rel="stylesheet" href="css/faq.css" type="text/css">
-    <link rel="stylesheet" href="css/rate-inquiry.css" type="text/css">
-    <link rel="stylesheet" href="css/AboutUs.css" type="text/css">
+    <link rel="stylesheet" href="/css/custome.css" type="text/css">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/Header.css" type="text/css">
+    <link rel="stylesheet" href="/css/Srvices-Section2.css" type="text/css">
+    <link rel="stylesheet" href="/css/Color.css" type="text/css">
+    <link rel="stylesheet" href="/css/Fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/Gallery.css" type="text/css">
+    <link rel="stylesheet" href="/css/Blog.css" type="text/css">
+    <link rel="stylesheet" href="/css/section2.css" type="text/css">
+    <link rel="stylesheet" href="/css/service-section.css" type="text/css">
+    <link rel="stylesheet" href="/css/Footer.css" type="text/css">
+    <link rel="stylesheet" href="/css/faq.css" type="text/css">
+    <link rel="stylesheet" href="/css/rate-inquiry.css" type="text/css">
+    <link rel="stylesheet" href="/css/AboutUs.css" type="text/css">
     <!-- <link rel="stylesheet" href="css/quoteModal.css" type="text/css"> -->
 
 
@@ -197,7 +197,7 @@
     </section>
 
 
-    <section class="py-10 -Section bg-transparent  sticky z-auto  shortService" id="sec-2">
+    <section class="py-10-Section bg-transparent  sticky z-auto  shortService" id="sec-2">
         <div class="container mx-auto overflow-x-hidden">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
@@ -484,7 +484,7 @@
                     </div>
                 </a>
                 <!-- Item 4 -->
-                <a data-aos="fade-left" href="./Components/services/ground-transport.html"
+                <a data-aos="fade-left" href="/Components/services/ground-transport.html"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group overflow-x-hidden secCard">
                     <div class="text-center">
                         <div class="item-icon">
@@ -1525,14 +1525,14 @@
 
     <!-- <script src="js/sectionLoader.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/custome-javascript.js"></script>
-    <script src="js/blog.js"></script>
-    <script src="js/Gallery.js"></script>
-    <script src="js/service-section.js"></script>
-    <script src="js/toggleFAQ.js"></script>
-    <script src="js/counters.js"></script>
-    <script src="js/toggleFAQ.js"></script>
-    <script src="js/quoteModel.js"></script>
+    <script src="/js/custome-javascript.js"></script>
+    <script src="/js/blog.js"></script>
+    <script src="/js/Gallery.js"></script>
+    <script src="/js/service-section.js"></script>
+    <script src="/js/toggleFAQ.js"></script>
+    <script src="/js/counters.js"></script>
+    <script src="/js/toggleFAQ.js"></script>
+    <script src="/js/quoteModel.js"></script>
     <!-- <script src="js/rate-inquiry.js"></script> -->
     <!-- <script src="persian/js/convertLangulage.js"></script> -->
     <script>
