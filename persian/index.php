@@ -143,7 +143,7 @@
                         class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
                     </div>
 
-                    <img src="/Images/Icon/roshan-new-en.png" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
+                    <img src="/Images/Icon/roshan-new-en.webp" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
                 </a>
 
 
@@ -625,9 +625,9 @@
                             <!-- Two Small Images -->
                             <div class="grid grid-cols-2 gap-4">
                                 <img class="rounded-lg shadow-lg w-full object-cover"
-                                    src="../Images/Image/AboutUs/Main/3.jpg" alt="Image 1" data-aos="zoom-out">
+                                    src="../Images/Image/AboutUs/Main/3.webp" alt="Image 1" data-aos="zoom-out">
                                 <img class="rounded-lg shadow-lg w-full object-cover"
-                                    src="../Images/Image/AboutUs/Main/98.jpg" data-aos="zoom-out" alt="Image 2">
+                                    src="../Images/Image/AboutUs/Main/98.webp" data-aos="zoom-out" alt="Image 2">
                             </div>
 
                         </div>
@@ -647,7 +647,7 @@
                     <div
                         class="flex items-center justify-center bg-white text-black py-3 px-4 h-full group-hover:bg-white transition-colors duration-300">
                         <div class="flex items-center">
-                            <img src="../Images/logo.png" alt="roshanDarya"
+                            <img src="../Images/logo.webp" alt="roshanDarya"
                                 class="h-16 fill-current text-white group-hover:text-blue-500 transition-colors duration-300">
                         </div>
                     </div>
@@ -797,7 +797,7 @@
             <div id="service1" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="../Images/Image/services/MainPage/1.png" alt="">
+                        <img src="../Images/Image/services/MainPage/1.webp" alt="">
                     </div>
                 </div>
                 <br />
@@ -812,7 +812,7 @@
             <div id="service2" class="service-content hidden">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="../Images/Image/services/MainPage/2.jpg" alt="">
+                        <img src="../Images/Image/services/MainPage/2.webp" alt="">
                     </div>
                 </div>
                 <br />
@@ -825,7 +825,7 @@
             <div id="service3" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="../Images/Image/services/MainPage/3.jpg" alt="">
+                        <img src="../Images/Image/services/MainPage/3.webp" alt="">
                     </div>
                 </div>
                 <br />
@@ -841,7 +841,7 @@
             <div id="service4" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="../Images/Image/services/MainPage/4.jpg" alt="">
+                        <img src="../Images/Image/services/MainPage/4.webp" alt="">
                     </div>
                 </div>
                 <br />
@@ -959,31 +959,31 @@
                 <div class="container-fluid gallery-wrapper gallery-scroll">
                     <div class="grid-container  horizontal-scroll cursor-grab">
                         <div class="grid-item left">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/1.jpg" alt="image1"
+                            <img src="../Images/Image/gallery/MainPage/AroundSlider/1.webp" alt="image1"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item right">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/2.jpg" alt="image2"
+                            <img src="../Images/Image/gallery/MainPage/AroundSlider/2.webp" alt="image2"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item left">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/3.jpg" alt="image3"
+                            <img src="../Images/Image/gallery/MainPage/AroundSlider/3.webp" alt="image3"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item right">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/4.jpg" alt="image4"
+                            <img src="../Images/Image/gallery/MainPage/AroundSlider/4.webp" alt="image4"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item left">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/5.jpg" alt="image5"
+                            <img src="../Images/Image/gallery/MainPage/AroundSlider/5.webp" alt="image5"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item right">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/6.jpg" alt="image6"
+                            <img src="../Images/Image/gallery/MainPage/AroundSlider/6.webp" alt="image6"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item left">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/7.jpg" alt="image7"
+                            <img src="../Images/Image/gallery/MainPage/AroundSlider/7.webp" alt="image7"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
 
@@ -996,27 +996,27 @@
 
             <div class="grid-container0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 p-4 select-none">
                 <div class="grid-item0 item1">
-                    <img src="../Images/Image/gallery/MainPage/1.jpg" alt="Image 1"
+                    <img src="../Images/Image/gallery/MainPage/1.webp" alt="Image 1"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item2">
-                    <img src="../Images/Image/gallery/MainPage/2.jpg" alt="Image 2"
+                    <img src="../Images/Image/gallery/MainPage/2.webp" alt="Image 2"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item3">
-                    <img src="../Images/Image/gallery/MainPage/3.jpg" alt="Image 3"
+                    <img src="../Images/Image/gallery/MainPage/3.webp" alt="Image 3"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item4">
-                    <img src="../Images/Image/gallery/MainPage/4.jpg" alt="Image 4"
+                    <img src="../Images/Image/gallery/MainPage/4.webp" alt="Image 4"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item5">
-                    <img src="../Images/Image/gallery/MainPage/5.jpg" alt="Image 5"
+                    <img src="../Images/Image/gallery/MainPage/5.webp" alt="Image 5"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item6">
-                    <img src="../Images/Image/gallery/MainPage/6.jpg" alt="Image 6"
+                    <img src="../Images/Image/gallery/MainPage/6.webp" alt="Image 6"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
             </div>
