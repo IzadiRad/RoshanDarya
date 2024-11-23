@@ -143,7 +143,8 @@
                         class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
                     </div>
 
-                    <img src="/Images/Icon/roshan-new-en.webp" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
+                    <img src="/Images/Icon/roshan-new-en.webp" alt="roshandarya"
+                        class="relative w-36 h-auto z-10 top-6">
                 </a>
 
 
@@ -647,7 +648,7 @@
                     <div
                         class="flex items-center justify-center bg-white text-black py-3 px-4 h-full group-hover:bg-white transition-colors duration-300">
                         <div class="flex items-center">
-                            <img src="../Images/logo.webp" alt="roshanDarya"
+                            <img src="/Images/Icon/logo.webp" alt="roshanDarya"
                                 class="h-16 fill-current text-white group-hover:text-blue-500 transition-colors duration-300">
                         </div>
                     </div>
@@ -1144,7 +1145,8 @@
             </div>
         </div>
         <div class=" rounded-lg m-2 p-1 flex flex-row justify-between relative top-14 lastblog">
-            <a href=" ./Components/blog.html" class="button explore">More</a>
+            <a href=" /Components/blog.html" class="button explore text-white"
+                style="-webkit-text-fill-color: white;">More</a>
         </div>
     </section>
     <br />

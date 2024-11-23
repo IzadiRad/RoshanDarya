@@ -78,8 +78,8 @@
                         freight</a>
                     <a href="/Components/services/air-freight.html" id="ground-transport-link-mob"><i class=""></i>
                         Ground Transport</a>
-                    <a href="/Components/services/maps.html" id="services-maps-link-mob"><i class=""></i> Services
-                        Maps</a>
+                    <!-- <a href="/Components/services/maps.html" id="services-maps-link-mob"><i class=""></i> Services
+                        Maps</a> -->
                 </div>
 
                 <hr />
@@ -193,7 +193,7 @@
         <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>
         <article id="custome-main-show" class="relative">
             <video autoplay muted loop id="myVideo" class="w-full h-[calc(100vh-70px)] object-cover">
-                <source src="/Images/Video/Hero.webm" type="video/mp4">
+                <source src="/Images/Video/hero.webm" type="video/mp4">
             </video>
         </article>
     </section>
