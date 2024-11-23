@@ -190,6 +190,23 @@ document.getElementById("back-to-step1").addEventListener("click", function () {
     document.getElementById("step1").classList.remove("hidden");
 });
 
+const containerTypeDropdown = document.getElementById("containerType");
+const dimensionsFields = document.getElementById("dimensionsFields");
+const gaugeOptions = document.getElementById("gaugeOptions");
+
+// مدیریت تغییرات نوع کانتینر
+containerTypeDropdown.addEventListener("change", () => {
+    const selectedType = containerTypeDropdown.value;
+
+    // برای Open Top و Flat Rack فیلدها را نمایش دهید
+    if (selectedType === "OpenTop" || selectedType === "FlatRack") {
+        dimensionsFields.classList.remove("hidden");
+        gaugeOptions.classList.remove("hidden");
+    } else {
+        dimensionsFields.classList.add("hidden");
+        gaugeOptions.classList.add("hidden");
+    }
+});
 
 // document.getElementById('menu-toggle').addEventListener("click", function () {
 //     document.getElementById("mobile-menu").classList.toggle("show");

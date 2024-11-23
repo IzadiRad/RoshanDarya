@@ -1,4 +1,5 @@
 <?php
+
 require './vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -31,28 +32,33 @@ try {
         exit;
     }
 
-    // پردازش اطلاعات فرم و ارسال کد تأیید
     $requiredFields = ['transportType', 'containerType', 'quantity', 'departureCountry', 'departurePort', 'destinationCountry', 'destinationPort', 'phoneNumber', 'email'];
-    $formData = [];
+    $optionalFields = ['length', 'width', 'height', 'inGauge', 'outOfGauge'];
+    foreach ($optionalFields as $field) {
+        $formData[$field] = $_POST[$field] ?? 'N/A';
+        $formData['gaugeType'] = $_POST['gaugeType'] ?? 'N/A';
+        $formData = [];
 
-    foreach ($requiredFields as $field) {
-        if (empty($_POST[$field])) {
-            throw new Exception("Field '{$field}' is required.");
+        foreach ($requiredFields as $field) {
+            if (empty($_POST[$field])) {
+                throw new Exception("Field '{$field}' is required.");
+            }
+            $formData[$field] = $_POST[$field];
         }
-        $formData[$field] = $_POST[$field];
+
+        $verificationCode = rand(100000, 999999);
+        $_SESSION['otp'] = $verificationCode;
+        // debug_to_console($verificationCode);
+        $_SESSION['formData'] = $formData; // ذخیره داده‌های فرم در جلسه
+
+        sendOtp($formData['phoneNumber'], $verificationCode);
+
     }
-
-    $verificationCode = rand(100000, 999999);
-    $_SESSION['otp'] = $verificationCode;
-    // debug_to_console($verificationCode);
-    $_SESSION['formData'] = $formData; // ذخیره داده‌های فرم در جلسه
-
-    sendOtp($formData['phoneNumber'], $verificationCode);
-
     echo json_encode(['success' => true, 'message' => 'OTP sent successfully.']);
 } catch (Exception $e) {
     echo json_encode(['success' => false, 'message' => $e->getMessage()]);
 }
+
 
 // تابع ارسال کد OTP
 function sendOtp($phoneNumber, $verificationCode)
@@ -103,6 +109,12 @@ function sendEmail($formData)
             <p><strong>Destination Port:</strong> {$formData['destinationPort']}</p>
             <p><strong>Phone Number:</strong> {$formData['phoneNumber']}</p>
             <p><strong>Customer Email:</strong> {$formData['email']}</p>
+
+
+                <p><strong>length:</strong> {$formData['length']}</p>
+    <p><strong>width:</strong> {$formData['width']}</p>
+    <p><strong>height:</strong> {$formData['height']}</p>
+    <p><strong>Gauge Type:</strong> {$formData['gaugeType']}</p>
         ";
 
         $mail->send();

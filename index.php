@@ -1400,7 +1400,7 @@
             <!-- Contact Us Section -->
             <div class="contact" style="display: flex; gap: 10px;flex-direction: column;">
                 <h1>Contact Us</h1>
-                <p>Unit 2 & 4, No.235 , After Sarafraz cross road St , Motahari Ave , Tehran , IRAN</p>
+                <p>Unit 4, No.235 , After Sarafraz cross road St , Motahari Ave , Tehran , IRAN</p>
                 <p>Email: info@roshandarya.com</p>
                 <p>Phone:<br /> (+98) 21 860 47 322 <br />(+98) 21 860 47 425 <br />(+98) 21 861 22 178 </p>
                 <br />
@@ -1469,8 +1469,11 @@
                         required>
                         <option value="" disabled selected>Select Container Type</option>
                         <option value="20">20 ft - Standard Container</option>
-                        <option value="40">40 ft - Standard Container</option>
+                        <option value="HQ">HQ - High Cube</option>
+                        <option value="Refreginator">Refreginator</option>
+                        <option value="FlatRack">FlatRack</option>
                         <option value="ISO">ISO Tank - Liquid Transport</option>
+                        <option value="OpenTop">OpenTop</option>
                     </select>
                     <!-- نوع ISO Tank -->
                     <select name="isoTankType" id="isoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
@@ -1480,6 +1483,34 @@
                         <option value="T50">T50</option>
                     </select>
                     <!-- سایر فیلدها -->
+
+
+                    <div id="dimensionsFields" class="hidden w-full flex flex-wrap gap-4">
+                        <input type="number" name="length" placeholder="Length(m)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <input type="number" name="width" placeholder="Width(m)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <input type="number" name="height" placeholder="Height(m)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                    </div>
+
+                    <!-- چک‌باکس‌های In-Gauge و Out of Gauge  display: flex
+;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap: 15em; */
+    color: white;-->
+                    <div id="gaugeOptions" class="hidden w-full flex gap-4  justify-around flex-row text-white">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gaugeType" value="In-Gauge" class="form-radio">
+                            <span>In-Gauge</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gaugeType" value="Out of Gauge" class="form-radio">
+                            <span>Out of Gauge</span>
+                        </label>
+                    </div>
+
                     <input type="number" name="quantity" placeholder="Enter Quantity" min="1" class="input-field w-full"
                         required>
                     <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
