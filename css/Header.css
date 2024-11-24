@@ -517,4 +517,8 @@ header li {
     .mobwhite {
         background-color: #fff;
     }
+
+    #roshan-icon {
+        position: absolute;
+    }
 }

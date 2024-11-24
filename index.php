@@ -51,7 +51,7 @@
         </div>
         <nav class="flex justify-center items-center space-x-8 mx-auto relative ">
             <!-- دکمه منوی همبرگری -->
-            <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0">
+            <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0 relative z-10">
                 <i class="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 30"
                         class="hamburger-svg">
@@ -83,7 +83,7 @@
                 </div>
 
                 <hr />
-                <a href="#" class="request-quote-link"><i class=""></i> Request a Quote</a>
+                <a href="#" class="request-quote-link" data-target="#quoteModal1"><i class=""></i> Request a Quote</a>
                 <div id="close-menu" class="close-btn">
                     <i class="contents">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
@@ -110,7 +110,7 @@
 
             </div>
 
-            <menu class="flex items-center flex-row w-full justify-center">
+            <menu class="flex items-center flex-row w-full justify-center m-0">
                 <!-- منوی سمت چپ لوگو -->
                 <nav id="menu" class="hidden md:flex space-x-4 mymenu">
                     <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-white"
@@ -139,14 +139,16 @@
                         </div>
                     </div>
 
-                    <a href="#"
-                        class="nav-link custome-size-menu custome-menu-item text-white request-quote-link">Request a
+                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-white request-quote-link"
+                        data-target="#quoteModal2">Request a
                         Quote</a>
 
                 </nav>
 
                 <!-- لوگو وسط منو -->
-                <a class="relative flex justify-center items-center ml-6" href="/index.php">
+                <a id="roshan-icon"
+                    class="relative flex justify-center items-center ml-6 left-0 right-0 top-0 lg:relative sm:absolute md:absolute"
+                    href="/index.php">
                     <div id="logo-butt"
                         class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
                     </div>
@@ -1048,13 +1050,13 @@
                 <!-- Blog Item 1 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0 ">
-                    <div class="blog-img">
-                        <a class="blog-link">
-                            <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
+                    <div class="blog-img h-64">
+                        <a class="blog-link h-full">
+                            <img class="w-full h-auto pointer-events-none object-cover" src="./Images/Image/3.webp"
+                                style="height: inherit;" alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
-                    <div class="p-4">
+                    <div class="p-4 h-60">
                         <h4 class="mb-3 text-primary">How to Build a Website</h4>
                         <p>Short description about the first blog. You can write more details about the topic here.
                         </p>
@@ -1066,13 +1068,13 @@
                 <!-- Blog Item 2 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                    <div class="blog-img">
-                        <a class="blog-link">
-                            <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                alt="Blog Image 2"> <!-- غیرفعال کردن کلیک -->
+                    <div class="blog-img h-64">
+                        <a class="blog-link h-full">
+                            <img class="w-full h-auto pointer-events-none object-cover" src="./Images/Image/38.webp"
+                                alt="Blog Image 2" style="height: inherit;"> <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
-                    <div class="p-4">
+                    <div class="p-4 h-60">
                         <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
                         <p>Short description about the second blog. You can write more details about the topic here.
                         </p>
@@ -1083,13 +1085,14 @@
                 <!-- Blog Item 3 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                    <div class="blog-img">
-                        <a class="blog-link">
-                            <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                alt="Blog Image 3"> <!-- غیرفعال کردن کلیک -->
+                    <div class="blog-img h-64">
+                        <a class="blog-link h-full">
+                            <img class="w-full h-auto pointer-events-none object-cover" src="./Images/Image/204.webp"
+                                alt="Blog Image 3" style="height: inherit;">
+                            <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
-                    <div class="p-4">
+                    <div class="p-4 h-60">
                         <h4 class="mb-3 text-primary">UX Design Guide</h4>
                         <p>Short description about the third blog. You can write more details about the topic here.
                         </p>
@@ -1100,13 +1103,14 @@
                 <!-- Blog Item 4 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                    <div class="blog-img">
-                        <a class="blog-link">
-                            <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                    <div class="blog-img h-64">
+                        <a class="blog-link h-full">
+                            <img class="w-full h-auto pointer-events-none object-cover"
+                                src="./Images/Image/gallery/MainPage/6.webp" alt="Blog Image 4"
+                                style="height: inherit;"> <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
-                    <div class="p-4">
+                    <div class="p-4 h-60">
                         <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
                         <p>Short description about the fourth blog. You can write more details about the topic here.
                         </p>
@@ -1117,13 +1121,15 @@
                 <!-- Blog Item 5 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
-                    <div class="blog-img">
-                        <a class="blog-link">
-                            <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                    <div class="blog-img h-64">
+                        <a class="blog-link h-full">
+                            <img class="w-full h-auto pointer-events-none object-cover"
+                                src="./Images/Image/services/air-freight/1.webp" alt="Blog Image 4"
+                                style="height: inherit;">
+                            <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
-                    <div class="p-4">
+                    <div class="p-4 h-60">
                         <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
                         <p>Short description about the fourth blog. You can write more details about the topic here.
                         </p>
@@ -1132,15 +1138,17 @@
                     </div>
                 </div>
                 <!-- Blog Item 6 -->
-                <div class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0"
-                    style="    margin-right: 20px;">
-                    <div class="blog-img">
-                        <a class="blog-link">
-                            <img class="w-full h-auto pointer-events-none" src="https://via.placeholder.com/350"
-                                alt="Blog Image 4"> <!-- غیرفعال کردن کلیک -->
+                <div class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0 "
+                    style="margin-right: 20px;">
+                    <div class="blog-img h-64">
+                        <a class="blog-link h-full">
+                            <img class="w-full h-auto pointer-events-none object-cover"
+                                src="./Images/Image/services/services/maps.webp" alt="Blog Image 4"
+                                style="height: inherit;">
+                            <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
-                    <div class="p-4">
+                    <div class="p-4 h-60">
                         <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
                         <p>Short description about the fourth blog. You can write more details about the topic here.
                         </p>
@@ -1162,55 +1170,78 @@
     <section id="rate-inquiry" class="py-6">
         <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
             <!-- Existing Fields -->
-            <select class="input-field w-full md:w-1/3 lg:w-1/5" name="transportType" required>
+            <!-- انتخاب نوع حمل و نقل -->
+            <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                 <option value="" disabled selected>Select Transport Type</option>
                 <option>Air Transport</option>
                 <option>Ground Transport</option>
                 <option>Sea Transport</option>
             </select>
-            <select id="mainContainerType" class="input-field w-full md:w-1/3 lg:w-1/5" name="containerType" required>
+            <!-- انتخاب نوع کانتینر -->
+            <!-- انتخاب نوع کانتینر -->
+            <select name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5 containerType" required>
                 <option value="" disabled selected>Select Container Type</option>
                 <option value="20">20 ft - Standard Container</option>
-                <option value="40">40 ft - Standard Container</option>
-                <option value="OP">OP - Open-Top Container</option>
-                <option value="FR">FR - Flat Rack Container</option>
+                <option value="HQ">HQ - High Cube Container</option>
                 <option value="RF">RF - Refrigerated Container</option>
+                <option value="FR">FR - Flat Rack Container</option>
                 <option value="ISO">ISO Tank - Liquid Transport</option>
+                <option value="OP">OP - Open-Top Container</option>
             </select>
-            <select name="isoTankType" id="mainIsoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
-                <option value="" disabled="" selected="">Select ISO Tank Type</option>
+
+            <!-- فیلدهای ابعاد -->
+            <div class="hidden w-full flex flex-wrap gap-4 dimensionsFields">
+                <input type="number" name="length" placeholder="Length (m)" min="0"
+                    class="input-field w-full md:w-1/3 lg:w-1/5">
+                <input type="number" name="width" placeholder="Width (m)" min="0"
+                    class="input-field w-full md:w-1/3 lg:w-1/5">
+                <input type="number" name="height" placeholder="Height (m)" min="0"
+                    class="input-field w-full md:w-1/3 lg:w-1/5">
+            </div>
+
+            <!-- گزینه‌های In-Gauge و Out of Gauge -->
+            <div id="gaugeOptions" class="hidden w-full flex gap-4 justify-around flex-row text-gray-700">
+                <label class="flex items-center gap-2">
+                    <input type="radio" name="gaugeType" value="In-Gauge" class="form-radio">
+                    <span>In-Gauge</span>
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="radio" name="gaugeType" value="Out of Gauge" class="form-radio">
+                    <span>Out of Gauge</span>
+                </label>
+            </div>
+
+
+            <select name="isoTankType" id="isoTankOptions"
+                class="input-field w-full md:w-1/3 lg:w-1/5 hidden isoTankOptions">
+                <option value="" disabled selected>Select ISO Tank Type</option>
                 <option value="T7">T7</option>
                 <option value="T1">T1</option>
                 <option value="T50">T50</option>
             </select>
 
-            <input type="number" id="containerCount" placeholder="Enter Quantity" min="1" class="input-field w-full"
-                required name="quantity">
-
-            <!-- Departure Fields -->
-            <select id="mainCountrySelect" class="input-field w-full md:w-1/3 lg:w-1/5" required
-                name="departureCountry">
+            <input type="number" name="quantity" placeholder="Enter Quantity" min="1" class="input-field w-full"
+                required>
+            <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                 <option value="" disabled selected>Select Departure Country</option>
             </select>
-            <select name="departurePort" id="mainPortsSelect" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+            <select id="portsSelect" name="departurePort" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                 <option value="" disabled selected>Select Departure Port</option>
             </select>
-
-            <!-- Destination Fields -->
-            <select id="mainDestinationCountry" name="destinationCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
+            <select id="destinationCountry" name="destinationCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
                 required>
                 <option value="" disabled selected>Select Destination Country</option>
             </select>
-            <select name="destinationPort" id="mainDestinationPortsSelect" class="input-field w-full md:w-1/3 lg:w-1/5"
+            <select id="destinationPortsSelect" name="destinationPort" class="input-field w-full md:w-1/3 lg:w-1/5"
                 required>
                 <option value="" disabled selected>Select Destination Port</option>
             </select>
-
-            <!-- Contact Fields -->
-            <input type="email" placeholder="Email" name="email" class="input-field w-full md:w-1/3 lg:w-1/5" required>
-            <input type="text" placeholder="Phone Number" name="phoneNumber"
+            <input type="email" name="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+            <input type="text" name="phoneNumber" placeholder="Phone Number"
                 class="input-field w-full md:w-1/3 lg:w-1/5" required>
-            <button class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get Rate Quote</button>
+
+            <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get
+                Rate Quote</button>
         </div>
     </section>
 
@@ -1356,81 +1387,86 @@
                     to excellence and customer satisfaction.</p>
                 <!-- Map Integration -->
                 <h2>Our Location</h2>
+                <iframe title="tehran, motahary st,  roshan darya pars"
+                    aria-label="tehran, motahary st,  roshan darya pars" data-origwidth="" data-origheight=""
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!--src="https://maps.google.com/maps?q=tehran%2C%20motahary%20st%2C%20%20roshan%20darya%20pars&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"-->
+                <!-- src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d202.44295713934417!2d51.4195127!3d35.7240711!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1732438662597!5m2!1sen!2suk" -->
                 <iframe loading="lazy"
-                    src="https://maps.google.com/maps?q=tehran%2C%20motahary%20st%2C%20%20roshan%20darya%20pars&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
-                    title="tehran, motahary st,  roshan darya pars" aria-label="tehran, motahary st,  roshan darya pars"
-                    data-origwidth="" data-origheight="" width="100%" height="250" style="border:0;" allowfullscreen=""
-                    loading="lazy"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d202.44295713934417!2d51.4195127!3d35.7240711!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1732438662597!5m2!1sen!2suk"
+                    title="New Location" aria-label="New Location" width="100%" height="250" style="border:0;"
+                    allowfullscreen=""></iframe>
 
-            </div>
 
-            <!-- Explor Links Section -->
-            <div class="links">
-                <h1 class="text-xl font-bold mb-4">Explore Links</h1>
-                <a href="#" class="block text-secondary-grayish-blue hover:underline">Our Services</a>
-                <a href="#" class="block text-secondary-grayish-blue hover:underline">Meet Our Team</a>
-                <a href="#" class="block text-secondary-grayish-blue hover:underline">Forum</a>
-                <a href="#" class="block text-secondary-grayish-blue hover:underline">Help Center</a>
-                <a href="#" class="block text-secondary-grayish-blue hover:underline">Contact Us</a>
-                <a href="#" class="block text-secondary-grayish-blue hover:underline">Privacy Policy</a>
-                <a href="#" class="block text-secondary-grayish-blue hover:underline">Our Terms</a>
-                <a href="#" class="block text-secondary-grayish-blue hover:underline">Site Map</a>
-            </div>
+                <!-- Explor Links Section -->
+                <div class="links">
+                    <h1 class="text-xl font-bold mb-4">Explore Links</h1>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Our Services</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Meet Our Team</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Forum</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Help Center</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Contact Us</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Privacy Policy</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Our Terms</a>
+                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Site Map</a>
+                </div>
 
-            <!-- Latest Posts Section -->
-            <div class="posts">
-                <h1 class="text-xl font-bold mb-4">Latest Posts</h1>
-                <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
-                    <span class="font-semibold">20<br>AUG</span> Important Tips for Efficient Shipping
-                </a>
-                <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
-                    <span class="font-semibold">15<br>AUG</span> How We Ensure Fast Deliveries
-                </a>
-                <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
-                    <span class="font-semibold">10<br>AUG</span> The Future of Marine Transport
-                </a>
-                <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
-                    <span class="font-semibold">05<br>AUG</span> Customer Success Stories
-                </a>
-                <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
-                    <span class="font-semibold">01<br>AUG</span> Navigating New Trade Routes
-                </a>
-            </div>
+                <!-- Latest Posts Section -->
+                <div class="posts">
+                    <h1 class="text-xl font-bold mb-4">Latest Posts</h1>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">20<br>AUG</span> Important Tips for Efficient Shipping
+                    </a>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">15<br>AUG</span> How We Ensure Fast Deliveries
+                    </a>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">10<br>AUG</span> The Future of Marine Transport
+                    </a>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">05<br>AUG</span> Customer Success Stories
+                    </a>
+                    <a href="#" class="block mb-2 text-secondary-grayish-blue hover:underline">
+                        <span class="font-semibold">01<br>AUG</span> Navigating New Trade Routes
+                    </a>
+                </div>
 
-            <!-- Contact Us Section -->
-            <div class="contact" style="display: flex; gap: 10px;flex-direction: column;">
-                <h1>Contact Us</h1>
-                <p>Unit 2 & 4, No.235 , After Sarafraz cross road St , Motahari Ave , Tehran , IRAN</p>
-                <p>Email: info@roshandarya.com</p>
-                <p>Phone:<br /> (+98) 21 860 47 322 <br />(+98) 21 860 47 425 <br />(+98) 21 861 22 178 </p>
-                <br />
-                <!-- Social Media Links with Specific Colors -->
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                <!-- Contact Us Section -->
+                <div class="contact" style="display: flex; gap: 10px;flex-direction: column;">
+                    <h1>Contact Us</h1>
+                    <p>Unit 4, No.235 , After Sarafraz cross road St , Motahari Ave , Tehran , IRAN</p>
+                    <p>Email: info@roshandarya.com</p>
+                    <p>Phone:<br /> (+98) 21 860 47 322 <br />(+98) 21 860 47 425 <br />(+98) 21 861 22 178 </p>
+                    <br />
 
-                <div class="social-icons text-center">
-                    <div class="social-icons space-x-4">
-                        <a href="https://facebook.com" target="_blank" style="color: #4267B2;">
-                            <i class="fab fa-facebook-f fa-2x"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" style="color: #1DA1F2;">
-                            <i class="fab fa-twitter fa-2x"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" style="color: #C13584;">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" style="color: #0A66C2;">
-                            <i class="fab fa-linkedin-in fa-2x"></i>
-                        </a>
-                        <a href="https://t.me/roshandarya" target="_blank" style="color: #0088cc;">
-                            <i class="fab fa-telegram-plane fa-2x"></i>
-                        </a>
+
+                    <!-- Social Media Links with Specific Colors -->
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+                    <div class="social-icons text-center">
+                        <div class="social-icons space-x-4">
+                            <a href="https://facebook.com" target="_blank" style="color: #4267B2;">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" style="color: #1DA1F2;">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" style="color: #C13584;">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" style="color: #0A66C2;">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+                            <a href="https://t.me/roshandarya" target="_blank" style="color: #0088cc;">
+                                <i class="fab fa-telegram-plane fa-2x"></i>
+                            </a>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
-        </div>
     </section>
 
     <section id="sec-7" style="background-color: black; color: aliceblue; height: auto;">
@@ -1465,21 +1501,48 @@
                         <option>Sea Transport</option>
                     </select>
                     <!-- انتخاب نوع کانتینر -->
-                    <select id="containerType" name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5"
-                        required>
+                    <!-- انتخاب نوع کانتینر -->
+                    <select name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5 containerType" required>
                         <option value="" disabled selected>Select Container Type</option>
                         <option value="20">20 ft - Standard Container</option>
-                        <option value="40">40 ft - Standard Container</option>
+                        <option value="HQ">HQ - High Cube Container</option>
+                        <option value="RF">RF - Refrigerated Container</option>
+                        <option value="FR">FR - Flat Rack Container</option>
                         <option value="ISO">ISO Tank - Liquid Transport</option>
+                        <option value="OP">OP - Open-Top Container</option>
                     </select>
-                    <!-- نوع ISO Tank -->
-                    <select name="isoTankType" id="isoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
+
+                    <!-- فیلدهای ابعاد -->
+                    <div class="hidden w-full flex flex-wrap gap-4 dimensionsFields">
+                        <input type="number" name="length" placeholder="Length (m)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <input type="number" name="width" placeholder="Width (m)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <input type="number" name="height" placeholder="Height (m)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                    </div>
+
+                    <!-- گزینه‌های In-Gauge و Out of Gauge -->
+                    <div id="gaugeOptions" class="hidden w-full flex gap-4 justify-around flex-row text-gray-700">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gaugeType" value="In-Gauge" class="form-radio">
+                            <span>In-Gauge</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gaugeType" value="Out of Gauge" class="form-radio">
+                            <span>Out of Gauge</span>
+                        </label>
+                    </div>
+
+
+                    <select name="isoTankType" id="isoTankOptions"
+                        class="input-field w-full md:w-1/3 lg:w-1/5 hidden isoTankOptions">
                         <option value="" disabled selected>Select ISO Tank Type</option>
                         <option value="T7">T7</option>
                         <option value="T1">T1</option>
                         <option value="T50">T50</option>
                     </select>
-                    <!-- سایر فیلدها -->
+
                     <input type="number" name="quantity" placeholder="Enter Quantity" min="1" class="input-field w-full"
                         required>
                     <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
