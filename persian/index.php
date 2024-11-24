@@ -1409,6 +1409,12 @@
                         <option value="T1">T1</option>
                         <option value="T50">T50</option>
                     </select>
+                    <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
+                    class="input-field w-full" required>
+                    <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
+                    class="input-field w-full" required>
+                    <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
+                    class="input-field w-full" required>
                     <!-- سایر فیلدها -->
                     <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
                         class="input-field w-full" required>
