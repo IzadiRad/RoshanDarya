@@ -12,7 +12,7 @@ step1.style.zIndex = "9999";
 div.id = "darkside";
 
 if (quoteModal) {
-    const quoteLinks = document.querySelectorAll(".request-quote-link");
+    const quoteLinks = document.querySelector(".request-quote-link");
     quoteLinks.forEach(link => {
         link.addEventListener("click", (event) => {
             event.preventDefault();
@@ -38,37 +38,55 @@ window.addEventListener("click", (event) => {
 });
 
 // نمایش یا مخفی‌سازی فیلد ISO Tank
-document.getElementById("containerType").addEventListener("change", function () {
-    const isoTankDropdown = document.getElementById("isoTankOptions");
-    if (this.value === "ISO") {
-        isoTankDropdown.classList.remove("hidden");
-    } else {
-        isoTankDropdown.classList.add("hidden");
-    }
+document.querySelectorAll(".containerType").forEach(containerTypeDropdown => {
+    containerTypeDropdown.addEventListener("change", function () {
+        const parentForm = this.closest("form"); // فرم مربوط به این کانتینر
+        const dimensionsFields = parentForm.querySelector(".dimensionsFields");
+        const gaugeOptions = parentForm.querySelector(".gaugeOptions");
+        const isoTankOptions = parentForm.querySelector(".isoTankOptions");
+
+        // مدیریت تغییرات بر اساس نوع کانتینر
+        if (this.value === "OP" || this.value === "FR") {
+            dimensionsFields.classList.remove("hidden");
+            gaugeOptions.classList.remove("hidden");
+        } else {
+            dimensionsFields.classList.add("hidden");
+            gaugeOptions.classList.add("hidden");
+        }
+
+        if (this.value === "ISO") {
+            isoTankOptions.classList.remove("hidden");
+        } else {
+            isoTankOptions.classList.add("hidden");
+        }
+    });
 });
 
+
 // فرم ارسال OTP
-document.getElementById("rate-inquiry-form").addEventListener("submit", function (e) {
-    e.preventDefault(); // جلوگیری از رفتار پیش‌فرض فرم
+document.querySelectorAll(".rate-inquiry-form").forEach(form => {
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    const formData = new FormData(this);
+        const formData = new FormData(this);
 
-    fetch('/processRateRequest.php', {
-        method: 'POST',
-        body: formData,
-    })
-        .then((response) => response.json())
-        .then((data) => {
-            if (data.success) {
-                alert('OTP sent successfully!');
-                document.getElementById("step1").classList.add("hidden");
-                document.getElementById("step2").classList.remove("hidden");
-                document.getElementById("phone-display").textContent = `Verification sent to: ${formData.get("phoneNumber")}`;
-            } else {
-                alert(data.message || 'Error sending OTP. Please try again.');
-            }
+        fetch('/processRateRequest.php', {
+            method: 'POST',
+            body: formData,
         })
-        .catch((error) => console.error('Error:', error));
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert("OTP sent successfully!");
+                    const step1 = this.closest("#step1");
+                    step1.classList.add("hidden");
+                    step1.nextElementSibling.classList.remove("hidden"); // نمایش مرحله دوم
+                } else {
+                    alert(data.message || "Error sending OTP. Please try again.");
+                }
+            })
+            .catch(error => console.error("Error:", error));
+    });
 });
 
 
@@ -191,7 +209,7 @@ document.getElementById("back-to-step1").addEventListener("click", function () {
 });
 
 const containerTypeDropdown = document.getElementById("containerType");
-const dimensionsFields = document.getElementById("dimensionsFields");
+const dimensionsFields = document.querySelector(".dimensionsFields");
 const gaugeOptions = document.getElementById("gaugeOptions");
 
 // مدیریت تغییرات نوع کانتینر
