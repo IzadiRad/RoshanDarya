@@ -189,7 +189,6 @@
             </menu>
         </nav>
     </header>
-    <div id="overlayy"></div>
 
     <section id="sec-0" class="hero-section relative">
         <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>

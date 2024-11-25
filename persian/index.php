@@ -20,7 +20,7 @@
     <link href="/css/section2.css" rel="stylesheet" type="text/css">
     <link href="/css/service-section.css" rel="stylesheet" type="text/css">
     <link href="/css/Footer.css" rel="stylesheet" type="text/css">
-    <!-- <link href="../css/faq.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="/css/faq.css" rel="stylesheet" type="text/css"> -->
     <link href="/css/faqFa.css" rel="stylesheet" type="text/css">
     <link href="/css/rate-inquiry.css" rel="stylesheet" type="text/css">
     <link href="/css/AboutUs.css" rel="stylesheet" type="text/css">
@@ -36,15 +36,15 @@
 </head>
 
 <body style="direction: rtl;">
-    <header class=" top-0 bg-white z-50 shadow-lg">
+    <header class="top-0 bg-white z-50 shadow-lg rtl">
         <div class="hide" id="searchBar">
             <input type="search" name="searchBox" id="searchBox"
-                placeholder="Type your search here.. Press [Esc] to exit">
+                placeholder="جستجوی خود را وارد کنید برای خروج [Esc] را فشار دهید">
         </div>
-        <nav class="flex justify-center items-center space-x-8 mx-auto relative ">
+        <nav class="flex justify-center items-center space-x-reverse mx-auto relative">
             <!-- دکمه منوی همبرگری -->
-            <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute left-0">
-                <i class="">
+            <div id="menu-toggle" class="block md:hidden focus:outline-none px-4 absolute right-0 relative z-10">
+                <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 30"
                         class="hamburger-svg">
                         <rect width="40" height="4" rx="2" fill="var(--primary-light-blue)"></rect>
@@ -54,31 +54,30 @@
                 </i>
             </div>
 
-
+            <!-- منوی موبایل -->
             <div id="mobile-menu" class="hidden">
-                <div id="overlay"> </div>
-                <a href="./index.php" id="home-link-mob"><i class=""></i> خانه</a>
+                <div id="overlay"></div>
+                <a href="./index.php" id="home-link-mob"><i></i> صفحه اصلی</a>
                 <hr />
                 <a id="services-linkss" class="menu-item">
-                    <i class="" id="services-link-mob"></i> خدمات
+                    <i id="services-link-mob"></i> خدمات
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="services-submenu" class="submenu hidden">
-                    <a href="./Components/services/maritime-transport.html" id="maritime-link-mob"><i class=""></i>
-                        حمل و نقل دریایی </a>
-                    <a href="./Components/services/ground-transport.html" id="air-freight-link-mob"><i class=""></i> حمل
-                        و نقل زمینی</a>
-                    <a href="./Components/services/air-freight.html" id="ground-transport-link-mob"><i class=""></i>
-                        حمل و نقل هوایی</a>
+                    <a href="./components/services/maritime-transport.html" id="maritime-link-mob"><i></i> حمل‌ونقل
+                        دریایی</a>
+                    <a href="./components/services/ground-transport.html" id="air-freight-link-mob"><i></i> حمل‌ونقل
+                        زمینی</a>
+                    <a href="./components/services/air-freight.html" id="ground-transport-link-mob"><i></i> حمل‌ونقل
+                        هوایی</a>
                 </div>
-
                 <hr />
-                <a href="#" class="request-quote-link"><i class=""></i> درخواست قیمت</a>
+                <a href="#" class="request-quote-link" data-target="#quoteModal1"><i></i> درخواست قیمت</a>
                 <div id="close-menu" class="close-btn">
                     <i class="contents">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
-                            class="x-icon text-blue-900 ">
+                            class="x-icon text-blue-900">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
                         </svg>
@@ -86,92 +85,79 @@
                 </div>
                 <hr />
                 <a href="#" id="eqc-linkss" class="menu-item">
-                    <i class=""></i> شرایط حمل و نقل
+                    <i></i> EQC
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="eqc-submenu" class="submenu hidden">
-                    <a href="./Components/eqc/incoterms.html" id="incoterms-link-mob"><i class=""></i> شرایط
-                        اینکوترمز</a>
-                    <a href="./Components/eqc/cargo.html" id="cargo-link-mob"><i class=""></i> کالا</a>
+                    <a href="./Components/eqc/Incoterms.html" id="incoterms-link-mob"><i></i> اینکوترمز</a>
+                    <a href="./components/eqc/cargo.html" id="cargo-link-mob"><i></i> محموله</a>
                 </div>
                 <hr />
-                <a href="./Components/AboutUs.html" id="about-us-link-mob"><i class=""></i> درباره ما</a>
+                <a href="./components/AboutUs.html" id="about-us-link-mob"><i></i> درباره ما</a>
                 <hr />
-                <a href="./Components/ContactUs.html" id="contact-us-link-mob"><i class=""></i> تماس با ما</a>
-
+                <a href="./components/ContactUs.html" id="contact-us-link-mob"><i></i> تماس با ما</a>
             </div>
 
-            <menu class="flex items-center flex-row w-full justify-center relative  mx-6 sm:left-1 md:left-1 lg:right-5"
-                style="margin-left:0; ">
-                <!-- منوی سمت چپ لوگو -->
-                <nav id="menu" class="hidden md:flex space-x-4 mymenu ">
+            <!-- منوی دسکتاپ -->
+            <menu class="flex items-center flex-row w-full justify-center m-0">
+                <nav id="menu" class="hidden md:flex space-x-reverse mymenu">
                     <a href="./index.php" class="nav-link custome-size-menu custome-menu-item text-white"
-                        id="home-link">خانه</a>
+                        id="home-link">صفحه اصلی</a>
                     <div class="relative">
-                        <a href="./Components/Services.html" id="desktop-services"
+                        <a href="./components/Services.html" id="desktop-services"
                             class="nav-link custome-size-menu custome-menu-item text-white">
                             خدمات
                             <span class="submenu-icon">&#9662;</span>
                         </a>
-
                         <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
-                            <a href="./Components/services/maritime-transport.html"
+                            <a href="./components/services/maritime-transport.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                                id="maritime-link">حمل و نقل دریایی</a>
-                            <a href="./Components/services/ground-transport.html"
+                                id="maritime-link">حمل‌ونقل دریایی</a>
+                            <a href="./components/services/ground-transport.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                                id="ground-transport-link">حمل و نقل زمینی</a>
-                            <a href="./Components/services/air-freight.html"
-                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
-                                id="air-freight-link">حمل و نقل هوایی</a>
-                            <!-- <a href="/Components/services/maps.html"
+                                id="ground-transport-link">حمل‌ونقل زمینی</a>
+                            <a href="./components/services/air-freight.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
-                                id="services-maps-link">Services
-                                Maps</a> -->
+                                id="air-freight-link">حمل‌ونقل هوایی</a>
                         </div>
                     </div>
-
-                    <a href="#"
-                        class="nav-link custome-size-menu custome-menu-item text-white request-quote-link">درخواست
-                        قیمت</a>
-
+                    <a href="#" class="nav-link custome-size-menu custome-menu-item text-white request-quote-link"
+                        data-target="#quoteModal2">درخواست قیمت</a>
                 </nav>
 
-                <!-- لوگو وسط منو -->
-                <a class="relative flex justify-center items-center " href="./index.php">
+                <!-- لوگو -->
+                <a id="roshan-icon"
+                    class="relative flex justify-center items-center mr-6 right-0 left-0 top-0 lg:relative sm:absolute md:absolute"
+                    href="./index.php">
                     <div id="logo-butt"
-                        class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
+                        class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite">
                     </div>
-
                     <img src="/Images/Icon/roshan-new-en.webp" alt="roshandarya"
                         class="relative w-36 h-auto z-10 top-6">
                 </a>
 
-
-
-                <!-- منو سمت راست لوگو -->
-                <nav class="hidden md:flex space-x-4 mymenu ml-3">
-
+                <nav class="hidden md:flex space-x-reverse mymenu mr-3">
                     <div class="relative z-10">
-                        <a href="/Components/eqc.html" id="desktop-eqc"
+                        <a href="./components/eqc.html" id="desktop-eqc"
                             class="nav-link custome-size-menu custome-menu-item z-100 text-white">
-                            شرایط حمل و نقل
+                            EQC
                             <span class="submenu-icon">&#9662;</span>
                         </a>
-                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                            <a href="/Components/eqc/incoterms.html"
-                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="incoterms-link"> شرایط
-                                اینکوترمز</a>
-                            <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                id="cargo-link">کالا</a>
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 left-0 substack">
+                            <a href="./components/eqc/incoterms.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="incoterms-link">اینکوترمز</a>
+                            <a href="./components/eqc/cargo.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link">محموله</a>
                         </div>
                     </div>
-                    <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                    <a href="./components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
                         id="about-us-link">درباره ما</a>
-                    <a href="/Components/ContactUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
-                        id="contact-us-link"> تماس با ما</a>
+                    <a href="./components/ContactUs.html"
+                        class="nav-link custome-size-menu custome-menu-item text-white" id="contact-us-link">تماس با
+                        ما</a>
                     <a href="/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                        <img src="/Images/united-kingdom-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                        <img src="/Images/united-kingdom-flag-icon.svg" alt="UK Flag" id="flag-icon" class="w-6 h-6">
                     </a>
                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
                 </nav>
@@ -180,11 +166,12 @@
     </header>
 
 
+
     <section id="sec-0" class="hero-section relative">
         <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>
         <article id="custome-main-show" class="relative">
             <video autoplay muted loop id="myVideo" class="w-full h-[calc(100vh-70px)] object-cover">
-                <source src="/Images/Video/Hero.webm" type="video/mp4">
+                <source src="/Images/Video/hero.webm" type="video/mp4">
             </video>
         </article>
     </section>
@@ -604,7 +591,7 @@
                                 لجستیکی قابل اعتماد است
                             </p>
                             <div class="rounded-lg m-2 p-1 flex flex-row justify-between relative lastAbout">
-                                <a href="./Components/blog.html"
+                                <a href="./components/blog.html"
                                     class="button explore inline-block mt-4 px-6 py-3 bg-primary-turquoise text-white font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300">بیشتر
                                     از ما بدونید</a>
                             </div>
@@ -626,9 +613,9 @@
                             <!-- Two Small Images -->
                             <div class="grid grid-cols-2 gap-4">
                                 <img class="rounded-lg shadow-lg w-full object-cover"
-                                    src="../Images/Image/AboutUs/Main/3.webp" alt="Image 1" data-aos="zoom-out">
+                                    src="/Images/Image/AboutUs/Main/3.webp" alt="Image 1" data-aos="zoom-out">
                                 <img class="rounded-lg shadow-lg w-full object-cover"
-                                    src="../Images/Image/AboutUs/Main/98.webp" data-aos="zoom-out" alt="Image 2">
+                                    src="/Images/Image/AboutUs/Main/98.webp" data-aos="zoom-out" alt="Image 2">
                             </div>
 
                         </div>
@@ -798,7 +785,7 @@
             <div id="service1" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="../Images/Image/services/MainPage/1.webp" alt="">
+                        <img src="/Images/Image/services/MainPage/1.webp" alt="">
                     </div>
                 </div>
                 <br />
@@ -813,7 +800,7 @@
             <div id="service2" class="service-content hidden">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="../Images/Image/services/MainPage/2.webp" alt="">
+                        <img src="/Images/Image/services/MainPage/2.webp" alt="">
                     </div>
                 </div>
                 <br />
@@ -826,7 +813,7 @@
             <div id="service3" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="../Images/Image/services/MainPage/3.webp" alt="">
+                        <img src="/Images/Image/services/MainPage/3.webp" alt="">
                     </div>
                 </div>
                 <br />
@@ -842,7 +829,7 @@
             <div id="service4" class="service-content hidden text-center">
                 <div class="relative overflow-hidden rounded-lg shadow-lg w-full">
                     <div class="aspect-w-16 aspect-h-9 lg:aspect-w-16 lg:aspect-h-17">
-                        <img src="../Images/Image/services/MainPage/4.webp" alt="">
+                        <img src="/Images/Image/services/MainPage/4.webp" alt="">
                     </div>
                 </div>
                 <br />
@@ -960,31 +947,31 @@
                 <div class="container-fluid gallery-wrapper gallery-scroll">
                     <div class="grid-container  horizontal-scroll cursor-grab">
                         <div class="grid-item left">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/1.webp" alt="image1"
+                            <img src="/Images/Image/gallery/MainPage/AroundSlider/1.webp" alt="image1"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item right">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/2.webp" alt="image2"
+                            <img src="/Images/Image/gallery/MainPage/AroundSlider/2.webp" alt="image2"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item left">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/3.webp" alt="image3"
+                            <img src="/Images/Image/gallery/MainPage/AroundSlider/3.webp" alt="image3"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item right">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/4.webp" alt="image4"
+                            <img src="/Images/Image/gallery/MainPage/AroundSlider/4.webp" alt="image4"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item left">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/5.webp" alt="image5"
+                            <img src="/Images/Image/gallery/MainPage/AroundSlider/5.webp" alt="image5"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item right">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/6.webp" alt="image6"
+                            <img src="/Images/Image/gallery/MainPage/AroundSlider/6.webp" alt="image6"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
                         <div class="grid-item left">
-                            <img src="../Images/Image/gallery/MainPage/AroundSlider/7.webp" alt="image7"
+                            <img src="/Images/Image/gallery/MainPage/AroundSlider/7.webp" alt="image7"
                                 class="animate__animated w-full h-auto object-cover pointer-events-none">
                         </div>
 
@@ -997,27 +984,27 @@
 
             <div class="grid-container0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 p-4 select-none">
                 <div class="grid-item0 item1">
-                    <img src="../Images/Image/gallery/MainPage/1.webp" alt="Image 1"
+                    <img src="/Images/Image/gallery/MainPage/1.webp" alt="Image 1"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item2">
-                    <img src="../Images/Image/gallery/MainPage/2.webp" alt="Image 2"
+                    <img src="/Images/Image/gallery/MainPage/2.webp" alt="Image 2"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item3">
-                    <img src="../Images/Image/gallery/MainPage/3.webp" alt="Image 3"
+                    <img src="/Images/Image/gallery/MainPage/3.webp" alt="Image 3"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item4">
-                    <img src="../Images/Image/gallery/MainPage/4.webp" alt="Image 4"
+                    <img src="/Images/Image/gallery/MainPage/4.webp" alt="Image 4"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item5">
-                    <img src="../Images/Image/gallery/MainPage/5.webp" alt="Image 5"
+                    <img src="/Images/Image/gallery/MainPage/5.webp" alt="Image 5"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item6">
-                    <img src="../Images/Image/gallery/MainPage/6.webp" alt="Image 6"
+                    <img src="/Images/Image/gallery/MainPage/6.webp" alt="Image 6"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
             </div>
@@ -1145,7 +1132,7 @@
             </div>
         </div>
         <div class=" rounded-lg m-2 p-1 flex flex-row justify-between relative top-14 lastblog">
-            <a href=" /Components/blog.html" class="button explore text-white"
+            <a href=" ./components/blog.html" class="button explore text-white"
                 style="-webkit-text-fill-color: white;">More</a>
         </div>
     </section>
@@ -1378,10 +1365,10 @@
 
 
     <!-- quoteModal-->
-    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10">
+    <div id="quoteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-10 rtl">
 
         <div class="bg-white rounded-lg w-11/12 md:w-1/2 lg:w-1/3" style="width: auto;">
-            <span id="closeModal" class="text-right text-2xl cursor-pointer ml-4">&times;</span>
+            <span id="closeModal" class="text-right text-2xl cursor-pointer mr-4">&times;</span>
 
             <!-- مرحله اول -->
             <section id="step1">
@@ -1389,73 +1376,99 @@
                     class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
                     <!-- انتخاب نوع حمل و نقل -->
                     <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>انتخاب نوع حمل و نقل</option>
-                        <option>حمل و نقل هوایی</option>
-                        <option>حمل و نقل زمینی</option>
-                        <option>حمل و نقل دریایی</option>
+                        <option value="" disabled selected>نوع حمل‌ونقل را انتخاب کنید</option>
+                        <option>حمل‌ونقل هوایی</option>
+                        <option>حمل‌ونقل زمینی</option>
+                        <option>حمل‌ونقل دریایی</option>
                     </select>
+
                     <!-- انتخاب نوع کانتینر -->
-                    <select id="containerType" name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5"
-                        required>
-                        <option value="" disabled selected>انتخاب نوع کانتینر</option>
-                        <option value="20">۲۰ فوت - کانتینر استاندارد</option>
-                        <option value="40">۴۰ فوت - کانتینر استاندارد</option>
-                        <option value="ISO">مخزن ISO - حمل مایعات</option>
+                    <select name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5 containerType" required>
+                        <option value="" disabled selected>نوع کانتینر را انتخاب کنید</option>
+                        <option value="20">کانتینر استاندارد ۲۰ فوت</option>
+                        <option value="HQ">کانتینر های‌کیوب</option>
+                        <option value="RF">کانتینر یخچالی</option>
+                        <option value="FR">کانتینر تخت</option>
+                        <option value="ISO">کانتینر ISO برای حمل مایعات</option>
+                        <option value="OP">کانتینر اپن‌تاپ</option>
                     </select>
-                    <!-- نوع ISO Tank -->
-                    <select name="isoTankType" id="isoTankOptions" class="input-field w-full md:w-1/3 lg:w-1/5 hidden">
-                        <option value="" disabled selected>انتخاب نوع مخزن ISO</option>
+
+                    <!-- فیلدهای ابعاد -->
+                    <div name="dimensionsFields" class="hidden w-full flex flex-wrap gap-4 dimensionsFields">
+                        <input type="number" name="length" placeholder="طول (متر)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <input type="number" name="width" placeholder="عرض (متر)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                        <input type="number" name="height" placeholder="ارتفاع (متر)" min="0"
+                            class="input-field w-full md:w-1/3 lg:w-1/5">
+                    </div>
+
+                    <!-- گزینه‌های نوع گیج -->
+                    <div name="gaugeOptions"
+                        class="hidden w-full flex gap-4 justify-around flex-row text-gray-700 gaugeOptions">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gaugeType" value="In-Gauge" class="form-radio">
+                            <span>گیج داخل</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gaugeType" value="Out of Gauge" class="form-radio">
+                            <span>گیج خارج</span>
+                        </label>
+                    </div>
+
+                    <!-- انتخاب نوع تانک ISO -->
+                    <select name="isoTankType" class="input-field w-full md:w-1/3 lg:w-1/5 hidden isoTankOptions">
+                        <option value="" disabled selected>نوع تانک ISO را انتخاب کنید</option>
                         <option value="T7">T7</option>
                         <option value="T1">T1</option>
                         <option value="T50">T50</option>
                     </select>
-                    <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
-                    class="input-field w-full" required>
-                    <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
-                    class="input-field w-full" required>
-                    <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
-                    class="input-field w-full" required>
-                    <!-- سایر فیلدها -->
+
                     <input type="number" name="quantity" placeholder="تعداد را وارد کنید" min="1"
                         class="input-field w-full" required>
-                    <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
-                        required>
-                        <option value="" disabled selected>انتخاب کشور مبدا</option>
+
+                    <select id="countrySelect" name="departureCountry"
+                        class="input-field w-full md:w-1/3 lg:w-1/5 countrySelect" required>
+                        <option value="" disabled selected>کشور مبدا را انتخاب کنید</option>
                     </select>
-                    <select id="portsSelect" name="departurePort" class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>انتخاب بندر مبدا</option>
+                    <select id="portsSelect" name="departurePort"
+                        class="input-field w-full md:w-1/3 lg:w-1/5 portsSelect" required>
+                        <option value="" disabled selected>پورت مبدا را انتخاب کنید</option>
                     </select>
                     <select id="destinationCountry" name="destinationCountry"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>انتخاب کشور مقصد</option>
+                        class="input-field w-full md:w-1/3 lg:w-1/5 destinationCountry" required>
+                        <option value="" disabled selected>کشور مقصد را انتخاب کنید</option>
                     </select>
                     <select id="destinationPortsSelect" name="destinationPort"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                        <option value="" disabled selected>انتخاب بندر مقصد</option>
+                        class="input-field w-full md:w-1/3 lg:w-1/5 destinationPortsSelect" required>
+                        <option value="" disabled selected>پورت مقصد را انتخاب کنید</option>
                     </select>
                     <input type="email" name="email" placeholder="ایمیل خود را وارد کنید"
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
-                    <input type="text" name="phoneNumber" placeholder="شماره تلفن خود را وارد کنید"
+                    <input type="text" name="phoneNumber" placeholder="شماره تلفن را وارد کنید"
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
 
-                    <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">دریافت
-                        نرخ حمل</button>
+                    <button id="rate-inquiry-form-sub"
+                        class="rate-button w-full md:w-1/3 lg:w-1/5 rate-inquiry-form-sub" type="submit">دریافت
+                        قیمت</button>
                 </form>
             </section>
 
             <!-- مرحله دوم -->
             <section id="step2" class="py-6 hidden">
-                <form id="otp-verification-form" class="container mx-auto px-4 flex flex-wrap gap-4 justify-center">
-                    <p id="phone-display" class="w-full text-center text-gray-700"></p>
+                <form id="otp-verification-form"
+                    class="container mx-auto px-4 flex flex-wrap gap-4 justify-center otp-verification-form">
+                    <p id="phone-display" class="w-full text-center text-gray-700 phone-display"></p>
                     <input type="text" name="verificationCode" placeholder="کد تایید را وارد کنید"
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
                     <button type="submit" class="rate-button w-full md:w-1/3 lg:w-1/5">تایید کد</button>
                     <button type="button" id="back-to-step1"
-                        class="text-blue-500 underline w-full text-center mt-4">بازگشت</button>
+                        class="text-blue-500 underline w-full text-center mt-4 back-to-step1">بازگشت</button>
                 </form>
             </section>
         </div>
     </div>
+
 
 
     <!-- <script src="js/sectionLoader.js"></script> -->
@@ -1468,7 +1481,7 @@
     <script src="/js/toggleFAQ.js"></script>
     <script src="/js/quoteModel.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- <script src="../persian/js/convertLangulage.js"></script> -->
+    <!-- <script src="/persian/js/convertLangulage.js"></script> -->
     <script>
         AOS.init();
     </script>
