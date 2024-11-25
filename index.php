@@ -110,9 +110,9 @@
 
             </div>
 
-            <menu class="flex items-center flex-row w-full justify-center m-0">
+            <menu id="mainManu" class="flex items-center flex-row w-full justify-center m-0 test">
                 <!-- منوی سمت چپ لوگو -->
-                <nav id="menu" class="hidden md:flex space-x-4 mymenu">
+                <nav id="menu" class="hidden md:flex space-x-4 mymenu whitespace-nowrap">
                     <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-white"
                         id="home-link">Home</a>
                     <div class="relative">
@@ -147,7 +147,7 @@
 
                 <!-- لوگو وسط منو -->
                 <a id="roshan-icon"
-                    class="relative flex justify-center items-center ml-6 left-0 right-0 top-0 lg:relative sm:absolute md:absolute"
+                    class="relative flex justify-center items-center ml-6 left-0 right-0 top-0  "
                     href="/index.php">
                     <div id="logo-butt"
                         class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
@@ -159,7 +159,7 @@
 
 
                 <!-- منو سمت راست لوگو -->
-                <nav class="hidden md:flex space-x-4 mymenu ml-3">
+                <nav class="hidden md:flex space-x-4 mymenu ml-3 whitespace-nowrap">
 
                     <div class="relative z-10">
                         <a href="/Components/eqc.html" id="desktop-eqc"

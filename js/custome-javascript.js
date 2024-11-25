@@ -30,12 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('header');
     const butt = document.getElementById('logo-butt');
     const mymenu = document.querySelector('.mymenu');
+    const mainManu = document.getElementById('mainManu')
     const links = document.querySelectorAll('.mymenu a'); // انتخاب تمامی لینک‌ها داخل هدر
 
     if (header && butt && mymenu && links.length > 0) {
         window.onscroll = function () {
             if (window.scrollY > 100) {
                 header.classList.add('fixed-header');
+                mainManu.classList.add("relative");
+
                 if (window.innerWidth >= 600) {
                     butt.classList.add("bg-white");
                     mymenu.classList.add("bg-white");
@@ -53,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 mymenu.classList.remove("bg-white");
                 eqcDropdown.classList.remove("eqc-dropdownScroll");
                 servicesDropdown.classList.remove("services-dropdownScroll");
-
+                mainManu.classList.remove("relative");
                 // بازگرداندن رنگ لینک‌ها به سفید
                 links.forEach(link => {
                     link.style.color = 'white'; // رنگ اولیه لینک‌ها
