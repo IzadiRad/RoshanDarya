@@ -100,7 +100,7 @@
                     <span class="submenu-icon">&#9662;</span>
                 </a>
                 <div id="eqc-submenu" class="submenu hidden">
-                    <a href="/Components/eqc/incoterms.html" id="incoterms-link-mob"><i class=""></i> Incoterms</a>
+                    <a href="/Components/eqc/Incoterms.html" id="incoterms-link-mob"><i class=""></i> Incoterms</a>
                     <a href="/Components/eqc/cargo.html" id="cargo-link-mob"><i class=""></i> Cargo</a>
                 </div>
                 <hr />
@@ -637,7 +637,7 @@
     <br />
     <br />
     <section class="flex flex-col md:flex-row container mx-auto max-w-screen-lg mt-10 p-4 service-section"
-        data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        loading="lazy" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         </div>
         <!-- Sidebar - کشویی سمت چپ -->
         <div class="w-full md:w-1/4 bg-gray-200 p-4 flex flex-col h-full">
@@ -962,7 +962,7 @@
 
     <div id="section04" class="gallery-Section">
 
-        <section id="src-04" class="gallery">
+        <section id="src-04" class="gallery " loading="lazy">
 
             <section class="gallery4 cid-upCxZ2xO3D left select-none" id="gallery-12-upCxZ2xO3D ">
                 <div class="container-fluid gallery-wrapper gallery-scroll">
@@ -1009,23 +1009,23 @@
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item2">
-                    <img src="Images/Image/gallery/MainPage/2.webp" alt="Image 2"
+                    <img src="Images/Image/gallery/MainPage/2.webp" loading="lazy" alt="Image 2"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item3">
-                    <img src="Images/Image/gallery/MainPage/3.webp" alt="Image 3"
+                    <img src="Images/Image/gallery/MainPage/3.webp" loading="lazy" alt="Image 3"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item4">
-                    <img src="Images/Image/gallery/MainPage/4.webp" alt="Image 4"
+                    <img src="Images/Image/gallery/MainPage/4.webp" loading="lazy" alt="Image 4"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item5">
-                    <img src="Images/Image/gallery/MainPage/5.webp" alt="Image 5"
+                    <img src="Images/Image/gallery/MainPage/5.webp" loading="lazy" alt="Image 5"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
                 <div class="grid-item0 item6">
-                    <img src="Images/Image/gallery/MainPage/6.webp" alt="Image 6"
+                    <img src="Images/Image/gallery/MainPage/6.webp" loading="lazy" alt="Image 6"
                         class="w-full h-full object-cover aspect-square transition-transform duration-300 ease-in-out hover:scale-110">
                 </div>
             </div>
@@ -1052,8 +1052,9 @@
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0 ">
                     <div class="blog-img h-64">
                         <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover" src="./Images/Image/3.webp"
-                                style="height: inherit;" alt="Blog Image 1"> <!-- غیرفعال کردن کلیک -->
+                            <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                                src="./Images/Image/3.webp" style="height: inherit;" alt="Blog Image 1">
+                            <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
                     <div class="p-4 h-60">
@@ -1070,8 +1071,9 @@
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
                         <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover" src="./Images/Image/38.webp"
-                                alt="Blog Image 2" style="height: inherit;"> <!-- غیرفعال کردن کلیک -->
+                            <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                                src="./Images/Image/38.webp" alt="Blog Image 2" style="height: inherit;">
+                            <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
                     <div class="p-4 h-60">
@@ -1087,8 +1089,8 @@
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
                         <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover" src="./Images/Image/204.webp"
-                                alt="Blog Image 3" style="height: inherit;">
+                            <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                                src="./Images/Image/204.webp" alt="Blog Image 3" style="height: inherit;">
                             <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
@@ -1106,7 +1108,7 @@
                     <div class="blog-img h-64">
                         <a class="blog-link h-full">
                             <img class="w-full h-auto pointer-events-none object-cover"
-                                src="./Images/Image/gallery/MainPage/6.webp" alt="Blog Image 4"
+                                src="./Images/Image/gallery/MainPage/6.webp" loading="lazy" alt="Blog Image 4"
                                 style="height: inherit;"> <!-- غیرفعال کردن کلیک -->
                         </a>
                     </div>
@@ -1124,7 +1126,7 @@
                     <div class="blog-img h-64">
                         <a class="blog-link h-full">
                             <img class="w-full h-auto pointer-events-none object-cover"
-                                src="./Images/Image/services/air-freight/1.webp" alt="Blog Image 4"
+                                src="./Images/Image/services/air-freight/1.webp" loading="lazy" alt="Blog Image 4"
                                 style="height: inherit;">
                             <!-- غیرفعال کردن کلیک -->
                         </a>
@@ -1143,7 +1145,7 @@
                     <div class="blog-img h-64">
                         <a class="blog-link h-full">
                             <img class="w-full h-auto pointer-events-none object-cover"
-                                src="./Images/Image/services/services/maps.webp" alt="Blog Image 4"
+                                src="./Images/Image/services/services/maps.webp" alt="Blog Image 4" loading="lazy"
                                 style="height: inherit;">
                             <!-- غیرفعال کردن کلیک -->
                         </a>
@@ -1167,18 +1169,17 @@
     <br />
     <br />
     <br />
-    <section id="rate-inquiry" class="py-6">
+    <!-- <section id="rate-inquiry" class="py-6">
         <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
-            <!-- Existing Fields -->
-            <!-- انتخاب نوع حمل و نقل -->
+             Existing Fields 
+
             <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                 <option value="" disabled selected>Select Transport Type</option>
                 <option>Air Transport</option>
                 <option>Ground Transport</option>
                 <option>Sea Transport</option>
             </select>
-            <!-- انتخاب نوع کانتینر -->
-            <!-- انتخاب نوع کانتینر -->
+
             <select name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5 containerType" required>
                 <option value="" disabled selected>Select Container Type</option>
                 <option value="20">20 ft - Standard Container</option>
@@ -1189,7 +1190,7 @@
                 <option value="OP">OP - Open-Top Container</option>
             </select>
 
-            <!-- فیلدهای ابعاد -->
+      
             <div class="hidden w-full flex flex-wrap gap-4 dimensionsFields">
                 <input type="number" name="length" placeholder="Length (m)" min="0"
                     class="input-field w-full md:w-1/3 lg:w-1/5">
@@ -1199,8 +1200,8 @@
                     class="input-field w-full md:w-1/3 lg:w-1/5">
             </div>
 
-            <!-- گزینه‌های In-Gauge و Out of Gauge -->
-            <div id="gaugeOptions" class="hidden w-full flex gap-4 justify-around flex-row text-gray-700">
+         
+            <div class="gaugeOptions" class="hidden w-full flex gap-4 justify-around flex-row text-gray-700">
                 <label class="flex items-center gap-2">
                     <input type="radio" name="gaugeType" value="In-Gauge" class="form-radio">
                     <span>In-Gauge</span>
@@ -1212,7 +1213,7 @@
             </div>
 
 
-            <select name="isoTankType" id="isoTankOptions"
+            <select name="isoTankType" class="isoTankOptions"
                 class="input-field w-full md:w-1/3 lg:w-1/5 hidden isoTankOptions">
                 <option value="" disabled selected>Select ISO Tank Type</option>
                 <option value="T7">T7</option>
@@ -1243,7 +1244,7 @@
             <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get
                 Rate Quote</button>
         </div>
-    </section>
+    </section> -->
 
 
     <br />
@@ -1373,30 +1374,30 @@
         </div>
     </section>
     <br />
-    <section id="sec-6" class="bg-primary-navy-blue text-white py-10">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer class="bg-primary-navy-blue text-white py-10">
+        <section id="sec-6" class="bg-primary-navy-blue text-white py-10">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pr-6 pl-6">
 
-            <!-- About Company Section -->
-            <div class="about">
-                <h1>About Company</h1>
-                <h2>
-                    Roshandarya
-                    <p>Global Shipping & Transport Solutions</p>
-                </h2>
-                <p>We specialize in providing comprehensive transportation and logistics solutions worldwide, committed
-                    to excellence and customer satisfaction.</p>
-                <!-- Map Integration -->
-                <h2>Our Location</h2>
-                <iframe title="tehran, motahary st,  roshan darya pars"
-                    aria-label="tehran, motahary st,  roshan darya pars" data-origwidth="" data-origheight=""
-                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <!--src="https://maps.google.com/maps?q=tehran%2C%20motahary%20st%2C%20%20roshan%20darya%20pars&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"-->
-                <!-- src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d202.44295713934417!2d51.4195127!3d35.7240711!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1732438662597!5m2!1sen!2suk" -->
-                <iframe loading="lazy"
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d202.44295713934417!2d51.4195127!3d35.7240711!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1732438662597!5m2!1sen!2suk"
-                    title="New Location" aria-label="New Location" width="100%" height="250" style="border:0;"
-                    allowfullscreen=""></iframe>
+                <!-- About Company Section -->
+                <div class="about">
+                    <h1>About Company</h1>
+                    <h2>
+                        Roshandarya
+                        <p>Global Shipping & Transport Solutions</p>
+                    </h2>
+                    <p>We specialize in providing comprehensive transportation and logistics solutions
+                        worldwide,
+                        committed
+                        to excellence and customer satisfaction.</p>
+                    <!-- Map Integration -->
+                    <h2>Our Location</h2>
+                    <iframe loading="lazy"
+                        src="https://maps.google.com/maps?q=tehran%2C%20motahary%20st%2C%20%20roshan%20darya%20pars&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
+                        title="tehran, motahary st,  roshan darya pars"
+                        aria-label="tehran, motahary st,  roshan darya pars" data-origwidth="" data-origheight=""
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+                </div>
 
                 <!-- Explor Links Section -->
                 <div class="links">
@@ -1438,27 +1439,25 @@
                     <p>Email: info@roshandarya.com</p>
                     <p>Phone:<br /> (+98) 21 860 47 322 <br />(+98) 21 860 47 425 <br />(+98) 21 861 22 178 </p>
                     <br />
-
-
                     <!-- Social Media Links with Specific Colors -->
                     <link rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
                     <div class="social-icons text-center">
                         <div class="social-icons space-x-4">
-                            <a href="https://facebook.com" target="_blank" style="color: #4267B2;">
+                            <a href="https://facebook.com" target="_blank" rel="none" style="color: #4267B2; ">
                                 <i class="fab fa-facebook-f fa-2x"></i>
                             </a>
-                            <a href="https://twitter.com" target="_blank" style="color: #1DA1F2;">
+                            <a href="https://twitter.com" target="_blank" rel="" style="color: #1DA1F2;">
                                 <i class="fab fa-twitter fa-2x"></i>
                             </a>
-                            <a href="https://instagram.com" target="_blank" style="color: #C13584;">
+                            <a href="https://instagram.com" target="_blank" rel="" style="color: #C13584;">
                                 <i class="fab fa-instagram fa-2x"></i>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" style="color: #0A66C2;">
+                            <a href="https://linkedin.com" target="_blank" rel="" style="color: #0A66C2;">
                                 <i class="fab fa-linkedin-in fa-2x"></i>
                             </a>
-                            <a href="https://t.me/roshandarya" target="_blank" style="color: #0088cc;">
+                            <a href="https://t.me/roshandarya" target="_blank" rel="" style="color: #0088cc;">
                                 <i class="fab fa-telegram-plane fa-2x"></i>
                             </a>
                         </div>
@@ -1467,7 +1466,8 @@
 
                 </div>
             </div>
-    </section>
+        </section>
+    </footer>
 
     <section id="sec-7" style="background-color: black; color: aliceblue; height: auto;">
         <div class="container">
@@ -1513,7 +1513,7 @@
                     </select>
 
                     <!-- فیلدهای ابعاد -->
-                    <div class="hidden w-full flex flex-wrap gap-4 dimensionsFields">
+                    <div name="dimensionsFields" class="hidden w-full flex flex-wrap gap-4 dimensionsFields">
                         <input type="number" name="length" placeholder="Length (m)" min="0"
                             class="input-field w-full md:w-1/3 lg:w-1/5">
                         <input type="number" name="width" placeholder="Width (m)" min="0"
@@ -1523,7 +1523,8 @@
                     </div>
 
                     <!-- گزینه‌های In-Gauge و Out of Gauge -->
-                    <div id="gaugeOptions" class="hidden w-full flex gap-4 justify-around flex-row text-gray-700">
+                    <div name="gaugeOptions"
+                        class="hidden w-full flex gap-4 justify-around flex-row text-gray-700 gaugeOptions">
                         <label class="flex items-center gap-2">
                             <input type="radio" name="gaugeType" value="In-Gauge" class="form-radio">
                             <span>In-Gauge</span>
@@ -1535,8 +1536,8 @@
                     </div>
 
 
-                    <select name="isoTankType" id="isoTankOptions"
-                        class="input-field w-full md:w-1/3 lg:w-1/5 hidden isoTankOptions">
+                    <select name="isoTankType"
+                        class="input-field w-full md:w-1/3 lg:w-1/5 hidden isoTankOptions isoTankOptions">
                         <option value="" disabled selected>Select ISO Tank Type</option>
                         <option value="T7">T7</option>
                         <option value="T1">T1</option>
@@ -1545,19 +1546,20 @@
 
                     <input type="number" name="quantity" placeholder="Enter Quantity" min="1" class="input-field w-full"
                         required>
-                    <select id="countrySelect" name="departureCountry" class="input-field w-full md:w-1/3 lg:w-1/5"
-                        required>
+                    <select id="countrySelect" name="departureCountry"
+                        class="input-field w-full md:w-1/3 lg:w-1/5 countrySelect" required>
                         <option value="" disabled selected>Select Departure Country</option>
                     </select>
-                    <select id="portsSelect" name="departurePort" class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                    <select id="portsSelect" name="departurePort"
+                        class="input-field w-full md:w-1/3 lg:w-1/5 portsSelect" required>
                         <option value="" disabled selected>Select Departure Port</option>
                     </select>
                     <select id="destinationCountry" name="destinationCountry"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        class="input-field w-full md:w-1/3 lg:w-1/5 destinationCountry" required>
                         <option value="" disabled selected>Select Destination Country</option>
                     </select>
                     <select id="destinationPortsSelect" name="destinationPort"
-                        class="input-field w-full md:w-1/3 lg:w-1/5" required>
+                        class="input-field w-full md:w-1/3 lg:w-1/5 destinationPortsSelect" required>
                         <option value="" disabled selected>Select Destination Port</option>
                     </select>
                     <input type="email" name="email" placeholder="Email" class="input-field w-full md:w-1/3 lg:w-1/5"
@@ -1565,20 +1567,22 @@
                     <input type="text" name="phoneNumber" placeholder="Phone Number"
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
 
-                    <button id="rate-inquiry-form-sub" class="rate-button w-full md:w-1/3 lg:w-1/5" type="submit">Get
+                    <button id="rate-inquiry-form-sub"
+                        class="rate-button w-full md:w-1/3 lg:w-1/5 rate-inquiry-form-sub" type="submit">Get
                         Rate Quote</button>
                 </form>
             </section>
 
             <!-- مرحله دوم -->
             <section id="step2" class="py-6 hidden">
-                <form id="otp-verification-form" class="container mx-auto px-4 flex flex-wrap gap-4 justify-center">
-                    <p id="phone-display" class="w-full text-center text-gray-700"></p>
+                <form id="otp-verification-form"
+                    class="container mx-auto px-4 flex flex-wrap gap-4 justify-center otp-verification-form">
+                    <p id="phone-display" class="w-full text-center text-gray-700 phone-display"></p>
                     <input type="text" name="verificationCode" placeholder="Enter OTP"
                         class="input-field w-full md:w-1/3 lg:w-1/5" required>
                     <button type="submit" class="rate-button w-full md:w-1/3 lg:w-1/5">Verify OTP</button>
                     <button type="button" id="back-to-step1"
-                        class="text-blue-500 underline w-full text-center mt-4">Back</button>
+                        class="text-blue-500 underline w-full text-center mt-4 back-to-step1">Back</button>
                 </form>
 
             </section>
