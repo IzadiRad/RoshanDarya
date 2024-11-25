@@ -112,7 +112,7 @@
 
             <menu id="mainManu" class="flex items-center flex-row w-full justify-center m-0 test">
                 <!-- منوی سمت چپ لوگو -->
-                <nav id="menu" class="hidden md:flex space-x-4 mymenu whitespace-nowrap">
+                <nav id="menu" class="hidden md:flex space-x-4 mymenu whitespace-nowrap z-50">
                     <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-white"
                         id="home-link">Home</a>
                     <div class="relative">
@@ -146,20 +146,19 @@
                 </nav>
 
                 <!-- لوگو وسط منو -->
-                <a id="roshan-icon"
-                    class="relative flex justify-center items-center ml-6 left-0 right-0 top-0  "
+                <a id="roshan-icon" class="relative flex justify-center items-center ml-6 left-0 right-0 top-0  "
                     href="/index.php">
                     <div id="logo-butt"
-                        class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite ">
+                        class="absolute w-72 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-3 mobwhite ">
                     </div>
 
-                    <img src="Images/Icon/roshan-new-en.webp" alt="roshandarya" class="relative w-36 h-auto z-10 top-6">
+                    <img src="Images/Icon/roshan-new-en.webp" alt="roshandarya" class="relative w-48 h-auto z-10 top-6">
                 </a>
 
 
 
                 <!-- منو سمت راست لوگو -->
-                <nav class="hidden md:flex space-x-4 mymenu ml-3 whitespace-nowrap">
+                <nav class="hidden md:flex space-x-4 mymenu ml-3 whitespace-nowrap z-[100]">
 
                     <div class="relative z-10">
                         <a href="/Components/eqc.html" id="desktop-eqc"
@@ -168,7 +167,7 @@
                             <span class="submenu-icon">&#9662;</span>
                         </a>
                         <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                            <a href="/Components/eqc/incoterms.html"
+                            <a href="/Components/eqc/Incoterms.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                                 id="incoterms-link">Incoterms</a>
                             <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
@@ -1401,14 +1400,19 @@
                 <!-- Explor Links Section -->
                 <div class="links">
                     <h1 class="text-xl font-bold mb-4">Explore Links</h1>
-                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Our Services</a>
-                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Meet Our Team</a>
-                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Forum</a>
-                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Help Center</a>
-                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Contact Us</a>
-                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Privacy Policy</a>
-                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Our Terms</a>
-                    <a href="#" class="block text-secondary-grayish-blue hover:underline">Site Map</a>
+                    <a href="https://saoi.ir" target="_blank"
+                        class="block text-secondary-grayish-blue hover:underline">Shipping
+                        association of Iran </a>
+                    <a href="https://www.pmo.ir/" target="_blank"
+                        class="block text-secondary-grayish-blue hover:underline">ports &
+                        Maritime Organization</a>
+                    <a href="https://tarabaran.com" class="block text-secondary-grayish-blue hover:underline"
+                        target="_blank">tarabaran</a>
+                    <a href="/Components/Services.html" class="block text-secondary-grayish-blue hover:underline">Our
+                        Services</a>
+                    <a href="./Components/ContactUs.html"
+                        class="block text-secondary-grayish-blue hover:underline">Contact Us</a>
+                    <!-- <a href="#" class="block text-secondary-grayish-blue hover:underline">Site Map</a> -->
                 </div>
 
                 <!-- Latest Posts Section -->
@@ -1495,20 +1499,20 @@
                     <!-- انتخاب نوع حمل و نقل -->
                     <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                         <option value="" disabled selected>Select Transport Type</option>
-                        <option>Air Transport</option>
-                        <option>Ground Transport</option>
                         <option>Sea Transport</option>
+                        <option>Land Transport</option>
+                        <option>Air Transport</option>
                     </select>
                     <!-- انتخاب نوع کانتینر -->
                     <!-- انتخاب نوع کانتینر -->
                     <select name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5 containerType" required>
                         <option value="" disabled selected>Select Container Type</option>
                         <option value="20">20 ft - Standard Container</option>
-                        <option value="HQ">HQ - High Cube Container</option>
+                        <option value="HQ">40 ft (HQ) - High Cube Container</option>
                         <option value="RF">RF - Refrigerated Container</option>
                         <option value="FR">FR - Flat Rack Container</option>
                         <option value="ISO">ISO Tank - Liquid Transport</option>
-                        <option value="OP">OP - Open-Top Container</option>
+                        <option value="OP">OT - Open-Top Container</option>
                     </select>
 
                     <!-- فیلدهای ابعاد -->
@@ -1526,11 +1530,11 @@
                         class="hidden w-full flex gap-4 justify-around flex-row text-gray-700 gaugeOptions">
                         <label class="flex items-center gap-2">
                             <input type="radio" name="gaugeType" value="In-Gauge" class="form-radio">
-                            <span>In-Gauge</span>
+                            <span class="text-white font-bold">In-Gauge</span>
                         </label>
-                        <label class="flex items-center gap-2">
+                        <label class="flex items-center gap-2 ">
                             <input type="radio" name="gaugeType" value="Out of Gauge" class="form-radio">
-                            <span>Out of Gauge</span>
+                            <span class="text-white font-bold">Out of Gauge</span>
                         </label>
                     </div>
 
@@ -1539,7 +1543,7 @@
                         class="input-field w-full md:w-1/3 lg:w-1/5 hidden isoTankOptions isoTankOptions">
                         <option value="" disabled selected>Select ISO Tank Type</option>
                         <option value="T7">T7</option>
-                        <option value="T1">T1</option>
+                        <option value="T1">T11</option>
                         <option value="T50">T50</option>
                     </select>
 

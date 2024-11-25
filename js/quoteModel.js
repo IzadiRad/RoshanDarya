@@ -69,55 +69,52 @@ document.querySelectorAll(".containerType").forEach(containerTypeDropdown => {
 fetch('/js/assist/ports.json')
     .then(response => response.json())
     .then(portsData => {
-        document.querySelectorAll("form").forEach(form => {
-            const countrySelect = form.querySelector(".countrySelect");
-            const portsSelect = form.querySelector(".portsSelect");
-            const destinationCountrySelect = form.querySelector(".destinationCountry");
-            const destinationPortsSelect = form.querySelector(".destinationPortsSelect");
+        const countrySelect = document.getElementById("countrySelect");
+        const portsSelect = document.getElementById("portsSelect");
+        const destinationCountrySelect = document.getElementById("destinationCountry");
+        const destinationPortsSelect = document.getElementById("destinationPortsSelect");
 
-            // تابع پر کردن Dropdown
-            const populateDropdown = (selectElement, items, placeholder) => {
-                selectElement.innerHTML = `<option value="" disabled selected>${placeholder}</option>`;
-                items.forEach(item => {
-                    const option = document.createElement("option");
-                    option.value = item.name || item;
-                    option.textContent = item.name || item;
-                    selectElement.appendChild(option);
-                });
-            };
-
-            const countryList = Object.keys(portsData);
-
-            // پر کردن کشورها
-            populateDropdown(countrySelect, countryList, "Select Departure Country");
-            populateDropdown(destinationCountrySelect, countryList, "Select Destination Country");
-
-            // مدیریت تغییر کشور مبدا
-            countrySelect.addEventListener("change", () => {
-                const selectedCountry = countrySelect.value;
-                const ports = portsData[selectedCountry] || [];
-                populateDropdown(portsSelect, ports.map(port => port.name), "Select Port");
-
-                // به‌روزرسانی کشورهای مقصد
-                populateDropdown(
-                    destinationCountrySelect,
-                    countryList.filter(country => country !== selectedCountry),
-                    "Select Destination Country"
-                );
-
-                // پاک کردن پورت‌های مقصد
-                destinationPortsSelect.innerHTML = `<option value="" disabled selected>Select Destination Port</option>`;
+        // Populate Dropdown Function
+        const populateDropdown = (selectElement, items, placeholder) => {
+            selectElement.innerHTML = `<option value="" disabled selected>${placeholder}</option>`;
+            items.forEach(item => {
+                const option = document.createElement("option");
+                option.value = item.name || item;
+                option.textContent = item.name || item;
+                selectElement.appendChild(option);
             });
+        };
 
-            // مدیریت تغییر کشور مقصد
-            destinationCountrySelect.addEventListener("change", () => {
-                const selectedDestinationCountry = destinationCountrySelect.value;
-                const destinationPorts = portsData[selectedDestinationCountry] || [];
-                populateDropdown(destinationPortsSelect, destinationPorts.map(port => port.name), "Select Destination Port");
-            });
+        // Add countries to Departure and Destination dropdowns
+        const countryList = Object.keys(portsData);
+        populateDropdown(countrySelect, countryList, "Select Departure Country");
+        populateDropdown(destinationCountrySelect, countryList, "Select Destination Country");
+
+        // Handle Departure Country Change
+        countrySelect.addEventListener("change", () => {
+            const selectedCountry = countrySelect.value;
+            const ports = portsData[selectedCountry] || [];
+            populateDropdown(portsSelect, ports.map(port => port.name), "Select Port");
+
+            // Update Destination Dropdown to disable/remove selected Departure Country
+            populateDropdown(
+                destinationCountrySelect,
+                countryList.filter(country => country !== selectedCountry),
+                "Select Destination Country"
+            );
+
+            // Clear destination ports when departure country changes
+            destinationPortsSelect.innerHTML = `<option value="" disabled selected>Select Destination Port</option>`;
+        });
+
+        // Handle Destination Country Change
+        destinationCountrySelect.addEventListener("change", () => {
+            const selectedDestinationCountry = destinationCountrySelect.value;
+            const destinationPorts = portsData[selectedDestinationCountry] || [];
+            populateDropdown(destinationPortsSelect, destinationPorts.map(port => port.name), "Select Destination Port");
         });
     })
-    .catch(error => console.error("Error loading ports data:", error));
+    .catch(error => console.error('Error loading ports data:', error));
 
 // ** مدیریت فرم ارسال OTP **
 document.querySelectorAll(".rate-inquiry-form").forEach(form => {

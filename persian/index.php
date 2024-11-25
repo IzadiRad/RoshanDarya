@@ -1377,18 +1377,18 @@
                     <!-- انتخاب نوع حمل و نقل -->
                     <select name="transportType" class="input-field w-full md:w-1/3 lg:w-1/5" required>
                         <option value="" disabled selected>نوع حمل‌ونقل را انتخاب کنید</option>
-                        <option>حمل‌ونقل هوایی</option>
-                        <option>حمل‌ونقل زمینی</option>
                         <option>حمل‌ونقل دریایی</option>
+                        <option>حمل‌ونقل زمینی</option>
+                        <option>حمل‌ونقل هوایی</option>
                     </select>
 
                     <!-- انتخاب نوع کانتینر -->
                     <select name="containerType" class="input-field w-full md:w-1/3 lg:w-1/5 containerType" required>
                         <option value="" disabled selected>نوع کانتینر را انتخاب کنید</option>
                         <option value="20">کانتینر استاندارد ۲۰ فوت</option>
-                        <option value="HQ">کانتینر های‌کیوب</option>
+                        <option value="HQ">کانتینر ۴۰ های‌کیوب</option>
                         <option value="RF">کانتینر یخچالی</option>
-                        <option value="FR">کانتینر تخت</option>
+                        <option value="FR">کانتینر فلت رک</option>
                         <option value="ISO">کانتینر ISO برای حمل مایعات</option>
                         <option value="OP">کانتینر اپن‌تاپ</option>
                     </select>
@@ -1408,11 +1408,11 @@
                         class="hidden w-full flex gap-4 justify-around flex-row text-gray-700 gaugeOptions">
                         <label class="flex items-center gap-2">
                             <input type="radio" name="gaugeType" value="In-Gauge" class="form-radio">
-                            <span>گیج داخل</span>
+                            <span class="text-white font-bold">گیج داخل</span>
                         </label>
                         <label class="flex items-center gap-2">
                             <input type="radio" name="gaugeType" value="Out of Gauge" class="form-radio">
-                            <span>گیج خارج</span>
+                            <span class="text-white font-bold">گیج خارج</span>
                         </label>
                     </div>
 
