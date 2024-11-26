@@ -1111,6 +1111,30 @@
                         <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
                     </div>
                 </div>
+                <div
+                    class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                    <div class="blog-img h-64">
+                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                            src="./Images/Image/3.webp" alt="Blog Image 1">
+                    </div>
+                    <div class="p-4 h-60">
+                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
+                    </div>
+                </div>
+                <div
+                    class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
+                    <div class="blog-img h-64">
+                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                            src="./Images/Image/3.webp" alt="Blog Image 1">
+                    </div>
+                    <div class="p-4 h-60">
+                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
+                    </div>
+                </div>
                 <!-- Repeat Blog Items as Needed -->
             </div>
         </div>
