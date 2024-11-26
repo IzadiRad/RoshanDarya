@@ -602,8 +602,8 @@
                                 reliable logistics services.
                             </p>
                             <div class="rounded-lg m-2 p-1 flex flex-row justify-between relative lastAbout">
-                                <a href="./Components/AboutUs.html"
-                                    class="button explore inline-block mt-4 px-6 py-3 bg-primary-turquoise text-white font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300">More</a>
+                                <a href="/Components/AboutUs.html"
+                                    class="explore inline-block mt-4 px-6 py-3  font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300 bg-blue-500 hover:bg-blue-900 hover:text-white text-blue-200">More</a>
                             </div>
                         </div>
                         <!-- Right Section (Video and Images) -->
@@ -790,8 +790,12 @@
                         </a>
                     </div> -->
                 </div>
-                <h2 class="text-2xl font-bold mb-4 items-center text-center">Welcome to Our Services</h2>
-                <p>This is the default content that is shown before any service is selected.</p>
+                <h2 class="text-2xl font-bold mb-1 items-center text-center ">Why Choose Us</h2>
+                <p class="mx-10 mb-5 justify">
+                    At Roshan Darya Pars, we combine innovation, expertise, and dedication to deliver exceptional
+                    logistics solutions. Our commitment is to streamline your operations, reduce costs, and ensure
+                    timely delivery across the globe. Partner with us and experience a seamless journey tailored to your
+                    unique needs.</p>
             </div>
 
             <!-- Service 1 content -->
@@ -1036,133 +1040,112 @@
     <br />
 
 
+    <!-- Blog Section -->
     <section id="sec-05" class="bg-light-gray blog-section relative">
-        <div class=" bg-azure rounded-lg m-2 p-1 flex flex-row justify-between relative devtitle">
+        <div class="bg-azure rounded-lg m-2 p-1 flex flex-row justify-between relative devtitle">
             <h4 class="text-white font-bold col-white">Blog</h4>
         </div>
 
+        <!-- Blog Items Container -->
         <div class="overflow-x-hidden">
             <div id="blogScroll" class="blogScroll flex space-x-4 cursor-grab overflow-x-auto"
                 style="user-select: none; scrollbar-width: none;">
-
-                <!-- Blog Item 1 -->
+                <!-- Blog Item Template -->
                 <div
-                    class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0 ">
+                    class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
-                                src="./Images/Image/3.webp" style="height: inherit;" alt="Blog Image 1">
-                            <!-- غیرفعال کردن کلیک -->
-                        </a>
+                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                            src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
                         <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                        <p>Short description about the first blog. You can write more details about the topic here.
-                        </p>
-                        <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                class="bi bi-arrow-right"></i></a>
-
+                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
                     </div>
                 </div>
-                <!-- Blog Item 2 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
-                                src="./Images/Image/38.webp" alt="Blog Image 2" style="height: inherit;">
-                            <!-- غیرفعال کردن کلیک -->
-                        </a>
+                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                            src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">10 Tips for SEO Improvement</h4>
-                        <p>Short description about the second blog. You can write more details about the topic here.
-                        </p>
-                        <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                class="bi bi-arrow-right"></i></a>
+                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
                     </div>
                 </div>
-                <!-- Blog Item 3 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
-                                src="./Images/Image/204.webp" alt="Blog Image 3" style="height: inherit;">
-                            <!-- غیرفعال کردن کلیک -->
-                        </a>
+                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                            src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">UX Design Guide</h4>
-                        <p>Short description about the third blog. You can write more details about the topic here.
-                        </p>
-                        <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                class="bi bi-arrow-right"></i></a>
+                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
                     </div>
                 </div>
-                <!-- Blog Item 4 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover"
-                                src="./Images/Image/gallery/MainPage/6.webp" loading="lazy" alt="Blog Image 4"
-                                style="height: inherit;"> <!-- غیرفعال کردن کلیک -->
-                        </a>
+                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                            src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                        <p>Short description about the fourth blog. You can write more details about the topic here.
-                        </p>
-                        <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                class="bi bi-arrow-right"></i></a>
+                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
                     </div>
                 </div>
-                <!-- Blog Item 5 -->
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover"
-                                src="./Images/Image/services/air-freight/1.webp" loading="lazy" alt="Blog Image 4"
-                                style="height: inherit;">
-                            <!-- غیرفعال کردن کلیک -->
-                        </a>
+                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                            src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                        <p>Short description about the fourth blog. You can write more details about the topic here.
-                        </p>
-                        <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                class="bi bi-arrow-right"></i></a>
+                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
+                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
                     </div>
                 </div>
-                <!-- Blog Item 6 -->
-                <div class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0 "
-                    style="margin-right: 20px;">
-                    <div class="blog-img h-64">
-                        <a class="blog-link h-full">
-                            <img class="w-full h-auto pointer-events-none object-cover"
-                                src="./Images/Image/services/services/maps.webp" alt="Blog Image 4" loading="lazy"
-                                style="height: inherit;">
-                            <!-- غیرفعال کردن کلیک -->
-                        </a>
-                    </div>
-                    <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">Understanding CSS Flexbox</h4>
-                        <p>Short description about the fourth blog. You can write more details about the topic here.
-                        </p>
-                        <a class="text-uppercase text-primary" href="blog-details.html">Read More <i
-                                class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
+                <!-- Repeat Blog Items as Needed -->
             </div>
         </div>
-        <div class=" rounded-lg m-2 p-1 flex flex-row justify-between relative top-14 lastblog">
-            <a href=" /Components/blog.html" class="button explore text-white"
+
+        <div class="rounded-lg m-2 p-1 flex flex-row justify-between relative top-14 lastblog">
+            <a href="/Components/blog.html" class="button explore text-white"
                 style="-webkit-text-fill-color: white;">More</a>
         </div>
     </section>
+
+    <!-- Modal Template -->
+    <div id="blogModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+            <button id="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-black">
+                &times;
+            </button>
+            <img id="modalImage" class="w-full rounded-md mb-4" src="" alt="Blog Image">
+            <h3 id="modalTitle" class="text-xl font-bold mb-2"></h3>
+            <p id="modalDescription" class="text-gray-700 mb-4"></p>
+            <div id="modalHashtags" class="flex flex-wrap gap-2"></div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="blogModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 w-11/12 md:w-1/2 lg:w-1/3 relative">
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-500 text-2xl">&times;</button>
+            <img id="modalImage" class="w-full rounded-md mb-4" src="" alt="Blog Image">
+            <div id="modalHashtags" class="mb-4 flex flex-wrap gap-2"></div>
+            <h4 id="modalTitle" class="text-xl font-bold mb-2"></h4>
+            <p id="modalDescription" class="text-gray-700"></p>
+        </div>
+    </div>
+
     <br />
     <br />
     <br />
@@ -1480,7 +1463,7 @@
 
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/+989965595135" target="_blank" aria-label="Chat with us on WhatsApp"
+    <a href="https://wa.me/+989122460188" target="_blank" aria-label="Chat with us on WhatsApp"
         class="fixed bottom-5 right-5 bg-green-500 text-white text-3xl w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform duration-300">
         <i class="fab fa-whatsapp"></i>
     </a>

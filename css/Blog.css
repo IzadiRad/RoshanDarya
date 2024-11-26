@@ -6,6 +6,7 @@
     padding: 5px;
     background-color: var(--primary-light-gray);
     /* height: 100%; */
+    transition: transform 0.3s ease;
 
 }
 
@@ -162,4 +163,43 @@
     z-index: -1;
     border-radius: 8px;
     transition: all 0.5s;
+}
+
+/* مودال */
+#blogModal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 9999;
+}
+
+#blogModal.active {
+    display: flex;
+}
+
+#blogModal img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#modalHashtags span {
+    margin-right: 5px;
+    background-color: #e2e8f0;
+    color: #2d3748;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.blogScroll {
+    scrollbar-width: none;
+    /* برای مرورگرهای پشتیبانی کننده */
+    -ms-overflow-style: none;
+    /* برای اینترنت اکسپلورر */
+}
+
+.blogScroll::-webkit-scrollbar {
+    display: none;
+    /* حذف اسکرول در مرورگر کروم */
 }

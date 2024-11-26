@@ -371,7 +371,7 @@ header nav i:hover {
         /* background-color: transparent; */
 /* یا از هر رنگ دلخواهی استفاده کنید */
 
-#logo-butt {
+.butt {
     box-shadow: #000000 0px 13px 5px -12px;
     /* یا از هر رنگ دلخواهی استفاده کنید */
 }
@@ -433,8 +433,9 @@ header nav i:hover {
 #menu {
     background-color: transparent;
     /* پس‌زمینه‌ی شفاف */
+    position: relative;
     top: 0;
-    z-index: 10;
+    z-index: 20;
 }
 
 #menu.scrolled {

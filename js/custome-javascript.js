@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     mymenu.classList.add("bg-white");
                     eqcDropdown.classList.add("eqc-dropdownScroll");
                     servicesDropdown.classList.add("services-dropdownScroll");
+                    butt.classList.add("butt");
 
                     // تغییر رنگ لینک‌ها
                     links.forEach(link => {
@@ -57,6 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 eqcDropdown.classList.remove("eqc-dropdownScroll");
                 servicesDropdown.classList.remove("services-dropdownScroll");
                 mainManu.classList.remove("relative");
+                butt.classList.remove("butt");
+
                 // بازگرداندن رنگ لینک‌ها به سفید
                 links.forEach(link => {
                     link.style.color = 'white'; // رنگ اولیه لینک‌ها

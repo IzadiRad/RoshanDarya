@@ -1,0 +1,26 @@
+/* مودال */
+#blogModal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+#blogModal.active {
+    display: flex;
+}
+
+#blogModal img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+#modalHashtags span {
+    background-color: #e2e8f0;
+    color: #2d3748;
+    padding: 4px 8px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+}
