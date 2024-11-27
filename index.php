@@ -113,7 +113,7 @@
             <menu id="mainManu" class="flex items-center flex-row w-full justify-center m-0 test">
                 <!-- منوی سمت چپ لوگو -->
                 <nav id="menu" class="hidden md:flex space-x-4 mymenu whitespace-nowrap z-50">
-                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-white"
+                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-white "
                         id="home-link">Home</a>
                     <div class="relative">
                         <a href="/Components/Services.html" id="desktop-services"
@@ -146,13 +146,14 @@
                 </nav>
 
                 <!-- لوگو وسط منو -->
-                <a id="roshan-icon" class="relative flex justify-center items-center ml-6 left-0 right-0 top-0  "
+                <a id="roshan-icon" class="relative flex justify-center items-center ml-6 left-0 right-0"
                     href="/index.php">
                     <div id="logo-butt"
-                        class="absolute w-72 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-3 mobwhite ">
+                        class="absolute lg:w-72 lg:h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-3 mobwhite sm:h-24 sm:w-44 md:h-24 md:w-44">
                     </div>
 
-                    <img src="Images/Icon/roshan-new-en.webp" alt="roshandarya" class="relative w-48 h-auto z-10 top-6">
+                    <img src="Images/Icon/roshan-new-en.webp" alt="roshandarya"
+                        class="relative lg:w-48 md:w-36 sm:w-48 h-auto z-10 top-6">
                 </a>
 
 
@@ -1054,101 +1055,103 @@
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                        <img class="w-full h-auto pointer-events-none object-cover h-full " loading="lazy"
                             src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
+                        <h4 class="mb-3 text-primary">The Role of Maritime Transport in Global Trade</h4>
+                        <p>Explore how maritime transport drives international commerce, connecting continents
+                            efficiently.</p>
                         <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
                     </div>
                 </div>
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                        <img class="w-full h-auto pointer-events-none object-cover h-full " loading="lazy"
                             src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
-                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
+                        <h4 class="mb-3 text-primary">Boosting Supply Chain Efficiency</h4>
+                        <p>Discover practical strategies to streamline your supply chain for optimal results.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="2">Read More</button>
                     </div>
                 </div>
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                        <img class="w-full h-auto pointer-events-none object-cover h-full " loading="lazy"
                             src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
-                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
+                        <h4 class="mb-3 text-primary"> Eco-Friendly Shipping Solutions</h4>
+                        <p> Learn how sustainable shipping practices can reduce environmental impact and cost.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="3">Read More</button>
                     </div>
                 </div>
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                        <img class="w-full h-auto pointer-events-none object-cover h-full " loading="lazy"
                             src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
-                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
+                        <h4 class="mb-3 text-primary">Overcoming Freight Challenges</h4>
+                        <p>Address common issues in freight forwarding and explore effective solutions.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="4">Read More</button>
                     </div>
                 </div>
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                        <img class="w-full h-auto pointer-events-none object-cover h-full " loading="lazy"
                             src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
-                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
+                        <h4 class="mb-3 text-primary">Advanced Cargo Tracking Systems</h4>
+                        <p>Understand how innovative tracking systems enhance cargo visibility and security.</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="5">Read More</button>
                     </div>
                 </div>
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                        <img class="w-full h-auto pointer-events-none object-cover h-full " loading="lazy"
                             src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
-                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
+                        <h4 class="mb-3 text-primary">The Future of AI in Freight Management</h4>
+                        <p>Delve into how artificial intelligence is transforming the logistics industry</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="6">Read More</button>
                     </div>
                 </div>
                 <div
                     class="blog-item bg-light rounded overflow-hidden shadow-md transition-transform duration-300 hover:transform hover:-translate-y-1 w-64 flex-shrink-0">
                     <div class="blog-img h-64">
-                        <img class="w-full h-auto pointer-events-none object-cover" loading="lazy"
+                        <img class="w-full h-auto pointer-events-none object-cover h-full " loading="lazy"
                             src="./Images/Image/3.webp" alt="Blog Image 1">
                     </div>
                     <div class="p-4 h-60">
-                        <h4 class="mb-3 text-primary">How to Build a Website</h4>
-                        <p>Learn the fundamentals of building a modern website with this comprehensive guide.</p>
-                        <button class="open-modal-btn text-uppercase text-primary" data-id="1">Read More</button>
+                        <h4 class="mb-3 text-primary">Navigating the Persian Gulf</h4>
+                        <p>Explore the significance of maritime routes in the Persian Gulf and how they impact</p>
+                        <button class="open-modal-btn text-uppercase text-primary" data-id="7">Read More</button>
                     </div>
                 </div>
                 <!-- Repeat Blog Items as Needed -->
             </div>
         </div>
 
-        <div class="rounded-lg m-2 p-1 flex flex-row justify-between relative top-14 lastblog">
+        <!-- <div class="rounded-lg m-2 p-1 flex flex-row justify-between relative top-14 lastblog">
             <a href="/Components/blog.html" class="button explore text-white"
                 style="-webkit-text-fill-color: white;">More</a>
-        </div>
+        </div> -->
     </section>
 
     <!-- Modal Template -->
     <div id="blogModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
         <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
-            <button id="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-black">
+            <button id="closeModal"
+                class="absolute top-2 right-2 text-gray-500 hover:text-black -right-3 left-unset -top-2 bg-white rounded-full">
                 &times;
             </button>
             <img id="modalImage" class="w-full rounded-md mb-4" src="" alt="Blog Image">

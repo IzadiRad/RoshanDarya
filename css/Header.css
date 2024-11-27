@@ -376,10 +376,34 @@ header nav i:hover {
     /* یا از هر رنگ دلخواهی استفاده کنید */
 }
 
+.roshan-icon-top {
+    top: -1.5rem;
+    left: unset;
+}
+
+.roshan-icon-top-normall {
+    top: 0;
+}
+
 @media (max-width: 768px) {
+    #blogModal {
+        background-color: unset;
+        margin: 1rem;
+    }
+
     #logo-butt {
         background-color: #fff;
+        width: 11rem;
+        height: 6rem;
+        box-shadow: black 0px 9px 8px -6px;
+
         /* یا از هر رنگ دلخواهی استفاده کنید */
+    }
+
+    #roshan-icon img {
+
+        width: 9rem;
+
     }
 }
 

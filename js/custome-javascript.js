@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const butt = document.getElementById('logo-butt');
     const mymenu = document.querySelector('.mymenu');
     const mainManu = document.getElementById('mainManu')
+    const roshanIcon = document.getElementById('roshan-icon')
     const links = document.querySelectorAll('.mymenu a'); // انتخاب تمامی لینک‌ها داخل هدر
 
     if (header && butt && mymenu && links.length > 0) {
@@ -46,10 +47,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     servicesDropdown.classList.add("services-dropdownScroll");
                     butt.classList.add("butt");
 
+
                     // تغییر رنگ لینک‌ها
                     links.forEach(link => {
                         link.style.color = '#003f5c'; // آبی تیره یا هر رنگ دیگر
                     });
+                }
+                else if (window.innerWidth <= 600) {
+
+                    roshanIcon.classList.remove("roshan-icon-top-normall");
+                    roshanIcon.classList.add("roshan-icon-top");
+                }
+                else {
+
                 }
             } else {
                 header.classList.remove('fixed-header');
@@ -59,7 +69,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 servicesDropdown.classList.remove("services-dropdownScroll");
                 mainManu.classList.remove("relative");
                 butt.classList.remove("butt");
-
+                roshanIcon.classList.remove("roshan-icon-top");
+                roshanIcon.classList.add("roshan-icon-top-normall");
                 // بازگرداندن رنگ لینک‌ها به سفید
                 links.forEach(link => {
                     link.style.color = 'white'; // رنگ اولیه لینک‌ها

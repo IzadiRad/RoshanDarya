@@ -33,38 +33,52 @@ document.querySelectorAll('.blogScroll').forEach((scrollContainer) => {
 const blogs = [
     {
         id: 1,
-        title: "How to Build a Website",
+        title: "The Role of Maritime Transport in Global Trade",
         image: "/Images/Image/3.webp",
-        description: "Learn the fundamentals of building a modern website with this comprehensive guide.",
-        hashtags: ["#WebDevelopment", "#HTML", "#CSS"]
+        description: "Explore how maritime transport drives international commerce, connecting continents efficiently.",
+        hashtags: ["#MaritimeTransport", "#GlobalTrade", "#Logistics"]
     },
     {
         id: 2,
-        title: "How to Build a Website",
+        title: "Boosting Supply Chain Efficiency",
         image: "/Images/Image/3.webp",
-        description: "Learn the fundamentals of building a modern website with this comprehensive guide.",
-        hashtags: ["#WebDevelopment", "#HTML", "#CSS"]
+        description: "Discover practical strategies to streamline your supply chain for optimal results.",
+        hashtags: ["#SupplyChain", "#Efficiency", "#FreightForwarding"]
     },
     {
         id: 3,
-        title: "How to Build a Website",
+        title: "Eco-Friendly Shipping Solutions",
         image: "/Images/Image/3.webp",
-        description: "Learn the fundamentals of building a modern website with this comprehensive guide.",
-        hashtags: ["#WebDevelopment", "#HTML", "#CSS"]
+        description: "Learn how sustainable shipping practices can reduce environmental impact and cost.",
+        hashtags: ["#SupplyChain", "#Efficiency", "#FreightForwarding"]
     },
     {
         id: 4,
-        title: "How to Build a Website",
+        title: "Overcoming Freight Challenges",
         image: "/Images/Image/3.webp",
-        description: "Learn the fundamentals of building a modern website with this comprehensive guide.",
-        hashtags: ["#WebDevelopment", "#HTML", "#CSS"]
+        description: "Address common issues in freight forwarding and explore effective solutions.",
+        hashtags: ["#FreightChallenges", "#RiskManagement", "#LogisticsSolutions"]
     },
     {
         id: 5,
-        title: "How to Build a Website",
+        title: "Advanced Cargo Tracking Systems",
         image: "/Images/Image/3.webp",
-        description: "Learn the fundamentals of building a modern website with this comprehensive guide.",
+        description: "Understand how innovative tracking systems enhance cargo visibility and security.",
+        hashtags: ["#FreightChallenges", "#RiskManagement", "#LogisticsSolutions"]
+    },
+    {
+        id: 6,
+        title: "The Future of AI in Freight Management",
+        image: "/Images/Image/3.webp",
+        description: "Delve into how artificial intelligence is transforming the logistics industry, from predictive analysis to automated operations...",
         hashtags: ["#WebDevelopment", "#HTML", "#CSS"]
+    },
+    {
+        id: 7,
+        title: "Navigating the Persian Gulf: Key Routes and Challenges",
+        image: "/Images/Image/3.webp",
+        description: "Explore the significance of maritime routes in the Persian Gulf and how they impact regional trade and logistics...",
+        hashtags: ["#CargoTracking", "#Innovation", "#SmartLogistics"]
     }
 ];
 
