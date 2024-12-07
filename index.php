@@ -110,7 +110,8 @@
 
             </div>
 
-            <menu id="mainManu" class="flex items-center flex-row w-full justify-center m-0 test">
+            <menu id="mainManu" class="flex items-center flex-row w-full justify-center  test bg-black "
+                style="margin:0">
                 <!-- منوی سمت چپ لوگو -->
                 <nav id="menu" class="hidden md:flex space-x-4 mymenu whitespace-nowrap z-50">
                     <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-white "
@@ -967,17 +968,16 @@
 
         <section id="src-04" class="gallery " loading="lazy">
 
-            <!-- <div class="relative bottom-0 left-0 w-full h-28 bg-cover overflow-hidden"
+            <div class="relative bottom-0 left-0 w-full h-28 bg-cover overflow-hidden"
                 style="background-image: url('/Images/Image/gallery/MainPage/sea.webp');" id="ocean">
                 <div id="ship"
                     class="absolute bottom-12 -left-[20%] sm:w-24 sm:h-24 md:w-36 md:h-36  lg:w-96 lg:h-96 h-auto bg-no-repeat bg-contain"
-                    style="background-image: url('/Images/Image/gallery/MainPage/ship.webp');">
+                    style="background-image: url('./Images/Image/gallery/MainPage/ship.webp');">
                 </div>
 
             </div>
             <script>
                 const ship = document.getElementById("ship");
-
                 function moveShip() {
                     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
                     const scrollPos = window.scrollY || document.documentElement.scrollTop;
@@ -991,7 +991,7 @@
                     requestAnimationFrame(moveShip);
                 });
 
-            </script> -->
+            </script>
             <br />
 
             <div class="grid-container0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 p-4 select-none">

@@ -99,26 +99,26 @@
             </div>
 
             <!-- منوی دسکتاپ -->
-            <menu id="mainManu" class="flex items-center flex-row w-full justify-center m-0 test">
+            <menu id="mainManu" class="flex items-center flex-row w-full justify-center m-0 test bg-black">
                 <!-- منوی سمت چپ لوگو -->
                 <nav id="menu" class="hidden md:flex space-x-4 mymenu whitespace-nowrap z-50">
-                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-white "
+                    <a href="./index.php" class="nav-link custome-size-menu custome-menu-item text-white "
                         id="home-link">صفحه اصلی</a>
                     <div class="relative">
-                        <a href="/Components/Services.html" id="desktop-services"
+                        <a href="./Components/Services.html" id="desktop-services"
                             class="nav-link custome-size-menu custome-menu-item text-white">
                             خدمات
                             <span class="submenu-icon">&#9662;</span>
                         </a>
 
                         <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
-                            <a href="/Components/services/maritime-transport.html"
+                            <a href="./Components/services/maritime-transport.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
                                 id="maritime-link">حمل‌ونقل دریایی</a>
-                            <a href="/Components/services/ground-transport.html"
+                            <a href="./Components/services/ground-transport.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
                                 id="ground-transport-link">حمل‌ونقل زمینی</a>
-                            <a href="/Components/services/air-freight.html"
+                            <a href="./Components/services/air-freight.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
                                 id="air-freight-link">حمل‌ونقل هوایی</a>
 
@@ -132,7 +132,7 @@
 
                 <!-- لوگو وسط منو -->
                 <a id="roshan-icon" class="relative flex justify-center items-center ml-6 left-0 right-0"
-                    href="/index.php">
+                    href="./index.php">
                     <div id="logo-butt"
                         class="absolute lg:w-72 lg:h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-3 mobwhite sm:h-24 sm:w-44 md:h-24 md:w-44">
                     </div>
@@ -147,25 +147,26 @@
                 <nav class="hidden md:flex space-x-4 mymenu ml-3 whitespace-nowrap z-[100]">
 
                     <div class="relative z-10">
-                        <a href="/Components/eqc.html" id="desktop-eqc"
+                        <a href="./Components/eqc.html" id="desktop-eqc"
                             class="nav-link custome-size-menu custome-menu-item z-100 text-white">
                             EQC
                             <span class="submenu-icon">&#9662;</span>
                         </a>
                         <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
-                            <a href="/Components/eqc/Incoterms.html"
+                            <a href="./Components/eqc/Incoterms.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                                 id="incoterms-link">اینکوترمز</a>
-                            <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                id="cargo-link">محموله</a>
+                            <a href="./Components/eqc/cargo.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link">محموله</a>
                         </div>
                     </div>
-                    <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                    <a href="./Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
                         id="about-us-link">درباره ما</a>
-                    <a href="/Components/ContactUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
-                        id="contact-us-link">تماس با ما</a>
-                    <a href="/persian/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                        <img src="/Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
+                    <a href="./Components/ContactUs.html"
+                        class="nav-link custome-size-menu custome-menu-item text-white" id="contact-us-link">تماس با
+                        ما</a>
+                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
+                        <img src="/Images/united-kingdom-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
                     </a>
                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
                 </nav>
@@ -190,8 +191,8 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
                 <!-- Item 1 -->
-                <div class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group flex flex-col items-center secCard"
-                    data-aos="fade-right overflow-x-hidden">
+                <a class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group flex flex-col items-center secCard"
+                    href="./Components/services/logistics-solution.html" data-aos="fade-right overflow-x-hidden">
                     <div class="text-center">
                         <div class="item-icon mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -219,9 +220,9 @@
                         </div>
 
                     </div>
-                </div>
+                </a>
                 <!-- Item 2-->
-                <div data-aos="fade-right"
+                <a data-aos="fade-right" href="./Components/services/air-freight.html"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group secCard overflow-x-hidden">
                     <div class="text-center">
                         <div class="item-icon">
@@ -338,11 +339,11 @@
 
 
                     </div>
-                </div>
+                </a>
                 <!-- Item 3 -->
-                <div data-aos="fade-left"
-                    class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group overflow-x-hidden secCard ">
-                    <div class="text-center">
+                <a data-aos="fade-left" href="./Components/services/maritime-transport.html" class=" bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105
+                    hover:bg-blue-600 group overflow-x-hidden secCard ">
+                    <div class=" text-center">
                         <div class="item-icon">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="w-12 h-12 fill-current text-gray-800 group-hover:text-white"
@@ -479,9 +480,9 @@
                                 کارگزاری حمل‌ونقل</h3>
                         </div>
                     </div>
-                </div>
+                </a>
                 <!-- Item 4 -->
-                <div data-aos="fade-left"
+                <a data-aos="fade-left" href="./Components/services/ground-transport.html"
                     class="bg-white p-6 shadow-lg rounded-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 group overflow-x-hidden secCard">
                     <div class="text-center">
                         <div class="item-icon">
@@ -563,7 +564,7 @@
                                 ترانزیت</h3>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -599,8 +600,9 @@
                                 لجستیکی قابل اعتماد است
                             </p>
                             <div class="rounded-lg m-2 p-1 flex flex-row justify-between relative lastAbout">
-                                <a href="/Components/AboutUs.html"
-                                    class="explore inline-block mt-4 px-6 py-3  font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300 bg-blue-500 hover:bg-blue-900 hover:text-white text-blue-200">از ما بیشتر بدونید</a>
+                                <a href="./Components/AboutUs.html"
+                                    class="explore inline-block mt-4 px-6 py-3  font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300 bg-blue-500 hover:bg-blue-900 hover:text-white text-blue-200">از
+                                    ما بیشتر بدونید</a>
                             </div>
                         </div>
                         <!-- Right Section (Video and Images) -->
@@ -624,7 +626,6 @@
                                 <img class="rounded-lg shadow-lg w-full object-cover"
                                     src="/Images/Image/AboutUs/Main/98.webp" data-aos="zoom-out" alt="Image 2">
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -784,8 +785,10 @@
                         </a>
                     </div> -->
                 </div>
-                <h2 class="text-2xl font-bold mb-4 items-center text-center">Welcome to Our Services</h2>
-                <p>This is the default content that is shown before any service is selected.</p>
+                <h2 class="text-2xl font-bold mb-4 items-center text-center">چرا ما را انتخاب کنید؟</h2>
+                <p>در شرکت روشن دریا پارس، نوآوری، تخصص، و تعهد را با هم ترکیب کرده‌ایم تا راهکارهای لجستیکی بی‌نظیری
+                    ارائه دهیم. هدف ما ساده‌سازی عملیات شما، کاهش هزینه‌ها، و تضمین تحویل به‌موقع در سراسر جهان است. با
+                    ما همراه شوید و سفری بی‌دردسر و منحصربه‌فرد متناسب با نیازهای خاص خود تجربه کنید.</p>
             </div>
 
             <!-- Service 1 content -->
@@ -1147,7 +1150,7 @@
     <br />
     <br />
     <br />
-    <section id="rate-inquiry" class="bg-primary-light-gray py-6">
+    <!-- <section id="rate-inquiry" class="bg-primary-light-gray py-6">
         <div class="container mx-auto px-4 flex flex-row flex-wrap gap-4 justify-center">
             <input type="text" placeholder="تاریخ آماده‌سازی" class="input-field w-full md:w-1/3 lg:w-1/5">
             <input type="text" placeholder="فرودگاه مبدأ" class="input-field w-full md:w-1/3 lg:w-1/5">
@@ -1161,7 +1164,7 @@
             </select>
             <button class="rate-button w-full md:w-1/3 lg:w-1/5">دریافت نرخ</button>
         </div>
-    </section>
+    </section> -->
     <br />
     <br />
 
@@ -1298,14 +1301,16 @@
             <!-- Explore Links Section -->
             <div class="links">
                 <h1 class="text-xl font-bold mb-4">لینک‌های پیشنهادی</h1>
-                <a href="#">خدمات ما</a>
-                <a href="#">تیم ما</a>
-                <a href="#">انجمن</a>
-                <a href="#">مرکز کمک</a>
-                <a href="#">تماس با ما</a>
-                <a href="#">سیاست حریم خصوصی</a>
-                <a href="#">شرایط و ضوابط</a>
-                <a href="#">نقشه سایت</a>
+                <a href="https://saoi.ir" target="_blank"
+                    class="block text-secondary-grayish-blue hover:underline">خدمات کشتی رانی و خدمات وابسته به آن </a>
+                <a href="https://www.pmo.ir/" target="_blank"
+                    class="block text-secondary-grayish-blue hover:underline">سازمان بنادر و دریانوردی</a>
+                <a href="https://tarabaran.com" class="block text-secondary-grayish-blue hover:underline"
+                    target="_blank">رسانه اقتصاد ترابری ایران</a>
+                <a href="/Components/Services.html" class="block text-secondary-grayish-blue hover:underline">خدمات
+                    ما</a>
+                <a href="./Components/ContactUs.html" class="block text-secondary-grayish-blue hover:underline">درباره
+                    ما</a>
             </div>
 
             <!-- Latest Posts Section -->
@@ -1335,7 +1340,7 @@
                 <p>ایمیل: info@roshandarya.com</p>
                 <p>تلفن:<br /> (+۹۸) ۲۱ ۸۶۰ ۴۷ ۳۲۲ <br />(+۹۸) ۲۱ ۸۶۰ ۴۷ ۴۲۵ <br />(+۹۸) ۲۱ ۸۶۱ ۲۲ ۱۷۸ </p>
                 <!-- Social Media Links -->
-                <div class="social-icons text-center">
+                <div class="social-icons text-center flex justify-center gap-3 mt-5">
                     <a href="https://facebook.com" target="_blank" style="color: #4267B2;">
                         <i class="fab fa-facebook-f fa-2x"></i>
                     </a>

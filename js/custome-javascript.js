@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (window.scrollY > 100) {
                 header.classList.add('fixed-header');
                 mainManu.classList.add("relative");
+                mainManu.classList.remove("bg-black");
 
                 if (window.innerWidth >= 600) {
                     butt.classList.add("bg-white");
@@ -71,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 butt.classList.remove("butt");
                 roshanIcon.classList.remove("roshan-icon-top");
                 roshanIcon.classList.add("roshan-icon-top-normall");
+                mainManu.classList.add("bg-black");
                 // بازگرداندن رنگ لینک‌ها به سفید
                 links.forEach(link => {
                     link.style.color = 'white'; // رنگ اولیه لینک‌ها
