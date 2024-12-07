@@ -967,43 +967,31 @@
 
         <section id="src-04" class="gallery " loading="lazy">
 
-            <section class="gallery4 cid-upCxZ2xO3D left select-none" id="gallery-12-upCxZ2xO3D ">
-                <div class="container-fluid gallery-wrapper gallery-scroll">
-                    <div class="grid-container  horizontal-scroll cursor-grab">
-                        <div class="grid-item left">
-                            <img src="Images/Image/gallery/MainPage/AroundSlider/1.webp" alt="image1"
-                                class="animate__animated w-full h-auto object-cover pointer-events-none">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="Images/Image/gallery/MainPage/AroundSlider/2.webp" alt="image2"
-                                class="animate__animated w-full h-auto object-cover pointer-events-none">
-                        </div>
-                        <div class="grid-item left">
-                            <img src="Images/Image/gallery/MainPage/AroundSlider/3.webp" alt="image3"
-                                class="animate__animated w-full h-auto object-cover pointer-events-none">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="Images/Image/gallery/MainPage/AroundSlider/4.webp" alt="image4"
-                                class="animate__animated w-full h-auto object-cover pointer-events-none">
-                        </div>
-                        <div class="grid-item left">
-                            <img src="Images/Image/gallery/MainPage/AroundSlider/5.webp" alt="image5"
-                                class="animate__animated w-full h-auto object-cover pointer-events-none">
-                        </div>
-                        <div class="grid-item right">
-                            <img src="Images/Image/gallery/MainPage/AroundSlider/6.webp" alt="image6"
-                                class="animate__animated w-full h-auto object-cover pointer-events-none">
-                        </div>
-                        <div class="grid-item left">
-                            <img src="Images/Image/gallery/MainPage/AroundSlider/7.webp" alt="image7"
-                                class="animate__animated w-full h-auto object-cover pointer-events-none">
-                        </div>
-
-                    </div>
+            <!-- <div class="relative bottom-0 left-0 w-full h-28 bg-cover overflow-hidden"
+                style="background-image: url('/Images/Image/gallery/MainPage/sea.webp');" id="ocean">
+                <div id="ship"
+                    class="absolute bottom-12 -left-[20%] sm:w-24 sm:h-24 md:w-36 md:h-36  lg:w-96 lg:h-96 h-auto bg-no-repeat bg-contain"
+                    style="background-image: url('/Images/Image/gallery/MainPage/ship.webp');">
                 </div>
-            </section>
-            <br />
-            <br />
+
+            </div>
+            <script>
+                const ship = document.getElementById("ship");
+
+                function moveShip() {
+                    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+                    const scrollPos = window.scrollY || document.documentElement.scrollTop;
+                    const moveDistance = (window.innerWidth + ship.offsetWidth) * (scrollPos / maxScroll) * 2;
+
+                    ship.style.transform = `translateX(${moveDistance - 640}px)`;
+                    requestAnimationFrame(moveShip);
+                }
+
+                window.addEventListener("scroll", () => {
+                    requestAnimationFrame(moveShip);
+                });
+
+            </script> -->
             <br />
 
             <div class="grid-container0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 p-4 select-none">

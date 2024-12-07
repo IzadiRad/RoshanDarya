@@ -99,65 +99,73 @@
             </div>
 
             <!-- منوی دسکتاپ -->
-            <menu class="flex items-center flex-row w-full justify-center m-0">
-                <nav id="menu" class="hidden md:flex space-x-reverse mymenu">
-                    <a href="./index.php" class="nav-link custome-size-menu custome-menu-item text-white"
+            <menu id="mainManu" class="flex items-center flex-row w-full justify-center m-0 test">
+                <!-- منوی سمت چپ لوگو -->
+                <nav id="menu" class="hidden md:flex space-x-4 mymenu whitespace-nowrap z-50">
+                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item text-white "
                         id="home-link">صفحه اصلی</a>
                     <div class="relative">
-                        <a href="./components/Services.html" id="desktop-services"
+                        <a href="/Components/Services.html" id="desktop-services"
                             class="nav-link custome-size-menu custome-menu-item text-white">
                             خدمات
                             <span class="submenu-icon">&#9662;</span>
                         </a>
+
                         <div id="services-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 substack">
-                            <a href="./components/services/maritime-transport.html"
+                            <a href="/Components/services/maritime-transport.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
                                 id="maritime-link">حمل‌ونقل دریایی</a>
-                            <a href="./components/services/ground-transport.html"
+                            <a href="/Components/services/ground-transport.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
                                 id="ground-transport-link">حمل‌ونقل زمینی</a>
-                            <a href="./components/services/air-freight.html"
-                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-white"
+                            <a href="/Components/services/air-freight.html"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200  text-white"
                                 id="air-freight-link">حمل‌ونقل هوایی</a>
+
                         </div>
                     </div>
+
                     <a href="#" class="nav-link custome-size-menu custome-menu-item text-white request-quote-link"
                         data-target="#quoteModal2">درخواست قیمت</a>
+
                 </nav>
 
-                <!-- لوگو -->
-                <a id="roshan-icon"
-                    class="relative flex justify-center items-center mr-6 right-0 left-0 top-0 lg:relative sm:absolute md:absolute"
-                    href="./index.php">
+                <!-- لوگو وسط منو -->
+                <a id="roshan-icon" class="relative flex justify-center items-center ml-6 left-0 right-0"
+                    href="/index.php">
                     <div id="logo-butt"
-                        class="absolute w-44 h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-7 mobwhite">
+                        class="absolute lg:w-72 lg:h-28 rounded-full z-10 shadow-[0_8px_16px_rgba(0,0,255,0.5)] -top-3 mobwhite sm:h-24 sm:w-44 md:h-24 md:w-44">
                     </div>
+
                     <img src="/Images/Icon/roshan-new-en.webp" alt="roshandarya"
-                        class="relative w-36 h-auto z-10 top-6">
+                        class="relative lg:w-48 md:w-36 sm:w-48 h-auto z-10 top-6">
                 </a>
 
-                <nav class="hidden md:flex space-x-reverse mymenu mr-3">
+
+
+                <!-- منو سمت راست لوگو -->
+                <nav class="hidden md:flex space-x-4 mymenu ml-3 whitespace-nowrap z-[100]">
+
                     <div class="relative z-10">
-                        <a href="./components/eqc.html" id="desktop-eqc"
+                        <a href="/Components/eqc.html" id="desktop-eqc"
                             class="nav-link custome-size-menu custome-menu-item z-100 text-white">
                             EQC
                             <span class="submenu-icon">&#9662;</span>
                         </a>
-                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 left-0 substack">
-                            <a href="./components/eqc/incoterms.html"
+                        <div id="eqc-dropdown" class="absolute hidden bg-white shadow-lg mt-2 w-48 right-0 substack">
+                            <a href="/Components/eqc/Incoterms.html"
                                 class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                                 id="incoterms-link">اینکوترمز</a>
-                            <a href="./components/eqc/cargo.html"
-                                class="block px-4 py-2 text-gray-800 hover:bg-gray-200" id="cargo-link">محموله</a>
+                            <a href="/Components/eqc/cargo.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                id="cargo-link">محموله</a>
                         </div>
                     </div>
-                    <a href="./components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                    <a href="/Components/AboutUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
                         id="about-us-link">درباره ما</a>
-                    <a href="./components/ContactUs.html"
-                        class="nav-link custome-size-menu custome-menu-item text-white" id="contact-us-link">تماس با
-                        ما</a>
-                    <a href="/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
-                        <img src="/Images/united-kingdom-flag-icon.svg" alt="UK Flag" id="flag-icon" class="w-6 h-6">
+                    <a href="/Components/ContactUs.html" class="nav-link custome-size-menu custome-menu-item text-white"
+                        id="contact-us-link">تماس با ما</a>
+                    <a href="/persian/index.php" class="nav-link custome-size-menu custome-menu-item language-toggle">
+                        <img src="/Images/iran-flag-icon.svg" alt="Iran Flag" id="flag-icon" class="w-6 h-6">
                     </a>
                     <i class="fa-solid fa-magnifying-glass" id="search"></i>
                 </nav>
@@ -591,9 +599,8 @@
                                 لجستیکی قابل اعتماد است
                             </p>
                             <div class="rounded-lg m-2 p-1 flex flex-row justify-between relative lastAbout">
-                                <a href="./components/blog.html"
-                                    class="button explore inline-block mt-4 px-6 py-3 bg-primary-turquoise text-white font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300">بیشتر
-                                    از ما بدونید</a>
+                                <a href="/Components/AboutUs.html"
+                                    class="explore inline-block mt-4 px-6 py-3  font-semibold rounded-lg hover:bg-secondary-sky-blue transition duration-300 bg-blue-500 hover:bg-blue-900 hover:text-white text-blue-200">از ما بیشتر بدونید</a>
                             </div>
                         </div>
                         <!-- Right Section (Video and Images) -->
@@ -1482,6 +1489,9 @@
     <script src="/js/quoteModel.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- <script src="/persian/js/convertLangulage.js"></script> -->
+
+
+
     <script>
         AOS.init();
     </script>
